@@ -1,0 +1,15 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"IELTS Lexicon complete backup v2",
+  "type":"object",
+  "required":["format","schema_version","exported_at","words","progress","reviews","overrides","settings"],
+  "properties":{
+    "format":{"const":"ielts-lexicon-backup"},"schema_version":{"const":2},"exported_at":{"type":"string","format":"date-time"},
+    "words":{"type":"array","items":{"$ref":"vocabulary.schema.json#/$defs/word"}},
+    "progress":{"type":"array","items":{"$ref":"#/$defs/progress"}},
+    "reviews":{"type":"array","items":{"type":"object","required":["id","word_id","at","grade","before","after"],"properties":{"id":{"type":"string"},"word_id":{"type":"string"},"at":{"type":"number","minimum":0},"grade":{"enum":["again","hard","good"]},"before":{"$ref":"#/$defs/progress"},"after":{"$ref":"#/$defs/progress"}}}},
+    "overrides":{"type":"array","items":{"type":"object","required":["word_id","meaning","example","example_zh","collocations","mnemonics","updated_at"],"properties":{"word_id":{"type":"string"},"meaning":{"type":"array","items":{"type":"string"}},"example":{"type":"string"},"example_zh":{"type":"string"},"collocations":{"type":"array","items":{"type":"string"}},"mnemonics":{"type":"array","items":{"$ref":"vocabulary.schema.json#/$defs/mnemonic"}},"updated_at":{"type":"number","minimum":0}}}},
+    "settings":{"type":"object","required":["phonetic","mnemonics","example","daily_limit"],"properties":{"phonetic":{"type":"boolean"},"mnemonics":{"type":"boolean"},"example":{"type":"boolean"},"daily_limit":{"type":"integer","minimum":1,"maximum":500}}}
+  },
+  "$defs":{"progress":{"type":"object","required":["word_id","state","due","interval","streak","lapses","reviews","last_review","algorithm"],"properties":{"word_id":{"type":"string"},"state":{"enum":["new","learning","review","mastered"]},"due":{"type":"number","minimum":0},"interval":{"type":"number","minimum":0},"streak":{"type":"integer","minimum":0},"lapses":{"type":"integer","minimum":0},"reviews":{"type":"integer","minimum":0},"last_review":{"type":["number","null"],"minimum":0},"algorithm":{"const":"simple-v1"}}}}
+}

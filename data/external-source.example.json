@@ -1,0 +1,12 @@
+{
+  "format": "ielts-lexicon-vocabulary",
+  "schema_version": 1,
+  "words": [{
+    "id": "word_resort", "word": "resort", "list_ids": [], "initial_level": "uncertain",
+    "origins": [{"list": null, "kind": "reading", "symbol": "△", "source": "reading-practice-example", "raw": "resort"}],
+    "meaning": ["n. 度假胜地", "v. 求助于；诉诸（resort to）"], "phonetic": "", "part_of_speech": ["noun", "verb"],
+    "example": "We should not resort to violence.", "example_zh": "我们不应诉诸暴力。", "collocations": ["a holiday resort", "resort to something"],
+    "mnemonics": [{"id":"example_resort_association","type":"association","title":"自由故事候选","content":"想象在度假胜地遇到难题，最后求助于前台。用故事串联名词和 resort to 动词搭配。","source":"codex","status":"needs_review","preferred":true}],
+    "content_status": "needs_review", "transcription_status": "needs_review", "notes": "格式示例，未宣称来自你的实际阅读记录。可导入体验多义与非 List 来源。"
+  }]
+}

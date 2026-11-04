@@ -1,0 +1,12 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.local
+*.tsbuildinfo
+backups/
+public-release/
+sources/
+*.jpg
+*.jpeg
+*.heic
