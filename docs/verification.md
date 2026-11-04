@@ -60,3 +60,12 @@ List 1 / 2 的 49 词均有中英文例句与记忆候选；List 3 / 4 现已补
 - 原图内容导出为data/notes下四份Markdown，公开源码与dist均不含原始手写图片。
 - 公开仓库从干净历史创建，旧私有Git历史不参与发布。
 - 保留现有数据库名，缓存升级限定自身scope；应用更新不重置学习状态。
+
+## 公开站点实测
+
+- URL：https://kada666.github.io/ielts-lexicon/ ，HTTPS主页面200。
+- 原始手写图路径 sources/list_01.jpg 返回404；构建资源不含手写图。
+- 隔离Chrome实际导入132词，离线重载成功，离线评分后再次刷新仍保留1条评分。
+- 页面运行错误0；可重跑 node scripts/verify-deployed.mjs。截图public-live.png来自隔离验收库，不是用户学习历史。
+- 桌面IELTS Lexicon.lnk已指向统一HTTPS地址；本地目录Git元数据已切换至干净公开仓库。
+- 旧localhost页面与线上站点属于不同origin，旧学习数据不自动搬移。需要保留时导出完整JSON并在新地址恢复；本次未覆盖用户正式浏览器的原记录。

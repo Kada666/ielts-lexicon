@@ -11,3 +11,5 @@
 - GitHub Actions 在 main 更新后运行测试、构建并发布 Pages。
 
 原私有仓库仅封存旧历史，不再作为维护或部署入口。日常开发与桌面入口统一指向新的公开项目。
+
+发布已由GitHub Actions完成，公开仓库visibility=public；原私有仓库已重命名为ielts-lexicon-archive-20261104并封存。桌面快捷方式默认打开在线统一入口，若需本地入口可执行 scripts/install-desktop-shortcut.ps1 -Local。
