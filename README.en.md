@@ -107,7 +107,7 @@ npm run build        # Markdown conversion, type checking and production build
 npm run test:e2e     # Isolated Chrome: import, edit, rate, restore and offline
 ```
 
-V1 passed **13 unit tests and 5 browser tests**, including offline reload and saved ratings. Desktop, 834px tablet and 390px phone layouts were checked with touch input. These checks do not replace physical iPad Safari or macOS installation testing. See the [verification record](docs/verification.md).
+V1 passed **15 unit tests and 7 browser tests**, including offline reload and saved ratings. Desktop, 834px tablet and 390px phone layouts were checked with touch input. These checks do not replace physical iPad Safari or macOS installation testing. See the [verification record](docs/verification.md).
 
 GitHub Actions tests, builds and deploys the unified Pages app after a push to `main`. Planned work includes FSRS, listening recognition, meaning recall and word-family links. Automatic cross-device sync is not part of V1.
 
@@ -116,3 +116,9 @@ GitHub Actions tests, builds and deploys the unified Pages app after a push to `
 Only one public repository and app URL are maintained. App updates never upload or reset browser study data. Importing an updated base vocabulary requires confirmation. Different browser profiles and devices have separate IndexedDB databases; people sharing the same profile also share that site storage.
 
 The public repository starts with clean history, without original handwritten images or previous Git commits. The former private repository is a historical archive, not a second development or deployment target.
+
+## Mobile reading and pronunciation
+
+The phone collection puts the word on the left and meanings on the right, with compact initial-level symbols and source labels. Scrolling loads more words automatically. Study cards focus on the word, pronunciation, meaning and preferred memory cue. Previous/next does not record a rating; already-rated cards can be revisited without duplicate ratings. Hold a memory cue for 550 ms or tap Edit to change it.
+
+Tap the phonetic text or speaker for device speech synthesis, requesting en-GB and preferring a local UK voice. Offline speech requires an installed local UK voice; ordinary offline study and ratings remain available without it. This is not an official IELTS audio recording. See [interaction and audio details](docs/mobile-reading.md).
