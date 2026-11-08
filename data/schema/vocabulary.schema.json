@@ -12,7 +12,7 @@
     }},
     "word":{"type":"object","required":["id","word","list_ids","initial_level","origins","meaning","phonetic","part_of_speech","example","example_zh","collocations","mnemonics","content_status","transcription_status","notes"],"properties":{
       "id":{"type":"string","pattern":"^word_"},"word":{"type":"string","pattern":"^[a-zA-Z]+(?:[ '-][a-zA-Z]+)*$"},"list_ids":{"type":"array","uniqueItems":true,"items":{"type":"integer","minimum":1,"maximum":50}},"initial_level":{"enum":["unknown","uncertain"]},
-      "origins":{"type":"array","minItems":1,"items":{"type":"object","required":["list","symbol","source","raw"],"properties":{"list":{"type":["integer","null"],"minimum":1,"maximum":50},"kind":{"enum":["book","listening","reading","writing","speaking","other"]},"symbol":{"enum":["○","△"]},"source":{"type":"string","minLength":1},"raw":{"type":"string"}}}},
+      "origins":{"type":"array","minItems":1,"items":{"type":"object","required":["list","symbol","source","raw"],"properties":{"list":{"type":["integer","null"],"minimum":1,"maximum":50},"kind":{"enum":["book","listening","reading","writing","speaking","other"]},"symbol":{"enum":["○","△","练"]},"source":{"type":"string","minLength":1},"raw":{"type":"string"}}}},
       "meaning":{"type":"array","minItems":1,"items":{"type":"string"}},"phonetic":{"type":"string"},"part_of_speech":{"type":"array","items":{"type":"string"}},"example":{"type":"string"},"example_zh":{"type":"string"},"collocations":{"type":"array","items":{"type":"string"}},"mnemonics":{"type":"array","items":{"$ref":"#/$defs/mnemonic"}},"content_status":{"$ref":"#/$defs/status"},"transcription_status":{"$ref":"#/$defs/status"},"notes":{"type":"string"}
     }}
   }

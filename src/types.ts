@@ -7,7 +7,7 @@ export interface Mnemonic {
 }
 export interface Word {
   id: string; word: string; list_ids: number[]; initial_level: Level;
-  origins: { list: number | null; symbol: '○' | '△'; source: string; raw: string; kind?: 'book' | 'listening' | 'reading' | 'writing' | 'speaking' | 'other' }[];
+  origins: { list: number | null; symbol: '○' | '△' | '练'; source: string; raw: string; kind?: 'book' | 'listening' | 'reading' | 'writing' | 'speaking' | 'other' }[];
   meaning: string[]; phonetic: string; part_of_speech: string[]; example: string; example_zh: string;
   collocations: string[]; mnemonics: Mnemonic[]; content_status: Status; transcription_status: Status; notes: string;
 }
@@ -23,4 +23,9 @@ export interface Settings { phonetic: boolean; mnemonics: boolean; example: bool
 export interface Snapshot { words: Word[]; progress: Progress[]; reviews: Review[]; overrides: Override[]; settings: Settings }
 export interface Backup extends Snapshot { format: 'ielts-lexicon-backup'; schema_version: 2; exported_at: string }
 export const defaults: Settings = { phonetic: true, mnemonics: true, example: true, daily_limit: 20 };
+export function initialMark(word: Word) {
+  if (word.initial_level === 'unknown') return '○';
+  return word.origins.some(origin => origin.symbol === '△') ? '△' : '练';
+}
+export const initialLabels = { '○': '陌生', '△': '模糊', '练': '练习' };
 export const mnemonicLabels: Record<MnemonicType, string> = { etymology: '真实词源', morphology: '构词拆解', phonetic: '谐音联想', onomatopoeia: '拟声记忆', association: '自由联想', word_family: '词族联想' };

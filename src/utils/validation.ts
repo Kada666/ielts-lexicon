@@ -26,7 +26,7 @@ export function validateWords(value: unknown): Word[] {
     assert(['unknown','uncertain'].includes(String(w.initial_level)) && status(w.content_status) && status(w.transcription_status), `${w.word}: 分类或审核状态无效`);
     assert(strings(w.meaning) && w.meaning.length > 0 && w.meaning.some(m => m.trim()) && strings(w.part_of_speech) && strings(w.collocations), `${w.word}: 释义或搭配格式无效`);
     assert(['phonetic','example','example_zh','notes'].every(k => typeof w[k] === 'string'), `${w.word}: 缺少文本字段`);
-    assert(Array.isArray(w.origins) && w.origins.length > 0 && w.origins.every(o => record(o) && (o.list === null || listIds.includes(Number(o.list))) && ['○','△'].includes(String(o.symbol)) && typeof o.source === 'string' && !!o.source && typeof o.raw === 'string' && (o.kind === undefined || ['book','listening','reading','writing','speaking','other'].includes(String(o.kind)))), `${w.word}: 来源无效`);
+    assert(Array.isArray(w.origins) && w.origins.length > 0 && w.origins.every(o => record(o) && (o.list === null || listIds.includes(Number(o.list))) && ['○','△','练'].includes(String(o.symbol)) && typeof o.source === 'string' && !!o.source && typeof o.raw === 'string' && (o.kind === undefined || ['book','listening','reading','writing','speaking','other'].includes(String(o.kind)))), `${w.word}: 来源无效`);
     const origins = w.origins as Word['origins'];
     assert(listIds.every(n => origins.some(o => o.list === n)), `${w.word}: List 缺少原始来源`);
     assert(w.initial_level === (origins.some(o => o.symbol === '○') ? 'unknown' : 'uncertain'), `${w.word}: 分类与原始标记不一致`);
@@ -44,9 +44,11 @@ export function mergeWords(existing: Word[], incoming: Word[]) {
     // 已确认资料优先；个人修改另存 overrides，永不由基础词库覆盖。
     const base = old.content_status === 'reviewed' && source.content_status !== 'reviewed' ? old : source;
     const mnemonicMap = new Map(base.mnemonics.map(m => [m.id, {...m}]));
+    for (const m of source.mnemonics) if (m.source === 'user' && !mnemonicMap.has(m.id)) mnemonicMap.set(m.id, {...m});
     for (const m of old.mnemonics) if (m.source === 'user' || !mnemonicMap.has(m.id)) mnemonicMap.set(m.id, {...m});
     const mnemonics = [...mnemonicMap.values()];
-    const first = mnemonics.find(m=>m.source==='user'&&m.preferred) ?? mnemonics.find(m=>m.preferred);
+    const first = old.mnemonics.find(m=>m.source==='user'&&m.preferred) ??
+      mnemonics.find(m=>m.source==='user'&&m.preferred) ?? mnemonics.find(m=>m.preferred);
     for (const m of mnemonics) m.preferred = m.id === first?.id;
     map.set(source.id, { ...base, mnemonics, origins, list_ids: [...new Set([...old.list_ids, ...source.list_ids])].sort((a,b)=>a-b), initial_level: origins.some(o => o.symbol === '○') ? 'unknown' : 'uncertain' });
   }

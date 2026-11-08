@@ -22,16 +22,16 @@ data/vocabulary_master.md         长期主词库及补充资料 JSON 块
                ↓ npm run build:data
 data/vocabulary.json              已确认转录
 data/vocabulary.pending.json      待审核转录
-data/vocabulary.list_03_04.json    专用83词增量包
+data/vocabulary.list_03_04.json    List 3、4 的90词增量包
                ↓ 应用预览、确认导入
 IndexedDB                        运行中的词汇、个人修改与复习数据
 ```
 
-List 1 有24词（○14、△10），List 2 有25词（○15、△10），List 3 有43词（○28、△15），List 4 有40词（○21、△19）。共132个可归类候选；另有7条辨认或分类问题保留在主词库与 List 4 笔记，不猜测导入。
+按《词汇整理.pdf》核对后，List 1 有24词，List 2 有25词，List 3 有43词，List 4 有47词，共139词。List 4 的练习组保留「练」标记，复习沿用模糊词的间隔。
 
 图片内容已转为 Markdown，公开仓库不保存原始手写图片。图片辨认备注仍是文字资料的一部分。未得到明确确认的转录与自动释义 / 记忆候选保持 needs_review；程序内导入确认不自动反向改写磁盘 Markdown。
 
-List 1、2 的49词均有中英文例句和记忆法；List 3、4 的83词另补了音标、词性和中英文例句候选。详细核验范围见 [本次补充记录](../data/list_03_04_review.md)。音标、例句与记忆候选不等于全部经词典逐项确认。
+List 1～4 已整理 91 条手写记忆法，附来源页码。已有词库可在首页增量合并。详细范围见 [词表核对记录](../data/import_review.md)。
 
 ## 追加与转换
 
@@ -116,6 +116,6 @@ npm run build
 npm run test:e2e
 ```
 
-浏览器测试使用独立临时 Chrome profile，不操作正式学习库。覆盖导入、个人编辑、评分持久化、83词增补、备份恢复、断网与桌面 / 平板 / 手机布局。视口与触屏模拟不等于真实 iPad Safari 或 macOS 安装验证。
+浏览器测试使用独立临时 Chrome profile，覆盖导入、个人编辑、评分持久化、词表增补、备份恢复、断网与桌面 / 平板 / 手机布局。实机安装需在对应设备上验证。
 
 后续可替换调度接口为 FSRS，保留原始历史；继续扩展听音、默写、词族和四科来源分析。V1 不需要账号、云数据库或运行时 AI / OCR。

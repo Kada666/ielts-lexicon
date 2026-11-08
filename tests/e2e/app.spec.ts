@@ -25,19 +25,48 @@ test('iPad触屏及手机布局、构词与拟声可见、个人记忆编辑',as
 });
 test('六类记忆法均在翻卡背面正确呈现，含多义与词根分段',async({page})=>{
  const selected=['apace','excavate','grunt','attendance','heel','variation'];
- const payload={...candidates,words:candidates.words.filter(w=>selected.includes(w.word))};
+ const payload={...candidates,words:candidates.words.filter(w=>selected.includes(w.word)).map(w=>w.word==='excavate'?{
+  ...w,mnemonics:w.mnemonics.map(m=>({...m,preferred:m.type==='etymology'})),
+ }:w)};
  await page.goto('/');await page.getByRole('button',{name:'导入与备份',exact:true}).click();await page.locator('input[type=file]').setInputFiles({name:'mnemonic-types.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(payload))});await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();await page.getByRole('button',{name:'确认导入 6 词'}).click();await page.getByRole('button',{name:'闪卡复习',exact:true}).click();await page.getByRole('button',{name:'开始复习',exact:true}).click();
  for(const [word,label] of [['apace','自由联想'],['excavate','真实词源'],['grunt','拟声记忆'],['attendance','词族联想'],['heel','谐音联想'],['variation','构词拆解']]){
   await page.getByRole('button',{name:'查看答案',exact:true}).click();await expect(page.locator('.answer-word h2')).toHaveText(word);await expect(page.locator('.mnemonic-heading').first()).toContainText(label);await expect(page.locator('.core-meaning p')).not.toBeEmpty();if(word==='variation'||word==='excavate')await expect(page.locator('.segments')).toBeVisible();await page.getByRole('button',{name:'记住了'}).click();
  }
  await expect(page.getByRole('heading',{name:'这一轮，完成了。'})).toBeVisible();
 });
-test('已有49词后补充List3/4的83词，保留原评分并能按List复习新词',async({page})=>{
+test('已有49词后补充List3/4的90词，保留原评分并能按List复习新词',async({page})=>{
  await seed(page);
  await page.getByRole('button',{name:'闪卡复习',exact:true}).click();await page.getByRole('button',{name:'开始复习',exact:true}).click();await page.getByRole('button',{name:'查看答案',exact:true}).click();await page.getByRole('button',{name:'记住了'}).click();
  await page.getByRole('button',{name:'导入与备份',exact:true}).click();const beforeDownload=page.waitForEvent('download');await page.getByRole('button',{name:'完整 JSON 备份'}).click();const fs=await import('node:fs/promises');const before=JSON.parse(await fs.readFile((await (await beforeDownload).path())!,'utf8'));
- await page.getByRole('button',{name:'补充 List 3 + List 4',exact:true}).click();await expect(page.getByRole('button',{name:'确认导入 83 词'})).toBeDisabled();await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();await page.getByRole('button',{name:'确认导入 83 词'}).click();await expect(page.getByRole('status')).toContainText('已合并 83');
- const afterDownload=page.waitForEvent('download');await page.getByRole('button',{name:'完整 JSON 备份'}).click();const after=JSON.parse(await fs.readFile((await (await afterDownload).path())!,'utf8'));expect(after.words).toHaveLength(132);expect(after.reviews).toEqual(before.reviews);expect(after.progress.filter((p:{word_id:string})=>before.progress.some((old:{word_id:string})=>old.word_id===p.word_id))).toEqual(before.progress);
- await page.getByRole('button',{name:'我的词库',exact:true}).click();await page.getByRole('combobox',{name:'按 List 筛选'}).selectOption('3');await expect(page.getByText('找到 43 个词汇',{exact:true})).toBeVisible();await page.getByRole('combobox',{name:'按 List 筛选'}).selectOption('4');await expect(page.getByText('找到 40 个词汇',{exact:true})).toBeVisible();
- await page.getByRole('button',{name:'闪卡复习',exact:true}).click();await page.getByRole('button',{name:'结束本轮'}).click();await page.getByRole('button',{name:'开始复习',exact:true}).click();await page.getByRole('button',{name:'查看答案',exact:true}).click();await expect(page.locator('.answer-word h2')).toHaveText('astrology');await expect(page.locator('.core-meaning')).toContainText('占星术');await expect(page.getByRole('button',{name:'播放 astrology 英式发音'})).toBeVisible();
+ await page.getByRole('button',{name:'补充 List 3 + List 4',exact:true}).click();await expect(page.getByRole('button',{name:'确认导入 90 词'})).toBeDisabled();await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();await page.getByRole('button',{name:'确认导入 90 词'}).click();await expect(page.getByRole('status')).toContainText('已合并 90');
+ const afterDownload=page.waitForEvent('download');await page.getByRole('button',{name:'完整 JSON 备份'}).click();const after=JSON.parse(await fs.readFile((await (await afterDownload).path())!,'utf8'));expect(after.words).toHaveLength(139);expect(after.reviews).toEqual(before.reviews);expect(after.progress.filter((p:{word_id:string})=>before.progress.some((old:{word_id:string})=>old.word_id===p.word_id))).toEqual(before.progress);
+ await page.getByRole('button',{name:'我的词库',exact:true}).click();await page.getByRole('combobox',{name:'按 List 筛选'}).selectOption('3');await expect(page.getByText('找到 43 个词汇',{exact:true})).toBeVisible();await page.getByRole('combobox',{name:'按 List 筛选'}).selectOption('4');await expect(page.getByText('找到 47 个词汇',{exact:true})).toBeVisible();
+ await page.getByRole('combobox',{name:'按初始分类筛选'}).selectOption('练');await expect(page.getByText('找到 6 个词汇',{exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'闪卡复习',exact:true}).click();await page.getByRole('button',{name:'结束本轮'}).click();await page.getByRole('button',{name:'开始复习',exact:true}).click();await page.getByRole('button',{name:'查看答案',exact:true}).click();await expect(page.locator('.answer-word h2')).toHaveText('astrology');await expect(page.locator('.core-meaning')).toContainText('占星术');await expect(page.getByRole('button',{name:'播放 astrology 英式发音'})).toBeVisible();await expect(page.getByLabel('联想记忆')).toContainText('List4.pdf · 第 5 页');
+});
+test('已有词库在首页增量更新，翻卡可看手写笔记',async({page})=>{
+ const newlyAdded=new Set(['pirate','mastery','precision','gloss','outward','anthropologist','comb']);
+ const older={...candidates,words:candidates.words.filter(w=>!newlyAdded.has(w.word)).map(w=>({
+  ...w,mnemonics:w.mnemonics.filter(m=>!m.id.startsWith('pdf_note_')),
+ }))};
+ await page.goto('/');
+ await page.getByRole('button',{name:'导入与备份',exact:true}).click();
+ await page.locator('input[type=file]').setInputFiles({name:'old.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(older))});
+ await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();
+ await page.getByRole('button',{name:'确认导入 132 词'}).click();
+ await expect(page.getByRole('status')).toContainText('已合并 132');
+ await page.getByRole('button',{name:'学习概览',exact:true}).click();
+ await page.getByRole('button',{name:'更新词库与笔记'}).click();
+ await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();
+ await page.getByRole('button',{name:'确认导入 139 词'}).click();
+ await expect(page.getByRole('status')).toContainText('已合并 139');
+ await page.reload();
+ await expect(page.getByRole('button',{name:'更新词库与笔记'})).toHaveCount(0);
+ await page.getByRole('button',{name:'我的词库',exact:true}).click();
+ await page.getByRole('combobox',{name:'按 List 筛选'}).selectOption('1');
+ await page.getByRole('button',{name:'闪卡复习',exact:true}).click();
+ await page.getByRole('button',{name:'开始复习',exact:true}).click();
+ await page.getByRole('button',{name:'查看答案',exact:true}).click();
+ await expect(page.locator('.answer-word h2')).toHaveText('apace');
+ await expect(page.getByLabel('联想记忆')).toContainText('想象脚步接连不断');
 });

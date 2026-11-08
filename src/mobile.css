@@ -17,3 +17,6 @@
 @media(max-width:760px){.library-panel .table-summary{padding:9px 1px;min-height:36px}}
 @media(max-width:760px){main:has(.study-workspace) .review-page-heading{display:none}.recall-card .card-collapse{display:none}.recall-card .card-answer .quick-memory p{font-size:18px;line-height:1.85}}
 @media(prefers-reduced-motion:reduce){.pronunciation-button{transition:none}}
+.memory-alternatives{margin-top:10px}
+.memory-alternatives summary{cursor:pointer;min-height:44px;align-content:center;color:#436548;font-size:14px}
+.memory-alternatives>div{margin:12px 0}

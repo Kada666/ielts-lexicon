@@ -10,7 +10,7 @@ export default function MnemonicEditor({word,busy,onClose,onSave}:{word:Word;bus
   const mnemonic:Mnemonic={...(original??{id:crypto.randomUUID(),title:'我的联想',status:'reviewed' as const}),type,content:text.trim(),source:'user',preferred:true};
   if(original&&original.type!==type)mnemonic.title=mnemonicLabels[type];
   if(['etymology','morphology','word_family'].includes(type))mnemonic.status='needs_review';
-  if(!['etymology','morphology'].includes(type)){delete mnemonic.segments;delete mnemonic.reference;}
+  if(!['etymology','morphology'].includes(type)){delete mnemonic.segments;if(!mnemonic.id.startsWith('pdf_note_'))delete mnemonic.reference;}
   const mnemonics=word.mnemonics.filter(m=>m.id!==original?.id).map(m=>({...m,preferred:false}));
   mnemonics.unshift(mnemonic);
   void onSave({word_id:word.id,meaning:word.meaning,example:word.example,example_zh:word.example_zh,collocations:word.collocations,mnemonics,updated_at:Date.now()});

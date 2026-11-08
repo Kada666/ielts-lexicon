@@ -42,7 +42,7 @@ It starts with a personal screening workflow for a 50-List IELTS vocabulary book
 
 Open **[IELTS Lexicon](https://kada666.github.io/ielts-lexicon/)**. There is one public repository and one shared app URL. The same code can also run locally.
 
-1. Open the initial-vocabulary review flow, which defaults to **132 candidates from Lists 1 to 4**; use the Lists 3 + 4 supplement option to add 83 words to an existing collection.
+1. Open the initial-vocabulary review flow to preview **139 candidates from Lists 1 to 4**. With an existing collection, use **更新词库与笔记** on the dashboard to merge the missing words and notes. The import page also offers a Lists 3 + 4 supplement.
 2. Compare the transcription with the Markdown notes, check spelling and classification, then confirm import. Additional Lists can be checked separately.
 3. Start a session: recall → reveal → read the meaning and cue → rate.
 4. Add personal memory cues and export complete backups regularly.
@@ -71,17 +71,17 @@ Open `http://127.0.0.1:4173/`. On Windows, `start-lexicon.cmd` builds and runs t
 
 Initial materials are four user-supplied handwritten screening sheets, transcribed into four files under `data/notes/`; handwritten source images are excluded from the public repository. They are personal selections, not complete book Lists. Without full List totals, the app does not claim a book-wide unfamiliar-word rate.
 
-| List | ○ Unfamiliar | △ Uncertain | Candidates |
-| --- | ---: | ---: | ---: |
-| 1 | 14 | 10 | 24 |
-| 2 | 15 | 10 | 25 |
-| 3 | 28 | 15 | 43 |
-| 4 | 21 | 19 | 40 |
-| Total | 78 | 54 | 132 |
+| List | ○ Unfamiliar | △ Uncertain | 练 Practice | Candidates |
+| --- | ---: | ---: | ---: | ---: |
+| 1 | 14 | 10 | 0 | 24 |
+| 2 | 15 | 10 | 0 | 25 |
+| 3 | 28 | 15 | 0 | 43 |
+| 4 | 22 | 19 | 6 | 47 |
+| Total | 79 | 54 | 6 | 139 |
 
-The 83 words in Lists 3 and 4 now include phonetic, part-of-speech, English-example, translation and memory-cue candidates. A [dedicated import file](data/vocabulary.list_03_04.json) is available; see the [review record](data/list_03_04_review.md) for verification limits.
+The four detailed notebooks contribute **91 handwritten memory cues**, with page references. A [dedicated import file](data/vocabulary.list_03_04.json) contains the 90 words in Lists 3 and 4. [Vocabulary audit](data/import_review.md)
 
-**Seven other entries have unresolved handwriting or classification questions** and are excluded from imports. Unconfirmed transcriptions go into `vocabulary.pending.json`; `vocabulary.json` includes only explicitly confirmed transcriptions. The app provides a preview and confirmation step. Generated definitions, phonetics, examples and mnemonics retain explicit review states.
+Transcriptions in `vocabulary.pending.json` enter the browser's collection after review and confirmation. Definitions, phonetics, examples and mnemonics retain their own review states. The practice group has its original mark and uses the uncertain-word schedule.
 
 ```text
 Text notes → Candidate Markdown → Human review
@@ -107,7 +107,7 @@ npm run build        # Markdown conversion, type checking and production build
 npm run test:e2e     # Isolated Chrome: import, edit, rate, restore and offline
 ```
 
-V1 passed **15 unit tests and 7 browser tests**, including offline reload and saved ratings. Desktop, 834px tablet and 390px phone layouts were checked with touch input. These checks do not replace physical iPad Safari or macOS installation testing. See the [verification record](docs/verification.md).
+V1 passed **16 unit tests and 8 browser tests**, including vocabulary upgrades, offline reload and saved ratings. Desktop, 834px tablet and 390px phone layouts were checked with touch input. Physical iPad Safari and macOS installation remain unverified. [Verification record](docs/verification.md)
 
 GitHub Actions tests, builds and deploys the unified Pages app after a push to `main`. Planned work includes FSRS, listening recognition, meaning recall and word-family links. Automatic cross-device sync is not part of V1.
 

@@ -23,8 +23,27 @@ export class Repository {
     await tx.done; db.close(); return {words,progress,reviews,overrides,settings: typeof settings === 'object' ? settings : {...defaults}};
   }
   async importWords(words: Word[]) {
-    validateWords(words); const db = await connect(this.name); const tx = db.transaction(['words','progress'], 'readwrite');
-    const merged = mergeWords(await tx.objectStore('words').getAll(),words);
+    validateWords(words); const db = await connect(this.name); const tx = db.transaction(['words','progress','overrides'], 'readwrite');
+    const previous = await tx.objectStore('words').getAll();
+    const previousById = new Map(previous.map(word => [word.id, word]));
+    const merged = mergeWords(previous,words);
+    for (const incoming of words) {
+      const old = previousById.get(incoming.id);
+      if (!old) continue;
+      // Add newly transcribed notes once. A user's selection and later deletions stay intact.
+      const additions = incoming.mnemonics.filter(note => note.source === 'user' &&
+        note.id.startsWith('pdf_note_') && !old.mnemonics.some(prior => prior.id === note.id));
+      if (!additions.length) continue;
+      const overrides = tx.objectStore('overrides');
+      const override = await overrides.get(incoming.id);
+      if (!override) continue;
+      const newNotes = additions.filter(note => !override.mnemonics.some(personal => personal.id === note.id));
+      if (newNotes.length) {
+        await overrides.put({...override, mnemonics: [
+          ...override.mnemonics, ...newNotes.map(note => ({...note, preferred: false})),
+        ]});
+      }
+    }
     for (const w of merged) { await tx.objectStore('words').put(w); if (!await tx.objectStore('progress').get(w.id)) await tx.objectStore('progress').put(freshProgress(w)); }
     await tx.done; db.close();
   }

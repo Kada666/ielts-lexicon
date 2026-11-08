@@ -16,13 +16,17 @@ describe('图片转录与 Markdown',()=>{
  it('保留初始 List 1/2 共49词及29/20分类；额外 List 来源独立',()=>{
   const initial=words.filter(w=>w.list_ids.some(n=>n===1||n===2));
   expect(initial).toHaveLength(49);expect(initial.filter(w=>w.initial_level==='unknown')).toHaveLength(29);expect(initial.filter(w=>w.initial_level==='uncertain')).toHaveLength(20);
-  expect(words.filter(w=>w.list_ids.includes(3))).toHaveLength(43);expect(words.filter(w=>w.list_ids.includes(4))).toHaveLength(40);
-  expect(words.some(w=>w.word==='pricate'||w.word==='mastery')).toBe(false);
+  expect(words.filter(w=>w.list_ids.includes(3))).toHaveLength(43);expect(words.filter(w=>w.list_ids.includes(4))).toHaveLength(47);
+  expect(words.find(w=>w.word==='pirate')?.origins[0]).toMatchObject({list:4,symbol:'○',raw:'pricate'});
+  expect(words.filter(w=>w.origins.some(o=>o.symbol==='练')).map(w=>w.word)).toEqual(['mastery','precision','gloss','outward','anthropologist','comb']);
+  expect(words.some(w=>w.word==='pricate')).toBe(false);
+  const notes=words.flatMap(w=>w.mnemonics.filter(m=>m.id.startsWith('pdf_note_')));
+  expect(notes).toHaveLength(91);expect(notes.every(m=>m.source==='user'&&m.preferred&&/List[1-4]\.pdf/.test(m.reference??''))).toBe(true);
   expect(words.every(w=>w.mnemonics.every(m=>m.status==='needs_review'))).toBe(true);
  });
  it('转换幂等、待审核不进入正式 JSON、仅明确审核词条进入正式词库',()=>{
   const text=readFileSync('data/vocabulary_master.md','utf8');const result=convertMarkdown(text);
-  expect(convertMarkdown(text)).toEqual(result);expect(result.words).toHaveLength(0);expect(result.pending).toHaveLength(132);
+  expect(convertMarkdown(text)).toEqual(result);expect(result.words).toHaveLength(0);expect(result.pending).toHaveLength(139);
   expect(convertMarkdown(text.replace(/\r?\n/g,'\r\n'))).toEqual(result);
   const changed=text.replace('| 深入探究；挖掘 |  | needs_review | needs_review |','| 深入探究；挖掘 |  | reviewed | needs_review |');
   expect(convertMarkdown(changed).words.map(w=>w.word)).toEqual(['delve']);
@@ -32,9 +36,9 @@ describe('图片转录与 Markdown',()=>{
   expect(()=>convertMarkdown(text.replace('| 1 | delve | unknown | ○','| 1 | delve | unknown | △'))).toThrow();
   expect(()=>convertMarkdown(text.replace('| 1 | delve','| 51 | delve'))).toThrow();
  });
- it('List3/4 共83词补全例句、译文、音标与词性，专用导入文件与主库一致',()=>{
+ it('List3/4 共90词补全例句、译文、音标与词性，专用导入文件与主库一致',()=>{
   const additions=words.filter(w=>w.list_ids.some(n=>n===3||n===4));
-  expect(additions).toHaveLength(83);
+  expect(additions).toHaveLength(90);
   expect(additions.every(w=>w.phonetic&&w.part_of_speech.length&&w.example&&w.example_zh&&w.mnemonics.length)).toBe(true);
   const supplement=parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_03_04.json','utf8')));
   expect(supplement.words).toEqual(additions);
@@ -73,6 +77,20 @@ describe('增量合并与验证',()=>{
  });
 });
 describe('IndexedDB 持久化与备份',()=>{
+ it('手写笔记补进已编辑的词，保留个人首选与删除决定',async()=>{
+  const [note]=word.mnemonics;
+  const personal={...note,id:'personal',content:'之前的首选'};
+  await repo.importWords([{...word,content_status:'reviewed',mnemonics:[]}]);
+  const override={word_id:word.id,meaning:['我的释义'],example:'',example_zh:'',collocations:[],mnemonics:[personal],updated_at:1000};
+  await repo.saveOverride(override);
+  await repo.importWords([word]);
+  const [updated]=effectiveWords(await repo.snapshot());
+  expect(updated.meaning).toEqual(override.meaning);
+  expect(updated.mnemonics).toEqual([personal,{...note,preferred:false}]);
+  await repo.saveOverride(override);
+  await repo.importWords([word]);
+  expect(effectiveWords(await repo.snapshot())[0].mnemonics).toEqual([personal]);
+ });
  it('重复导入、新List与内容更新均保留评分历史及个人记忆法',async()=>{
   await repo.importWords([word]);await repo.grade(word.id,'again',1000000);
   const edited={word_id:word.id,meaning:['我的释义'],example:'My example.',example_zh:'我的例句',collocations:['my phrase'],mnemonics:[{id:'user-1',type:'phonetic' as const,title:'个人口诀',content:'我的联想',source:'user' as const,status:'reviewed' as const,preferred:true}],updated_at:1000};
