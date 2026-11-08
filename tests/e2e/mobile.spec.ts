@@ -35,7 +35,23 @@ test('触屏前后切换不评分、收起、大按钮、长按编辑持久化�
  await page.getByRole('button',{name:'播放 apace 英式发音'}).tap();await expect.poll(()=>page.evaluate('window.__lexiconSpoken.length')).toBe(1);expect(await page.evaluate('window.__lexiconSpoken[0]')).toEqual({word:'apace',lang:'en-GB',voice:'UK local test'});await expect(page.locator('.core-meaning')).toHaveCount(0);
  await page.screenshot({path:info.outputPath('mobile-study-front-390.png'),fullPage:false});
  await page.getByRole('button',{name:'下一个单词'}).tap();await expect(page.locator('.answer-word h2')).not.toHaveText('apace');await page.getByRole('button',{name:'上一个单词'}).tap();await expect(page.locator('.answer-word h2')).toHaveText('apace');
- await page.getByRole('button',{name:'查看答案',exact:true}).tap();await page.getByRole('button',{name:'收起答案',exact:true}).first().tap();await expect(page.locator('.core-meaning')).toHaveCount(0);await page.getByRole('button',{name:'查看答案',exact:true}).tap();
+ const card=page.getByRole('article',{name:'apace 词汇卡片'});
+ const blank={position:{x:14,y:14}};
+ await card.tap(blank);
+ await expect(card.locator('.core-meaning')).toBeVisible();
+ await card.getByRole('button',{name:'播放 apace 英式发音'}).tap();
+ await expect.poll(()=>page.evaluate('window.__lexiconSpoken.length')).toBe(2);
+ await expect(card.locator('.core-meaning')).toBeVisible();
+ await card.tap(blank);
+ await expect(card.locator('.core-meaning')).toHaveCount(0);
+ await expect(card.getByRole('heading',{name:'apace'})).toBeVisible();
+ const flip=card.getByRole('button',{name:'翻转 apace 查看答案'});
+ await flip.press('Enter');
+ const collapse=card.getByRole('button',{name:'收起答案',exact:true});
+ await expect(collapse).toBeFocused();
+ await collapse.press('Enter');
+ await expect(flip).toBeFocused();
+ await card.tap(blank);
  expect(await page.locator('.quick-memory p').evaluate(e=>parseFloat(getComputedStyle(e).fontSize))).toBeGreaterThanOrEqual(18);
  await expect(page.locator('.collocations')).toHaveCount(0);await expect(page.locator('blockquote')).toHaveCount(0);
  for(const name of ['上一个单词','下一个单词','收起答案']){const button=page.getByRole('button',{name,exact:true}).first();const box=await button.boundingBox();expect(box!.height).toBeGreaterThanOrEqual(44);}

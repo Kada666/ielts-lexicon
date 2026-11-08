@@ -1,4 +1,4 @@
-import { useEffect, useRef, type PointerEvent } from 'react';
+import { useEffect, useRef, type MouseEvent, type PointerEvent } from 'react';
 import { ChevronUp, Pencil, Sparkles } from 'lucide-react';
 import type { Mnemonic, Settings, Word } from '../types';
 import { mnemonicLabels } from '../types';
@@ -38,11 +38,24 @@ function MemoryCue({mnemonic,alternatives,onEdit}:{mnemonic?:Mnemonic;alternativ
 }
 export default function RecallCard({word,flipped,onFlip,onEditMnemonic,settings}:{word:Word;flipped:boolean;onFlip?:()=>void;onEditMnemonic:()=>void;settings:Settings}){
  const preferred=word.mnemonics.find(m=>m.preferred)??word.mnemonics[0];
- return <article className={`flashcard recall-card ${flipped?'back':''}`} aria-label={`${word.word} 词汇卡片`} onClick={event=>{if(!flipped&&!(event.target as HTMLElement).closest('button,input,textarea,select'))onFlip?.();}}>
+ function flipFromCard(event: MouseEvent<HTMLElement>) {
+  if (!onFlip || !(event.target instanceof Element)) return;
+  if (event.target.closest('button, a, input, textarea, select, details, .quick-memory')) return;
+  if (window.getSelection()?.isCollapsed === false) return;
+  onFlip();
+ }
+ return <article className={`flashcard recall-card ${flipped?'back':''}${onFlip?' can-flip':''}`} aria-label={`${word.word} 词汇卡片`} onClick={onFlip?flipFromCard:undefined}>
   <div className={flipped?'card-answer':'card-front'}>
    <div className="answer-word"><h2>{word.word}</h2></div>
    <Pronunciation word={word.word} phonetic={word.phonetic} showPhonetic={settings.phonetic}/>
-   {flipped?<><div className="core-meaning"><span className="mini-label">意思</span><p>{word.meaning.join('；')}</p></div>{settings.mnemonics&&<MemoryCue key={word.id} mnemonic={preferred} alternatives={word.mnemonics.filter(note=>note.id!==preferred?.id)} onEdit={onEditMnemonic}/>} {onFlip&&<button type="button" className="card-collapse" onClick={onFlip}><ChevronUp size={19}/> 收起答案</button>}</>:<button type="button" className="card-recall-prompt" aria-label={`翻转 ${word.word} 查看答案`} onClick={onFlip}><span>先想一想，这个词是什么意思？</span><strong>轻点翻开</strong></button>}
+   {flipped&&<>
+    <div className="core-meaning"><span className="mini-label">意思</span><p>{word.meaning.join('；')}</p></div>
+    {settings.mnemonics&&<MemoryCue key={word.id} mnemonic={preferred} alternatives={word.mnemonics.filter(note=>note.id!==preferred?.id)} onEdit={onEditMnemonic}/>}
+   </>}
+   {onFlip&&<button type="button" className={flipped?'card-collapse':'card-recall-prompt'}
+    aria-label={flipped?'收起答案':`翻转 ${word.word} 查看答案`} aria-expanded={flipped} onClick={onFlip}>
+    {flipped?<><ChevronUp size={19}/> 轻点卡片收起</>:<><span>先想一想，这个词是什么意思？</span><strong>轻点翻开</strong></>}
+   </button>}
   </div>
  </article>;
 }

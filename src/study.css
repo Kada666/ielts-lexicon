@@ -24,7 +24,7 @@
 .app-shell .mnemonic p, .app-shell .mnemonic h4 { font-size: var(--ui-text); }
 .app-shell .review-start h2, .app-shell .daily-heading h1 { font-size: var(--ui-title); }
 .app-shell .setting-row p, .app-shell .inline-label, .app-shell .study-top,
-.app-shell .card-navigation > span, .app-shell .study-exit, .app-shell .study-toggle,
+.app-shell .card-navigation > span, .app-shell .study-exit,
 .app-shell .rating-buttons small, .app-shell .text-button, .app-shell .update-banner,
 .app-shell .table-summary, .app-shell .preview-table td, .app-shell .toast { font-size: var(--ui-small); }
 .app-shell .page-heading p, .app-shell .review-start p, .app-shell .setting-row p,
@@ -64,6 +64,9 @@
 .forecast-values dd { margin: 3px 0 0; color: #234d3c; font-size: var(--ui-text); font-weight: 650; }
 .daily-review-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px; padding-bottom: 18px; border-bottom: 1px solid #dce4d8; }
 .daily-review-controls label { display: flex; align-items: center; gap: 8px; font-size: var(--ui-small); }
+
+.recall-card.can-flip { cursor: pointer; }
+.recall-card.can-flip .quick-memory { cursor: auto; }
 
 .app-shell .vocabulary-reading-tools input {
   appearance: none;
