@@ -4,7 +4,7 @@ import type { Backup, Grade, Mnemonic, MnemonicType, Override, Progress, Setting
 import { defaults, initialMark, mnemonicLabels } from './types';
 import { effectiveWords, Repository } from './db/database';
 import { DAY, dayKey, freshProgress } from './review/scheduler';
-import { parseBackup, parseVocabulary } from './utils/validation';
+import { notebookChanges, parseBackup, parseVocabulary } from './utils/validation';
 import { csv, download } from './utils/export';
 import { pendingFile, reviewedFile, content } from './content';
 import edition from '../edition.json';
@@ -15,6 +15,9 @@ import { stopSpeech } from './utils/speech';
 
 type Page = 'home' | 'review' | 'library' | 'import' | 'settings';
 const repo = new Repository();
+const bundledRevisions = parseVocabulary(pendingFile).words
+ .map(word => ({...word, mnemonics: word.mnemonics.filter(note => note.revision !== undefined)}))
+ .filter(word => word.mnemonics.length);
 const empty: Snapshot = {words:[],progress:[],reviews:[],overrides:[],settings:defaults};
 const stateLabel = {new:'未学习',learning:'巩固中',review:'复习中',mastered:'已掌握'};
 const nav = [{id:'home',label:'学习概览',icon:LayoutDashboard},{id:'review',label:'闪卡复习',icon:Layers3},{id:'library',label:'我的词库',icon:BookOpen},{id:'import',label:'导入与备份',icon:Database},{id:'settings',label:'学习设置',icon:Settings2}] as const;
@@ -31,7 +34,17 @@ export default function App() {
  useEffect(()=>{const media=window.matchMedia('(max-width:760px)');const update=()=>setCompact(media.matches);media.addEventListener('change',update);return()=>media.removeEventListener('change',update);},[]);
  const [list,setList]=useState('all'),[level,setLevel]=useState('all'),[state,setState]=useState('all'),[query,setQuery]=useState(''),[limit,setLimit]=useState(30),[edit,setEdit]=useState<Word|null>(null);
  const [importData,setImportData]=useState<VocabularyFile|null>(null),[importName,setImportName]=useState(''),[restoreData,setRestoreData]=useState<Backup|null>(null),[accepted,setAccepted]=useState(false),[importList,setImportList]=useState('all');
- const refresh=useCallback(async()=>setSnapshot(await repo.snapshot()),[]);
+ const refresh=useCallback(async()=>{
+   const local = await repo.snapshot();
+   const revisions = bundledRevisions.filter(revised => {
+     const stored = local.words.find(word => word.id === revised.id);
+     return stored && notebookChanges(stored, revised).length;
+   });
+   if (revisions.length) {
+     await repo.applyNotebookRevisions(revisions);
+     setSnapshot(await repo.snapshot());
+   } else setSnapshot(local);
+ },[]);
  useEffect(()=>{refresh().catch(e=>setFatal(`无法打开本地数据库：${e.message}。请使用普通浏览模式并允许站点存储。`)).finally(()=>setLoading(false));},[refresh]);
  useEffect(()=>{const t=setInterval(()=>setClock(Date.now()),30000);return()=>clearInterval(t);},[]);
  useEffect(()=>{if(!toast)return;const t=setTimeout(()=>setToast(''),6000);return()=>clearTimeout(t);},[toast]);

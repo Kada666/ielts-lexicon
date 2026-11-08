@@ -66,8 +66,8 @@
 - **fauna · 同一个地方的动物和植物**　想象一处森林，把动物归到 fauna，把植物归到 flora。flora and fauna 是当地动植物群。（手写笔记 List4.pdf · 第 4 页）
 - **expel · 向外驱赶**　用 pel 联想到推动、驱赶。expel 向外赶 → 驱逐、开除；repel 击退、排斥；propel 向前推动；compel 迫使。（手写笔记 List4.pdf · 第 4 页）
 - **divisional · 先划分，再看分出来的部门**　divide（划分）→ division（部门、分部）→ divisional（部门的、分部的）。（手写笔记 List4.pdf · 第 4 页）
-- **astrology · 看星星来占卜**　astro-＝星、天体、-logy＝学科或研究。笔记把「星星」接到「占星术」。对照 astronomy（天文学）和 astronaut（宇航员）。（手写笔记 List4.pdf · 第 5 页）
-- **flap · 飞着扑来**　想象鸟飞近时双翼反复上下扑打 → 拍动、摆动。（手写笔记 List4.pdf · 第 5 页）
+- **astrology · 看星星来占卜**　astro-＝星星、天体（star）。谐音口诀「控制住你的一切」、-logy＝学说、研究领域。星星、天体 ＋ 学说、研究领域 → 看星星来占卜 → 占星术。 关联词：astronaut（宇航员）、astronomy（天文学）。（手写笔记 List4.pdf · 第 5 页）
+- **flap · 飞着扑过来**　「飞着扑过来」→ 想象鸟扑扇着翅膀飞过来 → 摆动、拍动。（手写笔记 List4.pdf · 第 5 页）
 - **wastage · 浪费之后损失的量**　waste＝浪费、损耗、-age＝行为、结果或数量的名词后缀。从 waste 想到损耗，再想到这个过程或损失掉的数量 → 消耗量、损耗量。（手写笔记 List4.pdf · 第 5 页）
 - **dub · 「吊部」提醒自己记住称号**　用笔记里的声音作提示，再想象给人加上一个称号 → 把……称为。另一个常见义是给影片配音。（手写笔记 List4.pdf · 第 5 页）
 - **mould · would 的 w 换成 m**　用拼写差一个字母作提示。把材料倒进模具，模具决定形状 → 模具、塑造；也记住霉菌义。（手写笔记 List4.pdf · 第 5 页）

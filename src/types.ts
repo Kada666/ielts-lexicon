@@ -3,7 +3,7 @@ export type Status = 'needs_review' | 'reviewed';
 export type MnemonicType = 'etymology' | 'morphology' | 'phonetic' | 'onomatopoeia' | 'association' | 'word_family';
 export interface Mnemonic {
   id: string; type: MnemonicType; title: string; content: string; source: 'user' | 'codex';
-  status: Status; preferred: boolean; segments?: { part: string; meaning: string }[]; reference?: string;
+  status: Status; preferred: boolean; segments?: { part: string; meaning: string }[]; reference?: string; revision?: number;
 }
 export interface Word {
   id: string; word: string; list_ids: number[]; initial_level: Level;

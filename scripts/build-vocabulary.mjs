@@ -38,7 +38,7 @@ if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href) {
    const unresolved=list===4?master.split('## 需人工辨认 / 分类')[1]?.split('## 词条补充资料')[0]?.trim():undefined;
    const notes=words.flatMap(w=>w.mnemonics.filter(m=>m.id.startsWith('pdf_note_')).map(m=>{
      const segments=m.segments?.map(s=>`${s.part}＝${s.meaning}`).join('、');
-     return `- **${w.word} · ${m.title}**　${segments?segments+'。':''}${m.content}（${m.reference}）`;
+     return `- **${w.word} · ${m.title}**　${segments?segments+'。':''}${m.content.replace(/\n/g,' ')}（${m.reference}）`;
    }));
    await writeFile(`data/notes/list_${String(list).padStart(2,'0')}.md`,`# List ${list} 手写笔记文字版\n\n共 ${words.length} 词。○ 表示陌生，△ 表示模糊，练表示原笔记单列的练习组。语言内容仍需审核。\n\n| 单词候选 | 原始写法 | 原始标记 | 中文义候选 | 备注 |\n| --- | --- | --- | --- | --- |\n${lines.join('\n')}\n${unresolved?'\n## 辨认或分类待确认\n\n'+unresolved+'\n':''}${notes.length?'\n## 手写记忆法\n\n'+notes.join('\n')+'\n':''}`);
  }

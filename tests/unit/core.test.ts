@@ -77,6 +77,29 @@ describe('增量合并与验证',()=>{
  });
 });
 describe('IndexedDB 持久化与备份',()=>{
+ it('修订既有手写笔记且保留个人改写、评分和词义，旧版重导不降级',async()=>{
+  const revisions=words.filter(w=>w.word==='astrology'||w.word==='flap');
+  const previous=revisions.map(w=>({...w,mnemonics:w.mnemonics.map(({revision,...m})=>({...m,content:'原有手写笔记'}))}));
+  await repo.importWords(previous);
+  const [astrology,flap]=previous;
+  await repo.grade(astrology.id,'again',1000000);
+  for(const old of previous){
+    const mnemonics=old===flap?old.mnemonics.map(m=>({...m,content:'自己在浏览器里写的口诀'})):old.mnemonics;
+    await repo.saveOverride({word_id:old.id,meaning:['我的释义'],example:'',example_zh:'',collocations:[],mnemonics,updated_at:1000});
+  }
+  const before=await repo.snapshot();
+  await repo.applyNotebookRevisions(revisions);
+  const updated=await repo.snapshot();
+  const effective=effectiveWords(updated);
+  expect(effective[0].mnemonics).toEqual(revisions[0].mnemonics);
+  expect(effective[0].meaning).toEqual(['我的释义']);
+  expect(effective[1].mnemonics[0].content).toBe('自己在浏览器里写的口诀');
+  expect(updated.progress).toEqual(before.progress);
+  expect(updated.reviews).toEqual(before.reviews);
+  await repo.applyNotebookRevisions(revisions);
+  await repo.importWords(previous);
+  expect(await repo.snapshot()).toEqual(updated);
+ });
  it('手写笔记补进已编辑的词，保留个人首选与删除决定',async()=>{
   const [note]=word.mnemonics;
   const personal={...note,id:'personal',content:'之前的首选'};

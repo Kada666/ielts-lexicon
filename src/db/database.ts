@@ -1,7 +1,7 @@
 import { openDB, type DBSchema } from 'idb';
 import { defaults, type Backup, type Grade, type Override, type Progress, type Review, type Settings, type Snapshot, type Word } from '../types';
 import { freshProgress, schedule } from '../review/scheduler';
-import { mergeWords, parseBackup, validateWords } from '../utils/validation';
+import { mergeNotebookOverride, mergeWords, notebookChanges, parseBackup, validateWords } from '../utils/validation';
 import edition from '../../edition.json';
 export const DATABASE_NAME = edition.database_name;
 interface Schema extends DBSchema {
@@ -30,22 +30,33 @@ export class Repository {
     for (const incoming of words) {
       const old = previousById.get(incoming.id);
       if (!old) continue;
-      // Add newly transcribed notes once. A user's selection and later deletions stay intact.
-      const additions = incoming.mnemonics.filter(note => note.source === 'user' &&
-        note.id.startsWith('pdf_note_') && !old.mnemonics.some(prior => prior.id === note.id));
-      if (!additions.length) continue;
+      const changes = notebookChanges(old, incoming);
+      if (!changes.length) continue;
       const overrides = tx.objectStore('overrides');
       const override = await overrides.get(incoming.id);
-      if (!override) continue;
-      const newNotes = additions.filter(note => !override.mnemonics.some(personal => personal.id === note.id));
-      if (newNotes.length) {
-        await overrides.put({...override, mnemonics: [
-          ...override.mnemonics, ...newNotes.map(note => ({...note, preferred: false})),
-        ]});
-      }
+      if (override) await overrides.put(mergeNotebookOverride(override, old, changes));
     }
     for (const w of merged) { await tx.objectStore('words').put(w); if (!await tx.objectStore('progress').get(w.id)) await tx.objectStore('progress').put(freshProgress(w)); }
     await tx.done; db.close();
+  }
+  async applyNotebookRevisions(revisions: Word[]) {
+    const db = await connect(this.name);
+    try {
+      const tx = db.transaction(['words', 'overrides'], 'readwrite');
+      for (const revised of revisions) {
+        const old = await tx.objectStore('words').get(revised.id);
+        if (!old) continue;
+        const changes = notebookChanges(old, revised);
+        if (!changes.length) continue;
+        const [word] = mergeWords([old], [{...old, mnemonics: changes}]);
+        await tx.objectStore('words').put(word);
+        const override = await tx.objectStore('overrides').get(old.id);
+        if (override) await tx.objectStore('overrides').put(mergeNotebookOverride(override, old, changes));
+      }
+      await tx.done;
+    } finally {
+      db.close();
+    }
   }
   async grade(wordId: string, grade: Grade, now = Date.now()) {
     const db = await connect(this.name); const tx = db.transaction(['words','progress','reviews'],'readwrite');

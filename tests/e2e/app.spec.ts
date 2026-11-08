@@ -70,3 +70,31 @@ test('已有词库在首页增量更新，翻卡可看手写笔记',async({page}
  await expect(page.locator('.answer-word h2')).toHaveText('apace');
  await expect(page.getByLabel('联想记忆')).toContainText('想象脚步接连不断');
 });
+test('已导入的 List 4 卡片显示修订后的蓝笔词块和趣味口诀',async({page})=>{
+ await page.setViewportSize({width:390,height:844});
+ await page.goto('/');
+ const words=candidates.words.filter(w=>w.word==='astrology'||w.word==='flap').map(w=>({
+  ...w,mnemonics:w.mnemonics.map(m=>({...m,revision:undefined,content:'上一版的联想'})),
+ }));
+ await page.getByRole('button',{name:'导入与备份',exact:true}).click();
+ await page.locator('input[type=file]').setInputFiles({name:'older-notes.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...candidates,words}))});
+ await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();
+ await page.getByRole('button',{name:'确认导入 2 词'}).click();
+ await expect(page.getByRole('status')).toContainText('已合并 2');
+ await page.reload();
+ await page.getByRole('button',{name:'闪卡复习',exact:true}).click();
+ await page.getByRole('button',{name:'开始复习',exact:true}).click();
+ await page.getByRole('button',{name:'查看答案',exact:true}).click();
+ const cue=page.getByLabel('联想记忆');
+ await expect(cue.locator('.segments').first()).toContainText('astro-');
+ await expect(cue.locator('.segments').first()).toContainText('控制住你的一切');
+ await expect(cue.locator('.segments').first()).toContainText('-logy');
+ await expect(cue.locator('.segments').first()).toContainText('学说、研究领域');
+ await expect(cue).toContainText('astronaut（宇航员）、astronomy（天文学）');
+ await expect(cue).not.toContainText('上一版的联想');
+ await page.getByRole('button',{name:'下一个单词'}).click();
+ await page.getByRole('button',{name:'查看答案',exact:true}).click();
+ await expect(cue).toContainText('「飞着扑过来」');
+ await expect(cue).toContainText('摆动、拍动');
+ await expect(cue.locator('.segments')).toHaveCount(0);
+});

@@ -7,7 +7,7 @@ function MemoryText({note}:{note:Mnemonic}){
  return <>
   <div className="mnemonic-heading"><span>{mnemonicLabels[note.type]}</span>{note.status==='needs_review'&&<span className="cue-review">候选</span>}</div>
   {['etymology','morphology'].includes(note.type)&&!!note.segments?.length&&<div className="segments">{note.segments.map((s,i)=><div key={i}><strong>{s.part}</strong><span>{s.meaning}</span></div>)}</div>}
-  <p>{note.content}</p>
+  <p className="memory-content">{note.content}</p>
   {note.id.startsWith('pdf_note_')&&note.reference&&<small className="memory-hold-hint">{note.reference}</small>}
  </>;
 }

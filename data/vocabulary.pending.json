@@ -4709,18 +4709,19 @@
           "id": "pdf_note_astrology",
           "type": "morphology",
           "title": "看星星来占卜",
-          "content": "笔记把「星星」接到「占星术」。对照 astronomy（天文学）和 astronaut（宇航员）。",
+          "content": "星星、天体 ＋ 学说、研究领域 → 看星星来占卜 → 占星术。\n关联词：astronaut（宇航员）、astronomy（天文学）。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 1,
           "segments": [
             {
               "part": "astro-",
-              "meaning": "星、天体"
+              "meaning": "星星、天体（star）。谐音口诀「控制住你的一切」"
             },
             {
               "part": "-logy",
-              "meaning": "学科或研究"
+              "meaning": "学说、研究领域"
             }
           ],
           "reference": "手写笔记 List4.pdf · 第 5 页"
@@ -4764,11 +4765,12 @@
         {
           "id": "pdf_note_flap",
           "type": "association",
-          "title": "飞着扑来",
-          "content": "想象鸟飞近时双翼反复上下扑打 → 拍动、摆动。",
+          "title": "飞着扑过来",
+          "content": "「飞着扑过来」→ 想象鸟扑扇着翅膀飞过来 → 摆动、拍动。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 1,
           "reference": "手写笔记 List4.pdf · 第 5 页"
         }
       ],

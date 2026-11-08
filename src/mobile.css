@@ -20,3 +20,4 @@
 .memory-alternatives{margin-top:10px}
 .memory-alternatives summary{cursor:pointer;min-height:44px;align-content:center;color:#436548;font-size:14px}
 .memory-alternatives>div{margin:12px 0}
+.memory-content{white-space:pre-line}

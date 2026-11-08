@@ -8,6 +8,7 @@
     "status":{"enum":["needs_review","reviewed"]},
     "mnemonic":{"type":"object","required":["id","type","title","content","source","status","preferred"],"properties":{
       "id":{"type":"string","minLength":1},"type":{"enum":["etymology","morphology","phonetic","onomatopoeia","association","word_family"]},"title":{"type":"string"},"content":{"type":"string"},"source":{"enum":["user","codex"]},"status":{"$ref":"#/$defs/status"},"preferred":{"type":"boolean"},"reference":{"type":"string"},
+      "revision":{"type":"integer","minimum":1},
       "segments":{"type":"array","items":{"type":"object","required":["part","meaning"],"properties":{"part":{"type":"string"},"meaning":{"type":"string"}}}}
     }},
     "word":{"type":"object","required":["id","word","list_ids","initial_level","origins","meaning","phonetic","part_of_speech","example","example_zh","collocations","mnemonics","content_status","transcription_status","notes"],"properties":{

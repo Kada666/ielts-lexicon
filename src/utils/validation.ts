@@ -1,4 +1,4 @@
-import { defaults, type Backup, type Mnemonic, type Progress, type Snapshot, type VocabularyFile, type Word } from '../types';
+import { defaults, type Backup, type Mnemonic, type Override, type Progress, type Snapshot, type VocabularyFile, type Word } from '../types';
 export const normalize = (word: string) => word.trim().toLowerCase().normalize('NFKC').replace(/\s+/g, ' ');
 export const stableId = (word: string) => 'word_' + normalize(word).replace(/ /g, '_');
 function assert(ok: unknown, message: string): asserts ok { if (!ok) throw new Error(message); }
@@ -14,6 +14,7 @@ export function validateMnemonics(value: unknown): asserts value is Mnemonic[] {
     assert(typeof m.title === 'string' && typeof m.content === 'string' && ['user','codex'].includes(String(m.source)) && status(m.status) && typeof m.preferred === 'boolean', '记忆方法字段不完整');
     if (m.segments !== undefined) assert(Array.isArray(m.segments) && m.segments.every(s => record(s) && typeof s.part === 'string' && typeof s.meaning === 'string'), '拆解分段无效');
     if (m.reference !== undefined) assert(typeof m.reference === 'string', '来源链接无效');
+    if (m.revision !== undefined) assert(Number.isSafeInteger(m.revision) && Number(m.revision) > 0, '记忆方法修订号无效');
   }
   assert(value.filter(m => m.preferred).length <= 1, '每个单词最多一个首选记忆法');
 }
@@ -34,6 +35,38 @@ export function validateWords(value: unknown): Word[] {
   }
   return value as Word[];
 }
+export function notebookChanges(previous: Word, incoming: Word) {
+  return incoming.mnemonics.filter(note => {
+    if (note.source !== 'user' || !note.id.startsWith('pdf_note_')) return false;
+    const old = previous.mnemonics.find(m => m.id === note.id);
+    return !old || (note.revision ?? 0) > (old.revision ?? 0);
+  });
+}
+function sameNote(left: Mnemonic, right: Mnemonic) {
+  return left.id === right.id && left.type === right.type && left.source === right.source &&
+    left.title === right.title && left.content === right.content && left.reference === right.reference &&
+    left.status === right.status && JSON.stringify(left.segments ?? []) === JSON.stringify(right.segments ?? []);
+}
+export function mergeNotebookOverride(override: Override, previous: Word, notes: Mnemonic[]) {
+  const mnemonics = [...override.mnemonics];
+  for (const note of notes) {
+    const old = previous.mnemonics.find(m => m.id === note.id);
+    const index = mnemonics.findIndex(m => m.id === note.id);
+    if (old) {
+      if (index >= 0 && sameNote(mnemonics[index], old)) {
+        mnemonics[index] = {...note, preferred: mnemonics[index].preferred};
+      }
+      continue;
+    }
+    if (index >= 0) continue;
+    const selected = mnemonics.find(m => m.preferred) ?? mnemonics[0];
+    const preferred = !!note.revision && note.preferred && (!selected ||
+      (selected.source === 'codex' && previous.mnemonics.some(m => sameNote(m, selected))));
+    if (preferred && selected) mnemonics[mnemonics.indexOf(selected)] = {...selected, preferred: false};
+    mnemonics.push({...note, preferred});
+  }
+  return {...override, mnemonics};
+}
 export function mergeWords(existing: Word[], incoming: Word[]) {
   const map = new Map(existing.map(w => [w.id, structuredClone(w)]));
   for (const source of incoming) {
@@ -46,6 +79,7 @@ export function mergeWords(existing: Word[], incoming: Word[]) {
     const mnemonicMap = new Map(base.mnemonics.map(m => [m.id, {...m}]));
     for (const m of source.mnemonics) if (m.source === 'user' && !mnemonicMap.has(m.id)) mnemonicMap.set(m.id, {...m});
     for (const m of old.mnemonics) if (m.source === 'user' || !mnemonicMap.has(m.id)) mnemonicMap.set(m.id, {...m});
+    for (const note of notebookChanges(old, source)) mnemonicMap.set(note.id, {...note});
     const mnemonics = [...mnemonicMap.values()];
     const first = old.mnemonics.find(m=>m.source==='user'&&m.preferred) ??
       mnemonics.find(m=>m.source==='user'&&m.preferred) ?? mnemonics.find(m=>m.preferred);
