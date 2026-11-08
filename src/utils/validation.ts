@@ -1,4 +1,4 @@
-import { defaults, type Backup, type Mnemonic, type Override, type Progress, type Snapshot, type VocabularyFile, type Word } from '../types';
+import { defaults, type Backup, type Mnemonic, type Override, type Progress, type ReviewEvent, type Snapshot, type VocabularyFile, type Word } from '../types';
 export const normalize = (word: string) => word.trim().toLowerCase().normalize('NFKC').replace(/\s+/g, ' ');
 export const stableId = (word: string) => 'word_' + normalize(word).replace(/ /g, '_');
 function assert(ok: unknown, message: string): asserts ok { if (!ok) throw new Error(message); }
@@ -102,6 +102,27 @@ function validateProgress(p: unknown, ids: Set<string>): asserts p is Progress {
   assert(finite(p.lapses) && finite(p.reviews) && finite(p.streak) && ['streak','lapses','reviews'].every(k => Number.isInteger(p[k])) && p.lapses <= p.reviews && p.streak <= p.reviews, '复习计数无效');
   assert(p.last_review === null || finite(p.last_review), '复习时间无效');
 }
+function validReviewEvent(event: unknown): event is ReviewEvent {
+  if (!record(event) || typeof event.id !== 'string' || !event.id || typeof event.word_id !== 'string' ||
+    !finite(event.at) || !['again','hard','good'].includes(String(event.grade)) ||
+    (event.initial_level !== undefined && !['unknown','uncertain'].includes(String(event.initial_level)))) return false;
+  if (event.attempt === undefined) return true;
+  const attempt=event.attempt;
+  return record(attempt) && attempt.version==='timed-v1' && finite(attempt.elapsed_ms) &&
+    Number.isInteger(attempt.elapsed_ms) && attempt.elapsed_ms<=10000 &&
+    (attempt.result==='timeout' ? event.grade==='again'&&attempt.elapsed_ms===10000 :
+     attempt.elapsed_ms<10000&&(attempt.result==='incorrect'?event.grade==='again':
+      attempt.result==='correct'&&event.grade===(attempt.elapsed_ms<5000?'good':'hard')));
+}
+export function parseSyncEvent(value: unknown): ReviewEvent | null {
+  if (!validReviewEvent(value) || !/^[\w-]{1,128}$/.test(value.id) ||
+    value.word_id.length>180 || value.at>253402300799999 ||
+    !/^word_[a-z]+(?:[_'-][a-z]+)*$/.test(value.word_id) || !value.initial_level) return null;
+  const {id,word_id,at,grade,initial_level,attempt}=value;
+  return {id,word_id,at,grade,initial_level,...(attempt?{attempt:{
+    version:attempt.version,result:attempt.result,elapsed_ms:attempt.elapsed_ms
+  }}:{})};
+}
 export function parseBackup(input: unknown): Backup {
   assert(record(input) && input.format === 'ielts-lexicon-backup' && [1,2].includes(Number(input.schema_version)), '不是受支持的完整备份');
   // V1 备份无设置；V2 使用默认设置迁移，拒绝未知未来版本。
@@ -113,7 +134,7 @@ export function parseBackup(input: unknown): Backup {
   assert(rows.progress.length === words.length && new Set(rows.progress.map(p=>p.word_id)).size === words.length, '每词必须有且只有一条复习状态');
   rows.progress.forEach(p => validateProgress(p, ids));
   assert(new Set(rows.reviews.map(r=>r.id)).size === rows.reviews.length && rows.reviews.length <= 1000000, '历史 ID 重复或条目过多');
-  rows.reviews.forEach(r => { assert(typeof r.id === 'string' && !!r.id && ids.has(r.word_id) && finite(r.at) && ['again','hard','good'].includes(r.grade), '复习历史无效'); validateProgress(r.before, ids); validateProgress(r.after, ids); assert(r.before.word_id === r.word_id && r.after.word_id === r.word_id, '历史关联不匹配'); });
+  rows.reviews.forEach(r => { assert(validReviewEvent(r) && ids.has(r.word_id), '复习历史无效'); validateProgress(r.before, ids); validateProgress(r.after, ids); assert(r.before.word_id === r.word_id && r.after.word_id === r.word_id, '历史关联不匹配'); });
   assert(new Set(rows.overrides.map(o=>o.word_id)).size === rows.overrides.length, '个人修改 ID 重复');
   rows.overrides.forEach(o => { assert(ids.has(o.word_id) && strings(o.meaning) && o.meaning.some(m=>m.trim()) && typeof o.example === 'string' && typeof o.example_zh === 'string' && strings(o.collocations) && finite(o.updated_at), '个人修改无效'); validateMnemonics(o.mnemonics); });
   const settings = b.settings;

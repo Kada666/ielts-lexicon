@@ -1,0 +1,40 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function own(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+    function validAttempt(data) {
+      let attempt = data.attempt;
+      return attempt is map
+        && attempt.keys().hasOnly(['version','elapsed_ms','result'])
+        && attempt.version == 'timed-v1'
+        && attempt.elapsed_ms is int
+        && attempt.elapsed_ms >= 0
+        && (
+          (attempt.result == 'timeout' && attempt.elapsed_ms == 10000 && data.grade == 'again')
+          || (attempt.elapsed_ms < 10000 && (
+            (attempt.result == 'incorrect' && data.grade == 'again')
+            || (attempt.result == 'correct'
+              && ((attempt.elapsed_ms < 5000 && data.grade == 'good')
+                || (attempt.elapsed_ms >= 5000 && data.grade == 'hard')))
+          ))
+        );
+    }
+    function validReview(data, reviewId) {
+      return data.keys().hasOnly(['id','word_id','at','grade','initial_level','attempt'])
+        && data.id == reviewId && reviewId.matches('^[A-Za-z0-9_-]{1,128}$')
+        && data.word_id is string && data.word_id.size() <= 180
+        && data.word_id.matches("^word_[a-z]+([_'-][a-z]+)*$")
+        && data.at is number && data.at >= 0 && data.at <= 253402300799999
+        && data.grade in ['again','hard','good']
+        && data.initial_level in ['unknown','uncertain']
+        && (!('attempt' in data) || validAttempt(data));
+    }
+    match /users/{uid}/reviews/{reviewId} {
+      allow read: if own(uid);
+      allow create: if own(uid) && validReview(request.resource.data, reviewId);
+      allow update: if own(uid) && request.resource.data == resource.data;
+    }
+  }
+}

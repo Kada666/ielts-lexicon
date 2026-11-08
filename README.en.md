@@ -93,7 +93,7 @@ The schema supports all 50 Lists and other sources without an invented List numb
 
 ## Data ownership
 
-The active database lives in the current browser's **IndexedDB**. No required account, paid cloud database or runtime AI / OCR call. GitHub Pages serves static files and bundled candidates; personal review history and edits stay in the browser.
+The active database lives in the current browser's **IndexedDB**. Guests can review offline. Timed review uses four choices and records actual response time with provisional 5 s and 10 s cutoffs. Configured deployments can offer opt-in review synchronization via Firebase. [Firebase setup](docs/firebase-sync.zh-CN.md)
 
 A **complete JSON backup** preserves words, personal overrides, scheduling states, all review events and settings. CSV is for inspection, not restoring history. Restoring replaces current device data, with explicit confirmation and a download of its current backup first. V1 does not merge independently edited histories from multiple devices.
 
@@ -107,9 +107,9 @@ npm run build        # Markdown conversion, type checking and production build
 npm run test:e2e     # Isolated Chrome: import, edit, rate, restore and offline
 ```
 
-V1 passed **17 unit tests and 11 browser tests**, including desktop meaning reveal, vocabulary upgrades, mnemonic editing and offline reload. Desktop, 834px tablet and 390px phone layouts were checked. Physical iPad Safari and macOS installation remain unverified. [Verification record](docs/verification.md)
+The app passed **20 unit tests and 12 browser tests**, including timed review, local event reconciliation and offline reload. Live two-device sync is verified after provisioning the Firebase project. [Verification record](docs/verification.md)
 
-GitHub Actions tests, builds and deploys the unified Pages app after a push to `main`. Planned work includes FSRS, listening recognition, meaning recall and word-family links. Automatic cross-device sync is not part of V1.
+GitHub Actions tests, builds and deploys the unified Pages app after a push to `main`. See the [Firebase setup guide](docs/firebase-sync.zh-CN.md) for the build variable and account-scoped security rules.
 
 ## One app, independent browser data
 

@@ -20,7 +20,9 @@ export interface Progress {
   streak: number; lapses: number; reviews: number; last_review: number | null; algorithm: 'simple-v1';
 }
 export type Grade = 'again' | 'hard' | 'good';
-export interface Review { id: string; word_id: string; at: number; grade: Grade; before: Progress; after: Progress }
+export interface TimedAttempt { version: 'timed-v1'; result: 'correct' | 'incorrect' | 'timeout'; elapsed_ms: number }
+export interface ReviewEvent { id: string; word_id: string; at: number; grade: Grade; attempt?: TimedAttempt; initial_level?: Level }
+export interface Review extends ReviewEvent { before: Progress; after: Progress }
 export interface Override { word_id: string; meaning: string[]; example: string; example_zh: string; collocations: string[]; mnemonics: Mnemonic[]; updated_at: number }
 export interface Settings { phonetic: boolean; mnemonics: boolean; example: boolean; daily_limit: number }
 export interface Snapshot { words: Word[]; progress: Progress[]; reviews: Review[]; overrides: Override[]; settings: Settings }

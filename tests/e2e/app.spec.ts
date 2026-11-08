@@ -1,6 +1,29 @@
 import { expect, test, type Page } from '@playwright/test';
 import candidates from '../../data/vocabulary.pending.json' with { type: 'json' };
 async function seed(page:Page){await page.goto('/');await page.getByRole('button',{name:'核对并导入初始词库'}).click();await page.getByRole('combobox',{name:'导入范围'}).selectOption('initial');await expect(page.getByRole('button',{name:'确认导入 49 词'})).toBeDisabled();await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();await page.getByRole('button',{name:'确认导入 49 词'}).click();await expect(page.getByRole('status')).toContainText('已合并 49');}
+test('计时快测记录快速答对，失焦暂停，断网超时也能保存',async({page,context})=>{
+ await page.setViewportSize({width:390,height:844});
+ await page.clock.install();
+ await seed(page);
+ await page.getByRole('button',{name:'闪卡复习',exact:true}).click();
+ await page.getByRole('button',{name:'开始计时快测'}).click();
+ const quiz=page.getByRole('region',{name:'计时快测题目'});
+ await expect(quiz.getByRole('button')).toHaveCount(4);
+ await quiz.getByRole('button',{name:'迅速地',exact:true}).click();
+ await expect(page.getByRole('status').filter({hasText:'快速认出'})).toBeVisible();
+ await page.getByRole('button',{name:'下一题',exact:true}).click();
+ await page.evaluate(()=>window.dispatchEvent(new Event('blur')));
+ await expect(quiz).toContainText('计时已暂停');
+ await page.clock.runFor(12000);
+ await expect(quiz).toBeVisible();
+ await page.evaluate(()=>window.dispatchEvent(new Event('focus')));
+ await context.setOffline(true);
+ await page.clock.runFor(10010);
+ await expect(page.getByRole('status').filter({hasText:'超时'})).toBeVisible();
+ await expect(page.getByRole('button',{name:'下一题',exact:true})).toBeEnabled();
+ await page.getByRole('button',{name:'学习概览',exact:true}).click();
+ await expect(page.locator('.metric').filter({hasText:'今日已复习'})).toContainText('2');
+});
 test.describe('桌面词库速览',()=>{
  test.use({hasTouch:false});
  test('只在释义上悬停或键盘聚焦时显义，字号可调且刷新后保留',async({page},info)=>{
