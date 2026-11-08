@@ -31,7 +31,7 @@ function SourceReferences({lists}:{lists:number[]}) { const images=content.image
 function Badge({children,kind=''}:{children:ReactNode;kind?:string}) {return <span className={`badge ${kind}`}>{children}</span>;}
 export default function App() {
  const [snapshot,setSnapshot]=useState<Snapshot>(empty),[loading,setLoading]=useState(true),[fatal,setFatal]=useState('');
- const [page,setPage]=useState<Page>('home'),[toast,setToast]=useState(''),[busy,setBusy]=useState(false),[online,setOnline]=useState(navigator.onLine),[offlineReady,setOfflineReady]=useState(false),[waiting,setWaiting]=useState<ServiceWorker|null>(null);
+ const [page,setPage]=useState<Page>('home'),[toast,setToast]=useState(''),[busy,setBusy]=useState(false),[online,setOnline]=useState(navigator.onLine),[offlineReady,setOfflineReady]=useState(false),[updateReady,setUpdateReady]=useState(false);
  useEffect(()=>{window.scrollTo({top:0,behavior:'auto'});},[page]);
  const [clock,setClock]=useState(Date.now()),[session,setSession]=useState<string[]>([]),[sessionTotal,setSessionTotal]=useState(0),[flipped,setFlipped]=useState(false),[started,setStarted]=useState(false);
  const [quiz,setQuiz]=useState<Question[]|null>(null);
@@ -57,13 +57,17 @@ export default function App() {
  useEffect(()=>{const net=()=>setOnline(navigator.onLine); const blocked=()=>setFatal('数据库升级被其他页面阻挡。请关闭此站点的其他标签页后重新打开。'); window.addEventListener('online',net);window.addEventListener('offline',net);window.addEventListener('lexicon-db-blocked',blocked);return()=>{window.removeEventListener('online',net);window.removeEventListener('offline',net);window.removeEventListener('lexicon-db-blocked',blocked);};},[]);
  useEffect(()=>{
    if(!import.meta.env.PROD||!('serviceWorker' in navigator))return;
-   let alive=true; const controlled=()=>{if(alive)setOfflineReady(!!navigator.serviceWorker.controller);};
+   let alive=true, controller=navigator.serviceWorker.controller;
+   const controlled=()=>{
+     if(!alive)return;
+     const next=navigator.serviceWorker.controller;
+     if(controller&&next&&controller!==next)setUpdateReady(true);
+     controller=next;
+     setOfflineReady(!!next);
+   };
    navigator.serviceWorker.addEventListener('controllerchange',controlled);
-   navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`).then(reg=>{
-     if(!alive)return;if(reg.waiting)setWaiting(reg.waiting);
-     reg.addEventListener('updatefound',()=>{const w=reg.installing;w?.addEventListener('statechange',()=>{if(w.state==='installed'&&navigator.serviceWorker.controller&&alive)setWaiting(reg.waiting);});});
-     navigator.serviceWorker.ready.then(controlled);
-   }).catch(()=>{if(alive)setToast('离线缓存未就绪，请联网重新打开，或检查 HTTPS / localhost 环境。');});
+   navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`)
+     .catch(()=>{if(alive)setToast('离线缓存未就绪，请联网重新打开，或检查 HTTPS / localhost 环境。');});
    controlled();return()=>{alive=false;navigator.serviceWorker.removeEventListener('controllerchange',controlled);};
  },[]);
  const words=useMemo(()=>effectiveWords(snapshot),[snapshot]);
@@ -118,7 +122,7 @@ export default function App() {
    <div className="sidebar-bottom"><ShieldCheck size={17}/><div>学习数据本地优先<span>无需账号 · 同步可选</span></div></div>
   </aside>
   <div className="main-shell"><header className="topbar"><div className="breadcrumb">个人词汇空间 <ChevronRight size={14}/><strong>{nav.find(n=>n.id===page)?.label}</strong></div><div className={`connection ${!online?'is-offline':''}`}>{online?<span className="dot"/>:<WifiOff size={14}/>}<span>{!online?'当前离线':offlineReady?'离线可用':'本地存储'}{!import.meta.env.PROD?' · 开发模式':''}</span></div></header>
-  {waiting&&<div className="update-banner">新版本已缓存。<button onClick={()=>{waiting.postMessage('ACTIVATE');navigator.serviceWorker.addEventListener('controllerchange',()=>location.reload(),{once:true});}}>应用更新</button>（学习记录会保留）</div>}
+  {updateReady&&<div className="update-banner">新版本已就绪。<button onClick={()=>location.reload()}>刷新页面</button>（学习记录会保留）</div>}
   <main>
    <CloudSync repo={repo} snapshot={snapshot} bundled={bundledWords} online={online} visible={page==='settings'} refresh={refresh}/>
    {page==='home'&&<>
