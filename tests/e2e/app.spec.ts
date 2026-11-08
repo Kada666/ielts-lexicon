@@ -1,6 +1,56 @@
 import { expect, test, type Page } from '@playwright/test';
 import candidates from '../../data/vocabulary.pending.json' with { type: 'json' };
 async function seed(page:Page){await page.goto('/');await page.getByRole('button',{name:'核对并导入初始词库'}).click();await page.getByRole('combobox',{name:'导入范围'}).selectOption('initial');await expect(page.getByRole('button',{name:'确认导入 49 词'})).toBeDisabled();await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();await page.getByRole('button',{name:'确认导入 49 词'}).click();await expect(page.getByRole('status')).toContainText('已合并 49');}
+test.describe('桌面词库速览',()=>{
+ test.use({hasTouch:false});
+ test('只在释义上悬停或键盘聚焦时显义，字号可调且刷新后保留',async({page},info)=>{
+  await seed(page);
+  await page.getByRole('button',{name:'我的词库',exact:true}).click();
+  const table=page.getByRole('table',{name:'桌面词库'});
+  await expect(table.getByRole('columnheader')).toHaveText(['单词','释义']);
+  const word=table.getByRole('button',{name:'编辑 apace',exact:true});
+  const row=table.getByRole('row').filter({has:page.getByRole('button',{name:'编辑 apace',exact:true})});
+  const reveal=row.locator('.meaning-reveal');
+  const text=reveal.locator('span');
+  await expect(row.getByRole('img',{name:'陌生'})).toHaveText('○');
+  await expect(table.getByRole('img',{name:'模糊'}).first()).toHaveText('△');
+  expect((await reveal.boundingBox())!.x).toBeGreaterThan((await word.boundingBox())!.x);
+  await expect(text).toHaveCSS('filter','blur(5px)');
+  await word.hover();
+  await expect(text).toHaveCSS('filter','blur(5px)');
+  await reveal.hover();
+  await expect(text).toHaveCSS('filter','none');
+  await page.screenshot({path:info.outputPath('desktop-vocabulary.png')});
+  await word.hover();
+  await expect(text).toHaveCSS('filter','blur(5px)');
+  await word.focus();
+  await page.keyboard.press('Tab');
+  await expect(reveal).toBeFocused();
+  await expect(text).toHaveCSS('filter','none');
+  await expect(word).toHaveCSS('font-size','26px');
+  const slider=page.getByRole('slider',{name:'词库字号'});
+  await slider.focus();
+  await page.keyboard.press('End');
+  await expect(slider).toHaveValue('160');
+  await expect(reveal).toHaveCSS('font-size','32px');
+  await page.reload();
+  await page.getByRole('button',{name:'我的词库',exact:true}).click();
+  await expect(slider).toHaveValue('160');
+  await expect(reveal).toHaveCSS('font-size','32px');
+ });
+});
+test('触屏宽屏可点释义切换清晰度',async({page})=>{
+ await page.setViewportSize({width:834,height:1194});
+ await seed(page);
+ await page.getByRole('button',{name:'我的词库',exact:true}).tap();
+ const reveal=page.getByRole('table',{name:'桌面词库'}).locator('.meaning-reveal').first();
+ const text=reveal.locator('span');
+ await expect(text).toHaveCSS('filter','blur(5px)');
+ await reveal.tap();
+ await expect(text).toHaveCSS('filter','none');
+ await reveal.tap();
+ await expect(text).toHaveCSS('filter','blur(5px)');
+});
 test('49词导入、编辑、评分持久化、重复导入、备份恢复和生产离线',async({page,context},info)=>{
  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await seed(page);
  await page.getByRole('button',{name:'我的词库',exact:true}).click();await page.getByRole('textbox',{name:'搜索英文单词'}).fill('delve');await page.getByRole('button',{name:'编辑 delve',exact:true}).click();

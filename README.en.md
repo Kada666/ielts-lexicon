@@ -32,7 +32,7 @@ It starts with a personal screening workflow for a 50-List IELTS vocabulary book
 
 - **Recall-first flashcards:** multiple Chinese meanings, a preferred memory cue, useful collocations and a short example. Touch and keyboard support.
 - **Six memory-cue types:** etymology, morphology, onomatopoeia, phonetic association, free association and word families. Historical claims and creative associations have distinct labels and review states.
-- **Editable collection:** search words; filter by List, initial classification and current state; edit meanings, examples and mnemonics.
+- **Vocabulary preview:** desktop rows show words on the left and meanings on the right. Hover to reveal a meaning, adjust the reading size, or select a word to edit it.
 - **Basic spaced repetition:** shorter initial intervals for unfamiliar words, longer intervals after successful recall and shorter intervals after forgetting. V1 uses a simple tested scheduler, not FSRS.
 - **Study overview:** imported Lists, vocabulary size, mastery, reviews due, reviews completed, seven-day activity and difficult words.
 - **Portable data:** complete JSON backup and restore, incremental JSON import and CSV vocabulary export.
@@ -107,7 +107,7 @@ npm run build        # Markdown conversion, type checking and production build
 npm run test:e2e     # Isolated Chrome: import, edit, rate, restore and offline
 ```
 
-V1 passed **17 unit tests and 9 browser tests**, including vocabulary upgrades, mnemonic editing, offline reload and saved ratings. Desktop, 834px tablet and 390px phone layouts were checked with touch input. Physical iPad Safari and macOS installation remain unverified. [Verification record](docs/verification.md)
+V1 passed **17 unit tests and 11 browser tests**, including desktop meaning reveal, vocabulary upgrades, mnemonic editing and offline reload. Desktop, 834px tablet and 390px phone layouts were checked. Physical iPad Safari and macOS installation remain unverified. [Verification record](docs/verification.md)
 
 GitHub Actions tests, builds and deploys the unified Pages app after a push to `main`. Planned work includes FSRS, listening recognition, meaning recall and word-family links. Automatic cross-device sync is not part of V1.
 
