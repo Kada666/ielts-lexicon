@@ -19,7 +19,7 @@ type Cloud = ReturnType<typeof createCloud>;
 export default function CloudSync({repo,snapshot,bundled,online,visible,refresh}:{repo:Repository;snapshot:Snapshot;bundled:Word[];online:boolean;visible:boolean;refresh:()=>Promise<void>}){
  const [cloud,setCloud]=useState<Cloud|null>(null);
  const [session,setSession]=useState<{user:User;linked:boolean;conflict:boolean}|null>(null);
- const [remote,setRemote]=useState<ReviewEvent[]|null>(null);
+ const [cloudSnapshot,setCloudSnapshot]=useState<{uid:string;retry:number;events:ReviewEvent[]}|null>(null);
  const [error,setError]=useState('');
  const [action,setAction]=useState(false);
  const [retry,setRetry]=useState(0);
@@ -32,7 +32,6 @@ export default function CloudSync({repo,snapshot,bundled,online,visible,refresh}
    return event?[event]:[];
   });
  },[snapshot.reviews,snapshot.words]);
- const wordIds=snapshot.words.map(word=>word.id).join('|');
  const reviewIds=useMemo(()=>new Set(snapshot.reviews.map(review=>review.id)),[snapshot.reviews]);
  useEffect(()=>{
   if(!import.meta.env.VITE_FIREBASE_CONFIG||!config)return;
@@ -55,32 +54,40 @@ export default function CloudSync({repo,snapshot,bundled,online,visible,refresh}
   return ()=>{active=false;stop?.();};
  },[repo]);
  const uid=session?.linked?session.user.uid:null;
+ const remote=cloudSnapshot?.uid===uid&&cloudSnapshot.retry===retry?cloudSnapshot.events:null;
+ const missing=useMemo(()=>remote?.filter(event=>!reviewIds.has(event.id))??[],[remote,reviewIds]);
+ const downloads=useMemo(()=>{
+  const available=new Set([...bundled,...snapshot.words].map(word=>word.id));
+  return missing.filter(event=>available.has(event.word_id));
+ },[missing,bundled,snapshot.words]);
+ const uploads=useMemo(()=>{
+  if(!remote)return [];
+  const cloudIds=new Set(remote.map(event=>event.id));
+  return localEvents.filter(event=>!cloudIds.has(event.id));
+ },[remote,localEvents]);
  useEffect(()=>{
-  setRemote(null);
+  setCloudSnapshot(null);
   setUploading(false);
   sent.current=new Set();
   if(!uid||!cloud)return;
   let active=true;
-  const stop=cloud.watchReviews(uid,events=>{if(active){setRemote(events);setError('');}},()=>{
+  const stop=cloud.watchReviews(uid,events=>{if(active)setCloudSnapshot({uid,retry,events});},()=>{
    if(active)setError('无法读取云端进度，请检查网络或同步权限。');
   });
   return ()=>{active=false;stop();};
  },[cloud,uid,retry]);
  useEffect(()=>{
-  if(!remote||!uid)return;
-  const missing=remote.filter(event=>!reviewIds.has(event.id));
-  if(!missing.length)return;
+  if(!uid||!downloads.length)return;
   let active=true;
-  void repo.mergeReviewEvents(missing,bundled).then(changed=>{
-   if(active&&changed)return refresh();
+  void repo.mergeReviewEvents(downloads,bundled).then(changed=>{
+   if(changed)return refresh();
   }).catch(()=>{if(active)setError('本机暂时无法合并云端进度。');});
   return ()=>{active=false;};
- },[remote,uid,repo,bundled,wordIds,reviewIds,refresh]);
+ },[downloads,uid,repo,bundled,refresh]);
  useEffect(()=>{
   if(!remote||!uid||!cloud||!online||uploading||error)return;
-  const serverIds=new Set(remote.map(event=>event.id));
   const queue=sent.current;
-  const pending=localEvents.filter(event=>!serverIds.has(event.id)&&!queue.has(event.id));
+  const pending=uploads.filter(event=>!queue.has(event.id));
   if(!pending.length)return;
   for(const event of pending)queue.add(event.id);
   setUploading(true);
@@ -92,7 +99,7 @@ export default function CloudSync({repo,snapshot,bundled,online,visible,refresh}
    setError('进度已保存在本机。云端上传失败，可重试。');
    setUploading(false);
   });
- },[remote,uid,cloud,online,localEvents,uploading,error]);
+ },[remote,uid,cloud,online,uploads,uploading,error]);
  async function login(event:FormEvent<HTMLFormElement>){
   event.preventDefault();
   if(!cloud||action)return;
@@ -116,6 +123,17 @@ export default function CloudSync({repo,snapshot,bundled,online,visible,refresh}
   try{await cloud?.signOut();setError('');}
   catch{setError('退出失败，请重试。');}
  }
+ function syncNow(){
+  setError('');
+  setRetry(value=>value+1);
+ }
+ let status='等待连接云端…';
+ if(!online)status='离线 · 记录保存在本机';
+ else if(error)status='同步未完成';
+ else if(uploading)status='正在上传进度…';
+ else if(downloads.length)status='正在合并云端进度…';
+ else if(uploads.length)status='等待云端确认…';
+ else if(remote)status=`已同步 ${remote.length-missing.length} 条复习记录`;
  if(!visible)return null;
  return <section className="panel settings-panel cloud-sync" aria-label="跨设备同步">
   <h3>跨设备同步</h3>
@@ -127,11 +145,14 @@ export default function CloudSync({repo,snapshot,bundled,online,visible,refresh}
    </form>:<>
     <p>{session.user.email}</p>
     {session.conflict?<p>此浏览器已绑定另一个同步账号。请用独立浏览器配置文件登录。</p>:
-     session.linked?<p role="status">{!online?'离线 · 记录保存在本机':uploading?'正在上传进度…':remote&&!error?'云端已连接':'等待连接云端…'}</p>:
-     <><p>启用后会把本机的已有复习历史合并到此账号。</p><button className="primary" disabled={action} onClick={()=>void link()}>同步本机进度</button></>}
+     session.linked?<>
+      <p role="status">{status}</p>
+      {missing.length>downloads.length&&<p>另有 {missing.length-downloads.length} 条记录需先导入对应词条。</p>}
+      <button className="primary" disabled={!online||uploading} onClick={syncNow}>{error?'重试同步':'立即同步'}</button>
+     </>:
+     <><p>此设备尚未启用同步。启用后会把本机的已有复习历史合并到此账号。</p><button className="primary" disabled={action} onClick={()=>void link()}>同步本机进度</button></>}
     <button className="secondary" disabled={action} onClick={()=>void logout()}>退出登录</button>
    </>}
   {error&&<p role="alert">{error}</p>}
-  {error&&uid&&<button className="secondary" onClick={()=>{setError('');setRetry(value=>value+1);}}>重试同步</button>}
  </section>;
 }
