@@ -9,7 +9,9 @@
     "mnemonic":{"type":"object","required":["id","type","title","content","source","status","preferred"],"properties":{
       "id":{"type":"string","minLength":1},"type":{"enum":["etymology","morphology","phonetic","onomatopoeia","association","word_family"]},"title":{"type":"string"},"content":{"type":"string"},"source":{"enum":["user","codex"]},"status":{"$ref":"#/$defs/status"},"preferred":{"type":"boolean"},"reference":{"type":"string"},
       "revision":{"type":"integer","minimum":1},
-      "segments":{"type":"array","items":{"type":"object","required":["part","meaning"],"properties":{"part":{"type":"string"},"meaning":{"type":"string"}}}}
+      "cue":{"type":"string"},
+      "segments":{"type":"array","items":{"type":"object","required":["part","meaning"],"properties":{"part":{"type":"string"},"meaning":{"type":"string"},"cue":{"type":"string"}}}},
+      "related":{"type":"array","items":{"type":"object","required":["term","meaning"],"properties":{"term":{"type":"string"},"meaning":{"type":"string"}}}}
     }},
     "word":{"type":"object","required":["id","word","list_ids","initial_level","origins","meaning","phonetic","part_of_speech","example","example_zh","collocations","mnemonics","content_status","transcription_status","notes"],"properties":{
       "id":{"type":"string","pattern":"^word_"},"word":{"type":"string","pattern":"^[a-zA-Z]+(?:[ '-][a-zA-Z]+)*$"},"list_ids":{"type":"array","uniqueItems":true,"items":{"type":"integer","minimum":1,"maximum":50}},"initial_level":{"enum":["unknown","uncertain"]},

@@ -21,3 +21,15 @@
 .memory-alternatives summary{cursor:pointer;min-height:44px;align-content:center;color:#436548;font-size:14px}
 .memory-alternatives>div{margin:12px 0}
 .memory-content{white-space:pre-line}
+.memory-label{font-size:12px;font-weight:650;color:#48664d;margin:12px 0 4px}
+.memory-source{font-size:12px;color:#436653}
+.memory-quote{display:grid;gap:3px;border-left:3px solid #8fac76;padding:3px 12px;margin:12px 0;background:#f5f8ed}
+.memory-quote .memory-label{margin:0}
+.memory-quote strong{color:#355c43;font-size:clamp(18px,2.3vw,22px);overflow-wrap:anywhere}
+.quick-memory .segments{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,135px),1fr))}
+.quick-memory .segments .segment-cue{color:#345e83;font-weight:600;margin-top:4px}
+.memory-related{list-style:none;padding:0;margin:0;display:grid;gap:5px}
+.memory-related li{display:flex;flex-wrap:wrap;gap:2px 10px;align-items:baseline;font-size:14px;color:#526748}
+.memory-related strong{color:#315740;overflow-wrap:anywhere}
+.mnemonic-fields>summary{cursor:pointer;min-height:44px;align-content:center;color:#436548;font-size:14px}
+.mnemonic-fields label{margin-top:8px}

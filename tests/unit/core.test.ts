@@ -9,6 +9,7 @@ import candidate from '../../data/vocabulary.pending.json';
 import { convertMarkdown } from '../../scripts/build-vocabulary.mjs';
 import { readFileSync } from 'node:fs';
 const words=parseVocabulary(candidate).words;
+const notebooks=[1,2,3,4].map(list=>({list,markdown:readFileSync(`data/notes/list_0${list}.md`,'utf8')}));
 const word=words.find(w=>w.word==='delve')!;
 const name='lexicon-unit'; const repo=new Repository(name);
 beforeEach(async()=>{await deleteDB(name);});
@@ -22,14 +23,19 @@ describe('图片转录与 Markdown',()=>{
   expect(words.some(w=>w.word==='pricate')).toBe(false);
   const notes=words.flatMap(w=>w.mnemonics.filter(m=>m.id.startsWith('pdf_note_')));
   expect(notes).toHaveLength(91);expect(notes.every(m=>m.source==='user'&&m.preferred&&/List[1-4]\.pdf/.test(m.reference??''))).toBe(true);
+  expect(notes.every(m=>m.revision===2)).toBe(true);
   expect(words.every(w=>w.mnemonics.every(m=>m.status==='needs_review'))).toBe(true);
  });
  it('转换幂等、待审核不进入正式 JSON、仅明确审核词条进入正式词库',()=>{
-  const text=readFileSync('data/vocabulary_master.md','utf8');const result=convertMarkdown(text);
-  expect(convertMarkdown(text)).toEqual(result);expect(result.words).toHaveLength(0);expect(result.pending).toHaveLength(139);
-  expect(convertMarkdown(text.replace(/\r?\n/g,'\r\n'))).toEqual(result);
+  const text=readFileSync('data/vocabulary_master.md','utf8');const result=convertMarkdown(text,notebooks);
+  expect(result.words).toHaveLength(0);expect(result.pending).toEqual(words);
+  expect(convertMarkdown(text.replace(/\r?\n/g,'\r\n'),notebooks.map(n=>({...n,markdown:n.markdown.replace(/\r?\n/g,'\r\n')})))).toEqual(result);
   const changed=text.replace('| 深入探究；挖掘 |  | needs_review | needs_review |','| 深入探究；挖掘 |  | reviewed | needs_review |');
-  expect(convertMarkdown(changed).words.map(w=>w.word)).toEqual(['delve']);
+  expect(convertMarkdown(changed,notebooks).words.map(w=>w.word)).toEqual(['delve']);
+  const astrology=result.pending.find(w=>w.word==='astrology')!.mnemonics[0];
+  expect(astrology.segments?.[0]).toEqual({part:'astro-',meaning:'星星、天体（star）',cue:'控制住你的一切'});
+  expect(astrology.related?.map(r=>r.term)).toEqual(['astronaut','astronomy']);
+  expect(result.pending.find(w=>w.word==='flap')!.mnemonics[0].cue).toBe('飞着扑过来');
  });
  it('拒绝分组冲突、缺列和无效 List',()=>{
   const text=readFileSync('data/vocabulary_master.md','utf8');

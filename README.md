@@ -79,7 +79,7 @@ npm run preview -- --port 4173 --strictPort
 | 4 | 22 | 19 | 6 | 47 |
 | 合计 | 79 | 54 | 6 | 139 |
 
-四份详解笔记补充了 **91 条手写记忆法**，保留页码和原始分组。List 3、4 另提供 [90 词导入文件](data/vocabulary.list_03_04.json)。[词表核对记录](data/import_review.md)
+四份详解笔记整理为 **91 条手写记忆法**，按词块、口诀、记忆链和关联词展示。后续可直接修改 [各 List 的 Markdown](data/notes/)。List 3、4 另提供 [90 词导入文件](data/vocabulary.list_03_04.json)。[词表核对记录](data/import_review.md)
 
 未确认转录保存在 `vocabulary.pending.json`，在看板预览确认后写入本地词库。释义、音标、例句和记忆候选保留各自的审核状态。「练」在词库中单独显示，调度沿用模糊词的间隔。
 
@@ -107,7 +107,7 @@ npm run build        # Markdown 转换、类型检查与生产打包
 npm run test:e2e     # 隔离 Chrome：导入、编辑、评分、恢复与断网
 ```
 
-V1 已通过 **16 项单元测试、8 项浏览器测试**，检查桌面、834px iPad 尺寸、390px 手机布局和触屏操作。iPad Safari / macOS 实机安装尚未验证。[验收记录](docs/verification.md)。
+V1 已通过 **17 项单元测试、9 项浏览器测试**，检查桌面、834px iPad 尺寸、390px 手机布局和触屏操作。iPad Safari / macOS 实机安装尚未验证。[验收记录](docs/verification.md)。
 
 推送 `main` 后，GitHub Actions 自动测试、构建并发布唯一的 Pages 看板。后续规划包括 FSRS、听音辨词、词义默写、词族联动和四科来源分析；V1 不提供跨设备自动同步。
 

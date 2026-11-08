@@ -150,7 +150,7 @@
 
 ## 词条补充资料
 
-补充资料包含 Codex 生成候选，以及来自 List 1～4 详解 PDF 的手写记忆法。手写联想和构词整理保留出处，转录内容仍可在看板核验。真实词源需要可靠引用。编辑 word 前同步修改补充资料中的键；复习开始后不要随意改词形，否则会产生新 ID。
+此处保存基础资料和生成候选。手写记忆法以 [data/notes](notes/) 下各 List 的 Markdown 为准，由构建脚本合并。真实词源需要可靠引用。编辑 word 前同步修改补充资料中的键；复习开始后不要随意改词形，否则会产生新 ID。
 
 <!-- word-details -->
 ```json
@@ -165,18 +165,7 @@
     ],
     "example": "The researchers delved into the archives.",
     "example_zh": "研究人员深入查阅档案。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_delve",
-        "type": "association",
-        "title": "从底下拨开",
-        "content": "想象从底下拨开泥土，往深处找东西 → 钻研、探究。delve into sth 深入研究；dive into 原指跳水、潜入，也可比喻一头扎进去。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List1.pdf · 第 1 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "elicit",
@@ -188,18 +177,7 @@
     ],
     "example": "The survey elicited useful responses.",
     "example_zh": "这项调查获得了有用的回应。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_elicit",
-        "type": "phonetic",
-        "title": "把回答骗出来",
-        "content": "用 lie 的声音联想「把它骗出来」→ 引出、诱出。elicit a response 就是引出回应。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List1.pdf · 第 1 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "hierarchy",
@@ -211,18 +189,7 @@
     ],
     "example": "The organisation has a clear hierarchy.",
     "example_zh": "这个组织有明确的层级结构。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_hierarchy",
-        "type": "association",
-        "title": "组织里的层级图",
-        "content": "从 CEO 到经理，再到员工，一层管一层。用 -archy 提醒自己想到统治或组织结构。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List1.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "consortium",
@@ -234,18 +201,7 @@
     ],
     "example": "A consortium of universities funded the study.",
     "example_zh": "一个大学联合体资助了这项研究。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_consortium",
-        "type": "association",
-        "title": "共享份额、共担命运",
-        "content": "把 con 想成「共同」，把 sort 联想到「份额、命运」。几家机构共享利益、追求同一个目标 → 联合体。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List1.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "buckle",
@@ -257,18 +213,7 @@
     ],
     "example": "The metal frame buckled under pressure.",
     "example_zh": "金属框架在压力下变形了。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_buckle",
-        "type": "association",
-        "title": "扣上，或在压力下弯折",
-        "content": "系安全带是 buckle up；压力太大，人或物都可能撑不住，buckle under pressure。对照 buck the trend（逆势而行）。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List1.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "curry",
@@ -280,18 +225,7 @@
     ],
     "example": "They served vegetable curry for lunch.",
     "example_zh": "他们午餐供应蔬菜咖喱。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_curry",
-        "type": "association",
-        "title": "看到一锅咖喱",
-        "content": "直接把 curry 和一锅咖喱的颜色、气味联系起来。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List1.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "subliminal",
@@ -303,28 +237,7 @@
     ],
     "example": "The study examined subliminal messages.",
     "example_zh": "这项研究考察了潜意识信息。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_subliminal",
-        "type": "morphology",
-        "title": "低于觉察的门槛",
-        "content": "刺激落在意识门槛以下 → 未被意识觉察的。对照 preliminary（在门槛前）和 eliminate（联想把东西赶到门槛外 → 排除）。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "segments": [
-          {
-            "part": "sub-",
-            "meaning": "低于"
-          },
-          {
-            "part": "limin",
-            "meaning": "门槛、阈值"
-          }
-        ],
-        "reference": "手写笔记 List1.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "preliminary",
@@ -336,28 +249,7 @@
     ],
     "example": "The preliminary results look promising.",
     "example_zh": "初步结果看起来很有希望。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_preliminary",
-        "type": "morphology",
-        "title": "还没跨过门槛",
-        "content": "正式开始前，先在门槛外准备 → 初步的、预备的。对照 subliminal（低于意识门槛）和 eliminate（排除、消除）。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "segments": [
-          {
-            "part": "pre-",
-            "meaning": "在……之前"
-          },
-          {
-            "part": "limin",
-            "meaning": "门槛"
-          }
-        ],
-        "reference": "手写笔记 List1.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "chamber",
@@ -369,18 +261,7 @@
     ],
     "example": "Air flows into the upper chamber.",
     "example_zh": "空气流入上方的腔室。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_chamber",
-        "type": "association",
-        "title": "封闭空间里的回声",
-        "content": "先想房间、洞穴或腔室，再想声音在里面反复回响。echo chamber 可指同类观点反复强化的「信息茧房」。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List1.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "excavate",
@@ -395,16 +276,6 @@
     "example": "The team will excavate the ancient settlement.",
     "example_zh": "团队将挖掘这处古代聚落。",
     "mnemonics": [
-      {
-        "id": "pdf_note_excavate",
-        "type": "association",
-        "title": "挖出个洞来",
-        "content": "想象把泥土一铲一铲往外挖，留出一个洞 → 挖掘、开凿，也可指发掘遗址。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List1.pdf · 第 4 页"
-      },
       {
         "id": "candidate_excavate_etymology",
         "type": "etymology",
@@ -437,18 +308,7 @@
     ],
     "example": "You may forfeit your deposit if you cancel.",
     "example_zh": "如果取消，你可能会损失押金。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_forfeit",
-        "type": "association",
-        "title": "做错事，被罚没",
-        "content": "用 feit 的拼写联想 fect / fic 和「做」。做了违规的事，资格或钱被没收 → forfeit；counterfeit 用「反着做」联想到伪造、假货。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List1.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "dismantle",
@@ -460,18 +320,7 @@
     ],
     "example": "The team dismantled the old machine.",
     "example_zh": "团队拆卸了那台旧机器。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_dismantle",
-        "type": "association",
-        "title": "把斗篷和伪装撤下来",
-        "content": "mantle 联想到斗篷、覆盖物。想象撤掉伪装，再把撑起来的结构逐件拆开 → 拆卸、拆除；也可指废除制度。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List1.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "periodical",
@@ -483,28 +332,7 @@
     ],
     "example": "The library subscribes to several scientific periodicals.",
     "example_zh": "图书馆订阅了几种科学期刊。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_periodical",
-        "type": "morphology",
-        "title": "每隔一段时期出现",
-        "content": "从 period（一段时期）想到按固定周期出现 → 定期的；定期出版的东西 → 期刊。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "segments": [
-          {
-            "part": "period",
-            "meaning": "时期、周期"
-          },
-          {
-            "part": "-ical",
-            "meaning": "形容词后缀"
-          }
-        ],
-        "reference": "手写笔记 List1.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "apace",
@@ -516,18 +344,7 @@
     ],
     "example": "Construction continued apace despite the rain.",
     "example_zh": "尽管下雨，施工仍在迅速推进。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_apace",
-        "type": "association",
-        "title": "一再地走",
-        "content": "想象脚步接连不断，走得越来越快 → 迅速地。pace 可以提醒自己想到步速。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List1.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "powder",
@@ -539,18 +356,7 @@
     ],
     "example": "Mix the powder with a little water.",
     "example_zh": "把粉末和少量水混合。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_powder",
-        "type": "association",
-        "title": "没有 power 的粉末",
-        "content": "从 power（力量）的拼写想到多一个 d 的 powder。想象捏不成团、散开的粉末。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List1.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "counterpart",
@@ -628,18 +434,7 @@
     ],
     "example": "The wound will take time to heal.",
     "example_zh": "伤口愈合需要时间。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_heal",
-        "type": "phonetic",
-        "title": "「好了」就是痊愈",
-        "content": "把声音联想到「好了」→ 伤口愈合、人恢复。heel 同音，意思是脚后跟。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List1.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "heel",
@@ -651,18 +446,7 @@
     ],
     "example": "The heel of my shoe is broken.",
     "example_zh": "我的鞋跟断了。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_heel",
-        "type": "phonetic",
-        "title": "看脚后跟",
-        "content": "把视线落到脚后跟上，记住 heel。对照同音的 heal，用「好了」记愈合。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List1.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "wage",
@@ -782,18 +566,7 @@
     ],
     "example": "He answered with a grunt.",
     "example_zh": "他哼了一声作为回答。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_grunt",
-        "type": "onomatopoeia",
-        "title": "低沉短促的「哼」",
-        "content": "模仿猪或人在不满时低沉、短促的鼻音。groan 更像拉长的呻吟或抱怨声。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List2.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "tram",
@@ -805,18 +578,7 @@
     ],
     "example": "We took a tram to the city centre.",
     "example_zh": "我们乘有轨电车去了市中心。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_tram",
-        "type": "association",
-        "title": "想到 train，再看街上的轨道",
-        "content": "先用 train 联想到轨道，再把画面换成在街上沿轨道开过的电车 → tram。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List2.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "stint",
@@ -828,18 +590,7 @@
     ],
     "example": "She completed a short stint at the museum.",
     "example_zh": "她在博物馆工作了一小段时间。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_stint",
-        "type": "association",
-        "title": "用 tiny 提醒自己「给得少」",
-        "content": "把 stint 的读音和 tiny 联系起来 → 限制用量、吝于给。a stint 也可以指一段任职或工作时间。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List2.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "evacuate",
@@ -851,18 +602,7 @@
     ],
     "example": "Residents were asked to evacuate the building.",
     "example_zh": "居民被要求撤离大楼。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_evacuate",
-        "type": "word_family",
-        "title": "都往外搬，留下空场地",
-        "content": "用 vacu 想到「空」，对照 vacant（空着的、空缺的）。把人都往外疏散，让场地空出来 → 撤离、疏散。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List2.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "embankment",
@@ -874,18 +614,7 @@
     ],
     "example": "The embankment protects the village from floods.",
     "example_zh": "堤岸保护村庄免受洪水侵袭。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_embankment",
-        "type": "association",
-        "title": "「做了一条银行」",
-        "content": "用 bank 的双义做提示，从银行转到河岸。想象堆起一条土坡挡水或垫高铁路 → 堤岸、路堤。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List2.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "squash",
@@ -897,18 +626,7 @@
     ],
     "example": "The box was squashed during transport.",
     "example_zh": "箱子在运输过程中被压扁了。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_squash",
-        "type": "association",
-        "title": "来吧，把它压扁",
-        "content": "想象把海绵用力压扁 → 压碎、挤扁。名词还可指壁球或南瓜类蔬菜。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List2.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "stamp",
@@ -920,18 +638,7 @@
     ],
     "example": "Please put a stamp on the envelope.",
     "example_zh": "请在信封上贴一张邮票。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_stamp",
-        "type": "association",
-        "title": "啪地压下去，留下印记",
-        "content": "用力跺脚是 stamp one’s foot；往文件上压印是 stamp a document；邮票是 postage stamp。stamp out 想成「一脚踩灭」→ 根除。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List2.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "whistle",
@@ -943,18 +650,7 @@
     ],
     "example": "The referee blew the whistle.",
     "example_zh": "裁判吹响了哨子。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_whistle",
-        "type": "onomatopoeia",
-        "title": "一声「咻」",
-        "content": "想象吹口哨或听见哨声。拼写有 t，发音时不读这个 t。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List2.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "denote",
@@ -966,18 +662,7 @@
     ],
     "example": "The symbol denotes an increase in temperature.",
     "example_zh": "这个符号表示温度升高。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_denote",
-        "type": "association",
-        "title": "在底下做个标注",
-        "content": "把 note 当作「标注」的拼写提示。在符号旁注明它代表什么 → 表示、指示。例如 X denotes an unknown value。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List2.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "chink",
@@ -989,18 +674,7 @@
     ],
     "example": "A narrow chink let light into the room.",
     "example_zh": "一道狭窄的缝隙让光照进了房间。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_chink",
-        "type": "onomatopoeia",
-        "title": "门缝里的一线光和「叮锵」声",
-        "content": "想象隔着门缝偷看，再听两件金属轻碰的声音 → 裂缝、叮当声。这个词也有冒犯性的用法，避免用来称呼人。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List2.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "iris",
@@ -1012,18 +686,7 @@
     ],
     "example": "The iris controls the amount of light entering the eye.",
     "example_zh": "虹膜控制进入眼睛的光量。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_iris",
-        "type": "phonetic",
-        "title": "爱、死亡和机器人里的眼睛",
-        "content": "用「爱人死了」联想到《爱、死亡和机器人》，再把画面停在人物眼睛的彩色虹膜上。iris 也可指鸢尾花。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List2.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "epitomise",
@@ -1035,18 +698,7 @@
     ],
     "example": "These buildings epitomise modern urban design.",
     "example_zh": "这些建筑集中体现了现代城市设计。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_epitomise",
-        "type": "association",
-        "title": "一幅画把特征都体现出来",
-        "content": "想象只看一个代表性事物，就看到了整类事物最典型的特征 → 集中体现。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List2.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "odour",
@@ -1058,18 +710,7 @@
     ],
     "example": "There was a strong odour of smoke.",
     "example_zh": "有一股浓重的烟味。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_odour",
-        "type": "phonetic",
-        "title": "闻到就「呕」",
-        "content": "想象猫闻见不舒服的气味，马上皱鼻子。「呕」提醒自己记住气味、臭味。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List2.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "seep",
@@ -1081,18 +722,7 @@
     ],
     "example": "Water began to seep through the wall.",
     "example_zh": "水开始从墙体渗入。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_seep",
-        "type": "association",
-        "title": "sleep 去掉 l",
-        "content": "想象睡着后，口水沿着枕头一点一点渗开 → seep，慢慢渗出、渗透。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List2.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "delinquency",
@@ -1104,18 +734,7 @@
     ],
     "example": "The programme aims to reduce juvenile delinquency.",
     "example_zh": "这个项目旨在减少青少年违法行为。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_delinquency",
-        "type": "association",
-        "title": "跌到法律那条线下面",
-        "content": "想象行为落到法律划定的线下面 → 不良、违法行为。用「九分！」提示 juven，再联想到年少。juvenile delinquency 指青少年违法行为。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List2.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "fabrication",
@@ -1369,18 +988,7 @@
     ],
     "example": "Many students juggle study and part-time work.",
     "example_zh": "许多学生同时兼顾学习和兼职工作。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_juggle",
-        "type": "association",
-        "title": "同时抛接好几个球",
-        "content": "杂耍演员同时抛接几个球，延伸到同时处理多件事，例如 juggle work and study。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "leak",
@@ -1395,18 +1003,7 @@
     ],
     "example": "A small leak wasted hundreds of litres of water.",
     "example_zh": "一个小漏点浪费了数百升水。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_leak",
-        "type": "association",
-        "title": "东西从破口溜走了",
-        "content": "用「离开」提示声音，想象水顺着破管的缝离开管道。水能漏，秘密也能泄露。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "impede",
@@ -1420,18 +1017,7 @@
     ],
     "example": "Poor transport links can impede economic growth.",
     "example_zh": "薄弱的交通联系会阻碍经济增长。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_impede",
-        "type": "association",
-        "title": "里面堵住了",
-        "content": "想象东西堵在通道里，后面的队伍走不动 → 阻碍、妨碍。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "deduce",
@@ -1445,18 +1031,7 @@
     ],
     "example": "We can deduce the cause from the available evidence.",
     "example_zh": "我们可以根据现有证据推断原因。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_deduce",
-        "type": "word_family",
-        "title": "顺着线索导出结论",
-        "content": "用 duc 联想到「引导」。把线索一步步导向结论 → 推断；与 conduct（实施、引导）和 induce（引起、诱发）一起记。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "doctorate",
@@ -1470,18 +1045,7 @@
     ],
     "example": "She is studying for a doctorate in engineering.",
     "example_zh": "她正在攻读工程学博士学位。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_doctorate",
-        "type": "word_family",
-        "title": "从 doctor 到博士学位",
-        "content": "doctor 也可指有博士学位的人。doctorate 则是学位本身，可说 earn a doctorate。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "internship",
@@ -1495,28 +1059,7 @@
     ],
     "example": "The internship gave him practical experience.",
     "example_zh": "这段实习让他获得了实践经验。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_internship",
-        "type": "morphology",
-        "title": "做实习生的那段时间",
-        "content": "由 intern 想到实习生，再想到这段任职时间 → 实习、实习期。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "segments": [
-          {
-            "part": "intern",
-            "meaning": "实习生"
-          },
-          {
-            "part": "-ship",
-            "meaning": "身份或状态"
-          }
-        ],
-        "reference": "手写笔记 List3.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "slender",
@@ -1530,18 +1073,7 @@
     ],
     "example": "The bridge rests on slender steel columns.",
     "example_zh": "这座桥由纤细的钢柱支撑。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_slender",
-        "type": "association",
-        "title": "像竹竿一样细长",
-        "content": "先记 slender figure（苗条身形），再把「细」用在机会或资源上 → slender chance / resources。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "submarine",
@@ -1556,28 +1088,7 @@
     ],
     "example": "The submarine remained below the surface.",
     "example_zh": "潜艇一直停留在水面以下。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_submarine",
-        "type": "morphology",
-        "title": "在海面以下",
-        "content": "把 sub- 和 marine 拼起来，先想到水下的，再想到在水下行驶的潜艇。对照 mar / marin 这个海洋线索。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "segments": [
-          {
-            "part": "sub-",
-            "meaning": "在……下方"
-          },
-          {
-            "part": "marine",
-            "meaning": "海的"
-          }
-        ],
-        "reference": "手写笔记 List3.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "lavatory",
@@ -1591,18 +1102,7 @@
     ],
     "example": "The public lavatory is next to the station.",
     "example_zh": "公共厕所在车站旁边。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_lavatory",
-        "type": "association",
-        "title": "在公共场所找厕所标识",
-        "content": "想象在飞机或公共场所寻找厕所，看到 lavatory 标识 → 洗手间、厕所。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "niche",
@@ -1616,18 +1116,7 @@
     ],
     "example": "Each species occupies a particular ecological niche.",
     "example_zh": "每个物种都占据特定的生态位。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_niche",
-        "type": "association",
-        "title": "你的那一小块市场",
-        "content": "先想 niche market（细分市场），再想 find one’s niche（找到适合自己的位置）和 a specialised niche（专门的细分领域）。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "muddle",
@@ -1642,18 +1131,7 @@
     ],
     "example": "The instructions left everyone in a muddle.",
     "example_zh": "这些说明让所有人都糊涂了。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_muddle",
-        "type": "association",
-        "title": "mud 倒了一地",
-        "content": "用 mud（泥）的拼写做提醒。泥倒了，到处糊成一团 → 弄乱、混乱，也可指把人搞糊涂。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "induce",
@@ -1667,18 +1145,7 @@
     ],
     "example": "Certain medicines can induce sleep.",
     "example_zh": "某些药物能诱导睡眠。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_induce",
-        "type": "word_family",
-        "title": "把事情引出来",
-        "content": "把笔记里的「在里面引导」想成引出某种结果 → 引起、诱发。对照 deduce，把线索引向结论。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "atomic",
@@ -1726,18 +1193,7 @@
     ],
     "example": "His family cosseted him throughout his childhood.",
     "example_zh": "他的家人在他整个童年时期都对他过分呵护。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_cosset",
-        "type": "association",
-        "title": "把猫裹进毯子里",
-        "content": "用「成了一个 loser」提醒自己想到被宠坏。想象怕猫受一点委屈，把它裹进毯子里百般照料 → 娇惯、过分宠爱。对照 spoil（宠坏）。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "silt",
@@ -1752,18 +1208,7 @@
     ],
     "example": "The flood left a thick layer of silt on the fields.",
     "example_zh": "洪水在田地上留下了厚厚一层淤泥。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_silt",
-        "type": "phonetic",
-        "title": "「四根针」扎进河泥",
-        "content": "用「四根针」提示读音，想象针扎在河底细细软软的沉积物里 → 淤泥、泥沙。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "abode",
@@ -1777,18 +1222,7 @@
     ],
     "example": "The cottage became their permanent abode.",
     "example_zh": "这间小屋成了他们的永久住所。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_abode",
-        "type": "association",
-        "title": "围起来，就有了住所",
-        "content": "想象把住的地方围起来 → abode（住所）。一起记 abide（忍受；abide by 遵守）。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "gadget",
@@ -1802,18 +1236,7 @@
     ],
     "example": "This small gadget measures air quality.",
     "example_zh": "这个小装置可以测量空气质量。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_gadget",
-        "type": "association",
-        "title": "终于拿到那个小装置",
-        "content": "想象终于把一个小巧、好用的装置拿到手 → 小装置、小玩意。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "legacy",
@@ -1827,18 +1250,7 @@
     ],
     "example": "The factory left a legacy of pollution.",
     "example_zh": "这家工厂遗留下了污染问题。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_legacy",
-        "type": "association",
-        "title": "留下来的东西",
-        "content": "从笔记里的「给留下」想到留给后人的东西 → 遗产、遗留影响。heritage 常用于文化或传统遗产。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "overlap",
@@ -1853,18 +1265,7 @@
     ],
     "example": "The two courses overlap in several areas.",
     "example_zh": "这两门课程在几个方面内容重叠。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_overlap",
-        "type": "association",
-        "title": "两个圆叠在一起",
-        "content": "想象两个圆相交，中间是共同覆盖的区域 → 重叠、交叠。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "vanish",
@@ -1878,18 +1279,7 @@
     ],
     "example": "The island vanished beneath the rising water.",
     "example_zh": "这座岛屿消失在上涨的水面之下。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_vanish",
-        "type": "association",
-        "title": "画面里突然空了",
-        "content": "想象盯着一辆车，转眼再看，它就从视野里消失了 → vanish。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "mechanism",
@@ -1903,18 +1293,7 @@
     ],
     "example": "Scientists are studying the mechanism behind the reaction.",
     "example_zh": "科学家正在研究这种反应背后的机制。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_mechanism",
-        "type": "word_family",
-        "title": "从机器转到运作机制",
-        "content": "用 mechan- 联想到 machine（机器），对照 mechanic（机械师）、mechanical（机械的）。装置如何运作，也就是它的机制。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "workaholic",
@@ -1928,18 +1307,7 @@
     ],
     "example": "The report examines why some people become workaholics.",
     "example_zh": "这份报告探讨了一些人为何会成为工作狂。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_workaholic",
-        "type": "association",
-        "title": "把工作看得「神圣」",
-        "content": "用 holy 当作发音联想，把工作看得神圣、停不下来 → 工作狂。-aholic 在这里表示对某事上瘾的人。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 5 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "erosion",
@@ -1953,18 +1321,7 @@
     ],
     "example": "Planting trees can reduce soil erosion.",
     "example_zh": "植树可以减少水土流失。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_erosion",
-        "type": "word_family",
-        "title": "一点一点被侵蚀",
-        "content": "erode 是侵蚀，erosion 是侵蚀过程。想象水流把一层层土带走。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 5 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "ion",
@@ -1978,18 +1335,7 @@
     ],
     "example": "The solution contains positively charged ions.",
     "example_zh": "该溶液含有带正电的离子。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_ion",
-        "type": "association",
-        "title": "看带电符号",
-        "content": "想到原子失去或得到电子而带电。cation 是阳离子，例如 Na⁺；anion 是阴离子，例如 Cl⁻。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 5 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "intercept",
@@ -2003,18 +1349,7 @@
     ],
     "example": "The equipment can intercept radio signals.",
     "example_zh": "这套设备能截获无线电信号。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_intercept",
-        "type": "association",
-        "title": "在中间拿下",
-        "content": "想象球或信号还没到目的地，就在半途被拦下 → 拦截、截获。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 5 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "hose",
@@ -2029,18 +1364,7 @@
     ],
     "example": "They used a hose to water the plants.",
     "example_zh": "他们用软管给植物浇水。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_hose",
-        "type": "association",
-        "title": "house 去掉 u",
-        "content": "想象把房子的核心去掉，剩下可弯曲的管线 → hose，软管。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 5 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "cruise",
@@ -2055,18 +1379,7 @@
     ],
     "example": "The ship cruises along the coast each summer.",
     "example_zh": "这艘船每年夏天都沿海岸巡游。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_cruise",
-        "type": "association",
-        "title": "站在船上看沿途景色",
-        "content": "用船上看风景的画面记住 cruise → 乘船游览、巡航。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 5 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "shave",
@@ -2080,18 +1393,7 @@
     ],
     "example": "The new route shaves ten minutes off the journey.",
     "example_zh": "新路线把行程缩短了十分钟。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_shave",
-        "type": "onomatopoeia",
-        "title": "刮胡子的「沙沙」声",
-        "content": "想象剃刀贴着脸颊发出沙沙声 → 刮胡子、剃毛。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List3.pdf · 第 5 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "spring",
@@ -2509,18 +1811,7 @@
     ],
     "example": "Fish are vertebrates with backbones.",
     "example_zh": "鱼是有脊柱的脊椎动物。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_vertebrate",
-        "type": "word_family",
-        "title": "先看脊柱，再分两类",
-        "content": "想象一节节脊椎骨，vertebra 是椎骨，vertebrate 是脊椎动物，invertebrate 是无脊椎动物。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "industrious",
@@ -2534,18 +1825,7 @@
     ],
     "example": "The industrious students worked steadily on the project.",
     "example_zh": "这些勤奋的学生持续认真地推进项目。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_industrious",
-        "type": "word_family",
-        "title": "在工业生产中勤勉工作",
-        "content": "先用 industry（工业；也可指勤勉）联想到辛勤工作，再记 industrious（勤劳的）；industrial 是工业的。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "intestine",
@@ -2559,18 +1839,7 @@
     ],
     "example": "Nutrients are absorbed in the small intestine.",
     "example_zh": "营养物质在小肠中被吸收。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_intestine",
-        "type": "association",
-        "title": "食物进到里面后",
-        "content": "想象吃进去的食物沿着肚子里的长管前进 → intestine，肠。用「在里面做测试」帮助记忆。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "outpost",
@@ -2584,28 +1853,7 @@
     ],
     "example": "Scientists established a research outpost in the Arctic.",
     "example_zh": "科学家在北极建立了一个研究据点。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_outpost",
-        "type": "morphology",
-        "title": "把哨站放到外面",
-        "content": "想象远离大本营的山头上有座瞭望塔 → 前哨站、偏远据点。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "segments": [
-          {
-            "part": "out",
-            "meaning": "在外"
-          },
-          {
-            "part": "-post",
-            "meaning": "哨站、岗哨"
-          }
-        ],
-        "reference": "手写笔记 List4.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "consignment",
@@ -2619,28 +1867,7 @@
     ],
     "example": "A consignment of medical supplies arrived yesterday.",
     "example_zh": "一批医疗物资昨天运到了。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_consignment",
-        "type": "morphology",
-        "title": "签好交运手续的一批货",
-        "content": "想象码头上的纸箱已经办好托运手续，等着运出或交人寄售 → 托运、寄售或一批托运货物。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "segments": [
-          {
-            "part": "consign",
-            "meaning": "托付、托运"
-          },
-          {
-            "part": "-ment",
-            "meaning": "行为或结果的名词后缀"
-          }
-        ],
-        "reference": "手写笔记 List4.pdf · 第 2 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "trapeze",
@@ -2654,18 +1881,7 @@
     ],
     "example": "The performer swung gracefully from the trapeze.",
     "example_zh": "表演者抓着高空秋千优雅地荡动。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_trapeze",
-        "type": "association",
-        "title": "高空里的秋千吊架",
-        "content": "用「陷阱很简单」做声音提示，再想象马戏演员抓住悬空的横杆荡过去 → 高空秋千、吊架。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "intersection",
@@ -2679,28 +1895,7 @@
     ],
     "example": "Traffic lights were installed at the intersection.",
     "example_zh": "这个交叉路口安装了交通信号灯。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_intersection",
-        "type": "morphology",
-        "title": "在中间交叉的两条路",
-        "content": "把两条路画成十字；它们相交的那个地方就是 intersection。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "segments": [
-          {
-            "part": "inter-",
-            "meaning": "在……之间"
-          },
-          {
-            "part": "section",
-            "meaning": "分段、部分"
-          }
-        ],
-        "reference": "手写笔记 List4.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "cardiovascular",
@@ -2714,32 +1909,7 @@
     ],
     "example": "Regular exercise benefits cardiovascular health.",
     "example_zh": "规律运动有益于心血管健康。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_cardiovascular",
-        "type": "morphology",
-        "title": "心脏加上输送血液的管道",
-        "content": "从心脏沿血管走一遍，整套循环系统提示「心血管的」。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "segments": [
-          {
-            "part": "cardio-",
-            "meaning": "心脏"
-          },
-          {
-            "part": "vascul-",
-            "meaning": "血管"
-          },
-          {
-            "part": "-ar",
-            "meaning": "形容词后缀"
-          }
-        ],
-        "reference": "手写笔记 List4.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "brass",
@@ -2753,18 +1923,7 @@
     ],
     "example": "The door handle is made of brass.",
     "example_zh": "这个门把手是黄铜制的。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_brass",
-        "type": "association",
-        "title": "听铜管乐器的声音",
-        "content": "想象小号、长号吹起来的声音和它们金黄的外观 → 黄铜、铜管乐器。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 3 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "fauna",
@@ -2778,18 +1937,7 @@
     ],
     "example": "The survey recorded the local flora and fauna.",
     "example_zh": "这次调查记录了当地的植物群和动物群。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_fauna",
-        "type": "association",
-        "title": "同一个地方的动物和植物",
-        "content": "想象一处森林，把动物归到 fauna，把植物归到 flora。flora and fauna 是当地动植物群。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "expel",
@@ -2803,18 +1951,7 @@
     ],
     "example": "The pump expels air from the chamber.",
     "example_zh": "这台泵把空气从腔室中排出。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_expel",
-        "type": "word_family",
-        "title": "向外驱赶",
-        "content": "用 pel 联想到推动、驱赶。expel 向外赶 → 驱逐、开除；repel 击退、排斥；propel 向前推动；compel 迫使。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "divisional",
@@ -2828,18 +1965,7 @@
     ],
     "example": "Each divisional manager submitted a report.",
     "example_zh": "每位部门经理都提交了一份报告。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_divisional",
-        "type": "word_family",
-        "title": "先划分，再看分出来的部门",
-        "content": "divide（划分）→ division（部门、分部）→ divisional（部门的、分部的）。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 4 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "astrology",
@@ -2853,29 +1979,7 @@
     ],
     "example": "Astrology should not be confused with astronomy.",
     "example_zh": "占星术不应与天文学混淆。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_astrology",
-        "type": "morphology",
-        "title": "看星星来占卜",
-        "content": "星星、天体 ＋ 学说、研究领域 → 看星星来占卜 → 占星术。\n关联词：astronaut（宇航员）、astronomy（天文学）。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "revision": 1,
-        "segments": [
-          {
-            "part": "astro-",
-            "meaning": "星星、天体（star）。谐音口诀「控制住你的一切」"
-          },
-          {
-            "part": "-logy",
-            "meaning": "学说、研究领域"
-          }
-        ],
-        "reference": "手写笔记 List4.pdf · 第 5 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "flap",
@@ -2890,19 +1994,7 @@
     ],
     "example": "The bird flapped its wings and took off.",
     "example_zh": "那只鸟拍动翅膀飞了起来。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_flap",
-        "type": "association",
-        "title": "飞着扑过来",
-        "content": "「飞着扑过来」→ 想象鸟扑扇着翅膀飞过来 → 摆动、拍动。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "revision": 1,
-        "reference": "手写笔记 List4.pdf · 第 5 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "wastage",
@@ -2916,28 +2008,7 @@
     ],
     "example": "Better storage can reduce food wastage.",
     "example_zh": "更好的储存方式能减少食物损耗。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_wastage",
-        "type": "morphology",
-        "title": "浪费之后损失的量",
-        "content": "从 waste 想到损耗，再想到这个过程或损失掉的数量 → 消耗量、损耗量。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "segments": [
-          {
-            "part": "waste",
-            "meaning": "浪费、损耗"
-          },
-          {
-            "part": "-age",
-            "meaning": "行为、结果或数量的名词后缀"
-          }
-        ],
-        "reference": "手写笔记 List4.pdf · 第 5 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "dub",
@@ -2951,18 +2022,7 @@
     ],
     "example": "The film was dubbed into several languages.",
     "example_zh": "这部电影被配成了多种语言的版本。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_dub",
-        "type": "phonetic",
-        "title": "「吊部」提醒自己记住称号",
-        "content": "用笔记里的声音作提示，再想象给人加上一个称号 → 把……称为。另一个常见义是给影片配音。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 5 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "mould",
@@ -2977,18 +2037,7 @@
     ],
     "example": "The clay was pressed into a mould.",
     "example_zh": "黏土被压进了模具。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_mould",
-        "type": "association",
-        "title": "would 的 w 换成 m",
-        "content": "用拼写差一个字母作提示。把材料倒进模具，模具决定形状 → 模具、塑造；也记住霉菌义。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 5 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "discretion",
@@ -3002,18 +2051,7 @@
     ],
     "example": "Teachers have some discretion over teaching methods.",
     "example_zh": "教师对教学方法有一定的自主决定权。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_discretion",
-        "type": "word_family",
-        "title": "分开来看，再谨慎判断",
-        "content": "用 cern / cret 的「辨别」线索串起 discern（识别、辨别）、discreet（谨慎的）和 discretion（判断力、谨慎；也可指自行决定权）。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 6 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "clamour",
@@ -3028,18 +2066,7 @@
     ],
     "example": "There is growing public clamour for reform.",
     "example_zh": "公众要求改革的呼声日益高涨。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_clamour",
-        "type": "word_family",
-        "title": "听见一群人在喊",
-        "content": "用 clam 的「喊叫」线索记喧闹和强烈要求。对照 exclaim（惊呼）、proclaim（宣告）、acclaim（称赞）、reclaim（收回）、declaim（慷慨陈词）。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 6 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "attest",
@@ -3053,18 +2080,7 @@
     ],
     "example": "Several witnesses can attest to the accuracy of the account.",
     "example_zh": "几位证人可以证实这份叙述的准确性。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_attest",
-        "type": "association",
-        "title": "再做一次测试来证明",
-        "content": "用 test 的拼写联想测试。再测一次，拿出结果证明确实如此 → 证明、证实。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 6 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "decrepit",
@@ -3078,18 +2094,7 @@
     ],
     "example": "The decrepit building needs urgent repairs.",
     "example_zh": "这座破旧的建筑急需修缮。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_decrepit",
-        "type": "association",
-        "title": "从底下坏了",
-        "content": "想象一栋楼从底部开始破损，已经摇摇欲坠 → 破旧的、衰老的。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 6 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "convention",
@@ -3462,18 +2467,7 @@
     ],
     "example": "Good judgement is essential when assessing risks.",
     "example_zh": "评估风险时，良好的判断力至关重要。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_judgement",
-        "type": "word_family",
-        "title": "从 judge 想到判断结果",
-        "content": "笔记圈出了 jud。先用熟悉的 judge（判断、法官）带出 judgement（判断、判断力、裁决），再和 judicial（司法的）对照。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 1 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "withstand",
@@ -3511,18 +2505,7 @@
     ],
     "example": "One consequence of deforestation is habitat loss.",
     "example_zh": "森林砍伐的一个后果是栖息地丧失。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_consequence",
-        "type": "word_family",
-        "title": "发生之后的结果",
-        "content": "把笔记括在一起的三个词放进同一件事：先有原因，再有 consequence（后果）；consequently 表示「因此」；subsequent 描述「随后的」。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 1 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "consequently",
@@ -3536,18 +2519,7 @@
     ],
     "example": "Rainfall declined; consequently, crop yields fell.",
     "example_zh": "降雨减少，因此作物产量下降。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_consequently",
-        "type": "word_family",
-        "title": "把前面的原因接到结果上",
-        "content": "consequence 是结果或后果，consequently 放在句中把原因接到结果上 → 因此。对照 subsequent（随后的）。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 1 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "subsequent",
@@ -3561,18 +2533,7 @@
     ],
     "example": "Subsequent studies confirmed the original findings.",
     "example_zh": "随后的研究证实了最初的发现。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_subsequent",
-        "type": "word_family",
-        "title": "后续发生的事",
-        "content": "用时间线记 subsequent（随后的）。对照 consequence（结果）和 consequently（因此），前者强调先后，后两者可表达因果。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 1 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "pirate",
@@ -3588,18 +2549,7 @@
     ],
     "example": "Some websites pirate films and distribute them without permission.",
     "example_zh": "有些网站盗版电影并在未经许可的情况下传播。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_pirate",
-        "type": "association",
-        "title": "把私人的东西拿走",
-        "content": "用 private 当拼写提示，想象未经允许拿走别人的东西 → 海盗；盗版、盗用。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 6 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "mastery",
@@ -3613,18 +2563,7 @@
     ],
     "example": "Mastery of a language takes sustained practice.",
     "example_zh": "熟练掌握一门语言需要持续练习。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_mastery",
-        "type": "word_family",
-        "title": "反复练到大师级",
-        "content": "从 master（大师；掌握）想到反复练习，直到达到精通、熟练的程度 → mastery。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 6 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "precision",
@@ -3639,18 +2578,7 @@
     ],
     "example": "The technician measured the sample with great precision.",
     "example_zh": "技术人员极其精确地测量了样本。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_precision",
-        "type": "word_family",
-        "title": "名词与形容词一起记",
-        "content": "把笔记中的声音提示「提前斩死」连到精确这层意思。precision 指精确、精准，precise 是精确的。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 7 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "gloss",
@@ -3666,18 +2594,7 @@
     ],
     "example": "A short gloss in the margin explained the unusual term.",
     "example_zh": "页边的一则简短注释解释了这个罕见术语。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_gloss",
-        "type": "association",
-        "title": "反光的车漆和书页边注",
-        "content": "想象亮得晃眼的车漆 → 光泽；再想象旧书旁解释生词的一行小字 → 注释。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 7 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "outward",
@@ -3693,28 +2610,7 @@
     ],
     "example": "The arrows indicate the outward movement of water.",
     "example_zh": "箭头表示水向外流动的方向。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_outward",
-        "type": "morphology",
-        "title": "方向朝外",
-        "content": "从中心往外画一支箭头，记向外的、外部的。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "segments": [
-          {
-            "part": "out",
-            "meaning": "外面"
-          },
-          {
-            "part": "-ward",
-            "meaning": "朝某个方向"
-          }
-        ],
-        "reference": "手写笔记 List4.pdf · 第 7 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "anthropologist",
@@ -3728,32 +2624,7 @@
     ],
     "example": "An anthropologist recorded how the custom had changed over time.",
     "example_zh": "一位人类学家记录了这一习俗如何随时间变化。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_anthropologist",
-        "type": "morphology",
-        "title": "研究人类和文化的人",
-        "content": "从人类这一构词线索联想到研究学科，再想到做这项研究的人。anthropic 是与人类有关的，anthropology 是人类学。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "segments": [
-          {
-            "part": "anthropo-",
-            "meaning": "人类"
-          },
-          {
-            "part": "-logy",
-            "meaning": "学科、研究"
-          },
-          {
-            "part": "-ist",
-            "meaning": "从事某领域的人"
-          }
-        ],
-        "reference": "手写笔记 List4.pdf · 第 7 页"
-      }
-    ]
+    "mnemonics": []
   },
   {
     "word": "comb",
@@ -3769,18 +2640,7 @@
     ],
     "example": "The researchers combed through decades of records.",
     "example_zh": "研究人员仔细查阅了数十年的记录。",
-    "mnemonics": [
-      {
-        "id": "pdf_note_comb",
-        "type": "association",
-        "title": "一齿一齿梳过去",
-        "content": "先想用梳子把头发梳理清楚，再想搜查时像梳头一样逐处检查 → 梳子、梳理、仔细搜寻。",
-        "source": "user",
-        "status": "needs_review",
-        "preferred": true,
-        "reference": "手写笔记 List4.pdf · 第 8 页"
-      }
-    ]
+    "mnemonics": []
   }
 ]
 ```

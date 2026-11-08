@@ -33,11 +33,22 @@
           "id": "pdf_note_delve",
           "type": "association",
           "title": "从底下拨开",
-          "content": "想象从底下拨开泥土，往深处找东西 → 钻研、探究。delve into sth 深入研究；dive into 原指跳水、潜入，也可比喻一头扎进去。",
+          "content": "想象从底下拨开泥土，往深处找东西 → 钻研、探究。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List1.pdf · 第 1 页"
+          "revision": 2,
+          "reference": "手写笔记 List1.pdf · 第 1 页",
+          "related": [
+            {
+              "term": "delve into sth",
+              "meaning": "深入研究某事"
+            },
+            {
+              "term": "dive into",
+              "meaning": "潜入，也可比喻一头扎进某事"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -75,11 +86,23 @@
           "id": "pdf_note_elicit",
           "type": "phonetic",
           "title": "把回答骗出来",
-          "content": "用 lie 的声音联想「把它骗出来」→ 引出、诱出。elicit a response 就是引出回应。",
+          "content": "借 lie 的声音想象把答案「骗」出来 → 引出、诱出。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List1.pdf · 第 1 页"
+          "revision": 2,
+          "reference": "手写笔记 List1.pdf · 第 1 页",
+          "cue": "把它骗出来",
+          "related": [
+            {
+              "term": "lie",
+              "meaning": "骗出回答的声音提示"
+            },
+            {
+              "term": "elicit a response",
+              "meaning": "引出回应"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -121,6 +144,7 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
           "reference": "手写笔记 List1.pdf · 第 2 页"
         }
       ],
@@ -163,7 +187,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List1.pdf · 第 2 页"
+          "revision": 2,
+          "reference": "手写笔记 List1.pdf · 第 2 页",
+          "cue": "共享份额、共担命运"
         }
       ],
       "content_status": "needs_review",
@@ -203,11 +229,26 @@
           "id": "pdf_note_buckle",
           "type": "association",
           "title": "扣上，或在压力下弯折",
-          "content": "系安全带是 buckle up；压力太大，人或物都可能撑不住，buckle under pressure。对照 buck the trend（逆势而行）。",
+          "content": "扣上安全带 → 扣紧。压力太大，人或物撑不住 → 屈服或变形。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List1.pdf · 第 2 页"
+          "revision": 2,
+          "reference": "手写笔记 List1.pdf · 第 2 页",
+          "related": [
+            {
+              "term": "buckle up",
+              "meaning": "系好安全带"
+            },
+            {
+              "term": "buckle under pressure",
+              "meaning": "在压力下屈服或变形"
+            },
+            {
+              "term": "buck the trend",
+              "meaning": "逆势而行"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -249,6 +290,7 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
           "reference": "手写笔记 List1.pdf · 第 2 页"
         }
       ],
@@ -287,10 +329,12 @@
           "id": "pdf_note_subliminal",
           "type": "morphology",
           "title": "低于觉察的门槛",
-          "content": "刺激落在意识门槛以下 → 未被意识觉察的。对照 preliminary（在门槛前）和 eliminate（联想把东西赶到门槛外 → 排除）。",
+          "content": "刺激落在意识门槛以下 → 未被意识觉察的。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
+          "reference": "手写笔记 List1.pdf · 第 3 页",
           "segments": [
             {
               "part": "sub-",
@@ -301,7 +345,16 @@
               "meaning": "门槛、阈值"
             }
           ],
-          "reference": "手写笔记 List1.pdf · 第 3 页"
+          "related": [
+            {
+              "term": "preliminary",
+              "meaning": "在门槛前，初步的"
+            },
+            {
+              "term": "eliminate",
+              "meaning": "联想赶到门槛外，排除"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -339,10 +392,12 @@
           "id": "pdf_note_preliminary",
           "type": "morphology",
           "title": "还没跨过门槛",
-          "content": "正式开始前，先在门槛外准备 → 初步的、预备的。对照 subliminal（低于意识门槛）和 eliminate（排除、消除）。",
+          "content": "正式开始前，先在门槛外准备 → 初步的、预备的。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
+          "reference": "手写笔记 List1.pdf · 第 3 页",
           "segments": [
             {
               "part": "pre-",
@@ -353,7 +408,16 @@
               "meaning": "门槛"
             }
           ],
-          "reference": "手写笔记 List1.pdf · 第 3 页"
+          "related": [
+            {
+              "term": "subliminal",
+              "meaning": "低于意识门槛的"
+            },
+            {
+              "term": "eliminate",
+              "meaning": "排除、消除"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -392,11 +456,18 @@
           "id": "pdf_note_chamber",
           "type": "association",
           "title": "封闭空间里的回声",
-          "content": "先想房间、洞穴或腔室，再想声音在里面反复回响。echo chamber 可指同类观点反复强化的「信息茧房」。",
+          "content": "先想房间、洞穴或腔室，再想声音在封闭空间里反复回响。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List1.pdf · 第 3 页"
+          "revision": 2,
+          "reference": "手写笔记 List1.pdf · 第 3 页",
+          "related": [
+            {
+              "term": "echo chamber",
+              "meaning": "回声室，也比喻同类观点反复强化的信息茧房"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -440,6 +511,7 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
           "reference": "手写笔记 List1.pdf · 第 4 页"
         },
         {
@@ -499,11 +571,22 @@
           "id": "pdf_note_forfeit",
           "type": "association",
           "title": "做错事，被罚没",
-          "content": "用 feit 的拼写联想 fect / fic 和「做」。做了违规的事，资格或钱被没收 → forfeit；counterfeit 用「反着做」联想到伪造、假货。",
+          "content": "做了违规的事 → 资格或钱被没收 → 丧失、被罚没。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List1.pdf · 第 4 页"
+          "revision": 2,
+          "reference": "手写笔记 List1.pdf · 第 4 页",
+          "related": [
+            {
+              "term": "fect / fic",
+              "meaning": "用「做」作拼写联想"
+            },
+            {
+              "term": "counterfeit",
+              "meaning": "用「反着做」想到伪造、假货"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -542,11 +625,18 @@
           "id": "pdf_note_dismantle",
           "type": "association",
           "title": "把斗篷和伪装撤下来",
-          "content": "mantle 联想到斗篷、覆盖物。想象撤掉伪装，再把撑起来的结构逐件拆开 → 拆卸、拆除；也可指废除制度。",
+          "content": "想象先撤掉斗篷和伪装，再把撑起来的结构逐件拆开 → 拆卸、拆除，也可指废除制度。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List1.pdf · 第 4 页"
+          "revision": 2,
+          "reference": "手写笔记 List1.pdf · 第 4 页",
+          "related": [
+            {
+              "term": "mantle",
+              "meaning": "斗篷、覆盖物"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -588,6 +678,8 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
+          "reference": "手写笔记 List1.pdf · 第 4 页",
           "segments": [
             {
               "part": "period",
@@ -597,8 +689,7 @@
               "part": "-ical",
               "meaning": "形容词后缀"
             }
-          ],
-          "reference": "手写笔记 List1.pdf · 第 4 页"
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -639,7 +730,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List1.pdf · 第 4 页"
+          "revision": 2,
+          "reference": "手写笔记 List1.pdf · 第 4 页",
+          "cue": "一再地走"
         }
       ],
       "content_status": "needs_review",
@@ -677,11 +770,18 @@
           "id": "pdf_note_powder",
           "type": "association",
           "title": "没有 power 的粉末",
-          "content": "从 power（力量）的拼写想到多一个 d 的 powder。想象捏不成团、散开的粉末。",
+          "content": "想象力量散了，变成捏不成团的粉末。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List1.pdf · 第 2 页"
+          "revision": 2,
+          "reference": "手写笔记 List1.pdf · 第 2 页",
+          "related": [
+            {
+              "term": "power",
+              "meaning": "力量，和 powder 对照拼写"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -842,11 +942,19 @@
           "id": "pdf_note_heal",
           "type": "phonetic",
           "title": "「好了」就是痊愈",
-          "content": "把声音联想到「好了」→ 伤口愈合、人恢复。heel 同音，意思是脚后跟。",
+          "content": "想象伤口好了 → 愈合、人恢复。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List1.pdf · 第 4 页"
+          "revision": 2,
+          "reference": "手写笔记 List1.pdf · 第 4 页",
+          "cue": "好了",
+          "related": [
+            {
+              "term": "heel",
+              "meaning": "脚后跟，与 heal 同音"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -884,11 +992,19 @@
           "id": "pdf_note_heel",
           "type": "phonetic",
           "title": "看脚后跟",
-          "content": "把视线落到脚后跟上，记住 heel。对照同音的 heal，用「好了」记愈合。",
+          "content": "把视线落到脚后跟上，记住 heel。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List1.pdf · 第 4 页"
+          "revision": 2,
+          "reference": "手写笔记 List1.pdf · 第 4 页",
+          "cue": "看脚后跟",
+          "related": [
+            {
+              "term": "heal",
+              "meaning": "愈合，谐音提示是「好了」"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -1111,11 +1227,19 @@
           "id": "pdf_note_grunt",
           "type": "onomatopoeia",
           "title": "低沉短促的「哼」",
-          "content": "模仿猪或人在不满时低沉、短促的鼻音。groan 更像拉长的呻吟或抱怨声。",
+          "content": "模仿猪或人在不满时低沉、短促的鼻音 → 咕哝、哼声。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List2.pdf · 第 2 页"
+          "revision": 2,
+          "reference": "手写笔记 List2.pdf · 第 2 页",
+          "cue": "哼",
+          "related": [
+            {
+              "term": "groan",
+              "meaning": "拉长的呻吟或抱怨声"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -1152,11 +1276,18 @@
           "id": "pdf_note_tram",
           "type": "association",
           "title": "想到 train，再看街上的轨道",
-          "content": "先用 train 联想到轨道，再把画面换成在街上沿轨道开过的电车 → tram。",
+          "content": "先想到轨道，再把画面换成在街上沿轨道开过的电车 → tram。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List2.pdf · 第 2 页"
+          "revision": 2,
+          "reference": "手写笔记 List2.pdf · 第 2 页",
+          "related": [
+            {
+              "term": "train",
+              "meaning": "火车，用轨道画面帮助联想"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -1194,11 +1325,22 @@
           "id": "pdf_note_stint",
           "type": "association",
           "title": "用 tiny 提醒自己「给得少」",
-          "content": "把 stint 的读音和 tiny 联系起来 → 限制用量、吝于给。a stint 也可以指一段任职或工作时间。",
+          "content": "用 tiny 提醒自己想到给得少 → 限制用量、吝于给。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List2.pdf · 第 2 页"
+          "revision": 2,
+          "reference": "手写笔记 List2.pdf · 第 2 页",
+          "related": [
+            {
+              "term": "tiny",
+              "meaning": "很小的，用读音提醒自己「给得少」"
+            },
+            {
+              "term": "a stint",
+              "meaning": "一段任职或工作时间"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -1236,11 +1378,18 @@
           "id": "pdf_note_evacuate",
           "type": "word_family",
           "title": "都往外搬，留下空场地",
-          "content": "用 vacu 想到「空」，对照 vacant（空着的、空缺的）。把人都往外疏散，让场地空出来 → 撤离、疏散。",
+          "content": "用 vacu 想到「空」。把人都往外疏散，让场地空出来 → 撤离、疏散。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List2.pdf · 第 2 页"
+          "revision": 2,
+          "reference": "手写笔记 List2.pdf · 第 2 页",
+          "related": [
+            {
+              "term": "vacant",
+              "meaning": "空着的、空缺的"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -1278,11 +1427,19 @@
           "id": "pdf_note_embankment",
           "type": "association",
           "title": "「做了一条银行」",
-          "content": "用 bank 的双义做提示，从银行转到河岸。想象堆起一条土坡挡水或垫高铁路 → 堤岸、路堤。",
+          "content": "从银行转到河岸。想象堆起一条土坡挡水或垫高铁路 → 堤岸、路堤。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List2.pdf · 第 2 页"
+          "revision": 2,
+          "reference": "手写笔记 List2.pdf · 第 2 页",
+          "cue": "做了一条银行",
+          "related": [
+            {
+              "term": "bank",
+              "meaning": "银行，也指河岸"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -1325,7 +1482,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List2.pdf · 第 2 页"
+          "revision": 2,
+          "reference": "手写笔记 List2.pdf · 第 2 页",
+          "cue": "来吧，把它压扁"
         }
       ],
       "content_status": "needs_review",
@@ -1364,11 +1523,31 @@
           "id": "pdf_note_stamp",
           "type": "association",
           "title": "啪地压下去，留下印记",
-          "content": "用力跺脚是 stamp one’s foot；往文件上压印是 stamp a document；邮票是 postage stamp。stamp out 想成「一脚踩灭」→ 根除。",
+          "content": "脚或印章用力压下去 → 跺脚、盖印、留下印记。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List2.pdf · 第 3 页"
+          "revision": 2,
+          "reference": "手写笔记 List2.pdf · 第 3 页",
+          "cue": "啪地压下去",
+          "related": [
+            {
+              "term": "stamp one’s foot",
+              "meaning": "跺脚"
+            },
+            {
+              "term": "stamp a document",
+              "meaning": "给文件盖章"
+            },
+            {
+              "term": "postage stamp",
+              "meaning": "邮票"
+            },
+            {
+              "term": "stamp out",
+              "meaning": "一脚踩灭，根除"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -1411,7 +1590,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List2.pdf · 第 3 页"
+          "revision": 2,
+          "reference": "手写笔记 List2.pdf · 第 3 页",
+          "cue": "咻"
         }
       ],
       "content_status": "needs_review",
@@ -1453,7 +1634,14 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List2.pdf · 第 3 页"
+          "revision": 2,
+          "reference": "手写笔记 List2.pdf · 第 3 页",
+          "related": [
+            {
+              "term": "note",
+              "meaning": "标注，用作拼写提示"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -1496,7 +1684,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List2.pdf · 第 3 页"
+          "revision": 2,
+          "reference": "手写笔记 List2.pdf · 第 3 页",
+          "cue": "叮锵"
         }
       ],
       "content_status": "needs_review",
@@ -1538,7 +1728,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List2.pdf · 第 4 页"
+          "revision": 2,
+          "reference": "手写笔记 List2.pdf · 第 4 页",
+          "cue": "爱人死了"
         }
       ],
       "content_status": "needs_review",
@@ -1580,6 +1772,7 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
           "reference": "手写笔记 List2.pdf · 第 4 页"
         }
       ],
@@ -1621,7 +1814,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List2.pdf · 第 4 页"
+          "revision": 2,
+          "reference": "手写笔记 List2.pdf · 第 4 页",
+          "cue": "呕"
         }
       ],
       "content_status": "needs_review",
@@ -1659,11 +1854,19 @@
           "id": "pdf_note_seep",
           "type": "association",
           "title": "sleep 去掉 l",
-          "content": "想象睡着后，口水沿着枕头一点一点渗开 → seep，慢慢渗出、渗透。",
+          "content": "想象睡着后，口水沿着枕头一点一点渗开 → 慢慢渗出、渗透。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List2.pdf · 第 4 页"
+          "revision": 2,
+          "reference": "手写笔记 List2.pdf · 第 4 页",
+          "cue": "sleep 去掉 l",
+          "related": [
+            {
+              "term": "sleep",
+              "meaning": "睡觉，去掉 l 联想到 seep"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -1701,11 +1904,23 @@
           "id": "pdf_note_delinquency",
           "type": "association",
           "title": "跌到法律那条线下面",
-          "content": "想象行为落到法律划定的线下面 → 不良、违法行为。用「九分！」提示 juven，再联想到年少。juvenile delinquency 指青少年违法行为。",
+          "content": "想象行为落到法律划定的线下面 → 不良、违法行为。用「九分！」提示 juven，再联想到年少。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List2.pdf · 第 4 页"
+          "revision": 2,
+          "reference": "手写笔记 List2.pdf · 第 4 页",
+          "cue": "九分！",
+          "related": [
+            {
+              "term": "juven",
+              "meaning": "「九分！」提示年少"
+            },
+            {
+              "term": "juvenile delinquency",
+              "meaning": "青少年违法行为"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -2179,11 +2394,18 @@
           "id": "pdf_note_juggle",
           "type": "association",
           "title": "同时抛接好几个球",
-          "content": "杂耍演员同时抛接几个球，延伸到同时处理多件事，例如 juggle work and study。",
+          "content": "杂耍演员同时抛接几个球 → 同时处理多件事。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 2 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 2 页",
+          "related": [
+            {
+              "term": "juggle work and study",
+              "meaning": "同时兼顾工作和学习"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -2229,7 +2451,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 2 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 2 页",
+          "cue": "离开"
         }
       ],
       "content_status": "needs_review",
@@ -2273,6 +2497,7 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
           "reference": "手写笔记 List3.pdf · 第 2 页"
         }
       ],
@@ -2313,11 +2538,22 @@
           "id": "pdf_note_deduce",
           "type": "word_family",
           "title": "顺着线索导出结论",
-          "content": "用 duc 联想到「引导」。把线索一步步导向结论 → 推断；与 conduct（实施、引导）和 induce（引起、诱发）一起记。",
+          "content": "用 duc 联想到「引导」。把线索一步步导向结论 → 推断。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 3 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 3 页",
+          "related": [
+            {
+              "term": "conduct",
+              "meaning": "实施、引导"
+            },
+            {
+              "term": "induce",
+              "meaning": "引起、诱发"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -2356,11 +2592,22 @@
           "id": "pdf_note_doctorate",
           "type": "word_family",
           "title": "从 doctor 到博士学位",
-          "content": "doctor 也可指有博士学位的人。doctorate 则是学位本身，可说 earn a doctorate。",
+          "content": "从有博士学位的人联想到学位本身 → 博士学位。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 2 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 2 页",
+          "related": [
+            {
+              "term": "doctor",
+              "meaning": "博士、医生"
+            },
+            {
+              "term": "earn a doctorate",
+              "meaning": "获得博士学位"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -2404,6 +2651,8 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 2 页",
           "segments": [
             {
               "part": "intern",
@@ -2413,8 +2662,7 @@
               "part": "-ship",
               "meaning": "身份或状态"
             }
-          ],
-          "reference": "手写笔记 List3.pdf · 第 2 页"
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -2454,11 +2702,22 @@
           "id": "pdf_note_slender",
           "type": "association",
           "title": "像竹竿一样细长",
-          "content": "先记 slender figure（苗条身形），再把「细」用在机会或资源上 → slender chance / resources。",
+          "content": "先想竹竿的细长和苗条身形，再把「细」引申到机会很小或资源很少。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 2 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 2 页",
+          "related": [
+            {
+              "term": "slender figure",
+              "meaning": "苗条身形"
+            },
+            {
+              "term": "slender chance / resources",
+              "meaning": "渺茫的机会、有限的资源"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -2499,10 +2758,12 @@
           "id": "pdf_note_submarine",
           "type": "morphology",
           "title": "在海面以下",
-          "content": "把 sub- 和 marine 拼起来，先想到水下的，再想到在水下行驶的潜艇。对照 mar / marin 这个海洋线索。",
+          "content": "把 sub- 和 marine 拼起来，先想到水下的，再想到在水下行驶的潜艇。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 3 页",
           "segments": [
             {
               "part": "sub-",
@@ -2513,7 +2774,12 @@
               "meaning": "海的"
             }
           ],
-          "reference": "手写笔记 List3.pdf · 第 3 页"
+          "related": [
+            {
+              "term": "mar / marin",
+              "meaning": "海洋线索"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -2557,6 +2823,7 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
           "reference": "手写笔记 List3.pdf · 第 3 页"
         }
       ],
@@ -2598,11 +2865,27 @@
           "id": "pdf_note_niche",
           "type": "association",
           "title": "你的那一小块市场",
-          "content": "先想 niche market（细分市场），再想 find one’s niche（找到适合自己的位置）和 a specialised niche（专门的细分领域）。",
+          "content": "想象市场被切成一个个小领域，找到专属于自己的那一块。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 3 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 3 页",
+          "cue": "你的那一小块市场",
+          "related": [
+            {
+              "term": "niche market",
+              "meaning": "细分市场"
+            },
+            {
+              "term": "find one’s niche",
+              "meaning": "找到适合自己的位置"
+            },
+            {
+              "term": "a specialised niche",
+              "meaning": "专门的细分领域"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -2647,7 +2930,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 3 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 3 页",
+          "cue": "mud 倒了一地"
         }
       ],
       "content_status": "needs_review",
@@ -2687,11 +2972,18 @@
           "id": "pdf_note_induce",
           "type": "word_family",
           "title": "把事情引出来",
-          "content": "把笔记里的「在里面引导」想成引出某种结果 → 引起、诱发。对照 deduce，把线索引向结论。",
+          "content": "把笔记里的「在里面引导」想成引出某种结果 → 引起、诱发。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 3 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 3 页",
+          "related": [
+            {
+              "term": "deduce",
+              "meaning": "顺着线索推断"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -2784,11 +3076,19 @@
           "id": "pdf_note_cosset",
           "type": "association",
           "title": "把猫裹进毯子里",
-          "content": "用「成了一个 loser」提醒自己想到被宠坏。想象怕猫受一点委屈，把它裹进毯子里百般照料 → 娇惯、过分宠爱。对照 spoil（宠坏）。",
+          "content": "想象怕猫受一点委屈，把它裹进毯子里百般照料 → 娇惯、过分宠爱。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 3 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 3 页",
+          "cue": "成了一个 loser",
+          "related": [
+            {
+              "term": "spoil",
+              "meaning": "宠坏"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -2833,7 +3133,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 4 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 4 页",
+          "cue": "四根针"
         }
       ],
       "content_status": "needs_review",
@@ -2873,11 +3175,22 @@
           "id": "pdf_note_abode",
           "type": "association",
           "title": "围起来，就有了住所",
-          "content": "想象把住的地方围起来 → abode（住所）。一起记 abide（忍受；abide by 遵守）。",
+          "content": "想象把住的地方围起来 → 住所。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 4 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 4 页",
+          "related": [
+            {
+              "term": "abide",
+              "meaning": "忍受"
+            },
+            {
+              "term": "abide by",
+              "meaning": "遵守"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -2921,6 +3234,7 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
           "reference": "手写笔记 List3.pdf · 第 4 页"
         }
       ],
@@ -2961,11 +3275,18 @@
           "id": "pdf_note_legacy",
           "type": "association",
           "title": "留下来的东西",
-          "content": "从笔记里的「给留下」想到留给后人的东西 → 遗产、遗留影响。heritage 常用于文化或传统遗产。",
+          "content": "从笔记里的「给留下」想到留给后人的东西 → 遗产、遗留影响。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 4 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 4 页",
+          "related": [
+            {
+              "term": "heritage",
+              "meaning": "常用于文化或传统遗产"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -3010,6 +3331,7 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
           "reference": "手写笔记 List3.pdf · 第 4 页"
         }
       ],
@@ -3054,6 +3376,7 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
           "reference": "手写笔记 List3.pdf · 第 4 页"
         }
       ],
@@ -3094,11 +3417,26 @@
           "id": "pdf_note_mechanism",
           "type": "word_family",
           "title": "从机器转到运作机制",
-          "content": "用 mechan- 联想到 machine（机器），对照 mechanic（机械师）、mechanical（机械的）。装置如何运作，也就是它的机制。",
+          "content": "用 mechan- 联想到机器。从机器怎么运作，想到装置背后的机制。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 4 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 4 页",
+          "related": [
+            {
+              "term": "machine",
+              "meaning": "机器"
+            },
+            {
+              "term": "mechanic",
+              "meaning": "机械师"
+            },
+            {
+              "term": "mechanical",
+              "meaning": "机械的"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -3141,7 +3479,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 5 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 5 页",
+          "cue": "把工作看得「神圣」"
         }
       ],
       "content_status": "needs_review",
@@ -3181,11 +3521,18 @@
           "id": "pdf_note_erosion",
           "type": "word_family",
           "title": "一点一点被侵蚀",
-          "content": "erode 是侵蚀，erosion 是侵蚀过程。想象水流把一层层土带走。",
+          "content": "想象水流把一层层土带走 → 侵蚀过程。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 5 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 5 页",
+          "related": [
+            {
+              "term": "erode",
+              "meaning": "侵蚀"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -3224,11 +3571,22 @@
           "id": "pdf_note_ion",
           "type": "association",
           "title": "看带电符号",
-          "content": "想到原子失去或得到电子而带电。cation 是阳离子，例如 Na⁺；anion 是阴离子，例如 Cl⁻。",
+          "content": "看电荷符号，想到原子失去或得到电子后形成离子。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 5 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 5 页",
+          "related": [
+            {
+              "term": "cation",
+              "meaning": "阳离子，例如 Na⁺"
+            },
+            {
+              "term": "anion",
+              "meaning": "阴离子，例如 Cl⁻"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -3272,7 +3630,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 5 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 5 页",
+          "cue": "在中间拿下"
         }
       ],
       "content_status": "needs_review",
@@ -3317,7 +3677,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 5 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 5 页",
+          "cue": "house 去掉 u"
         }
       ],
       "content_status": "needs_review",
@@ -3362,6 +3724,7 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
           "reference": "手写笔记 List3.pdf · 第 5 页"
         }
       ],
@@ -3407,7 +3770,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List3.pdf · 第 5 页"
+          "revision": 2,
+          "reference": "手写笔记 List3.pdf · 第 5 页",
+          "cue": "沙沙"
         }
       ],
       "content_status": "needs_review",
@@ -4142,11 +4507,22 @@
           "id": "pdf_note_vertebrate",
           "type": "word_family",
           "title": "先看脊柱，再分两类",
-          "content": "想象一节节脊椎骨，vertebra 是椎骨，vertebrate 是脊椎动物，invertebrate 是无脊椎动物。",
+          "content": "想象一节节脊椎骨，有脊椎的动物就是 vertebrate。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 2 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 2 页",
+          "related": [
+            {
+              "term": "vertebra",
+              "meaning": "椎骨"
+            },
+            {
+              "term": "invertebrate",
+              "meaning": "无脊椎动物"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -4186,11 +4562,22 @@
           "id": "pdf_note_industrious",
           "type": "word_family",
           "title": "在工业生产中勤勉工作",
-          "content": "先用 industry（工业；也可指勤勉）联想到辛勤工作，再记 industrious（勤劳的）；industrial 是工业的。",
+          "content": "想象工业生产里辛勤工作的人 → 勤劳的。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 2 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 2 页",
+          "related": [
+            {
+              "term": "industry",
+              "meaning": "工业、勤勉"
+            },
+            {
+              "term": "industrial",
+              "meaning": "工业的"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -4233,7 +4620,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 2 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 2 页",
+          "cue": "在里面做测试"
         }
       ],
       "content_status": "needs_review",
@@ -4277,6 +4666,8 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 2 页",
           "segments": [
             {
               "part": "out",
@@ -4286,8 +4677,7 @@
               "part": "-post",
               "meaning": "哨站、岗哨"
             }
-          ],
-          "reference": "手写笔记 List4.pdf · 第 2 页"
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -4331,6 +4721,8 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 2 页",
           "segments": [
             {
               "part": "consign",
@@ -4340,8 +4732,7 @@
               "part": "-ment",
               "meaning": "行为或结果的名词后缀"
             }
-          ],
-          "reference": "手写笔记 List4.pdf · 第 2 页"
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -4384,7 +4775,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 3 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 3 页",
+          "cue": "陷阱很简单"
         }
       ],
       "content_status": "needs_review",
@@ -4428,6 +4821,8 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 3 页",
           "segments": [
             {
               "part": "inter-",
@@ -4437,8 +4832,7 @@
               "part": "section",
               "meaning": "分段、部分"
             }
-          ],
-          "reference": "手写笔记 List4.pdf · 第 3 页"
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -4481,6 +4875,8 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 3 页",
           "segments": [
             {
               "part": "cardio-",
@@ -4494,8 +4890,7 @@
               "part": "-ar",
               "meaning": "形容词后缀"
             }
-          ],
-          "reference": "手写笔记 List4.pdf · 第 3 页"
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -4539,6 +4934,7 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
           "reference": "手写笔记 List4.pdf · 第 3 页"
         }
       ],
@@ -4578,11 +4974,22 @@
           "id": "pdf_note_fauna",
           "type": "association",
           "title": "同一个地方的动物和植物",
-          "content": "想象一处森林，把动物归到 fauna，把植物归到 flora。flora and fauna 是当地动植物群。",
+          "content": "想象一处森林，把动物归到 fauna，把植物归到 flora。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 4 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 4 页",
+          "related": [
+            {
+              "term": "flora",
+              "meaning": "某地区的植物群"
+            },
+            {
+              "term": "flora and fauna",
+              "meaning": "当地动植物群"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -4622,11 +5029,26 @@
           "id": "pdf_note_expel",
           "type": "word_family",
           "title": "向外驱赶",
-          "content": "用 pel 联想到推动、驱赶。expel 向外赶 → 驱逐、开除；repel 击退、排斥；propel 向前推动；compel 迫使。",
+          "content": "用 pel 联想到推动、驱赶。向外赶 → 驱逐、开除。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 4 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 4 页",
+          "related": [
+            {
+              "term": "repel",
+              "meaning": "击退、排斥"
+            },
+            {
+              "term": "propel",
+              "meaning": "向前推动"
+            },
+            {
+              "term": "compel",
+              "meaning": "迫使"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -4666,11 +5088,22 @@
           "id": "pdf_note_divisional",
           "type": "word_family",
           "title": "先划分，再看分出来的部门",
-          "content": "divide（划分）→ division（部门、分部）→ divisional（部门的、分部的）。",
+          "content": "划分 → 划出来的部门 → 部门的、分部的。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 4 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 4 页",
+          "related": [
+            {
+              "term": "divide",
+              "meaning": "划分"
+            },
+            {
+              "term": "division",
+              "meaning": "部门、分部"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -4709,22 +5142,33 @@
           "id": "pdf_note_astrology",
           "type": "morphology",
           "title": "看星星来占卜",
-          "content": "星星、天体 ＋ 学说、研究领域 → 看星星来占卜 → 占星术。\n关联词：astronaut（宇航员）、astronomy（天文学）。",
+          "content": "星星、天体 ＋ 学说、研究领域 → 看星星来占卜 → 占星术。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "revision": 1,
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 5 页",
           "segments": [
             {
               "part": "astro-",
-              "meaning": "星星、天体（star）。谐音口诀「控制住你的一切」"
+              "meaning": "星星、天体（star）",
+              "cue": "控制住你的一切"
             },
             {
               "part": "-logy",
               "meaning": "学说、研究领域"
             }
           ],
-          "reference": "手写笔记 List4.pdf · 第 5 页"
+          "related": [
+            {
+              "term": "astronaut",
+              "meaning": "宇航员"
+            },
+            {
+              "term": "astronomy",
+              "meaning": "天文学"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -4766,12 +5210,13 @@
           "id": "pdf_note_flap",
           "type": "association",
           "title": "飞着扑过来",
-          "content": "「飞着扑过来」→ 想象鸟扑扇着翅膀飞过来 → 摆动、拍动。",
+          "content": "想象鸟扑扇着翅膀飞过来 → 摆动、拍动。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "revision": 1,
-          "reference": "手写笔记 List4.pdf · 第 5 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 5 页",
+          "cue": "飞着扑过来"
         }
       ],
       "content_status": "needs_review",
@@ -4815,6 +5260,8 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 5 页",
           "segments": [
             {
               "part": "waste",
@@ -4824,8 +5271,7 @@
               "part": "-age",
               "meaning": "行为、结果或数量的名词后缀"
             }
-          ],
-          "reference": "手写笔记 List4.pdf · 第 5 页"
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -4869,7 +5315,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 5 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 5 页",
+          "cue": "吊部"
         }
       ],
       "content_status": "needs_review",
@@ -4911,11 +5359,19 @@
           "id": "pdf_note_mould",
           "type": "association",
           "title": "would 的 w 换成 m",
-          "content": "用拼写差一个字母作提示。把材料倒进模具，模具决定形状 → 模具、塑造；也记住霉菌义。",
+          "content": "把材料倒进模具，模具决定形状 → 模具、塑造。另记霉菌义。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 5 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 5 页",
+          "cue": "would 的 w 换成 m",
+          "related": [
+            {
+              "term": "would",
+              "meaning": "将 w 换成 m 的拼写线索"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -4955,11 +5411,22 @@
           "id": "pdf_note_discretion",
           "type": "word_family",
           "title": "分开来看，再谨慎判断",
-          "content": "用 cern / cret 的「辨别」线索串起 discern（识别、辨别）、discreet（谨慎的）和 discretion（判断力、谨慎；也可指自行决定权）。",
+          "content": "用 cern / cret 的「辨别」线索提醒自己分开来看，再谨慎判断 → 判断力、谨慎，也可指自行决定权。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 6 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 6 页",
+          "related": [
+            {
+              "term": "discern",
+              "meaning": "识别、辨别"
+            },
+            {
+              "term": "discreet",
+              "meaning": "谨慎的"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -5000,11 +5467,34 @@
           "id": "pdf_note_clamour",
           "type": "word_family",
           "title": "听见一群人在喊",
-          "content": "用 clam 的「喊叫」线索记喧闹和强烈要求。对照 exclaim（惊呼）、proclaim（宣告）、acclaim（称赞）、reclaim（收回）、declaim（慷慨陈词）。",
+          "content": "用 clam 的「喊叫」线索，想象一群人喧闹着强烈要求某事。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 6 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 6 页",
+          "related": [
+            {
+              "term": "exclaim",
+              "meaning": "惊呼"
+            },
+            {
+              "term": "proclaim",
+              "meaning": "宣告"
+            },
+            {
+              "term": "acclaim",
+              "meaning": "称赞"
+            },
+            {
+              "term": "reclaim",
+              "meaning": "收回"
+            },
+            {
+              "term": "declaim",
+              "meaning": "慷慨陈词"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -5048,7 +5538,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 6 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 6 页",
+          "cue": "再做一次测试"
         }
       ],
       "content_status": "needs_review",
@@ -5092,7 +5584,9 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 6 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 6 页",
+          "cue": "从底下坏了"
         }
       ],
       "content_status": "needs_review",
@@ -5763,11 +6257,22 @@
           "id": "pdf_note_judgement",
           "type": "word_family",
           "title": "从 judge 想到判断结果",
-          "content": "笔记圈出了 jud。先用熟悉的 judge（判断、法官）带出 judgement（判断、判断力、裁决），再和 judicial（司法的）对照。",
+          "content": "笔记圈出了 jud。由熟悉的 judge 带出判断、判断力、裁决。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 1 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 1 页",
+          "related": [
+            {
+              "term": "judge",
+              "meaning": "判断、法官"
+            },
+            {
+              "term": "judicial",
+              "meaning": "司法的"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -5850,11 +6355,22 @@
           "id": "pdf_note_consequence",
           "type": "word_family",
           "title": "发生之后的结果",
-          "content": "把笔记括在一起的三个词放进同一件事：先有原因，再有 consequence（后果）；consequently 表示「因此」；subsequent 描述「随后的」。",
+          "content": "先有原因，再出现结果或后果。用时间线把括在一起的三个词区分开。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 1 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 1 页",
+          "related": [
+            {
+              "term": "consequently",
+              "meaning": "因此"
+            },
+            {
+              "term": "subsequent",
+              "meaning": "随后的"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -5894,11 +6410,22 @@
           "id": "pdf_note_consequently",
           "type": "word_family",
           "title": "把前面的原因接到结果上",
-          "content": "consequence 是结果或后果，consequently 放在句中把原因接到结果上 → 因此。对照 subsequent（随后的）。",
+          "content": "把前面的原因接到结果上 → 因此。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 1 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 1 页",
+          "related": [
+            {
+              "term": "consequence",
+              "meaning": "结果、后果"
+            },
+            {
+              "term": "subsequent",
+              "meaning": "随后的"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -5938,11 +6465,22 @@
           "id": "pdf_note_subsequent",
           "type": "word_family",
           "title": "后续发生的事",
-          "content": "用时间线记 subsequent（随后的）。对照 consequence（结果）和 consequently（因此），前者强调先后，后两者可表达因果。",
+          "content": "用时间线记「随后的」。subsequent 强调先后，另两个词可表达因果。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 1 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 1 页",
+          "related": [
+            {
+              "term": "consequence",
+              "meaning": "结果、后果"
+            },
+            {
+              "term": "consequently",
+              "meaning": "因此"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -5985,11 +6523,18 @@
           "id": "pdf_note_pirate",
           "type": "association",
           "title": "把私人的东西拿走",
-          "content": "用 private 当拼写提示，想象未经允许拿走别人的东西 → 海盗；盗版、盗用。",
+          "content": "想象未经允许拿走别人的私人物品 → 海盗、盗版、盗用。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 6 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 6 页",
+          "related": [
+            {
+              "term": "private",
+              "meaning": "私人的，作为拼写联想"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -6030,11 +6575,18 @@
           "id": "pdf_note_mastery",
           "type": "word_family",
           "title": "反复练到大师级",
-          "content": "从 master（大师；掌握）想到反复练习，直到达到精通、熟练的程度 → mastery。",
+          "content": "想象反复练习直到达到大师的程度 → 精通、熟练。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 6 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 6 页",
+          "related": [
+            {
+              "term": "master",
+              "meaning": "大师、掌握"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -6075,11 +6627,19 @@
           "id": "pdf_note_precision",
           "type": "word_family",
           "title": "名词与形容词一起记",
-          "content": "把笔记中的声音提示「提前斩死」连到精确这层意思。precision 指精确、精准，precise 是精确的。",
+          "content": "用「提前斩死」作声音提示。precision 是名词，指精确、精准。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
-          "reference": "手写笔记 List4.pdf · 第 7 页"
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 7 页",
+          "cue": "提前斩死",
+          "related": [
+            {
+              "term": "precise",
+              "meaning": "精确的"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -6126,6 +6686,7 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
           "reference": "手写笔记 List4.pdf · 第 7 页"
         }
       ],
@@ -6173,6 +6734,8 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 7 页",
           "segments": [
             {
               "part": "out",
@@ -6182,8 +6745,7 @@
               "part": "-ward",
               "meaning": "朝某个方向"
             }
-          ],
-          "reference": "手写笔记 List4.pdf · 第 7 页"
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -6222,10 +6784,12 @@
           "id": "pdf_note_anthropologist",
           "type": "morphology",
           "title": "研究人类和文化的人",
-          "content": "从人类这一构词线索联想到研究学科，再想到做这项研究的人。anthropic 是与人类有关的，anthropology 是人类学。",
+          "content": "从「人类」联想到研究这门学科，再想到做研究的人 → 人类学家。",
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
+          "reference": "手写笔记 List4.pdf · 第 7 页",
           "segments": [
             {
               "part": "anthropo-",
@@ -6240,7 +6804,16 @@
               "meaning": "从事某领域的人"
             }
           ],
-          "reference": "手写笔记 List4.pdf · 第 7 页"
+          "related": [
+            {
+              "term": "anthropic",
+              "meaning": "与人类有关的"
+            },
+            {
+              "term": "anthropology",
+              "meaning": "人类学"
+            }
+          ]
         }
       ],
       "content_status": "needs_review",
@@ -6287,6 +6860,7 @@
           "source": "user",
           "status": "needs_review",
           "preferred": true,
+          "revision": 2,
           "reference": "手写笔记 List4.pdf · 第 8 页"
         }
       ],

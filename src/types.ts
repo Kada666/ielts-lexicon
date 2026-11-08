@@ -1,9 +1,12 @@
 export type Level = 'unknown' | 'uncertain';
 export type Status = 'needs_review' | 'reviewed';
 export type MnemonicType = 'etymology' | 'morphology' | 'phonetic' | 'onomatopoeia' | 'association' | 'word_family';
+export interface MnemonicSegment { part: string; meaning: string; cue?: string }
+export interface MnemonicRelation { term: string; meaning: string }
 export interface Mnemonic {
   id: string; type: MnemonicType; title: string; content: string; source: 'user' | 'codex';
-  status: Status; preferred: boolean; segments?: { part: string; meaning: string }[]; reference?: string; revision?: number;
+  status: Status; preferred: boolean; segments?: MnemonicSegment[]; reference?: string; revision?: number;
+  cue?: string; related?: MnemonicRelation[];
 }
 export interface Word {
   id: string; word: string; list_ids: number[]; initial_level: Level;

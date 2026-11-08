@@ -4,10 +4,20 @@ import type { Mnemonic, Settings, Word } from '../types';
 import { mnemonicLabels } from '../types';
 import Pronunciation from './Pronunciation';
 function MemoryText({note}:{note:Mnemonic}){
+ const structured=!!(note.cue||note.segments?.length||note.related?.length);
  return <>
-  <div className="mnemonic-heading"><span>{mnemonicLabels[note.type]}</span>{note.status==='needs_review'&&<span className="cue-review">候选</span>}</div>
-  {['etymology','morphology'].includes(note.type)&&!!note.segments?.length&&<div className="segments">{note.segments.map((s,i)=><div key={i}><strong>{s.part}</strong><span>{s.meaning}</span></div>)}</div>}
+  <div className="mnemonic-heading"><span>{mnemonicLabels[note.type]}</span>{note.id.startsWith('pdf_note_')&&<span className="memory-source">手写笔记</span>}{note.status==='needs_review'&&<span className="cue-review">候选</span>}</div>
+  {!!note.segments?.length&&<>
+   <div className="memory-label">词块拆解</div>
+   <div className="segments">{note.segments.map((segment,i)=><div key={i}><strong lang="en">{segment.part}</strong><span>{segment.meaning}</span>{segment.cue&&<span className="segment-cue">谐音提示 · {segment.cue}</span>}</div>)}</div>
+  </>}
+  {note.cue&&<div className="memory-quote"><span className="memory-label">{note.type==='phonetic'?'谐音口诀':note.type==='onomatopoeia'?'声音提示':'联想口诀'}</span><strong>{note.cue}</strong></div>}
+  {structured&&<div className="memory-label">记忆链</div>}
   <p className="memory-content">{note.content}</p>
+  {!!note.related?.length&&<>
+   <div className="memory-label">关联词</div>
+   <ul className="memory-related">{note.related.map((item,i)=><li key={i}><strong lang="en">{item.term}</strong><span>{item.meaning}</span></li>)}</ul>
+  </>}
   {note.id.startsWith('pdf_note_')&&note.reference&&<small className="memory-hold-hint">{note.reference}</small>}
  </>;
 }

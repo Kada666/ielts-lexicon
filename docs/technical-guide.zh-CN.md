@@ -38,8 +38,9 @@ List 1～4 已整理 91 条手写记忆法，附来源页码。已有词库可�
 - 在主词库“词条”表格追加8列：List、Word、Initial Level、Symbol、Meaning、Notes、Transcription、Content。
 - List 支持1～50，○ 使用 unknown，△ 使用 uncertain；多个中文义项用 `；` 分隔。
 - 审核状态为 needs_review 或 reviewed。单元格避免未转义的 `|`，可用 `／`。
-- 音标、词性、搭配、例句与记忆候选写在同一 Markdown 的 word-details JSON 块，以 word 关联。
-- 运行 `npm run build:data`，检查输出后在应用导入 JSON；构建也会重新生成文字笔记。
+- 音标、词性、搭配、例句与生成的记忆候选写在主词库的 `word-details` 块，以 word 关联。
+- 手写记忆法直接编辑 [各 List 的 Markdown](../data/notes/)，构建时会读取「手写记忆法」标题以下的正文，并用主词库更新上方词表。
+- 运行 `npm run build:data` 生成 JSON。已入库卡片的笔记修订在刷新时生效，新单词在看板确认后导入。
 - 不重建或覆盖已经确认的资料。一次性初始建库脚本会在主文件存在时拒绝覆盖，增补脚本只补空字段。
 - 其他来源可使用 `list_ids: []` 与 `origins.list: null`，kind 可为 listening / reading / writing / speaking / other；参见 [示例](../data/external-source.example.json)。
 
@@ -53,9 +54,11 @@ ID 来自规范化词形：NFKC、小写、去前后空白、合并空格，然�
 
 ## 记忆系统
 
-支持 etymology（真实词源）、morphology（构词）、phonetic（谐音）、onomatopoeia（拟声）、association（自由联想）、word_family（词族）。每条有 ID、类型、标题、内容、来源、审核状态和首选标记；词根类可加 segments 与 reference。
+支持 etymology（真实词源）、morphology（构词）、phonetic（谐音）、onomatopoeia（拟声）、association（自由联想）、word_family（词族）。词块、口诀、关联词按实际笔记添加。词块的字面含义和谐音提示分开记录。
 
-背面依次呈现核心义、首选记忆法、最多两条搭配和一句例句，其他义项与候选可展开。音标、记忆法和例句均可关闭默认显示。用户可添加、选择、编辑、删除记忆方法并独立核验。
+闪卡背面显示核心义和首选联想，其他记忆线索可展开。长按联想区可改正文，也可展开编辑口诀、词块和关联词。
+
+每条手写笔记用 `### 单词` 开头，接「类型」「标题」「记忆链」「来源」「修订」五个字段。可加一条「口诀」、多条「词块」和「关联词」。词块一行写 `拼写 | 含义 | 可选口诀`，关联词写 `拼写 | 含义或用法`。例子见 [List 4 的 astrology 和 flap](../data/notes/list_04.md)。更新已发布笔记时递增「修订」号，浏览器里的个人改写仍优先。
 
 ## 复习规则 simple-v1
 

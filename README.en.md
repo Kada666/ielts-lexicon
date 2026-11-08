@@ -79,7 +79,7 @@ Initial materials are four user-supplied handwritten screening sheets, transcrib
 | 4 | 22 | 19 | 6 | 47 |
 | Total | 79 | 54 | 6 | 139 |
 
-The four detailed notebooks contribute **91 handwritten memory cues**, with page references. A [dedicated import file](data/vocabulary.list_03_04.json) contains the 90 words in Lists 3 and 4. [Vocabulary audit](data/import_review.md)
+The four detailed notebooks contribute **91 handwritten memory cues**, organized into word parts, hooks, recall steps and related words. Edit the [Markdown notebooks](data/notes/) to update them. A [dedicated import file](data/vocabulary.list_03_04.json) contains the 90 words in Lists 3 and 4. [Vocabulary audit](data/import_review.md)
 
 Transcriptions in `vocabulary.pending.json` enter the browser's collection after review and confirmation. Definitions, phonetics, examples and mnemonics retain their own review states. The practice group has its original mark and uses the uncertain-word schedule.
 
@@ -107,7 +107,7 @@ npm run build        # Markdown conversion, type checking and production build
 npm run test:e2e     # Isolated Chrome: import, edit, rate, restore and offline
 ```
 
-V1 passed **16 unit tests and 8 browser tests**, including vocabulary upgrades, offline reload and saved ratings. Desktop, 834px tablet and 390px phone layouts were checked with touch input. Physical iPad Safari and macOS installation remain unverified. [Verification record](docs/verification.md)
+V1 passed **17 unit tests and 9 browser tests**, including vocabulary upgrades, mnemonic editing, offline reload and saved ratings. Desktop, 834px tablet and 390px phone layouts were checked with touch input. Physical iPad Safari and macOS installation remain unverified. [Verification record](docs/verification.md)
 
 GitHub Actions tests, builds and deploys the unified Pages app after a push to `main`. Planned work includes FSRS, listening recognition, meaning recall and word-family links. Automatic cross-device sync is not part of V1.
 

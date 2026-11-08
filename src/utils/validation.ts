@@ -12,7 +12,9 @@ export function validateMnemonics(value: unknown): asserts value is Mnemonic[] {
     assert(record(m) && typeof m.id === 'string' && m.id.length > 0 && !ids.has(m.id), '记忆方法 ID 无效或重复'); ids.add(m.id);
     assert(['etymology','morphology','phonetic','onomatopoeia','association','word_family'].includes(String(m.type)), '未知记忆类型');
     assert(typeof m.title === 'string' && typeof m.content === 'string' && ['user','codex'].includes(String(m.source)) && status(m.status) && typeof m.preferred === 'boolean', '记忆方法字段不完整');
-    if (m.segments !== undefined) assert(Array.isArray(m.segments) && m.segments.every(s => record(s) && typeof s.part === 'string' && typeof s.meaning === 'string'), '拆解分段无效');
+    if (m.cue !== undefined) assert(typeof m.cue === 'string', '口诀无效');
+    if (m.segments !== undefined) assert(Array.isArray(m.segments) && m.segments.every(s => record(s) && typeof s.part === 'string' && typeof s.meaning === 'string' && (s.cue === undefined || typeof s.cue === 'string')), '拆解分段无效');
+    if (m.related !== undefined) assert(Array.isArray(m.related) && m.related.every(s => record(s) && typeof s.term === 'string' && typeof s.meaning === 'string'), '关联词无效');
     if (m.reference !== undefined) assert(typeof m.reference === 'string', '来源链接无效');
     if (m.revision !== undefined) assert(Number.isSafeInteger(m.revision) && Number(m.revision) > 0, '记忆方法修订号无效');
   }
@@ -45,7 +47,9 @@ export function notebookChanges(previous: Word, incoming: Word) {
 function sameNote(left: Mnemonic, right: Mnemonic) {
   return left.id === right.id && left.type === right.type && left.source === right.source &&
     left.title === right.title && left.content === right.content && left.reference === right.reference &&
-    left.status === right.status && JSON.stringify(left.segments ?? []) === JSON.stringify(right.segments ?? []);
+    left.status === right.status && (left.cue ?? '') === (right.cue ?? '') &&
+    JSON.stringify(left.segments ?? []) === JSON.stringify(right.segments ?? []) &&
+    JSON.stringify(left.related ?? []) === JSON.stringify(right.related ?? []);
 }
 export function mergeNotebookOverride(override: Override, previous: Word, notes: Mnemonic[]) {
   const mnemonics = [...override.mnemonics];
