@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, it } from 'vitest';
 import 'fake-indexeddb/auto';
 import { openDB, deleteDB } from 'idb';
 import { Repository, connect, effectiveWords } from '../../src/db/database';
-import { DAY, freshProgress, schedule } from '../../src/review/scheduler';
+import { ALGORITHM, DAY, freshProgress, recallAt, schedule } from '../../src/review/scheduler';
 import { mergeWords, parseBackup, parseVocabulary, stableId } from '../../src/utils/validation';
 import { defaults, type Word } from '../../src/types';
 import candidate from '../../data/vocabulary.pending.json';
@@ -59,10 +59,24 @@ describe('复习调度',()=>{
   expect(schedule(word,p,'good',now).interval).toBe(1);expect(schedule(uncertain,p,'good',now).interval).toBe(2);
  });
  it('连续记住达到7天才掌握，遗忘撤销掌握并累计困难次数',()=>{
-  let p=freshProgress(word);for(let i=0;i<4;i++)p=schedule(word,p,'good',i*DAY);
+  let p=schedule(word,freshProgress(word),'good',1000);
+  for(let i=0;i<3;i++)p=schedule(word,p,'good',p.due);
   expect(p.state).toBe('mastered');expect(p.interval).toBeGreaterThanOrEqual(7);
-  const failed=schedule(word,p,'again',5*DAY);expect(failed.state).toBe('learning');expect(failed.streak).toBe(0);expect(failed.lapses).toBe(1);
-  for(let i=0;i<20;i++)p=schedule(word,p,'good',i*DAY);expect(p.interval).toBe(180);
+  const failed=schedule(word,p,'again',p.due);expect(failed.state).toBe('learning');expect(failed.streak).toBe(0);expect(failed.lapses).toBe(1);
+  for(let i=0;i<20;i++)p=schedule(word,p,'good',p.due);expect(p.interval).toBe(180);
+ });
+ it('隔一段时间答对的证据更强，慢答仍优于超时，预测随时间下降',()=>{
+  const p=schedule(word,freshProgress(word),'good',1000);
+  const fast={version:'timed-v1',result:'correct',elapsed_ms:1300} as const;
+  const immediate=schedule(word,p,'good',2000,fast);
+  const delayed=schedule(word,p,'good',p.due,fast);
+  const slow=schedule(word,p,'hard',p.due,{...fast,elapsed_ms:7800});
+  const timeout=schedule(word,p,'again',p.due,{...fast,result:'timeout',elapsed_ms:10000});
+  expect(delayed.interval).toBeGreaterThan(immediate.interval);
+  expect(delayed.interval).toBeGreaterThan(slow.interval);
+  expect(slow.interval).toBeGreaterThan(timeout.interval);
+  expect(recallAt(delayed,delayed.due)).toBeCloseTo(.85);
+  expect(recallAt(delayed,delayed.due+DAY)!).toBeLessThan(recallAt(delayed,delayed.due)!);
  });
 });
 describe('增量合并与验证',()=>{
@@ -137,7 +151,22 @@ describe('IndexedDB 持久化与备份',()=>{
  it('V1数据库升级添加个人修改存储，原词汇与历史不被清空',async()=>{
   const legacy=await openDB(name,1,{upgrade(db){db.createObjectStore('words',{keyPath:'id'});db.createObjectStore('progress',{keyPath:'word_id'});db.createObjectStore('reviews',{keyPath:'id'});db.createObjectStore('meta');}});
   await legacy.put('words',word);await legacy.put('progress',freshProgress(word));legacy.close();
-  const upgraded=await connect(name);expect(upgraded.version).toBe(2);expect(await upgraded.get('words',word.id)).toEqual(word);expect(upgraded.objectStoreNames.contains('overrides')).toBe(true);upgraded.close();
+  const upgraded=await connect(name);expect(upgraded.version).toBe(3);expect(await upgraded.get('words',word.id)).toEqual(word);expect(upgraded.objectStoreNames.contains('overrides')).toBe(true);upgraded.close();
+ });
+ it('从旧版备份重算历史并保留快测原始事件和字号设置',async()=>{
+  const old={...freshProgress(word),algorithm:'simple-v1' as const,stability_days:undefined};
+  const at=1000;
+  const after={...old,state:'learning' as const,due:at+DAY*.25,interval:.25,reviews:1,last_review:at};
+  const event={id:'old-timed',word_id:word.id,grade:'hard' as const,at,
+    attempt:{version:'timed-v1' as const,result:'correct' as const,elapsed_ms:6300}};
+  await repo.restore({format:'ielts-lexicon-backup',schema_version:2,exported_at:new Date().toISOString(),
+    words:[word],progress:[after],reviews:[{...event,before:old,after}],overrides:[],
+    settings:{...defaults,text_size:'large'}});
+  const upgraded=await repo.snapshot();
+  expect(upgraded.progress[0]).toMatchObject({algorithm:ALGORITHM,due:at+DAY*.5});
+  expect(upgraded.reviews[0]).toMatchObject(event);
+  expect(upgraded.settings.text_size).toBe('large');
+  expect(await repo.snapshot()).toEqual(upgraded);
  });
  it('V1备份迁移补默认设置；保留用户历史',async()=>{
   await repo.importWords([word]);const backup=await repo.backup();const v1={...backup,schema_version:1,settings:undefined};expect(parseBackup(v1).settings).toEqual(defaults);

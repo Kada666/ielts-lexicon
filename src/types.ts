@@ -17,14 +17,15 @@ export interface Word {
 export interface VocabularyFile { format: 'ielts-lexicon-vocabulary'; schema_version: 1; words: Word[] }
 export interface Progress {
   word_id: string; state: 'new' | 'learning' | 'review' | 'mastered'; due: number; interval: number;
-  streak: number; lapses: number; reviews: number; last_review: number | null; algorithm: 'simple-v1';
+  streak: number; lapses: number; reviews: number; last_review: number | null;
+  algorithm: 'simple-v1' | 'recall-v2'; stability_days?: number;
 }
 export type Grade = 'again' | 'hard' | 'good';
 export interface TimedAttempt { version: 'timed-v1'; result: 'correct' | 'incorrect' | 'timeout'; elapsed_ms: number }
 export interface ReviewEvent { id: string; word_id: string; at: number; grade: Grade; attempt?: TimedAttempt; initial_level?: Level }
 export interface Review extends ReviewEvent { before: Progress; after: Progress }
 export interface Override { word_id: string; meaning: string[]; example: string; example_zh: string; collocations: string[]; mnemonics: Mnemonic[]; updated_at: number }
-export interface Settings { phonetic: boolean; mnemonics: boolean; example: boolean; daily_limit: number }
+export interface Settings { phonetic: boolean; mnemonics: boolean; example: boolean; daily_limit: number; text_size?: 'standard' | 'large' | 'extra-large' }
 export interface Snapshot { words: Word[]; progress: Progress[]; reviews: Review[]; overrides: Override[]; settings: Settings }
 export interface Backup extends Snapshot { format: 'ielts-lexicon-backup'; schema_version: 2; exported_at: string }
 export const defaults: Settings = { phonetic: true, mnemonics: true, example: true, daily_limit: 20 };

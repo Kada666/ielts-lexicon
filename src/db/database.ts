@@ -1,6 +1,6 @@
 import { openDB, type DBSchema } from 'idb';
 import { defaults, type Backup, type Grade, type Override, type Progress, type Review, type ReviewEvent, type Settings, type Snapshot, type TimedAttempt, type Word } from '../types';
-import { freshProgress, schedule } from '../review/scheduler';
+import { ALGORITHM, freshProgress, replayReviews, schedule, upgradeProgress } from '../review/scheduler';
 import { mergeNotebookOverride, mergeWords, notebookChanges, parseBackup, parseSyncEvent, validateWords } from '../utils/validation';
 import edition from '../../edition.json';
 export const DATABASE_NAME = edition.database_name;
@@ -10,17 +10,53 @@ interface Schema extends DBSchema {
   meta: { key: string; value: Settings | string };
 }
 export function connect(name = DATABASE_NAME) {
-  return openDB<Schema>(name, 2, { upgrade(db, old) {
+  // Version 3 prevents older open clients from writing the previous scheduling rules.
+  return openDB<Schema>(name, 3, { upgrade(db, old) {
     if (old < 1) { db.createObjectStore('words', {keyPath:'id'}); db.createObjectStore('progress',{keyPath:'word_id'}); db.createObjectStore('reviews',{keyPath:'id'}); db.createObjectStore('meta'); }
     if (old < 2) db.createObjectStore('overrides',{keyPath:'word_id'});
   }, blocked() { if (typeof window !== 'undefined') window.dispatchEvent(new Event('lexicon-db-blocked')); }, blocking(_a,_b,event) { (event.target as IDBDatabase).close(); } });
 }
+
+function legacySchedules(words: Word[], progress: Progress[], reviews: Review[]) {
+  const legacy = new Map(progress.filter(p => p.algorithm !== ALGORITHM).map(p => [p.word_id, p]));
+  const history = new Map<string, Review[]>();
+  for (const review of reviews) {
+    if (!legacy.has(review.word_id)) continue;
+    const entries = history.get(review.word_id) ?? [];
+    entries.push(review);
+    history.set(review.word_id, entries);
+  }
+  return words.flatMap(word => {
+    const previous = legacy.get(word.id);
+    if (!previous) return [];
+    const events = history.get(word.id);
+    return [events?.length ? replayReviews(word, events) : { progress: upgradeProgress(previous), reviews: [] }];
+  });
+}
+
 export class Repository {
   constructor(public name = DATABASE_NAME) {}
   async snapshot(): Promise<Snapshot> {
     const db = await connect(this.name); const tx = db.transaction(['words','progress','reviews','overrides','meta'], 'readonly');
     const [words,progress,reviews,overrides,settings] = await Promise.all([tx.objectStore('words').getAll(),tx.objectStore('progress').getAll(),tx.objectStore('reviews').getAll(),tx.objectStore('overrides').getAll(),tx.objectStore('meta').get('settings')]);
-    await tx.done; db.close(); return {words,progress,reviews,overrides,settings: typeof settings === 'object' ? settings : {...defaults}};
+    await tx.done;
+    if (progress.some(p => p.algorithm !== ALGORITHM)) {
+      try {
+        const migration = db.transaction(['words','progress','reviews'], 'readwrite');
+        const wordStore = migration.objectStore('words');
+        const progressStore = migration.objectStore('progress');
+        const reviewStore = migration.objectStore('reviews');
+        const current = await Promise.all([wordStore.getAll(), progressStore.getAll(), reviewStore.getAll()] as const);
+        for (const change of legacySchedules(...current)) {
+          await progressStore.put(change.progress);
+          for (const review of change.reviews) await reviewStore.put(review);
+        }
+        await migration.done;
+      } finally { db.close(); }
+      return this.snapshot();
+    }
+    db.close();
+    return { words, progress, reviews, overrides, settings: { ...defaults, ...(typeof settings === 'object' ? settings : {}) } };
   }
   async importWords(words: Word[]) {
     validateWords(words); const db = await connect(this.name); const tx = db.transaction(['words','progress','overrides'], 'readwrite');
@@ -59,10 +95,30 @@ export class Repository {
     }
   }
   async grade(wordId: string, grade: Grade, now = Date.now(), attempt?: TimedAttempt) {
-    const db = await connect(this.name); const tx = db.transaction(['words','progress','reviews'],'readwrite');
-    const word = await tx.objectStore('words').get(wordId); if (!word) { tx.abort(); throw new Error('单词不存在，请刷新后重试'); }
-    const before = await tx.objectStore('progress').get(wordId) ?? freshProgress(word); const after = schedule(word,before,grade,now);
-    await tx.objectStore('reviews').put({id:crypto.randomUUID(),word_id:wordId,at:now,grade,before,after,initial_level:word.initial_level,...(attempt?{attempt}:{})}); await tx.objectStore('progress').put(after); await tx.done; db.close();
+    const db = await connect(this.name);
+    try {
+      const tx = db.transaction(['words','progress','reviews'], 'readwrite');
+      const word = await tx.objectStore('words').get(wordId);
+      if (!word) { await tx.done; throw new Error('单词不存在，请刷新后重试'); }
+      const progressStore = tx.objectStore('progress');
+      const reviewStore = tx.objectStore('reviews');
+      const before = await progressStore.get(wordId) ?? freshProgress(word);
+      const event = { id: crypto.randomUUID(), word_id: wordId, at: now, grade, initial_level: word.initial_level, ...(attempt ? { attempt } : {}) };
+      if (before.last_review !== null && (before.last_review >= now || before.algorithm !== ALGORITHM)) {
+        const history = (await reviewStore.getAll()).filter(review => review.word_id === wordId);
+        const replayed = replayReviews(word, [...history, event]);
+        if (history.length) {
+          for (const review of replayed.reviews) await reviewStore.put(review);
+          await progressStore.put(replayed.progress);
+          await tx.done;
+          return;
+        }
+      }
+      const after = schedule(word, before, grade, now, attempt);
+      await reviewStore.put({ ...event, before, after });
+      await progressStore.put(after);
+      await tx.done;
+    } finally { db.close(); }
   }
   async claimSyncOwner(owner: string) {
     const db=await connect(this.name);
@@ -107,13 +163,8 @@ export class Repository {
         for(const review of localReviews)additions.get(review.word_id)?.push(review);
         for(const [wordId,history] of additions){
           const word=words.get(wordId)!;
-          let progress=freshProgress(word);
-          history.sort((a,b)=>a.at-b.at||(a.id<b.id?-1:a.id>b.id?1:0));
-          for(const event of history){
-            const before=progress;
-            progress=schedule({...word,initial_level:event.initial_level??word.initial_level},before,event.grade,event.at);
-            await reviewStore.put({...event,before,after:progress});
-          }
+          const { progress, reviews } = replayReviews(word, history);
+          for (const review of reviews) await reviewStore.put(review);
           await tx.objectStore('progress').put(progress);
         }
       }

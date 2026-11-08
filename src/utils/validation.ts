@@ -97,10 +97,13 @@ export function parseVocabulary(value: unknown): VocabularyFile {
   const words = mergeWords([], validateWords(value.words)); return { format: 'ielts-lexicon-vocabulary', schema_version: 1, words };
 }
 function validateProgress(p: unknown, ids: Set<string>): asserts p is Progress {
-  assert(record(p) && ids.has(String(p.word_id)) && ['new','learning','review','mastered'].includes(String(p.state)) && p.algorithm === 'simple-v1', '复习状态或算法无效');
+  assert(record(p) && ids.has(String(p.word_id)) && ['new','learning','review','mastered'].includes(String(p.state)) && (p.algorithm === 'simple-v1' || p.algorithm === 'recall-v2'), '复习状态或算法无效');
   assert(['due','interval','streak','lapses','reviews'].every(k => finite(p[k])), '复习数值无效');
   assert(finite(p.lapses) && finite(p.reviews) && finite(p.streak) && ['streak','lapses','reviews'].every(k => Number.isInteger(p[k])) && p.lapses <= p.reviews && p.streak <= p.reviews, '复习计数无效');
   assert(p.last_review === null || finite(p.last_review), '复习时间无效');
+  if (p.algorithm === 'recall-v2') {
+    assert(finite(p.stability_days) && (p.reviews ? p.stability_days > 0 : p.stability_days === 0), '记忆稳定度无效');
+  }
 }
 function validReviewEvent(event: unknown): event is ReviewEvent {
   if (!record(event) || typeof event.id !== 'string' || !event.id || typeof event.word_id !== 'string' ||
@@ -139,6 +142,7 @@ export function parseBackup(input: unknown): Backup {
   rows.overrides.forEach(o => { assert(ids.has(o.word_id) && strings(o.meaning) && o.meaning.some(m=>m.trim()) && typeof o.example === 'string' && typeof o.example_zh === 'string' && strings(o.collocations) && finite(o.updated_at), '个人修改无效'); validateMnemonics(o.mnemonics); });
   const settings = b.settings;
   assert(record(settings) && ['phonetic','mnemonics','example'].every(k => typeof settings[k] === 'boolean') && Number.isInteger(settings.daily_limit) && Number(settings.daily_limit) >= 1 && Number(settings.daily_limit) <= 500, '设置无效');
+  assert(settings.text_size === undefined || ['standard','large','extra-large'].includes(String(settings.text_size)), '字号设置无效');
   assert(typeof input.exported_at === 'string' && Number.isFinite(Date.parse(input.exported_at)), '备份时间无效');
   return structuredClone(b) as unknown as Backup;
 }

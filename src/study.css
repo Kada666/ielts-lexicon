@@ -1,0 +1,97 @@
+.app-shell {
+  --ui-text: 16px;
+  --ui-small: 14px;
+  --ui-title: 32px;
+  --ui-caption: 12px;
+  --readable-muted: #586750;
+  font-size: var(--ui-text);
+}
+.app-shell[data-text-size="large"] { --ui-text: 18px; --ui-small: 16px; --ui-title: 35px; --ui-caption: 13px; }
+.app-shell[data-text-size="extra-large"] { --ui-text: 20px; --ui-small: 17px; --ui-title: 38px; --ui-caption: 14px; }
+.app-shell .primary, .app-shell .secondary,
+.app-shell input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+.app-shell select, .app-shell textarea { font-size: var(--ui-text); }
+.app-shell .primary, .app-shell .secondary, .app-shell select { min-height: 44px; }
+.app-shell .search-box input { font-size: var(--ui-text) !important; }
+.app-shell .sidebar nav button { font-size: var(--ui-text); }
+.app-shell .sidebar-label, .app-shell .sidebar-bottom, .app-shell .sidebar-bottom span,
+.app-shell .connection, .app-shell .topbar .breadcrumb, .app-shell .page-heading .eyebrow { font-size: var(--ui-caption); color: var(--readable-muted); }
+.app-shell .page-heading h1 { font-size: var(--ui-title); }
+.app-shell .page-heading p, .app-shell .review-start p,
+.app-shell .settings-panel > p, .app-shell .import-options p,
+.app-shell .editor-body label, .app-shell .setting-row strong,
+.app-shell .quiz-result, .app-shell .quiz-selected, .app-shell .rating-buttons span,
+.app-shell .mnemonic p, .app-shell .mnemonic h4 { font-size: var(--ui-text); }
+.app-shell .review-start h2, .app-shell .daily-heading h1 { font-size: var(--ui-title); }
+.app-shell .setting-row p, .app-shell .inline-label, .app-shell .study-top,
+.app-shell .card-navigation > span, .app-shell .study-exit, .app-shell .study-toggle,
+.app-shell .rating-buttons small, .app-shell .text-button, .app-shell .update-banner,
+.app-shell .table-summary, .app-shell .preview-table td, .app-shell .toast { font-size: var(--ui-small); }
+.app-shell .page-heading p, .app-shell .review-start p, .app-shell .setting-row p,
+.app-shell .import-options p, .app-shell .study-top, .app-shell .muted,
+.app-shell .quiz-question > p, .app-shell .card-navigation > span,
+.app-shell .mnemonic p, .app-shell .table-summary { color: var(--readable-muted); }
+.app-shell .fine-print { font-size: var(--ui-small) !important; color: var(--readable-muted) !important; }
+.app-shell .quiz-choices button { font-size: calc(var(--ui-text) + 2px); }
+.app-shell .answer-word h2 { font-size: calc(var(--ui-title) + 6px); }
+.app-shell .core-meaning p { font-size: calc(var(--ui-text) + 6px); }
+.app-shell .setting-row > div { min-width: 0; }
+.app-shell .setting-row select { max-width: 45%; }
+.app-shell .confirm-check, .app-shell .callout { font-size: var(--ui-small) !important; }
+
+.study-dashboard { display: grid; gap: 20px; max-width: 1040px; margin: 0 auto 22px; }
+.daily-panel, .forecast-panel { padding: clamp(17px, 3vw, 32px); }
+.daily-heading { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin-bottom: 22px; }
+.daily-heading h1 { color: #234d3c; line-height: 1.22; }
+.daily-heading p, .forecast-panel > p, .daily-complete { color: #586750; margin-top: 9px; line-height: 1.55; }
+.daily-heading .primary { flex-shrink: 0; }
+.daily-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.daily-metrics .metric { padding: 14px; }
+.daily-metrics .metric-label { font-size: var(--ui-small); color: #3c5646; gap: 5px; }
+.daily-metrics .metric-label svg { flex-shrink: 0; }
+.daily-metrics .metric strong { font-size: calc(var(--ui-title) + 3px); }
+.daily-metrics .metric strong small, .daily-metrics .metric p { font-size: var(--ui-caption); color: #586750; }
+.forecast-panel h2 { font-size: calc(var(--ui-text) + 7px); color: #234d3c; }
+.forecast-chart { display: flex; align-items: stretch; height: clamp(120px, 19vw, 205px); margin: 21px 0 12px; gap: 8px; }
+.forecast-axis { display: flex; flex-direction: column; align-items: end; justify-content: space-between; color: #586750; font-size: var(--ui-caption); }
+.forecast-chart svg { min-width: 0; width: 100%; overflow: visible; }
+.forecast-chart line { stroke: #d6e0d4; }
+.forecast-chart polygon { fill: #e3efdf; }
+.forecast-chart polyline { fill: none; stroke: #286349; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.forecast-time-axis { display: flex; justify-content: space-between; padding-left: 42px; margin: 0 0 14px; color: #586750; font-size: var(--ui-caption); }
+.forecast-values { margin: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; text-align: center; }
+.forecast-values dt { font-size: var(--ui-caption); color: #586750; }
+.forecast-values dd { margin: 3px 0 0; color: #234d3c; font-size: var(--ui-text); font-weight: 650; }
+.daily-review-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px; padding-bottom: 18px; border-bottom: 1px solid #dce4d8; }
+.daily-review-controls label { display: flex; align-items: center; gap: 8px; font-size: var(--ui-small); }
+
+.app-shell .vocabulary-reading-tools input {
+  appearance: none;
+  width: clamp(100px, 15vw, 150px);
+  height: 28px;
+  min-height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  cursor: pointer;
+  --slider-track: linear-gradient(to right, #235b49 var(--slider-fill), #dce4d9 var(--slider-fill));
+}
+.vocabulary-reading-tools input::-webkit-slider-runnable-track { height: 8px; border-radius: 8px; background: var(--slider-track); }
+.vocabulary-reading-tools input::-moz-range-track { height: 8px; border-radius: 8px; background: var(--slider-track); }
+.vocabulary-reading-tools input::-webkit-slider-thumb { appearance: none; width: 20px; height: 20px; margin-top: -6px; border-radius: 50%; background: #235b49; }
+.vocabulary-reading-tools input::-moz-range-thumb { width: 20px; height: 20px; border: 0; border-radius: 50%; background: #235b49; }
+
+@media (max-width: 760px) {
+  .app-shell .sidebar nav button { font-size: var(--ui-caption); padding-inline: 2px; }
+  .app-shell .sidebar nav button span { font-size: inherit; }
+}
+@media (max-width: 560px) {
+  .daily-heading { align-items: stretch; flex-direction: column; }
+  .daily-metrics { gap: 6px; }
+  .daily-metrics .metric { padding: 10px 7px; }
+  .daily-metrics .metric-label svg { display: none; }
+  .daily-metrics .metric strong { margin-block: 6px; }
+  .daily-metrics .metric strong small { margin-left: 2px; }
+  .daily-review-controls { align-items: stretch; flex-direction: column; }
+  .daily-review-controls label { flex-wrap: wrap; justify-content: center; }
+}

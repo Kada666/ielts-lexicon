@@ -38,7 +38,8 @@ export default function VocabularyRows({words,onEdit}:{words:Word[];onEdit:(word
    <div className="vocabulary-reading-tools">
     <span>悬停释义查看</span>
     <label>字号 <input type="range" aria-label="词库字号" min={minScale} max={maxScale} step={5} value={scale}
-     aria-valuetext={`${scale}%`} onChange={e=>changeScale(e.currentTarget.valueAsNumber)}/><span className="vocabulary-scale-value" aria-hidden="true">{scale}%</span></label>
+     style={{'--slider-fill':`${(scale-minScale)/(maxScale-minScale)*100}%`} as CSSProperties}
+     aria-valuetext={scale===maxScale?`${scale}%（最大）`:`${scale}%`} onChange={e=>changeScale(e.currentTarget.valueAsNumber)}/><span className="vocabulary-scale-value" aria-hidden="true">{scale}%</span></label>
    </div>
    {!!words.length&&<table aria-label="桌面词库">
     <thead><tr><th scope="col">单词</th><th scope="col">释义</th></tr></thead>

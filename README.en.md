@@ -34,7 +34,7 @@ It starts with a personal screening workflow for a 50-List IELTS vocabulary book
 - **Six memory-cue types:** etymology, morphology, onomatopoeia, phonetic association, free association and word families. Historical claims and creative associations have distinct labels and review states.
 - **Vocabulary preview:** desktop rows show words on the left and meanings on the right. Hover to reveal a meaning, adjust the reading size, or select a word to edit it.
 - **Basic spaced repetition:** shorter initial intervals for unfamiliar words, longer intervals after successful recall and shorter intervals after forgetting. V1 uses a simple tested scheduler, not FSRS.
-- **Study overview:** imported Lists, vocabulary size, mastery, reviews due, reviews completed, seven-day activity and difficult words.
+- **Daily review and forgetting curve:** start with due words at greatest risk of forgetting, then study a few new words. Timed quizzes and flashcards share a schedule based on answer outcomes, response time and the time between reviews. The dashboard shows today's progress and a seven-day recall forecast. Text size is adjustable in Study Settings.
 - **Portable data:** complete JSON backup and restore, incremental JSON import and CSV vocabulary export.
 - **Offline study:** after caching, reload, reveal cards, rate recall and save progress without a network connection.
 

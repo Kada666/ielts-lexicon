@@ -1,6 +1,28 @@
 import { expect, test, type Page } from '@playwright/test';
 import candidates from '../../data/vocabulary.pending.json' with { type: 'json' };
 async function seed(page:Page){await page.goto('/');await page.getByRole('button',{name:'核对并导入初始词库'}).click();await page.getByRole('combobox',{name:'导入范围'}).selectOption('initial');await expect(page.getByRole('button',{name:'确认导入 49 词'})).toBeDisabled();await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();await page.getByRole('button',{name:'确认导入 49 词'}).click();await expect(page.getByRole('status')).toContainText('已合并 49');}
+test('每日背诵优先重练刚到期的错词，首页更新曲线并记住全局字号', async ({page})=>{
+ await page.setViewportSize({width:390,height:844});
+ await page.clock.install();
+ await seed(page);
+ const overview=page.getByRole('button',{name:'学习概览',exact:true});
+ await overview.click();
+ await page.getByRole('button',{name:'开始今日背诵'}).click();
+ const quiz=page.getByRole('region',{name:'计时快测题目'});
+ const word=await quiz.getByRole('heading').innerText();
+ await page.clock.runFor(10010);
+ await expect(page.getByRole('button',{name:'下一题',exact:true})).toBeEnabled();
+ await overview.click();
+ await expect(page.getByRole('region',{name:'我的遗忘曲线'})).toContainText('已练过的 1 个词');
+ await page.clock.fastForward(11*60000);
+ await page.getByRole('button',{name:'开始今日背诵'}).click();
+ await expect(quiz.getByRole('heading')).toHaveText(word);
+ await page.getByRole('button',{name:'学习设置',exact:true}).click();
+ await page.getByRole('combobox',{name:'全局字号'}).selectOption('extra-large');
+ await expect(page.getByRole('combobox',{name:'全局字号'})).toHaveCSS('font-size','20px');
+ await page.reload();
+ await expect(page.getByRole('button',{name:'开始今日背诵'})).toHaveCSS('font-size','20px');
+});
 test('计时快测记录快速答对，失焦暂停，断网超时也能保存',async({page,context})=>{
  await page.setViewportSize({width:390,height:844});
  await page.clock.install();
@@ -55,6 +77,8 @@ test.describe('桌面词库速览',()=>{
   await slider.focus();
   await page.keyboard.press('End');
   await expect(slider).toHaveValue('160');
+  await expect(slider).toHaveAttribute('aria-valuetext','160%（最大）');
+  expect(await slider.evaluate(node=>getComputedStyle(node).getPropertyValue('--slider-fill').trim())).toBe('100%');
   await expect(reveal).toHaveCSS('font-size','32px');
   await page.reload();
   await page.getByRole('button',{name:'我的词库',exact:true}).click();
