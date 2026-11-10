@@ -1,0 +1,2078 @@
+{
+  "format": "ielts-lexicon-vocabulary",
+  "schema_version": 1,
+  "words": [
+    {
+      "id": "word_pinpoint",
+      "word": "pinpoint",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "pinpoint"
+        }
+      ],
+      "meaning": [
+        "精确定位",
+        "准确指出"
+      ],
+      "phonetic": "/ˈpɪnpɔɪnt/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "pinpoint the cause"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_pinpoint",
+          "type": "morphology",
+          "title": "用针点出准确的位置",
+          "content": "用针点出一个具体的点 → 精确指向某一点 → 精确定位、准确指出。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 2 页",
+          "segments": [
+            {
+              "part": "pin",
+              "meaning": "针"
+            },
+            {
+              "part": "point",
+              "meaning": "点；指向"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "详解第 2 页开头多写了一个 o；总表词形为 pinpoint。"
+    },
+    {
+      "id": "word_pulley",
+      "word": "pulley",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "pulley"
+        }
+      ],
+      "meaning": [
+        "滑轮"
+      ],
+      "phonetic": "/ˈpʊli/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a pulley system"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_pulley",
+          "type": "association",
+          "title": "沿着绳子看见滑轮",
+          "content": "想象工人拉绳，绳子绕过上方的轮子，把重物吊起来 → pulley，滑轮。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 2 页",
+          "cue": "推着省力"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_intern",
+      "word": "intern",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "intern"
+        }
+      ],
+      "meaning": [
+        "实习生",
+        "实习"
+      ],
+      "phonetic": "/ˈɪntɜːn/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a summer intern"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_intern",
+          "type": "association",
+          "title": "在中间的你",
+          "content": "想象你站在学校与正式工作之间，正在跟着同事学做事 → intern，实习生。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 2–3 页",
+          "cue": "在中间的你",
+          "related": [
+            {
+              "term": "internship",
+              "meaning": "实习、实习期；intern + -ship"
+            },
+            {
+              "term": "friendship",
+              "meaning": "友谊；friend + -ship"
+            },
+            {
+              "term": "leadership",
+              "meaning": "领导力；leader + -ship"
+            },
+            {
+              "term": "membership",
+              "meaning": "会员资格；member + -ship"
+            },
+            {
+              "term": "scholarship",
+              "meaning": "奖学金、学术成就；scholar + -ship"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_migratory",
+      "word": "migratory",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "migratory"
+        }
+      ],
+      "meaning": [
+        "迁徙的",
+        "迁移的"
+      ],
+      "phonetic": "/maɪˈɡreɪtəri/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "migratory birds"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_migratory",
+          "type": "morphology",
+          "title": "从移动想到迁徙",
+          "content": "想象鸟群随季节从一个地方移到另一个地方 → migratory，迁徙的。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 2 页",
+          "segments": [
+            {
+              "part": "migr-",
+              "meaning": "移动、迁移（move）"
+            },
+            {
+              "part": "-atory",
+              "meaning": "形容词后缀"
+            }
+          ],
+          "related": [
+            {
+              "term": "immigrant",
+              "meaning": "移民（名词）"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_inlet",
+      "word": "inlet",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "inlet"
+        }
+      ],
+      "meaning": [
+        "入口",
+        "进水口",
+        "小海湾"
+      ],
+      "phonetic": "/ˈɪnlet/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a water inlet"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_inlet",
+          "type": "association",
+          "title": "让它进来的口",
+          "content": "想象水从管道的一端流进来 → inlet，入口、进水口。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 2 页",
+          "cue": "让它进来"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_censor",
+      "word": "censor",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "censor"
+        }
+      ],
+      "meaning": [
+        "审查",
+        "删剪",
+        "审查员"
+      ],
+      "phonetic": "/ˈsensə/",
+      "part_of_speech": [
+        "verb",
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "censor a film"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_censor",
+          "type": "association",
+          "title": "从人口普查联想到审查",
+          "content": "先想象普查人员逐项核查资料，再把这个「检查」画面移到影片或出版物上 → censor，审查、审查员。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 2 页",
+          "related": [
+            {
+              "term": "census",
+              "meaning": "人口普查"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_shareholder",
+      "word": "shareholder",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "share holder"
+        }
+      ],
+      "meaning": [
+        "股东"
+      ],
+      "phonetic": "/ˈʃeəhəʊldə/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a major shareholder"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_shareholder",
+          "type": "morphology",
+          "title": "持有公司股份的人",
+          "content": "持有公司股份的人 → shareholder，股东。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 3 页",
+          "segments": [
+            {
+              "part": "share",
+              "meaning": "股份、份额"
+            },
+            {
+              "part": "holder",
+              "meaning": "持有者"
+            }
+          ],
+          "related": [
+            {
+              "term": "share",
+              "meaning": "股份、份额；分享、分配"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "总表有分写笔迹；详解第 3 页与标准拼写为 shareholder。"
+    },
+    {
+      "id": "word_explosive",
+      "word": "explosive",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "explosive"
+        }
+      ],
+      "meaning": [
+        "爆炸物",
+        "易爆的",
+        "爆炸性的"
+      ],
+      "phonetic": "/ɪkˈspləʊsɪv/",
+      "part_of_speech": [
+        "noun",
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "explosive growth"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_explosive",
+          "type": "morphology",
+          "title": "会爆炸的东西",
+          "content": "具有爆炸性质 → explosive 作形容词是「易爆的、爆炸性的」，作名词是「爆炸物」。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 3 页",
+          "segments": [
+            {
+              "part": "-ive",
+              "meaning": "具有……性质的"
+            }
+          ],
+          "related": [
+            {
+              "term": "explode",
+              "meaning": "爆炸"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_grope",
+      "word": "grope",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "grope"
+        }
+      ],
+      "meaning": [
+        "摸索",
+        "摸着找"
+      ],
+      "phonetic": "/ɡrəʊp/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "grope for the light switch"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_grope",
+          "type": "phonetic",
+          "title": "伸手摸索",
+          "content": "把口诀和手伸出去摸的动作连起来，再想象在昏暗的房间里伸手摸索开关 → grope，摸索。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 3 页",
+          "cue": "哥哥肉屁股",
+          "related": [
+            {
+              "term": "grip",
+              "meaning": "紧握"
+            },
+            {
+              "term": "grasp",
+              "meaning": "抓住；理解"
+            },
+            {
+              "term": "grab",
+              "meaning": "抓取；夺取"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_lever",
+      "word": "lever",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "lever"
+        }
+      ],
+      "meaning": [
+        "杠杆",
+        "操纵杆",
+        "撬动"
+      ],
+      "phonetic": "/ˈliːvə/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "pull a lever"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_lever",
+          "type": "association",
+          "title": "用字形画出杠杆",
+          "content": "把 l 想成一根杆，把 v 想成杆下的支点 → lever，杠杆。字母在这里用作图像提示。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 3 页",
+          "segments": [
+            {
+              "part": "l",
+              "meaning": "字形提示：长杆"
+            },
+            {
+              "part": "v",
+              "meaning": "字形提示：支点"
+            }
+          ],
+          "related": [
+            {
+              "term": "leverage",
+              "meaning": "杠杆作用；利用"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_truant",
+      "word": "truant",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "truant"
+        }
+      ],
+      "meaning": [
+        "逃学者",
+        "逃学的",
+        "逃学"
+      ],
+      "phonetic": "/ˈtruːənt/",
+      "part_of_speech": [
+        "noun",
+        "adjective",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "play truant"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_truant",
+          "type": "phonetic",
+          "title": "真正的蚂蚁逃学了",
+          "content": "用 true 和 ant 的声音联想到一只背着书包的蚂蚁离开学校 → truant，逃学者。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 4 页",
+          "cue": "真正的蚂蚁"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_latent",
+      "word": "latent",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "latent"
+        }
+      ],
+      "meaning": [
+        "潜在的",
+        "潜伏的"
+      ],
+      "phonetic": "/ˈleɪtənt/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "latent demand"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_latent",
+          "type": "phonetic",
+          "title": "后来到的蚂蚁先藏着",
+          "content": "把来晚的蚂蚁想成暂时躲着、还没出现的蚂蚁 → latent，潜在的、潜伏的。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 4 页",
+          "cue": "后来（到）的蚂蚁"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_psychiatric",
+      "word": "psychiatric",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "psychiatric"
+        }
+      ],
+      "meaning": [
+        "精神病学的",
+        "精神科的"
+      ],
+      "phonetic": "/ˌsaɪkiˈætrɪk/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "psychiatric care"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_psychiatric",
+          "type": "morphology",
+          "title": "和精神科有关",
+          "content": "先联想到精神与心理，再用 psychiatry 锁定精神病学这一专业 → psychiatric，精神科的、精神病学的。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 4 页",
+          "segments": [
+            {
+              "part": "psych-",
+              "meaning": "精神、心理"
+            },
+            {
+              "part": "-ic",
+              "meaning": "……的"
+            }
+          ],
+          "related": [
+            {
+              "term": "psychology",
+              "meaning": "心理学"
+            },
+            {
+              "term": "psychiatry",
+              "meaning": "精神病学"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_bolster",
+      "word": "bolster",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "bolster"
+        }
+      ],
+      "meaning": [
+        "支撑",
+        "加强",
+        "长靠垫"
+      ],
+      "phonetic": "/ˈbəʊlstə/",
+      "part_of_speech": [
+        "verb",
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "bolster confidence"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_bolster",
+          "type": "phonetic",
+          "title": "靠垫托住身体",
+          "content": "用口诀想起「支撑」，再想象沙发上的长靠垫撑住后背 → bolster，支撑、加强；作名词是长靠垫。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 4 页",
+          "cue": "到死都搏着"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_destiny",
+      "word": "destiny",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "destiny"
+        }
+      ],
+      "meaning": [
+        "命运",
+        "天命"
+      ],
+      "phonetic": "/ˈdestɪni/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "People should have the freedom to shape their own destiny.",
+      "example_zh": "人们应该拥有塑造自身命运的自由。",
+      "collocations": [
+        "shape your own destiny"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_destiny",
+          "type": "association",
+          "title": "旅程的终点与人生的走向",
+          "content": "destination 是旅程的终点，destiny 是人生的走向或命运。shape your own destiny 指塑造自己的命运。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 4 页",
+          "related": [
+            {
+              "term": "destination",
+              "meaning": "目的地、旅程的终点"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_former",
+      "word": "former",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "former"
+        }
+      ],
+      "meaning": [
+        "以前的",
+        "前任的",
+        "前者"
+      ],
+      "phonetic": "/ˈfɔːmə/",
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a former employee"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_former",
+          "type": "association",
+          "title": "在前面的是前者",
+          "content": "按笔记用 for 提醒自己「向前」，再联想到时间或顺序排在前面 → former，以前的、前任的；the former，前者。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 5 页",
+          "cue": "在前面的",
+          "related": [
+            {
+              "term": "the latter",
+              "meaning": "后者"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_sore",
+      "word": "sore",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "sore"
+        }
+      ],
+      "meaning": [
+        "疼痛的",
+        "酸痛的",
+        "痛处"
+      ],
+      "phonetic": "/sɔː/",
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a sore throat"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_sore",
+          "type": "phonetic",
+          "title": "疼死人了",
+          "content": "想象运动后肩膀酸痛，忍不住伸手揉按 → sore，疼痛的、酸痛的。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 5 页",
+          "cue": "疼死人了"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_virtually",
+      "word": "virtually",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "virtually"
+        }
+      ],
+      "meaning": [
+        "几乎",
+        "实际上",
+        "以虚拟方式"
+      ],
+      "phonetic": "/ˈvɜːtʃuəli/",
+      "part_of_speech": [
+        "adverb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "virtually impossible"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_virtually",
+          "type": "association",
+          "title": "按上下文区分「几乎」和「虚拟地」",
+          "content": "原笔记并列「几乎、实际上、虚拟地」。看到 virtually impossible 想「几乎不可能」，看到 meet virtually 想「线上见面」。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 5 页"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_privilege",
+      "word": "privilege",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "privilege"
+        }
+      ],
+      "meaning": [
+        "特权",
+        "荣幸",
+        "给予特权"
+      ],
+      "phonetic": "/ˈprɪvəlɪdʒ/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "have the privilege of"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_infrastructure",
+      "word": "infrastructure",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "infrastructure"
+        }
+      ],
+      "meaning": [
+        "基础设施"
+      ],
+      "phonetic": "/ˈɪnfrəstrʌktʃə/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "transport infrastructure"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_repaint",
+      "word": "repaint",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "repaint"
+        }
+      ],
+      "meaning": [
+        "重新刷漆",
+        "重新上色"
+      ],
+      "phonetic": "/ˌriːˈpeɪnt/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "repaint the walls"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_rear",
+      "word": "rear",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "rear"
+        }
+      ],
+      "meaning": [
+        "后部",
+        "后面的",
+        "抚养",
+        "饲养"
+      ],
+      "phonetic": "/rɪə/",
+      "part_of_speech": [
+        "noun",
+        "adjective",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "at the rear"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_alight",
+      "word": "alight",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "alight"
+        }
+      ],
+      "meaning": [
+        "下车",
+        "飞落",
+        "着火的"
+      ],
+      "phonetic": "/əˈlaɪt/",
+      "part_of_speech": [
+        "verb",
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "alight from the train"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "下车或飞落是动词用法；着火的是形容词用法。"
+    },
+    {
+      "id": "word_shrewd",
+      "word": "shrewd",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "shrewd"
+        }
+      ],
+      "meaning": [
+        "精明的",
+        "有判断力的"
+      ],
+      "phonetic": "/ʃruːd/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a shrewd decision"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_inherent",
+      "word": "inherent",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "inherent"
+        }
+      ],
+      "meaning": [
+        "固有的",
+        "内在的"
+      ],
+      "phonetic": "/ɪnˈhɪərənt/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "inherent risks"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_coherent",
+      "word": "coherent",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "coherent"
+        }
+      ],
+      "meaning": [
+        "连贯的",
+        "条理清晰的"
+      ],
+      "phonetic": "/kəʊˈhɪərənt/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a coherent argument"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_scandal",
+      "word": "scandal",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "scandal"
+        }
+      ],
+      "meaning": [
+        "丑闻",
+        "令人愤慨的事"
+      ],
+      "phonetic": "/ˈskændəl/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a political scandal"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_tenant",
+      "word": "tenant",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "tenant"
+        }
+      ],
+      "meaning": [
+        "租户",
+        "承租人"
+      ],
+      "phonetic": "/ˈtenənt/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a landlord and tenant"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_sequence",
+      "word": "sequence",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "sequence"
+        }
+      ],
+      "meaning": [
+        "顺序",
+        "一连串",
+        "按顺序排列"
+      ],
+      "phonetic": "/ˈsiːkwəns/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a sequence of events"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_ecosystem",
+      "word": "ecosystem",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "ecosystem"
+        }
+      ],
+      "meaning": [
+        "生态系统"
+      ],
+      "phonetic": "/ˈiːkəʊˌsɪstəm/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a marine ecosystem"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_concern",
+      "word": "concern",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "concern"
+        }
+      ],
+      "meaning": [
+        "担忧",
+        "关切",
+        "涉及",
+        "使担心"
+      ],
+      "phonetic": "/kənˈsɜːn/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "raise concerns about"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_evaporate",
+      "word": "evaporate",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "evaporate"
+        }
+      ],
+      "meaning": [
+        "蒸发",
+        "使蒸发",
+        "逐渐消失"
+      ],
+      "phonetic": "/ɪˈvæpəreɪt/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "water evaporates"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_decent",
+      "word": "decent",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "decent"
+        }
+      ],
+      "meaning": [
+        "像样的",
+        "体面的",
+        "正派的"
+      ],
+      "phonetic": "/ˈdiːsənt/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a decent wage"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_shade",
+      "word": "shade",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "shade"
+        }
+      ],
+      "meaning": [
+        "阴凉处",
+        "色调",
+        "给…遮阴"
+      ],
+      "phonetic": "/ʃeɪd/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "in the shade"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_comprise",
+      "word": "comprise",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "comprise"
+        }
+      ],
+      "meaning": [
+        "由…组成",
+        "构成"
+      ],
+      "phonetic": "/kəmˈpraɪz/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "comprise three sections"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_execution",
+      "word": "execution",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "execution"
+        }
+      ],
+      "meaning": [
+        "执行",
+        "实施",
+        "处决"
+      ],
+      "phonetic": "/ˌeksɪˈkjuːʃən/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "the execution of a plan"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_windscreen",
+      "word": "windscreen",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "练",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "wind screen"
+        }
+      ],
+      "meaning": [
+        "挡风玻璃"
+      ],
+      "phonetic": "/ˈwɪndskriːn/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a cracked windscreen"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_windscreen",
+          "type": "morphology",
+          "title": "挡住风的屏障",
+          "content": "挡住迎面风的玻璃屏障 → windscreen，挡风玻璃。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 5 页",
+          "segments": [
+            {
+              "part": "wind",
+              "meaning": "风"
+            },
+            {
+              "part": "screen",
+              "meaning": "屏障"
+            }
+          ],
+          "related": [
+            {
+              "term": "screen",
+              "meaning": "屏幕、屏障"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "保留总表写法以供核对；标准词形为 windscreen。"
+    },
+    {
+      "id": "word_alluvial",
+      "word": "alluvial",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "练",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "alluvial"
+        }
+      ],
+      "meaning": [
+        "冲积的"
+      ],
+      "phonetic": "/əˈluːviəl/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "Alluvial soils are often fertile and suitable for agriculture.",
+      "example_zh": "冲积土通常比较肥沃，适合农业生产。",
+      "collocations": [
+        "alluvial soil"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_alluvial",
+          "type": "phonetic",
+          "title": "河水把泥沙一路带来",
+          "content": "用口诀想起泥沙随水一路搬运；流速降低时，泥沙沉下来形成冲积层 → alluvial，冲积的。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 5 页",
+          "cue": "所有的都到路上了",
+          "related": [
+            {
+              "term": "alluvial soil",
+              "meaning": "冲积土"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_slum",
+      "word": "slum",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "练",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "slum"
+        }
+      ],
+      "meaning": [
+        "贫民窟",
+        "贫民区"
+      ],
+      "phonetic": "/slʌm/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "an urban slum"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_slum",
+          "type": "phonetic",
+          "title": "俯看密密相连的房屋",
+          "content": "跟着口诀想象两人牵着手穿过拥挤的窄巷，再从上空看密密相连的屋顶 → slum，贫民区。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 6 页",
+          "cue": "死死拉着妹妹"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_distill",
+      "word": "distill",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "练",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "distill"
+        }
+      ],
+      "meaning": [
+        "蒸馏",
+        "提取",
+        "提炼要点"
+      ],
+      "phonetic": "/dɪˈstɪl/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "distill seawater"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_distill",
+          "type": "phonetic",
+          "title": "蒸馏后留下提取物",
+          "content": "用口诀想象把混合液加热，再把蒸气冷凝收集 → distill，蒸馏、提取；也可指提炼要点。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 6 页",
+          "cue": "私底下仍然是这样",
+          "related": [
+            {
+              "term": "distil",
+              "meaning": "英式常见拼写"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "沿用原笔记拼写 distill；英式常见写法为 distil。"
+    },
+    {
+      "id": "word_medication",
+      "word": "medication",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "练",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "medication"
+        }
+      ],
+      "meaning": [
+        "药物",
+        "药物治疗"
+      ],
+      "phonetic": "/ˌmedɪˈkeɪʃən/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "take medication"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_medication",
+          "type": "morphology",
+          "title": "用药进行治疗",
+          "content": "用药治疗的过程，或治疗所用的药 → medication，药物、药物治疗。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 6 页",
+          "segments": [
+            {
+              "part": "medic-",
+              "meaning": "医疗、治疗"
+            },
+            {
+              "part": "-ation",
+              "meaning": "动作、过程、结果"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_radius",
+      "word": "radius",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "练",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "radius"
+        }
+      ],
+      "meaning": [
+        "半径",
+        "半径范围",
+        "桡骨"
+      ],
+      "phonetic": "/ˈreɪdiəs/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "within a five-kilometre radius"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_radius",
+          "type": "phonetic",
+          "title": "雷达的覆盖半径",
+          "content": "想象从雷达所在的中心到圆形覆盖区边缘画一条线 → radius，半径。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 6 页",
+          "cue": "我们的雷达",
+          "related": [
+            {
+              "term": "radiate",
+              "meaning": "辐射、发射"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_wean",
+      "word": "wean",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "练",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "wean"
+        }
+      ],
+      "meaning": [
+        "使断奶",
+        "使逐渐戒掉"
+      ],
+      "phonetic": "/wiːn/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "wean someone off something"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_wean",
+          "type": "phonetic",
+          "title": "小牛渐渐不再喝奶",
+          "content": "想象小牛逐渐减少喝奶、开始吃别的食物 → wean，使断奶。这个动作也可用来比喻逐渐摆脱依赖。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 6 页",
+          "cue": "喂给俺们（不行！）",
+          "related": [
+            {
+              "term": "wean off",
+              "meaning": "逐渐摆脱依赖"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_delta",
+      "word": "delta",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "练",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "delta"
+        }
+      ],
+      "meaning": [
+        "三角洲",
+        "希腊字母 Δ 或 δ"
+      ],
+      "phonetic": "/ˈdeltə/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a river delta"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_delta",
+          "type": "association",
+          "title": "从数学里的 Δ 想到三角洲",
+          "content": "先回忆数学公式里的希腊字母 Δ，再用它的三角形轮廓联想到河口的三角洲。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 6 页",
+          "cue": "Δx = x₁ − x₂",
+          "related": [
+            {
+              "term": "river delta",
+              "meaning": "河流三角洲"
+            },
+            {
+              "term": "alluvial soil",
+              "meaning": "冲积土"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_compliment",
+      "word": "compliment",
+      "list_ids": [
+        5
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 5,
+          "symbol": "练",
+          "source": "data/vocabulary_master.md#list-5",
+          "raw": "compliment"
+        }
+      ],
+      "meaning": [
+        "称赞",
+        "赞美的话"
+      ],
+      "phonetic": "/ˈkɒmplɪmənt/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "pay someone a compliment"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_compliment",
+          "type": "phonetic",
+          "title": "用 i 和 e 区分两个易混词",
+          "content": "用口诀想到称赞。compliment 里的 i 提醒你 I praise you（我赞美你）；complement 里的 e 提醒你 complete（使完整）。笔记里还用「都过来最后 peace 一下」联想 complete 的「完整的、彻底的」。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List5.pdf · 第 7 页",
+          "cue": "都趴在我面前说阿门",
+          "related": [
+            {
+              "term": "complement",
+              "meaning": "补充、使完善"
+            },
+            {
+              "term": "complete",
+              "meaning": "完整的、彻底的；完成"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    }
+  ]
+}

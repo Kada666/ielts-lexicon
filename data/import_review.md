@@ -49,6 +49,10 @@ List1.pdf 另有未对应总表卡片的独立旁注，留在这里供查阅。
 - 第 3 页。prosperous 用 super 联想繁荣，purpose 用 pose 的拼写联想目的。equal、equality、equity 围绕「平等」对照，equity 也表示公平或权益。
 - 第 4 页。dense 用楼房挤在一起的画面联想密集，density 表示密度。companion 用「一直陪着」联想同伴，rig 联想到操控或设备。counteract 用相反的行为联想抵消。intermediate 用「中间」联想中间的。commonwealth 用「共同富裕」联想共同体。
 
+## List 5 核对
+
+第 1 页是词表，包含 ○ 18 个、△ 18 个、「练」9 个，共 45 个词。第 2～7 页记录了 27 个词的详解和第 3 页的两组词缀例词，转录见 [List 5 文字笔记](notes/list_05.md)。用总表的 pinpoint 订正详解多写的 o；合写 shareholder 和 windscreen；保留原词形 distill。internship、complement 等关联词保留在联想里，统计按总表词条计。
+
 ## 确认方法
 
 - 仅核对图片：修改主表 Transcription 为 reviewed，或在应用预览中确认导入。

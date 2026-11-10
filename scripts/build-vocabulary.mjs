@@ -3,11 +3,14 @@ import { pathToFileURL } from 'node:url';
 const noteHeading = '## 手写记忆法\n';
 const mnemonicTypes = ['etymology','morphology','phonetic','onomatopoeia','association','word_family'];
 
+function notebookNotes(markdown) {
+  return markdown.replace(/\r\n/g, '\n').split(noteHeading)[1]?.split(/^## /m)[0].trim() ?? '';
+}
+
 function parseNotebooks(notebooks) {
   const notes = new Map();
   for (const {list, markdown} of notebooks) {
-    const section = markdown.replace(/\r\n/g, '\n').split(noteHeading)[1] ?? '';
-    for (const entry of section.trim().split(/^### /m).filter(Boolean)) {
+    for (const entry of notebookNotes(markdown).split(/^### /m).filter(Boolean)) {
       const [word, ...lines] = entry.trim().split('\n');
       const fields = new Map();
       for (const line of lines.filter(Boolean)) {
@@ -84,12 +87,15 @@ if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href) {
  const file=words=>JSON.stringify({format:'ielts-lexicon-vocabulary',schema_version:1,words},null,2)+'\n';
  await mkdir('data',{recursive:true}); await writeFile('data/vocabulary.json',file(result.words)); await writeFile('data/vocabulary.pending.json',file(result.pending));
  await writeFile('data/vocabulary.list_03_04.json',file([...result.words,...result.pending].filter(w=>w.list_ids.some(n=>n===3||n===4))));
+ await writeFile('data/vocabulary.list_05.json',file([...result.words,...result.pending].filter(w=>w.list_ids.includes(5))));
  for(const list of [...new Set([...result.words,...result.pending].flatMap(w=>w.list_ids))].sort((a,b)=>a-b)){
    const words=[...result.words,...result.pending].filter(w=>w.list_ids.includes(list));
    const lines=words.map(w=>{const origin=w.origins.find(o=>o.list===list);return `| ${w.word} | ${origin.raw} | ${origin.symbol} | ${w.meaning.join('；')} | ${w.notes} |`;});
    const unresolved=list===4?master.split('## 需人工辨认 / 分类')[1]?.split('## 词条补充资料')[0]?.trim():undefined;
-   const notes=notebooks.find(n=>n.list===list)?.markdown.replace(/\r\n/g,'\n').split(noteHeading)[1]?.trim();
-   await writeFile(`data/notes/list_${String(list).padStart(2,'0')}.md`,`# List ${list} 手写笔记文字版\n\n共 ${words.length} 词。○ 表示陌生，△ 表示模糊，练表示原笔记单列的练习组。语言内容仍需审核。\n\n| 单词候选 | 原始写法 | 原始标记 | 中文义候选 | 备注 |\n| --- | --- | --- | --- | --- |\n${lines.join('\n')}\n${unresolved?'\n## 辨认或分类待确认\n\n'+unresolved+'\n':''}${notes?'\n'+noteHeading+'\n'+notes+'\n':''}`);
+   const notebook=notebooks.find(n=>n.list===list)?.markdown ?? '';
+   const notes=notebookNotes(notebook);
+   const appendix=notebook.replace(/\r\n/g,'\n').match(/^## 补充词缀\n[\s\S]*$/m)?.[0].trim();
+   await writeFile(`data/notes/list_${String(list).padStart(2,'0')}.md`,`# List ${list} 手写笔记文字版\n\n共 ${words.length} 词。○ 表示陌生，△ 表示模糊，练表示原笔记单列的练习组。语言内容仍需审核。\n\n| 单词候选 | 原始写法 | 原始标记 | 中文义候选 | 备注 |\n| --- | --- | --- | --- | --- |\n${lines.join('\n')}\n${unresolved?'\n## 辨认或分类待确认\n\n'+unresolved+'\n':''}${notes?'\n'+noteHeading+'\n'+notes+'\n':''}${appendix?'\n'+appendix+'\n':''}`);
  }
  console.log(`词库构建：已审核 ${result.words.length}，待核对 ${result.pending.length}。${result.issues.join('；')}`);
 }

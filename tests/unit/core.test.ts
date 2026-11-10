@@ -9,7 +9,7 @@ import candidate from '../../data/vocabulary.pending.json';
 import { convertMarkdown } from '../../scripts/build-vocabulary.mjs';
 import { readFileSync } from 'node:fs';
 const words=parseVocabulary(candidate).words;
-const notebooks=[1,2,3,4].map(list=>({list,markdown:readFileSync(`data/notes/list_0${list}.md`,'utf8')}));
+const notebooks=[1,2,3,4,5].map(list=>({list,markdown:readFileSync(`data/notes/list_0${list}.md`,'utf8')}));
 const word=words.find(w=>w.word==='delve')!;
 const name='lexicon-unit'; const repo=new Repository(name);
 beforeEach(async()=>{await deleteDB(name);});
@@ -19,9 +19,9 @@ describe('图片转录与 Markdown',()=>{
   expect(initial).toHaveLength(49);expect(initial.filter(w=>w.initial_level==='unknown')).toHaveLength(29);expect(initial.filter(w=>w.initial_level==='uncertain')).toHaveLength(20);
   expect(words.filter(w=>w.list_ids.includes(3))).toHaveLength(43);expect(words.filter(w=>w.list_ids.includes(4))).toHaveLength(47);
   expect(words.find(w=>w.word==='pirate')?.origins[0]).toMatchObject({list:4,symbol:'○',raw:'pricate'});
-  expect(words.filter(w=>w.origins.some(o=>o.symbol==='练')).map(w=>w.word)).toEqual(['mastery','precision','gloss','outward','anthropologist','comb']);
+  expect(words.filter(w=>w.origins.some(o=>o.list===4&&o.symbol==='练')).map(w=>w.word)).toEqual(['mastery','precision','gloss','outward','anthropologist','comb']);
   expect(words.some(w=>w.word==='pricate')).toBe(false);
-  const notes=words.flatMap(w=>w.mnemonics.filter(m=>m.id.startsWith('pdf_note_')));
+  const notes=words.filter(w=>w.list_ids.some(list=>list<=4)).flatMap(w=>w.mnemonics.filter(m=>m.id.startsWith('pdf_note_')));
   expect(notes).toHaveLength(91);expect(notes.every(m=>m.source==='user'&&m.preferred&&/List[1-4]\.pdf/.test(m.reference??''))).toBe(true);
   expect(notes.every(m=>m.revision===2)).toBe(true);
   expect(words.every(w=>w.mnemonics.every(m=>m.status==='needs_review'))).toBe(true);
@@ -49,6 +49,19 @@ describe('图片转录与 Markdown',()=>{
   const supplement=parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_03_04.json','utf8')));
   expect(supplement.words).toEqual(additions);
   expect(additions.every(w=>w.content_status==='needs_review')).toBe(true);
+ });
+ it('List 5 按原表保留 18 个陌生词、18 个模糊词和 9 个练习词',()=>{
+  const list5=words.filter(w=>w.list_ids.includes(5));
+  expect(list5).toHaveLength(45);
+  expect(['○','△','练'].map(symbol=>list5.filter(w=>w.origins.some(o=>o.list===5&&o.symbol===symbol)).length)).toEqual([18,18,9]);
+  expect(list5.flatMap(w=>w.mnemonics)).toHaveLength(27);
+  expect(list5.find(w=>w.word==='compliment')?.mnemonics[0]).toMatchObject({
+   source:'user', reference:'手写笔记 List5.pdf · 第 7 页',
+   related:[{term:'complement',meaning:'补充、使完善'},{term:'complete',meaning:'完整的、彻底的；完成'}]
+  });
+  expect(list5.find(w=>w.word==='intern')?.mnemonics[0].related?.[0].term).toBe('internship');
+  expect(words.find(w=>w.word==='internship')?.list_ids).toEqual([3]);
+  expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_05.json','utf8'))).words).toEqual(list5);
  });
 });
 describe('复习调度',()=>{

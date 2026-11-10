@@ -43,7 +43,7 @@ IELTS Lexicon 是一个本地优先、支持离线使用的个人雅思词汇学
 
 在线地址为 **[IELTS Lexicon](https://kada666.github.io/ielts-lexicon/)**。统一公开仓库和看板链接；桌面入口可直接打开在线版，也可运行本地副本。
 
-1. 点击“核对并导入初始词库”，预览 List 1～4 共 **139 个候选词**。已有词库时，点首页“更新词库与笔记”增量合并。只补 List 3、4 时，可在“导入与备份”选择对应范围。
+1. 点击“核对并导入初始词库”，预览 List 1～5 共 **184 个候选词**。已有词库时，点首页“更新词库与笔记”增量合并，也可在“导入与备份”单独补充 List 5 或 List 3 + List 4。
 2. 查看 Markdown 文字笔记，核对拼写及 ○ / △ 后导入；可逐 List 核对更多候选。
 3. 开始复习：先回忆 → 翻开 → 查看词义与记忆线索 → 评分。
 4. 在词库中补充自己的记忆方法，并定期导出**完整 JSON 备份**。
@@ -70,7 +70,7 @@ npm run preview -- --port 4173 --strictPort
 
 ## 数据来源与持续扩充
 
-初始材料为用户提供的 List 1～4 手写筛查表，已转写为 [List 1](data/notes/list_01.md)、[List 2](data/notes/list_02.md)、[List 3](data/notes/list_03.md)、[List 4](data/notes/list_04.md) 四份 Markdown；公开仓库不含原始手写图片。未提供完整 List 总词数，因此不把个人导入占比称为“整本陌生词率”。
+词库来自手写筛查表，已转写为 [List 1](data/notes/list_01.md)、[List 2](data/notes/list_02.md)、[List 3](data/notes/list_03.md)、[List 4](data/notes/list_04.md) 和 [List 5](data/notes/list_05.md) 的 Markdown。表格统计的是个人筛查词。
 
 | List | ○ 陌生 | △ 模糊 | 练习 | 候选数 |
 | --- | ---: | ---: | ---: | ---: |
@@ -78,9 +78,10 @@ npm run preview -- --port 4173 --strictPort
 | 2 | 15 | 10 | 0 | 25 |
 | 3 | 28 | 15 | 0 | 43 |
 | 4 | 22 | 19 | 6 | 47 |
-| 合计 | 79 | 54 | 6 | 139 |
+| 5 | 18 | 18 | 9 | 45 |
+| 合计 | 97 | 72 | 15 | 184 |
 
-四份详解笔记整理为 **91 条手写记忆法**，按词块、口诀、记忆链和关联词展示。后续可直接修改 [各 List 的 Markdown](data/notes/)。List 3、4 另提供 [90 词导入文件](data/vocabulary.list_03_04.json)。[词表核对记录](data/import_review.md)
+五份详解笔记整理为 **118 条手写记忆法**，按词块、口诀、记忆链和关联词展示。另提供 [List 3 + List 4 的 90 词](data/vocabulary.list_03_04.json)和 [List 5 的 45 词](data/vocabulary.list_05.json)独立导入文件。[词表核对记录](data/import_review.md)
 
 未确认转录保存在 `vocabulary.pending.json`，在看板预览确认后写入本地词库。释义、音标、例句和记忆候选保留各自的审核状态。「练」在词库中单独显示，调度沿用模糊词的间隔。
 

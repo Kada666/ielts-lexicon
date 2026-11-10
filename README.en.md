@@ -42,7 +42,7 @@ It starts with a personal screening workflow for a 50-List IELTS vocabulary book
 
 Open **[IELTS Lexicon](https://kada666.github.io/ielts-lexicon/)**. There is one public repository and one shared app URL. The same code can also run locally.
 
-1. Open the initial-vocabulary review flow to preview **139 candidates from Lists 1 to 4**. With an existing collection, use **更新词库与笔记** on the dashboard to merge the missing words and notes. The import page also offers a Lists 3 + 4 supplement.
+1. Open the initial-vocabulary review flow to preview **184 candidates from Lists 1 to 5**. With an existing collection, use **更新词库与笔记** on the dashboard to merge missing words and notes, or select the List 5 or Lists 3 + 4 supplement on the import page.
 2. Compare the transcription with the Markdown notes, check spelling and classification, then confirm import. Additional Lists can be checked separately.
 3. Start a session: recall → reveal → read the meaning and cue → rate.
 4. Add personal memory cues and export complete backups regularly.
@@ -69,7 +69,7 @@ Open `http://127.0.0.1:4173/`. On Windows, `start-lexicon.cmd` builds and runs t
 
 ## Source data and expansion
 
-Initial materials are four user-supplied handwritten screening sheets, transcribed into four files under `data/notes/`; handwritten source images are excluded from the public repository. They are personal selections, not complete book Lists. Without full List totals, the app does not claim a book-wide unfamiliar-word rate.
+The five handwritten screening sheets are transcribed under `data/notes/`. The public repository contains the transcriptions. Counts reflect the words selected during screening.
 
 | List | ○ Unfamiliar | △ Uncertain | 练 Practice | Candidates |
 | --- | ---: | ---: | ---: | ---: |
@@ -77,9 +77,10 @@ Initial materials are four user-supplied handwritten screening sheets, transcrib
 | 2 | 15 | 10 | 0 | 25 |
 | 3 | 28 | 15 | 0 | 43 |
 | 4 | 22 | 19 | 6 | 47 |
-| Total | 79 | 54 | 6 | 139 |
+| 5 | 18 | 18 | 9 | 45 |
+| Total | 97 | 72 | 15 | 184 |
 
-The four detailed notebooks contribute **91 handwritten memory cues**, organized into word parts, hooks, recall steps and related words. Edit the [Markdown notebooks](data/notes/) to update them. A [dedicated import file](data/vocabulary.list_03_04.json) contains the 90 words in Lists 3 and 4. [Vocabulary audit](data/import_review.md)
+The five detailed notebooks contribute **118 handwritten memory cues**, organized into word parts, hooks, recall steps and related words. Edit the [Markdown notebooks](data/notes/) to update them. Separate import files cover [Lists 3 and 4 (90 words)](data/vocabulary.list_03_04.json) and [List 5 (45 words)](data/vocabulary.list_05.json). [Vocabulary audit](data/import_review.md)
 
 Transcriptions in `vocabulary.pending.json` enter the browser's collection after review and confirmation. Definitions, phonetics, examples and mnemonics retain their own review states. The practice group has its original mark and uses the uncertain-word schedule.
 

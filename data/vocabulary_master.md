@@ -148,6 +148,52 @@
 | 4 | anthropologist | uncertain | 练 | 人类学家 | 总表单列「练」组；详解第 7 页图表给出完整拼写 | needs_review | needs_review |
 | 4 | comb | uncertain | 练 | 梳子；梳理；仔细搜寻 | 总表单列「练」组 | needs_review | needs_review |
 
+| 5 | pinpoint | unknown | ○ | 精确定位；准确指出 | 详解第 2 页开头多写了一个 o；总表词形为 pinpoint。 | needs_review | needs_review |
+| 5 | pulley | unknown | ○ | 滑轮 |  | needs_review | needs_review |
+| 5 | intern | unknown | ○ | 实习生；实习 |  | needs_review | needs_review |
+| 5 | migratory | unknown | ○ | 迁徙的；迁移的 |  | needs_review | needs_review |
+| 5 | inlet | unknown | ○ | 入口；进水口；小海湾 |  | needs_review | needs_review |
+| 5 | censor | unknown | ○ | 审查；删剪；审查员 |  | needs_review | needs_review |
+| 5 | shareholder | unknown | ○ | 股东 | 总表有分写笔迹；详解第 3 页与标准拼写为 shareholder。 | needs_review | needs_review |
+| 5 | explosive | unknown | ○ | 爆炸物；易爆的；爆炸性的 |  | needs_review | needs_review |
+| 5 | grope | unknown | ○ | 摸索；摸着找 |  | needs_review | needs_review |
+| 5 | lever | unknown | ○ | 杠杆；操纵杆；撬动 |  | needs_review | needs_review |
+| 5 | truant | unknown | ○ | 逃学者；逃学的；逃学 |  | needs_review | needs_review |
+| 5 | latent | unknown | ○ | 潜在的；潜伏的 |  | needs_review | needs_review |
+| 5 | psychiatric | unknown | ○ | 精神病学的；精神科的 |  | needs_review | needs_review |
+| 5 | bolster | unknown | ○ | 支撑；加强；长靠垫 |  | needs_review | needs_review |
+| 5 | destiny | unknown | ○ | 命运；天命 |  | needs_review | needs_review |
+| 5 | former | unknown | ○ | 以前的；前任的；前者 |  | needs_review | needs_review |
+| 5 | sore | unknown | ○ | 疼痛的；酸痛的；痛处 |  | needs_review | needs_review |
+| 5 | virtually | unknown | ○ | 几乎；实际上；以虚拟方式 |  | needs_review | needs_review |
+| 5 | privilege | uncertain | △ | 特权；荣幸；给予特权 |  | needs_review | needs_review |
+| 5 | infrastructure | uncertain | △ | 基础设施 |  | needs_review | needs_review |
+| 5 | repaint | uncertain | △ | 重新刷漆；重新上色 |  | needs_review | needs_review |
+| 5 | rear | uncertain | △ | 后部；后面的；抚养；饲养 |  | needs_review | needs_review |
+| 5 | alight | uncertain | △ | 下车；飞落；着火的 | 下车或飞落是动词用法；着火的是形容词用法。 | needs_review | needs_review |
+| 5 | shrewd | uncertain | △ | 精明的；有判断力的 |  | needs_review | needs_review |
+| 5 | inherent | uncertain | △ | 固有的；内在的 |  | needs_review | needs_review |
+| 5 | coherent | uncertain | △ | 连贯的；条理清晰的 |  | needs_review | needs_review |
+| 5 | scandal | uncertain | △ | 丑闻；令人愤慨的事 |  | needs_review | needs_review |
+| 5 | tenant | uncertain | △ | 租户；承租人 |  | needs_review | needs_review |
+| 5 | sequence | uncertain | △ | 顺序；一连串；按顺序排列 |  | needs_review | needs_review |
+| 5 | ecosystem | uncertain | △ | 生态系统 |  | needs_review | needs_review |
+| 5 | concern | uncertain | △ | 担忧；关切；涉及；使担心 |  | needs_review | needs_review |
+| 5 | evaporate | uncertain | △ | 蒸发；使蒸发；逐渐消失 |  | needs_review | needs_review |
+| 5 | decent | uncertain | △ | 像样的；体面的；正派的 |  | needs_review | needs_review |
+| 5 | shade | uncertain | △ | 阴凉处；色调；给…遮阴 |  | needs_review | needs_review |
+| 5 | comprise | uncertain | △ | 由…组成；构成 |  | needs_review | needs_review |
+| 5 | execution | uncertain | △ | 执行；实施；处决 |  | needs_review | needs_review |
+| 5 | windscreen | uncertain | 练 | 挡风玻璃 | 保留总表写法以供核对；标准词形为 windscreen。 | needs_review | needs_review |
+| 5 | alluvial | uncertain | 练 | 冲积的 |  | needs_review | needs_review |
+| 5 | slum | uncertain | 练 | 贫民窟；贫民区 |  | needs_review | needs_review |
+| 5 | distill | uncertain | 练 | 蒸馏；提取；提炼要点 | 沿用原笔记拼写 distill；英式常见写法为 distil。 | needs_review | needs_review |
+| 5 | medication | uncertain | 练 | 药物；药物治疗 |  | needs_review | needs_review |
+| 5 | radius | uncertain | 练 | 半径；半径范围；桡骨 |  | needs_review | needs_review |
+| 5 | wean | uncertain | 练 | 使断奶；使逐渐戒掉 |  | needs_review | needs_review |
+| 5 | delta | uncertain | 练 | 三角洲；希腊字母 Δ 或 δ |  | needs_review | needs_review |
+| 5 | compliment | uncertain | 练 | 称赞；赞美的话 |  | needs_review | needs_review |
+
 ## 词条补充资料
 
 此处保存基础资料和生成候选。手写记忆法以 [data/notes](notes/) 下各 List 的 Markdown 为准，由构建脚本合并。真实词源需要可靠引用。编辑 word 前同步修改补充资料中的键；复习开始后不要随意改词形，否则会产生新 ID。
@@ -2641,6 +2687,522 @@
     "example": "The researchers combed through decades of records.",
     "example_zh": "研究人员仔细查阅了数十年的记录。",
     "mnemonics": []
+  },
+  {
+    "word": "pinpoint",
+    "raw": "pinpoint",
+    "phonetic": "/ˈpɪnpɔɪnt/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "pinpoint the cause"
+    ]
+  },
+  {
+    "word": "pulley",
+    "raw": "pulley",
+    "phonetic": "/ˈpʊli/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a pulley system"
+    ]
+  },
+  {
+    "word": "intern",
+    "raw": "intern",
+    "phonetic": "/ˈɪntɜːn/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "a summer intern"
+    ]
+  },
+  {
+    "word": "migratory",
+    "raw": "migratory",
+    "phonetic": "/maɪˈɡreɪtəri/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "migratory birds"
+    ]
+  },
+  {
+    "word": "inlet",
+    "raw": "inlet",
+    "phonetic": "/ˈɪnlet/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a water inlet"
+    ]
+  },
+  {
+    "word": "censor",
+    "raw": "censor",
+    "phonetic": "/ˈsensə/",
+    "part_of_speech": [
+      "verb",
+      "noun"
+    ],
+    "collocations": [
+      "censor a film"
+    ]
+  },
+  {
+    "word": "shareholder",
+    "raw": "share holder",
+    "phonetic": "/ˈʃeəhəʊldə/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a major shareholder"
+    ]
+  },
+  {
+    "word": "explosive",
+    "raw": "explosive",
+    "phonetic": "/ɪkˈspləʊsɪv/",
+    "part_of_speech": [
+      "noun",
+      "adjective"
+    ],
+    "collocations": [
+      "explosive growth"
+    ]
+  },
+  {
+    "word": "grope",
+    "raw": "grope",
+    "phonetic": "/ɡrəʊp/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "grope for the light switch"
+    ]
+  },
+  {
+    "word": "lever",
+    "raw": "lever",
+    "phonetic": "/ˈliːvə/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "pull a lever"
+    ]
+  },
+  {
+    "word": "truant",
+    "raw": "truant",
+    "phonetic": "/ˈtruːənt/",
+    "part_of_speech": [
+      "noun",
+      "adjective",
+      "verb"
+    ],
+    "collocations": [
+      "play truant"
+    ]
+  },
+  {
+    "word": "latent",
+    "raw": "latent",
+    "phonetic": "/ˈleɪtənt/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "latent demand"
+    ]
+  },
+  {
+    "word": "psychiatric",
+    "raw": "psychiatric",
+    "phonetic": "/ˌsaɪkiˈætrɪk/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "psychiatric care"
+    ]
+  },
+  {
+    "word": "bolster",
+    "raw": "bolster",
+    "phonetic": "/ˈbəʊlstə/",
+    "part_of_speech": [
+      "verb",
+      "noun"
+    ],
+    "collocations": [
+      "bolster confidence"
+    ]
+  },
+  {
+    "word": "destiny",
+    "raw": "destiny",
+    "phonetic": "/ˈdestɪni/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "shape your own destiny"
+    ],
+    "example": "People should have the freedom to shape their own destiny.",
+    "example_zh": "人们应该拥有塑造自身命运的自由。"
+  },
+  {
+    "word": "former",
+    "raw": "former",
+    "phonetic": "/ˈfɔːmə/",
+    "part_of_speech": [
+      "adjective",
+      "noun"
+    ],
+    "collocations": [
+      "a former employee"
+    ]
+  },
+  {
+    "word": "sore",
+    "raw": "sore",
+    "phonetic": "/sɔː/",
+    "part_of_speech": [
+      "adjective",
+      "noun"
+    ],
+    "collocations": [
+      "a sore throat"
+    ]
+  },
+  {
+    "word": "virtually",
+    "raw": "virtually",
+    "phonetic": "/ˈvɜːtʃuəli/",
+    "part_of_speech": [
+      "adverb"
+    ],
+    "collocations": [
+      "virtually impossible"
+    ]
+  },
+  {
+    "word": "privilege",
+    "raw": "privilege",
+    "phonetic": "/ˈprɪvəlɪdʒ/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "have the privilege of"
+    ]
+  },
+  {
+    "word": "infrastructure",
+    "raw": "infrastructure",
+    "phonetic": "/ˈɪnfrəstrʌktʃə/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "transport infrastructure"
+    ]
+  },
+  {
+    "word": "repaint",
+    "raw": "repaint",
+    "phonetic": "/ˌriːˈpeɪnt/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "repaint the walls"
+    ]
+  },
+  {
+    "word": "rear",
+    "raw": "rear",
+    "phonetic": "/rɪə/",
+    "part_of_speech": [
+      "noun",
+      "adjective",
+      "verb"
+    ],
+    "collocations": [
+      "at the rear"
+    ]
+  },
+  {
+    "word": "alight",
+    "raw": "alight",
+    "phonetic": "/əˈlaɪt/",
+    "part_of_speech": [
+      "verb",
+      "adjective"
+    ],
+    "collocations": [
+      "alight from the train"
+    ]
+  },
+  {
+    "word": "shrewd",
+    "raw": "shrewd",
+    "phonetic": "/ʃruːd/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "a shrewd decision"
+    ]
+  },
+  {
+    "word": "inherent",
+    "raw": "inherent",
+    "phonetic": "/ɪnˈhɪərənt/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "inherent risks"
+    ]
+  },
+  {
+    "word": "coherent",
+    "raw": "coherent",
+    "phonetic": "/kəʊˈhɪərənt/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "a coherent argument"
+    ]
+  },
+  {
+    "word": "scandal",
+    "raw": "scandal",
+    "phonetic": "/ˈskændəl/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a political scandal"
+    ]
+  },
+  {
+    "word": "tenant",
+    "raw": "tenant",
+    "phonetic": "/ˈtenənt/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a landlord and tenant"
+    ]
+  },
+  {
+    "word": "sequence",
+    "raw": "sequence",
+    "phonetic": "/ˈsiːkwəns/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "a sequence of events"
+    ]
+  },
+  {
+    "word": "ecosystem",
+    "raw": "ecosystem",
+    "phonetic": "/ˈiːkəʊˌsɪstəm/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a marine ecosystem"
+    ]
+  },
+  {
+    "word": "concern",
+    "raw": "concern",
+    "phonetic": "/kənˈsɜːn/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "raise concerns about"
+    ]
+  },
+  {
+    "word": "evaporate",
+    "raw": "evaporate",
+    "phonetic": "/ɪˈvæpəreɪt/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "water evaporates"
+    ]
+  },
+  {
+    "word": "decent",
+    "raw": "decent",
+    "phonetic": "/ˈdiːsənt/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "a decent wage"
+    ]
+  },
+  {
+    "word": "shade",
+    "raw": "shade",
+    "phonetic": "/ʃeɪd/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "in the shade"
+    ]
+  },
+  {
+    "word": "comprise",
+    "raw": "comprise",
+    "phonetic": "/kəmˈpraɪz/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "comprise three sections"
+    ]
+  },
+  {
+    "word": "execution",
+    "raw": "execution",
+    "phonetic": "/ˌeksɪˈkjuːʃən/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "the execution of a plan"
+    ]
+  },
+  {
+    "word": "windscreen",
+    "raw": "wind screen",
+    "phonetic": "/ˈwɪndskriːn/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a cracked windscreen"
+    ]
+  },
+  {
+    "word": "alluvial",
+    "raw": "alluvial",
+    "phonetic": "/əˈluːviəl/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "alluvial soil"
+    ],
+    "example": "Alluvial soils are often fertile and suitable for agriculture.",
+    "example_zh": "冲积土通常比较肥沃，适合农业生产。"
+  },
+  {
+    "word": "slum",
+    "raw": "slum",
+    "phonetic": "/slʌm/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "an urban slum"
+    ]
+  },
+  {
+    "word": "distill",
+    "raw": "distill",
+    "phonetic": "/dɪˈstɪl/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "distill seawater"
+    ]
+  },
+  {
+    "word": "medication",
+    "raw": "medication",
+    "phonetic": "/ˌmedɪˈkeɪʃən/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "take medication"
+    ]
+  },
+  {
+    "word": "radius",
+    "raw": "radius",
+    "phonetic": "/ˈreɪdiəs/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "within a five-kilometre radius"
+    ]
+  },
+  {
+    "word": "wean",
+    "raw": "wean",
+    "phonetic": "/wiːn/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "wean someone off something"
+    ]
+  },
+  {
+    "word": "delta",
+    "raw": "delta",
+    "phonetic": "/ˈdeltə/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a river delta"
+    ]
+  },
+  {
+    "word": "compliment",
+    "raw": "compliment",
+    "phonetic": "/ˈkɒmplɪmənt/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "pay someone a compliment"
+    ]
   }
 ]
 ```
