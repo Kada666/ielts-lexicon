@@ -95,7 +95,7 @@ if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href) {
    const notebook=notebooks.find(n=>n.list===list)?.markdown ?? '';
    const notes=notebookNotes(notebook);
    const appendix=notebook.replace(/\r\n/g,'\n').match(/^## 补充词缀\n[\s\S]*$/m)?.[0].trim();
-   await writeFile(`data/notes/list_${String(list).padStart(2,'0')}.md`,`# List ${list} 手写笔记文字版\n\n共 ${words.length} 词。○ 表示陌生，△ 表示模糊，练表示原笔记单列的练习组。语言内容仍需审核。\n\n| 单词候选 | 原始写法 | 原始标记 | 中文义候选 | 备注 |\n| --- | --- | --- | --- | --- |\n${lines.join('\n')}\n${unresolved?'\n## 辨认或分类待确认\n\n'+unresolved+'\n':''}${notes?'\n'+noteHeading+'\n'+notes+'\n':''}${appendix?'\n'+appendix+'\n':''}`);
+   await writeFile(`data/notes/list_${String(list).padStart(2,'0')}.md`,`# List ${list} 手写笔记文字版\n\n共 ${words.length} 词。○ 表示陌生，△ 表示模糊。语言内容仍需审核。\n\n| 单词候选 | 原始写法 | 原始标记 | 中文义候选 | 备注 |\n| --- | --- | --- | --- | --- |\n${lines.join('\n')}\n${unresolved?'\n## 辨认或分类待确认\n\n'+unresolved+'\n':''}${notes?'\n'+noteHeading+'\n'+notes+'\n':''}${appendix?'\n'+appendix+'\n':''}`);
  }
  console.log(`词库构建：已审核 ${result.words.length}，待核对 ${result.pending.length}。${result.issues.join('；')}`);
 }

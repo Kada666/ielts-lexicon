@@ -138,8 +138,8 @@ test('已有49词后补充List3/4的90词，保留原评分并能按List复习�
  await page.getByRole('button',{name:'补充 List 3 + List 4',exact:true}).click();await expect(page.getByRole('button',{name:'确认导入 90 词'})).toBeDisabled();await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();await page.getByRole('button',{name:'确认导入 90 词'}).click();await expect(page.getByRole('status')).toContainText('已合并 90');
  const afterDownload=page.waitForEvent('download');await page.getByRole('button',{name:'完整 JSON 备份'}).click();const after=JSON.parse(await fs.readFile((await (await afterDownload).path())!,'utf8'));expect(after.words).toHaveLength(139);expect(after.reviews).toEqual(before.reviews);expect(after.progress.filter((p:{word_id:string})=>before.progress.some((old:{word_id:string})=>old.word_id===p.word_id))).toEqual(before.progress);
  await page.getByRole('button',{name:'我的词库',exact:true}).click();await page.getByRole('combobox',{name:'按 List 筛选'}).selectOption('3');await expect(page.getByText('找到 43 个词汇',{exact:true})).toBeVisible();await page.getByRole('combobox',{name:'按 List 筛选'}).selectOption('4');await expect(page.getByText('找到 47 个词汇',{exact:true})).toBeVisible();
- await page.getByRole('combobox',{name:'按初始分类筛选'}).selectOption('练');await expect(page.getByText('找到 6 个词汇',{exact:true})).toBeVisible();
- await page.getByRole('button',{name:'闪卡复习',exact:true}).click();await page.getByRole('button',{name:'结束本轮'}).click();await page.getByRole('button',{name:'开始复习',exact:true}).click();await page.getByRole('button',{name:'查看答案',exact:true}).click();await expect(page.locator('.answer-word h2')).toHaveText('astrology');await expect(page.locator('.core-meaning')).toContainText('占星术');await expect(page.getByRole('button',{name:'播放 astrology 英式发音'})).toBeVisible();await expect(page.getByLabel('联想记忆')).toContainText('List4.pdf · 第 5 页');
+ await page.getByRole('combobox',{name:'按初始分类筛选'}).selectOption('○');await expect(page.getByText('找到 28 个词汇',{exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'闪卡复习',exact:true}).click();await page.getByRole('button',{name:'结束本轮'}).click();await page.getByRole('button',{name:'开始复习',exact:true}).click();await expect(page.locator('.answer-word h2')).toHaveText('anthropologist');await page.getByRole('button',{name:'下一个单词'}).click();await page.getByRole('button',{name:'查看答案',exact:true}).click();await expect(page.locator('.answer-word h2')).toHaveText('astrology');await expect(page.locator('.core-meaning')).toContainText('占星术');await expect(page.getByRole('button',{name:'播放 astrology 英式发音'})).toBeVisible();await expect(page.getByLabel('联想记忆')).toContainText('List4.pdf · 第 5 页');
 });
 test('已有词库在首页增量更新，翻卡可看手写笔记',async({page})=>{
  const newlyAdded=new Set(['pirate','mastery','precision','gloss','outward','anthropologist','comb']);
@@ -184,13 +184,13 @@ test('List 5 可单独导入，原有复习记录和手写联想保留', async (
  await page.getByRole('button',{name:'我的词库',exact:true}).click();
  await page.getByRole('combobox',{name:'按 List 筛选'}).selectOption('5');
  await expect(page.getByText('找到 45 个词汇',{exact:true})).toBeVisible();
- await page.getByRole('combobox',{name:'按初始分类筛选'}).selectOption('练');
- await expect(page.getByText('找到 9 个词汇',{exact:true})).toBeVisible();
+ await page.getByRole('combobox',{name:'按初始分类筛选'}).selectOption('○');
+ await expect(page.getByText('找到 27 个词汇',{exact:true})).toBeVisible();
  await page.getByRole('button',{name:'闪卡复习',exact:true}).click();
  await page.getByRole('button',{name:'开始复习',exact:true}).click();
  await page.getByRole('button',{name:'查看答案',exact:true}).click();
- await expect(page.locator('.answer-word h2')).toHaveText('bolster');
- await expect(page.getByLabel('联想记忆')).toContainText('到死都搏着');
+ await expect(page.locator('.answer-word h2')).toHaveText('alluvial');
+ await expect(page.getByLabel('联想记忆')).toContainText('所有的都到路上了');
 });
 test('已导入的 List 4 卡片显示修订后的蓝笔词块和趣味口诀',async({page})=>{
  await page.setViewportSize({width:390,height:844});

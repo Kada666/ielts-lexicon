@@ -1,6 +1,6 @@
 # 《词汇整理.pdf》核对记录
 
-以《词汇整理.pdf》第 2～5 页为准，逐项对照旧词库与四份详解。原有 132 词都能在总表找到。补入 7 词后共 139 词，含 ○ 79 词、△ 54 词、「练」6 词。每个单词及原始分组见 [主词库](vocabulary_master.md)。
+以《词汇整理.pdf》第 2～5 页为准，逐项对照旧词库与四份详解。原有 132 词都能在总表找到。补入 7 词后共 139 词，含 ○ 85 词、△ 54 词。每个单词及原始分组见 [主词库](vocabulary_master.md)。
 
 ## List 1：24 词
 
@@ -34,7 +34,7 @@
 
 新增 `pirate`。总表的笔形似 `pricate`，List4.pdf 第 6 页明确写作 `pirate`，并用 `private` 联想海盗、盗版和盗用。
 
-「练」（6）：mastery, precision, gloss, outward, anthropologist, comb。保留独立标记，调度沿用 △ 的间隔。
+○ 续列（6）：mastery, precision, gloss, outward, anthropologist, comb。原稿标注「续」。
 
 fauna 的 n 笔形请核对。judgement 旁“jud 词根有模糊的点”保存在备注，未擅自加上词源解释。consequence / consequently / subsequent 的括号视为比较记忆线索，没有把它们当作一个词条。
 
@@ -51,7 +51,7 @@ List1.pdf 另有未对应总表卡片的独立旁注，留在这里供查阅。
 
 ## List 5 核对
 
-第 1 页是词表，包含 ○ 18 个、△ 18 个、「练」9 个，共 45 个词。第 2～7 页记录了 27 个词的详解和第 3 页的两组词缀例词，转录见 [List 5 文字笔记](notes/list_05.md)。用总表的 pinpoint 订正详解多写的 o；合写 shareholder 和 windscreen；保留原词形 distill。internship、complement 等关联词保留在联想里，统计按总表词条计。
+第 1 页是词表，包含 ○ 27 个（含「续」的 9 个词）、△ 18 个，共 45 个词。第 2～7 页记录了 27 个词的详解和第 3 页的两组词缀例词，转录见 [List 5 文字笔记](notes/list_05.md)。用总表的 pinpoint 订正详解多写的 o；合写 shareholder 和 windscreen；保留原词形 distill。internship、complement 等关联词保留在联想里，统计按总表词条计。
 
 ## 确认方法
 

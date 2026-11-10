@@ -1,6 +1,6 @@
 # List 4 手写笔记文字版
 
-共 47 词。○ 表示陌生，△ 表示模糊，练表示原笔记单列的练习组。语言内容仍需审核。
+共 47 词。○ 表示陌生，△ 表示模糊。语言内容仍需审核。
 
 | 单词候选 | 原始写法 | 原始标记 | 中文义候选 | 备注 |
 | --- | --- | --- | --- | --- |
@@ -45,12 +45,12 @@
 | consequently | consequently | △ | 因此；结果 |  |
 | subsequent | subsequent | △ | 随后的；后来的 |  |
 | pirate | pricate | ○ | 海盗；盗版；盗用 | 总表原笔形似 pricate；List 4 详解第 6 页明确写作 pirate |
-| mastery | mastery | 练 | 精通；熟练掌握；控制 | 总表单列「练」组 |
-| precision | precision | 练 | 精确；精准 | 总表单列「练」组 |
-| gloss | gloss | 练 | 光泽；光亮表层；注释 | 总表单列「练」组 |
-| outward | outward | 练 | 向外的；外表的；向外 | 总表单列「练」组 |
-| anthropologist | anthropologist | 练 | 人类学家 | 总表单列「练」组；详解第 7 页图表给出完整拼写 |
-| comb | comb | 练 | 梳子；梳理；仔细搜寻 | 总表单列「练」组 |
+| mastery | mastery | ○ | 精通；熟练掌握；控制 | 原稿「续」为 ○ 栏续列。 |
+| precision | precision | ○ | 精确；精准 | 原稿「续」为 ○ 栏续列。 |
+| gloss | gloss | ○ | 光泽；光亮表层；注释 | 原稿「续」为 ○ 栏续列。 |
+| outward | outward | ○ | 向外的；外表的；向外 | 原稿「续」为 ○ 栏续列。 |
+| anthropologist | anthropologist | ○ | 人类学家 | 原稿「续」为 ○ 栏续列。详解第 7 页图表给出完整拼写 |
+| comb | comb | ○ | 梳子；梳理；仔细搜寻 | 原稿「续」为 ○ 栏续列。 |
 
 ## 手写记忆法
 

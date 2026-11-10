@@ -1,4 +1,5 @@
 import { defaults, type Backup, type Mnemonic, type Override, type Progress, type ReviewEvent, type Snapshot, type VocabularyFile, type Word } from '../types';
+import { correctContinuationOrigins } from './originCorrections';
 export const normalize = (word: string) => word.trim().toLowerCase().normalize('NFKC').replace(/\s+/g, ' ');
 export const stableId = (word: string) => 'word_' + normalize(word).replace(/ /g, '_');
 function assert(ok: unknown, message: string): asserts ok { if (!ok) throw new Error(message); }
@@ -72,8 +73,9 @@ export function mergeNotebookOverride(override: Override, previous: Word, notes:
   return {...override, mnemonics};
 }
 export function mergeWords(existing: Word[], incoming: Word[]) {
-  const map = new Map(existing.map(w => [w.id, structuredClone(w)]));
-  for (const source of incoming) {
+  const map = new Map(existing.map(w => [w.id, structuredClone(correctContinuationOrigins(w))]));
+  for (const item of incoming) {
+    const source = correctContinuationOrigins(item);
     const old = map.get(source.id);
     if (!old) { map.set(source.id, structuredClone(source)); continue; }
     const origins = [...old.origins];

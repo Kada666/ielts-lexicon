@@ -6547,11 +6547,11 @@
       "list_ids": [
         4
       ],
-      "initial_level": "uncertain",
+      "initial_level": "unknown",
       "origins": [
         {
           "list": 4,
-          "symbol": "练",
+          "symbol": "○",
           "source": "data/vocabulary_master.md#list-4",
           "raw": "mastery"
         }
@@ -6591,7 +6591,7 @@
       ],
       "content_status": "needs_review",
       "transcription_status": "needs_review",
-      "notes": "总表单列「练」组"
+      "notes": "原稿「续」为 ○ 栏续列。"
     },
     {
       "id": "word_precision",
@@ -6599,11 +6599,11 @@
       "list_ids": [
         4
       ],
-      "initial_level": "uncertain",
+      "initial_level": "unknown",
       "origins": [
         {
           "list": 4,
-          "symbol": "练",
+          "symbol": "○",
           "source": "data/vocabulary_master.md#list-4",
           "raw": "precision"
         }
@@ -6644,7 +6644,7 @@
       ],
       "content_status": "needs_review",
       "transcription_status": "needs_review",
-      "notes": "总表单列「练」组"
+      "notes": "原稿「续」为 ○ 栏续列。"
     },
     {
       "id": "word_gloss",
@@ -6652,11 +6652,11 @@
       "list_ids": [
         4
       ],
-      "initial_level": "uncertain",
+      "initial_level": "unknown",
       "origins": [
         {
           "list": 4,
-          "symbol": "练",
+          "symbol": "○",
           "source": "data/vocabulary_master.md#list-4",
           "raw": "gloss"
         }
@@ -6692,7 +6692,7 @@
       ],
       "content_status": "needs_review",
       "transcription_status": "needs_review",
-      "notes": "总表单列「练」组"
+      "notes": "原稿「续」为 ○ 栏续列。"
     },
     {
       "id": "word_outward",
@@ -6700,11 +6700,11 @@
       "list_ids": [
         4
       ],
-      "initial_level": "uncertain",
+      "initial_level": "unknown",
       "origins": [
         {
           "list": 4,
-          "symbol": "练",
+          "symbol": "○",
           "source": "data/vocabulary_master.md#list-4",
           "raw": "outward"
         }
@@ -6750,7 +6750,7 @@
       ],
       "content_status": "needs_review",
       "transcription_status": "needs_review",
-      "notes": "总表单列「练」组"
+      "notes": "原稿「续」为 ○ 栏续列。"
     },
     {
       "id": "word_anthropologist",
@@ -6758,11 +6758,11 @@
       "list_ids": [
         4
       ],
-      "initial_level": "uncertain",
+      "initial_level": "unknown",
       "origins": [
         {
           "list": 4,
-          "symbol": "练",
+          "symbol": "○",
           "source": "data/vocabulary_master.md#list-4",
           "raw": "anthropologist"
         }
@@ -6818,7 +6818,7 @@
       ],
       "content_status": "needs_review",
       "transcription_status": "needs_review",
-      "notes": "总表单列「练」组；详解第 7 页图表给出完整拼写"
+      "notes": "原稿「续」为 ○ 栏续列。详解第 7 页图表给出完整拼写"
     },
     {
       "id": "word_comb",
@@ -6826,11 +6826,11 @@
       "list_ids": [
         4
       ],
-      "initial_level": "uncertain",
+      "initial_level": "unknown",
       "origins": [
         {
           "list": 4,
-          "symbol": "练",
+          "symbol": "○",
           "source": "data/vocabulary_master.md#list-4",
           "raw": "comb"
         }
@@ -6866,7 +6866,7 @@
       ],
       "content_status": "needs_review",
       "transcription_status": "needs_review",
-      "notes": "总表单列「练」组"
+      "notes": "原稿「续」为 ○ 栏续列。"
     },
     {
       "id": "word_pinpoint",
@@ -8463,11 +8463,11 @@
       "list_ids": [
         5
       ],
-      "initial_level": "uncertain",
+      "initial_level": "unknown",
       "origins": [
         {
           "list": 5,
-          "symbol": "练",
+          "symbol": "○",
           "source": "data/vocabulary_master.md#list-5",
           "raw": "wind screen"
         }
@@ -8515,7 +8515,7 @@
       ],
       "content_status": "needs_review",
       "transcription_status": "needs_review",
-      "notes": "保留总表写法以供核对；标准词形为 windscreen。"
+      "notes": "原稿「续」为 ○ 栏续列。保留总表写法以供核对；标准词形为 windscreen。"
     },
     {
       "id": "word_alluvial",
@@ -8523,11 +8523,11 @@
       "list_ids": [
         5
       ],
-      "initial_level": "uncertain",
+      "initial_level": "unknown",
       "origins": [
         {
           "list": 5,
-          "symbol": "练",
+          "symbol": "○",
           "source": "data/vocabulary_master.md#list-5",
           "raw": "alluvial"
         }
@@ -8566,7 +8566,7 @@
       ],
       "content_status": "needs_review",
       "transcription_status": "needs_review",
-      "notes": ""
+      "notes": "原稿「续」为 ○ 栏续列。"
     },
     {
       "id": "word_slum",
@@ -8574,11 +8574,11 @@
       "list_ids": [
         5
       ],
-      "initial_level": "uncertain",
+      "initial_level": "unknown",
       "origins": [
         {
           "list": 5,
-          "symbol": "练",
+          "symbol": "○",
           "source": "data/vocabulary_master.md#list-5",
           "raw": "slum"
         }
@@ -8612,7 +8612,7 @@
       ],
       "content_status": "needs_review",
       "transcription_status": "needs_review",
-      "notes": ""
+      "notes": "原稿「续」为 ○ 栏续列。"
     },
     {
       "id": "word_distill",
@@ -8620,11 +8620,11 @@
       "list_ids": [
         5
       ],
-      "initial_level": "uncertain",
+      "initial_level": "unknown",
       "origins": [
         {
           "list": 5,
-          "symbol": "练",
+          "symbol": "○",
           "source": "data/vocabulary_master.md#list-5",
           "raw": "distill"
         }
@@ -8665,7 +8665,7 @@
       ],
       "content_status": "needs_review",
       "transcription_status": "needs_review",
-      "notes": "沿用原笔记拼写 distill；英式常见写法为 distil。"
+      "notes": "原稿「续」为 ○ 栏续列。沿用原笔记拼写 distill；英式常见写法为 distil。"
     },
     {
       "id": "word_medication",
@@ -8673,11 +8673,11 @@
       "list_ids": [
         5
       ],
-      "initial_level": "uncertain",
+      "initial_level": "unknown",
       "origins": [
         {
           "list": 5,
-          "symbol": "练",
+          "symbol": "○",
           "source": "data/vocabulary_master.md#list-5",
           "raw": "medication"
         }
@@ -8720,7 +8720,7 @@
       ],
       "content_status": "needs_review",
       "transcription_status": "needs_review",
-      "notes": ""
+      "notes": "原稿「续」为 ○ 栏续列。"
     },
     {
       "id": "word_radius",
@@ -8728,11 +8728,11 @@
       "list_ids": [
         5
       ],
-      "initial_level": "uncertain",
+      "initial_level": "unknown",
       "origins": [
         {
           "list": 5,
-          "symbol": "练",
+          "symbol": "○",
           "source": "data/vocabulary_master.md#list-5",
           "raw": "radius"
         }
@@ -8773,7 +8773,7 @@
       ],
       "content_status": "needs_review",
       "transcription_status": "needs_review",
-      "notes": ""
+      "notes": "原稿「续」为 ○ 栏续列。"
     },
     {
       "id": "word_wean",
@@ -8781,11 +8781,11 @@
       "list_ids": [
         5
       ],
-      "initial_level": "uncertain",
+      "initial_level": "unknown",
       "origins": [
         {
           "list": 5,
-          "symbol": "练",
+          "symbol": "○",
           "source": "data/vocabulary_master.md#list-5",
           "raw": "wean"
         }
@@ -8825,7 +8825,7 @@
       ],
       "content_status": "needs_review",
       "transcription_status": "needs_review",
-      "notes": ""
+      "notes": "原稿「续」为 ○ 栏续列。"
     },
     {
       "id": "word_delta",
@@ -8833,11 +8833,11 @@
       "list_ids": [
         5
       ],
-      "initial_level": "uncertain",
+      "initial_level": "unknown",
       "origins": [
         {
           "list": 5,
-          "symbol": "练",
+          "symbol": "○",
           "source": "data/vocabulary_master.md#list-5",
           "raw": "delta"
         }
@@ -8881,7 +8881,7 @@
       ],
       "content_status": "needs_review",
       "transcription_status": "needs_review",
-      "notes": ""
+      "notes": "原稿「续」为 ○ 栏续列。"
     },
     {
       "id": "word_compliment",
@@ -8889,11 +8889,11 @@
       "list_ids": [
         5
       ],
-      "initial_level": "uncertain",
+      "initial_level": "unknown",
       "origins": [
         {
           "list": 5,
-          "symbol": "练",
+          "symbol": "○",
           "source": "data/vocabulary_master.md#list-5",
           "raw": "compliment"
         }
@@ -8938,7 +8938,7 @@
       ],
       "content_status": "needs_review",
       "transcription_status": "needs_review",
-      "notes": ""
+      "notes": "原稿「续」为 ○ 栏续列。"
     }
   ]
 }

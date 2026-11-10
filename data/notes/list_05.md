@@ -1,6 +1,6 @@
 # List 5 手写笔记文字版
 
-共 45 词。○ 表示陌生，△ 表示模糊，练表示原笔记单列的练习组。语言内容仍需审核。
+共 45 词。○ 表示陌生，△ 表示模糊。语言内容仍需审核。
 
 | 单词候选 | 原始写法 | 原始标记 | 中文义候选 | 备注 |
 | --- | --- | --- | --- | --- |
@@ -40,15 +40,15 @@
 | shade | shade | △ | 阴凉处；色调；给…遮阴 |  |
 | comprise | comprise | △ | 由…组成；构成 |  |
 | execution | execution | △ | 执行；实施；处决 |  |
-| windscreen | wind screen | 练 | 挡风玻璃 | 保留总表写法以供核对；标准词形为 windscreen。 |
-| alluvial | alluvial | 练 | 冲积的 |  |
-| slum | slum | 练 | 贫民窟；贫民区 |  |
-| distill | distill | 练 | 蒸馏；提取；提炼要点 | 沿用原笔记拼写 distill；英式常见写法为 distil。 |
-| medication | medication | 练 | 药物；药物治疗 |  |
-| radius | radius | 练 | 半径；半径范围；桡骨 |  |
-| wean | wean | 练 | 使断奶；使逐渐戒掉 |  |
-| delta | delta | 练 | 三角洲；希腊字母 Δ 或 δ |  |
-| compliment | compliment | 练 | 称赞；赞美的话 |  |
+| windscreen | wind screen | ○ | 挡风玻璃 | 原稿「续」为 ○ 栏续列。保留总表写法以供核对；标准词形为 windscreen。 |
+| alluvial | alluvial | ○ | 冲积的 | 原稿「续」为 ○ 栏续列。 |
+| slum | slum | ○ | 贫民窟；贫民区 | 原稿「续」为 ○ 栏续列。 |
+| distill | distill | ○ | 蒸馏；提取；提炼要点 | 原稿「续」为 ○ 栏续列。沿用原笔记拼写 distill；英式常见写法为 distil。 |
+| medication | medication | ○ | 药物；药物治疗 | 原稿「续」为 ○ 栏续列。 |
+| radius | radius | ○ | 半径；半径范围；桡骨 | 原稿「续」为 ○ 栏续列。 |
+| wean | wean | ○ | 使断奶；使逐渐戒掉 | 原稿「续」为 ○ 栏续列。 |
+| delta | delta | ○ | 三角洲；希腊字母 Δ 或 δ | 原稿「续」为 ○ 栏续列。 |
+| compliment | compliment | ○ | 称赞；赞美的话 | 原稿「续」为 ○ 栏续列。 |
 
 ## 手写记忆法
 

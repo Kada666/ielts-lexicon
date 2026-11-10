@@ -2,6 +2,7 @@ import { openDB, type DBSchema } from 'idb';
 import { defaults, type Backup, type Grade, type Override, type Progress, type Review, type ReviewEvent, type Settings, type Snapshot, type TimedAttempt, type Word } from '../types';
 import { ALGORITHM, freshProgress, replayReviews, schedule, upgradeProgress } from '../review/scheduler';
 import { mergeNotebookOverride, mergeWords, notebookChanges, parseBackup, parseSyncEvent, validateWords } from '../utils/validation';
+import { correctContinuationOrigins } from '../utils/originCorrections';
 import edition from '../../edition.json';
 export const DATABASE_NAME = edition.database_name;
 interface Schema extends DBSchema {
@@ -40,6 +41,20 @@ export class Repository {
     const db = await connect(this.name); const tx = db.transaction(['words','progress','reviews','overrides','meta'], 'readonly');
     const [words,progress,reviews,overrides,settings] = await Promise.all([tx.objectStore('words').getAll(),tx.objectStore('progress').getAll(),tx.objectStore('reviews').getAll(),tx.objectStore('overrides').getAll(),tx.objectStore('meta').get('settings')]);
     await tx.done;
+    const misclassified = words.filter(word => correctContinuationOrigins(word) !== word);
+    if (misclassified.length) {
+      try {
+        const update = db.transaction('words', 'readwrite');
+        for (const { id } of misclassified) {
+          const current = await update.store.get(id);
+          if (!current) continue;
+          const corrected = correctContinuationOrigins(current);
+          if (corrected !== current) await update.store.put(corrected);
+        }
+        await update.done;
+      } finally { db.close(); }
+      return this.snapshot();
+    }
     if (progress.some(p => p.algorithm !== ALGORITHM)) {
       try {
         const migration = db.transaction(['words','progress','reviews'], 'readwrite');
@@ -179,7 +194,7 @@ export class Repository {
     const backup = parseBackup(input); // 任何验证失败均发生在事务之前。
     const db = await connect(this.name); const tx = db.transaction(['words','progress','reviews','overrides','meta'],'readwrite');
     for (const store of ['words','progress','reviews','overrides'] as const) await tx.objectStore(store).clear();
-    for (const w of backup.words) await tx.objectStore('words').put(w);
+    for (const w of backup.words) await tx.objectStore('words').put(correctContinuationOrigins(w));
     for (const p of backup.progress) await tx.objectStore('progress').put(p);
     for (const r of backup.reviews) await tx.objectStore('reviews').put(r);
     for (const o of backup.overrides) await tx.objectStore('overrides').put(o);

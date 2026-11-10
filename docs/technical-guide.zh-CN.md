@@ -27,7 +27,7 @@ data/vocabulary.list_03_04.json    List 3、4 的90词增量包
 IndexedDB                        运行中的词汇、个人修改与复习数据
 ```
 
-按《词汇整理.pdf》核对后，List 1 有24词，List 2 有25词，List 3 有43词，List 4 有47词，共139词。List 4 的练习组保留「练」标记，复习沿用模糊词的间隔。
+按《词汇整理.pdf》核对后，List 1 有24词，List 2 有25词，List 3 有43词，List 4 有47词，共139词。List 5 有 45 词。List 4 和 List 5 的「续」均为 ○ 陌生词的续列。
 
 图片内容已转为 Markdown，公开仓库不保存原始手写图片。图片辨认备注仍是文字资料的一部分。未得到明确确认的转录与自动释义 / 记忆候选保持 needs_review；程序内导入确认不自动反向改写磁盘 Markdown。
 

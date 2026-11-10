@@ -1,6 +1,6 @@
 # IELTS Lexicon 主词库
 
-手写笔记的文字转录候选，保留原始内容与待核验状态；公开仓库不保存手写图片。○ = unknown，△ = uncertain。「练」保留为独立来源标记，复习间隔沿用 uncertain。List 总数 50，未提供完整 List 词数，不计算陌生词率。
+手写笔记的文字转录候选，保留原始内容与待核验状态；公开仓库不保存手写图片。○ = unknown，△ = uncertain。「续」表示 ○ 陌生词续列。List 总数 50，未提供完整 List 词数，不计算陌生词率。
 
 工作流：核对文字转录的拼写及分类后，将对应行 Transcription 改为 reviewed；核验释义、搭配后再将 Content 改为 reviewed。记忆候选在下方 JSON 中单独审核。未审核转录仅生成 vocabulary.pending.json，不进入 vocabulary.json。
 
@@ -141,12 +141,12 @@
 | 4 | consequently | uncertain | △ | 因此；结果 |  | needs_review | needs_review |
 | 4 | subsequent | uncertain | △ | 随后的；后来的 |  | needs_review | needs_review |
 | 4 | pirate | unknown | ○ | 海盗；盗版；盗用 | 总表原笔形似 pricate；List 4 详解第 6 页明确写作 pirate | needs_review | needs_review |
-| 4 | mastery | uncertain | 练 | 精通；熟练掌握；控制 | 总表单列「练」组 | needs_review | needs_review |
-| 4 | precision | uncertain | 练 | 精确；精准 | 总表单列「练」组 | needs_review | needs_review |
-| 4 | gloss | uncertain | 练 | 光泽；光亮表层；注释 | 总表单列「练」组 | needs_review | needs_review |
-| 4 | outward | uncertain | 练 | 向外的；外表的；向外 | 总表单列「练」组 | needs_review | needs_review |
-| 4 | anthropologist | uncertain | 练 | 人类学家 | 总表单列「练」组；详解第 7 页图表给出完整拼写 | needs_review | needs_review |
-| 4 | comb | uncertain | 练 | 梳子；梳理；仔细搜寻 | 总表单列「练」组 | needs_review | needs_review |
+| 4 | mastery | unknown | ○ | 精通；熟练掌握；控制 | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
+| 4 | precision | unknown | ○ | 精确；精准 | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
+| 4 | gloss | unknown | ○ | 光泽；光亮表层；注释 | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
+| 4 | outward | unknown | ○ | 向外的；外表的；向外 | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
+| 4 | anthropologist | unknown | ○ | 人类学家 | 原稿「续」为 ○ 栏续列。详解第 7 页图表给出完整拼写 | needs_review | needs_review |
+| 4 | comb | unknown | ○ | 梳子；梳理；仔细搜寻 | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
 
 | 5 | pinpoint | unknown | ○ | 精确定位；准确指出 | 详解第 2 页开头多写了一个 o；总表词形为 pinpoint。 | needs_review | needs_review |
 | 5 | pulley | unknown | ○ | 滑轮 |  | needs_review | needs_review |
@@ -184,15 +184,15 @@
 | 5 | shade | uncertain | △ | 阴凉处；色调；给…遮阴 |  | needs_review | needs_review |
 | 5 | comprise | uncertain | △ | 由…组成；构成 |  | needs_review | needs_review |
 | 5 | execution | uncertain | △ | 执行；实施；处决 |  | needs_review | needs_review |
-| 5 | windscreen | uncertain | 练 | 挡风玻璃 | 保留总表写法以供核对；标准词形为 windscreen。 | needs_review | needs_review |
-| 5 | alluvial | uncertain | 练 | 冲积的 |  | needs_review | needs_review |
-| 5 | slum | uncertain | 练 | 贫民窟；贫民区 |  | needs_review | needs_review |
-| 5 | distill | uncertain | 练 | 蒸馏；提取；提炼要点 | 沿用原笔记拼写 distill；英式常见写法为 distil。 | needs_review | needs_review |
-| 5 | medication | uncertain | 练 | 药物；药物治疗 |  | needs_review | needs_review |
-| 5 | radius | uncertain | 练 | 半径；半径范围；桡骨 |  | needs_review | needs_review |
-| 5 | wean | uncertain | 练 | 使断奶；使逐渐戒掉 |  | needs_review | needs_review |
-| 5 | delta | uncertain | 练 | 三角洲；希腊字母 Δ 或 δ |  | needs_review | needs_review |
-| 5 | compliment | uncertain | 练 | 称赞；赞美的话 |  | needs_review | needs_review |
+| 5 | windscreen | unknown | ○ | 挡风玻璃 | 原稿「续」为 ○ 栏续列。保留总表写法以供核对；标准词形为 windscreen。 | needs_review | needs_review |
+| 5 | alluvial | unknown | ○ | 冲积的 | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
+| 5 | slum | unknown | ○ | 贫民窟；贫民区 | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
+| 5 | distill | unknown | ○ | 蒸馏；提取；提炼要点 | 原稿「续」为 ○ 栏续列。沿用原笔记拼写 distill；英式常见写法为 distil。 | needs_review | needs_review |
+| 5 | medication | unknown | ○ | 药物；药物治疗 | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
+| 5 | radius | unknown | ○ | 半径；半径范围；桡骨 | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
+| 5 | wean | unknown | ○ | 使断奶；使逐渐戒掉 | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
+| 5 | delta | unknown | ○ | 三角洲；希腊字母 Δ 或 δ | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
+| 5 | compliment | unknown | ○ | 称赞；赞美的话 | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
 
 ## 词条补充资料
 

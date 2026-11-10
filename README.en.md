@@ -76,13 +76,13 @@ The five handwritten screening sheets are transcribed under `data/notes/`. The p
 | 1 | 14 | 10 | 0 | 24 |
 | 2 | 15 | 10 | 0 | 25 |
 | 3 | 28 | 15 | 0 | 43 |
-| 4 | 22 | 19 | 6 | 47 |
-| 5 | 18 | 18 | 9 | 45 |
-| Total | 97 | 72 | 15 | 184 |
+| 4 | 28 | 19 | 0 | 47 |
+| 5 | 27 | 18 | 0 | 45 |
+| Total | 112 | 72 | 0 | 184 |
 
 The five detailed notebooks contribute **118 handwritten memory cues**, organized into word parts, hooks, recall steps and related words. Edit the [Markdown notebooks](data/notes/) to update them. Separate import files cover [Lists 3 and 4 (90 words)](data/vocabulary.list_03_04.json) and [List 5 (45 words)](data/vocabulary.list_05.json). [Vocabulary audit](data/import_review.md)
 
-Transcriptions in `vocabulary.pending.json` enter the browser's collection after review and confirmation. Definitions, phonetics, examples and mnemonics retain their own review states. The practice group has its original mark and uses the uncertain-word schedule.
+Transcriptions in `vocabulary.pending.json` enter the browser's collection after review and confirmation. Definitions, phonetics, examples and mnemonics retain their own review states. The handwritten 续 in Lists 4 and 5 continues the unfamiliar-word column.
 
 ```text
 Text notes → Candidate Markdown → Human review
