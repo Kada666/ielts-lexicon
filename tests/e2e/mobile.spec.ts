@@ -1,10 +1,12 @@
 import { expect, test, type Page } from '@playwright/test';
+import candidates from '../../data/vocabulary.pending.json' with { type: 'json' };
+const totalWords=candidates.words.length;
 async function seed(page:Page,all=false){
  await page.goto('/');await page.getByRole('button',{name:'核对并导入初始词库'}).click();
  if(!all)await page.getByRole('combobox',{name:'导入范围'}).selectOption('initial');
  await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();
- await page.getByRole('button',{name:`确认导入 ${all?184:49} 词`}).click();
- await expect(page.getByRole('status')).toContainText(`已合并 ${all?184:49}`);
+ await page.getByRole('button',{name:`确认导入 ${all?totalWords:49} 词`}).click();
+ await expect(page.getByRole('status')).toContainText(`已合并 ${all?totalWords:49}`);
  await page.getByRole('button',{name:'关闭提示'}).click();
 }
 test('手机词库左右布局、大字体、滚动连续加载且不显示学习状态',async({page},info)=>{
@@ -16,8 +18,8 @@ test('手机词库左右布局、大字体、滚动连续加载且不显示学�
  expect(await first.locator('.mobile-word-meaning').evaluate(e=>parseFloat(getComputedStyle(e).fontSize))).toBeGreaterThanOrEqual(17);
  await expect(page.locator('.mobile-vocabulary')).not.toContainText('未学习');await expect(page.locator('.mobile-vocabulary')).not.toContainText('现在可学');
  await page.screenshot({path:info.outputPath('mobile-library-390.png'),fullPage:false});
- for(let i=0;i<4&&await rows.count()<184;i++){const count=await rows.count();await rows.last().scrollIntoViewIfNeeded();await expect.poll(()=>rows.count()).toBeGreaterThan(count);}
- await expect(rows).toHaveCount(184);
+ for(let i=0;i<Math.ceil(totalWords/40)&&await rows.count()<totalWords;i++){const count=await rows.count();await rows.last().scrollIntoViewIfNeeded();await expect.poll(()=>rows.count()).toBeGreaterThan(count);}
+ await expect(rows).toHaveCount(totalWords);
  await page.getByRole('textbox',{name:'搜索英文单词'}).fill('cardiovascular');
  await expect(rows).toHaveCount(1);
  for(const width of [320,390,430]){await page.setViewportSize({width,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}

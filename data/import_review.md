@@ -53,6 +53,12 @@ List1.pdf 另有未对应总表卡片的独立旁注，留在这里供查阅。
 
 第 1 页是词表，包含 ○ 27 个（含「续」的 9 个词）、△ 18 个，共 45 个词。第 2～7 页记录了 27 个词的详解和第 3 页的两组词缀例词，转录见 [List 5 文字笔记](notes/list_05.md)。用总表的 pinpoint 订正详解多写的 o；合写 shareholder 和 windscreen；保留原词形 distill。internship、complement 等关联词保留在联想里，统计按总表词条计。
 
+## List 6 核对
+
+第 1 页列出 ○ 陌生 19 个、△ 模糊 18 个，共 37 个词。第 2～6 页有 19 条手写记忆法，见 [List 6 文字笔记](notes/list_06.md)。详解中拼写有出入的三处，以总表的 corrode、soluble、turret 为准。dislodge、underline、mishandle 采用标准合写。总表分别列有 statistic 与 statistics，以及 coordinator 与 coordinate，各自保留为独立词条。详解中引用的 latent、dismantle、erosion 保留为关联词。
+
+补充核对了 [appropriate 的两种英式读音](https://dictionary.cambridge.org/us/pronunciation/english/appropriate)、[turret 的英式读音](https://dictionary.cambridge.org/pronunciation/english/turret)、[statistic 的用法](https://dictionary.cambridge.org/us/dictionary/english/statistic)和 [corrode 的词源](https://www.ahdictionary.com/word/search.html?q=+CORRODE)。
+
 ## 确认方法
 
 - 仅核对图片：修改主表 Transcription 为 reviewed，或在应用预览中确认导入。

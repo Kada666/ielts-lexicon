@@ -88,6 +88,7 @@ if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href) {
  await mkdir('data',{recursive:true}); await writeFile('data/vocabulary.json',file(result.words)); await writeFile('data/vocabulary.pending.json',file(result.pending));
  await writeFile('data/vocabulary.list_03_04.json',file([...result.words,...result.pending].filter(w=>w.list_ids.some(n=>n===3||n===4))));
  await writeFile('data/vocabulary.list_05.json',file([...result.words,...result.pending].filter(w=>w.list_ids.includes(5))));
+ await writeFile('data/vocabulary.list_06.json',file([...result.words,...result.pending].filter(w=>w.list_ids.includes(6))));
  for(const list of [...new Set([...result.words,...result.pending].flatMap(w=>w.list_ids))].sort((a,b)=>a-b)){
    const words=[...result.words,...result.pending].filter(w=>w.list_ids.includes(list));
    const lines=words.map(w=>{const origin=w.origins.find(o=>o.list===list);return `| ${w.word} | ${origin.raw} | ${origin.symbol} | ${w.meaning.join('；')} | ${w.notes} |`;});

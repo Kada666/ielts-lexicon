@@ -194,6 +194,44 @@
 | 5 | delta | unknown | ○ | 三角洲；希腊字母 Δ 或 δ | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
 | 5 | compliment | unknown | ○ | 称赞；赞美的话 | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
 
+| 6 | appropriate | unknown | ○ | 合适的；恰当的；占有；挪用；拨款 |  | needs_review | needs_review |
+| 6 | depict | unknown | ○ | 描绘；刻画；描述 |  | needs_review | needs_review |
+| 6 | dormancy | unknown | ○ | 休眠状态；蛰伏期 |  | needs_review | needs_review |
+| 6 | pitch | unknown | ○ | 投掷；音高；球场；沥青；推销 |  | needs_review | needs_review |
+| 6 | shutter | unknown | ○ | 百叶窗；活动窗板；相机快门 |  | needs_review | needs_review |
+| 6 | demolish | unknown | ○ | 拆除；摧毁；彻底驳倒 |  | needs_review | needs_review |
+| 6 | stuffy | unknown | ○ | 闷热的；不通风的；鼻塞的；古板乏味的 |  | needs_review | needs_review |
+| 6 | excusable | unknown | ○ | 可原谅的；情有可原的 |  | needs_review | needs_review |
+| 6 | corrode | unknown | ○ | 腐蚀；受腐蚀；逐渐损害 | 总表作 corrode，详解标题少写词尾 e。以总表为准。 | needs_review | needs_review |
+| 6 | dislodge | unknown | ○ | 使移位；移开卡住的东西；驱逐 | 总表分写，词条采用合写 dislodge。 | needs_review | needs_review |
+| 6 | soluble | unknown | ○ | 可溶解的；可解决的 | 总表作 soluble，详解标题多写 a。以总表为准。 | needs_review | needs_review |
+| 6 | underline | unknown | ○ | 在…下面画线；强调；突出 | 总表分写，词条采用合写 underline。 | needs_review | needs_review |
+| 6 | antidote | unknown | ○ | 解毒剂；抵消不良影响的方法 |  | needs_review | needs_review |
+| 6 | turret | unknown | ○ | 塔楼；炮塔 | 总表作 turret，详解标题多写词尾 n。以总表为准。 | needs_review | needs_review |
+| 6 | mishandle | unknown | ○ | 处理不当；粗暴对待 | 总表分写，词条采用合写 mishandle。 | needs_review | needs_review |
+| 6 | amend | unknown | ○ | 修订；修改 |  | needs_review | needs_review |
+| 6 | lens | unknown | ○ | 透镜；镜头；镜片 |  | needs_review | needs_review |
+| 6 | coordinator | unknown | ○ | 协调员；统筹者 |  | needs_review | needs_review |
+| 6 | crisp | unknown | ○ | 脆的；清爽凉快的；简洁清晰的；薯片（英式） |  | needs_review | needs_review |
+| 6 | reign | uncertain | △ | 统治；在位；统治时期 |  | needs_review | needs_review |
+| 6 | literacy | uncertain | △ | 读写能力；某领域的素养 |  | needs_review | needs_review |
+| 6 | constant | uncertain | △ | 持续不断的；恒定的；常数 |  | needs_review | needs_review |
+| 6 | subscription | uncertain | △ | 订阅；订阅费；会费 |  | needs_review | needs_review |
+| 6 | circulation | uncertain | △ | 循环；流通；发行量 |  | needs_review | needs_review |
+| 6 | decay | uncertain | △ | 腐烂；衰退；衰变 |  | needs_review | needs_review |
+| 6 | distribution | uncertain | △ | 分配；分发；分布 |  | needs_review | needs_review |
+| 6 | defect | uncertain | △ | 缺陷；瑕疵；叛逃；倒戈 |  | needs_review | needs_review |
+| 6 | statistics | uncertain | △ | 统计数据；统计学 |  | needs_review | needs_review |
+| 6 | statistic | uncertain | △ | 一项统计数据；统计量 |  | needs_review | needs_review |
+| 6 | propose | uncertain | △ | 提议；提出；求婚 |  | needs_review | needs_review |
+| 6 | administration | uncertain | △ | 管理；行政；管理部门；政府 |  | needs_review | needs_review |
+| 6 | objective | uncertain | △ | 目标；客观的 |  | needs_review | needs_review |
+| 6 | conflict | uncertain | △ | 冲突；矛盾；抵触 |  | needs_review | needs_review |
+| 6 | continent | uncertain | △ | 洲；大陆 |  | needs_review | needs_review |
+| 6 | redundant | uncertain | △ | 多余的；因岗位取消而被裁的 |  | needs_review | needs_review |
+| 6 | property | uncertain | △ | 财产；房产；性质 |  | needs_review | needs_review |
+| 6 | coordinate | uncertain | △ | 协调；配合；坐标 |  | needs_review | needs_review |
+
 ## 词条补充资料
 
 此处保存基础资料和生成候选。手写记忆法以 [data/notes](notes/) 下各 List 的 Markdown 为准，由构建脚本合并。真实词源需要可靠引用。编辑 word 前同步修改补充资料中的键；复习开始后不要随意改词形，否则会产生新 ID。
@@ -3202,6 +3240,437 @@
     ],
     "collocations": [
       "pay someone a compliment"
+    ]
+  },
+  {
+    "word": "appropriate",
+    "raw": "appropriate",
+    "phonetic": "/əˈprəʊpriət/ adj. · /əˈprəʊprieɪt/ v.",
+    "part_of_speech": [
+      "adjective",
+      "verb"
+    ],
+    "collocations": [
+      "an appropriate response",
+      "appropriate funds"
+    ]
+  },
+  {
+    "word": "depict",
+    "raw": "depict",
+    "phonetic": "/dɪˈpɪkt/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "depict everyday life"
+    ]
+  },
+  {
+    "word": "dormancy",
+    "raw": "dormancy",
+    "phonetic": "/ˈdɔːmənsi/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "break seed dormancy"
+    ]
+  },
+  {
+    "word": "pitch",
+    "raw": "pitch",
+    "phonetic": "/pɪtʃ/",
+    "part_of_speech": [
+      "verb",
+      "noun"
+    ],
+    "collocations": [
+      "pitch a ball",
+      "a football pitch"
+    ]
+  },
+  {
+    "word": "shutter",
+    "raw": "shutter",
+    "phonetic": "/ˈʃʌtə/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "window shutters",
+      "a camera shutter"
+    ]
+  },
+  {
+    "word": "demolish",
+    "raw": "demolish",
+    "phonetic": "/dɪˈmɒlɪʃ/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "demolish a building"
+    ]
+  },
+  {
+    "word": "stuffy",
+    "raw": "stuffy",
+    "phonetic": "/ˈstʌfi/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "a stuffy room"
+    ]
+  },
+  {
+    "word": "excusable",
+    "raw": "excusable",
+    "phonetic": "/ɪkˈskjuːzəbəl/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "an excusable mistake"
+    ]
+  },
+  {
+    "word": "corrode",
+    "raw": "corrode",
+    "phonetic": "/kəˈrəʊd/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "salt water corrodes metal"
+    ]
+  },
+  {
+    "word": "dislodge",
+    "raw": "dis lodge",
+    "phonetic": "/dɪsˈlɒdʒ/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "dislodge a blockage"
+    ]
+  },
+  {
+    "word": "soluble",
+    "raw": "soluble",
+    "phonetic": "/ˈsɒljəbəl/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "soluble in water"
+    ]
+  },
+  {
+    "word": "underline",
+    "raw": "under line",
+    "phonetic": "/ˌʌndəˈlaɪn/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "underline the key points"
+    ]
+  },
+  {
+    "word": "antidote",
+    "raw": "antidote",
+    "phonetic": "/ˈæntɪdəʊt/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "an antidote to the poison"
+    ]
+  },
+  {
+    "word": "turret",
+    "raw": "turret",
+    "phonetic": "/ˈtʌrət/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a castle turret",
+      "a gun turret"
+    ]
+  },
+  {
+    "word": "mishandle",
+    "raw": "mis handle",
+    "phonetic": "/ˌmɪsˈhændəl/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "mishandle a complaint"
+    ]
+  },
+  {
+    "word": "amend",
+    "raw": "amend",
+    "phonetic": "/əˈmend/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "amend the law"
+    ]
+  },
+  {
+    "word": "lens",
+    "raw": "lens",
+    "phonetic": "/lenz/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a camera lens",
+      "contact lenses"
+    ]
+  },
+  {
+    "word": "coordinator",
+    "raw": "coordinator",
+    "phonetic": "/kəʊˈɔːdɪneɪtə/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a project coordinator"
+    ]
+  },
+  {
+    "word": "crisp",
+    "raw": "crisp",
+    "phonetic": "/krɪsp/",
+    "part_of_speech": [
+      "adjective",
+      "noun"
+    ],
+    "collocations": [
+      "crisp air",
+      "a packet of crisps"
+    ]
+  },
+  {
+    "word": "reign",
+    "raw": "reign",
+    "phonetic": "/reɪn/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "during the reign of"
+    ]
+  },
+  {
+    "word": "literacy",
+    "raw": "literacy",
+    "phonetic": "/ˈlɪtərəsi/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "adult literacy",
+      "digital literacy"
+    ]
+  },
+  {
+    "word": "constant",
+    "raw": "constant",
+    "phonetic": "/ˈkɒnstənt/",
+    "part_of_speech": [
+      "adjective",
+      "noun"
+    ],
+    "collocations": [
+      "at a constant speed"
+    ]
+  },
+  {
+    "word": "subscription",
+    "raw": "subscription",
+    "phonetic": "/səbˈskrɪpʃən/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "an annual subscription"
+    ]
+  },
+  {
+    "word": "circulation",
+    "raw": "circulation",
+    "phonetic": "/ˌsɜːkjəˈleɪʃən/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "blood circulation",
+      "in circulation"
+    ]
+  },
+  {
+    "word": "decay",
+    "raw": "decay",
+    "phonetic": "/dɪˈkeɪ/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "tooth decay"
+    ]
+  },
+  {
+    "word": "distribution",
+    "raw": "distribution",
+    "phonetic": "/ˌdɪstrɪˈbjuːʃən/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "the distribution of income"
+    ]
+  },
+  {
+    "word": "defect",
+    "raw": "defect",
+    "phonetic": "/ˈdiːfekt/ n. · /dɪˈfekt/ v.",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "a manufacturing defect",
+      "defect to another country"
+    ]
+  },
+  {
+    "word": "statistics",
+    "raw": "statistics",
+    "phonetic": "/stəˈtɪstɪks/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "official statistics",
+      "study statistics"
+    ]
+  },
+  {
+    "word": "statistic",
+    "raw": "statistic",
+    "phonetic": "/stəˈtɪstɪk/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a key statistic"
+    ]
+  },
+  {
+    "word": "propose",
+    "raw": "propose",
+    "phonetic": "/prəˈpəʊz/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "propose a solution"
+    ]
+  },
+  {
+    "word": "administration",
+    "raw": "administration",
+    "phonetic": "/ədˌmɪnɪˈstreɪʃən/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "public administration"
+    ]
+  },
+  {
+    "word": "objective",
+    "raw": "objective",
+    "phonetic": "/əbˈdʒektɪv/",
+    "part_of_speech": [
+      "noun",
+      "adjective"
+    ],
+    "collocations": [
+      "achieve an objective",
+      "an objective assessment"
+    ]
+  },
+  {
+    "word": "conflict",
+    "raw": "conflict",
+    "phonetic": "/ˈkɒnflɪkt/ n. · /kənˈflɪkt/ v.",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "a conflict of interest",
+      "conflict with the evidence"
+    ]
+  },
+  {
+    "word": "continent",
+    "raw": "continent",
+    "phonetic": "/ˈkɒntɪnənt/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "the African continent"
+    ]
+  },
+  {
+    "word": "redundant",
+    "raw": "redundant",
+    "phonetic": "/rɪˈdʌndənt/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "make staff redundant"
+    ]
+  },
+  {
+    "word": "property",
+    "raw": "property",
+    "phonetic": "/ˈprɒpəti/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "private property",
+      "physical properties"
+    ]
+  },
+  {
+    "word": "coordinate",
+    "raw": "coordinate",
+    "phonetic": "/kəʊˈɔːdɪneɪt/ v. · /kəʊˈɔːdɪnət/ n.",
+    "part_of_speech": [
+      "verb",
+      "noun"
+    ],
+    "collocations": [
+      "coordinate the response",
+      "geographic coordinates"
     ]
   }
 ]

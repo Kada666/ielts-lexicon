@@ -9,7 +9,7 @@ import candidate from '../../data/vocabulary.pending.json';
 import { convertMarkdown } from '../../scripts/build-vocabulary.mjs';
 import { readFileSync } from 'node:fs';
 const words=parseVocabulary(candidate).words;
-const notebooks=[1,2,3,4,5].map(list=>({list,markdown:readFileSync(`data/notes/list_0${list}.md`,'utf8')}));
+const notebooks=[1,2,3,4,5,6].map(list=>({list,markdown:readFileSync(`data/notes/list_0${list}.md`,'utf8')}));
 const word=words.find(w=>w.word==='delve')!;
 const name='lexicon-unit'; const repo=new Repository(name);
 beforeEach(async()=>{await deleteDB(name);});
@@ -64,6 +64,18 @@ describe('图片转录与 Markdown',()=>{
   expect(list5.find(w=>w.word==='intern')?.mnemonics[0].related?.[0].term).toBe('internship');
   expect(words.find(w=>w.word==='internship')?.list_ids).toEqual([3]);
   expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_05.json','utf8'))).words).toEqual(list5);
+ });
+ it('List 6 保留总表的 37 个词形、分类及 19 条手写联想',()=>{
+  const list6=words.filter(w=>w.list_ids.includes(6));
+  expect(list6).toHaveLength(37);
+  expect(list6.filter(w=>w.initial_level==='unknown')).toHaveLength(19);
+  expect(list6.flatMap(w=>w.mnemonics)).toHaveLength(19);
+  expect(list6.filter(w=>['corrode','soluble','turret','statistic','statistics','coordinator','coordinate'].includes(w.word))).toHaveLength(7);
+  expect(list6.find(w=>w.word==='dormancy')?.mnemonics[0]).toMatchObject({
+   source:'user', reference:'手写笔记 List6.pdf · 第 2 页',
+   related:[{term:'dormant',meaning:'暂不活跃的、休眠的'},{term:'latent',meaning:'潜在的、尚未显现的'}],
+  });
+  expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_06.json','utf8'))).words).toEqual(list6);
  });
 });
 describe('复习调度',()=>{

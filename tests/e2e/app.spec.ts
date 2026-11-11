@@ -155,8 +155,8 @@ test('已有词库在首页增量更新，翻卡可看手写笔记',async({page}
  await page.getByRole('button',{name:'学习概览',exact:true}).click();
  await page.getByRole('button',{name:'更新词库与笔记'}).click();
  await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();
- await page.getByRole('button',{name:'确认导入 184 词'}).click();
- await expect(page.getByRole('status')).toContainText('已合并 184');
+ await page.getByRole('button',{name:`确认导入 ${candidates.words.length} 词`}).click();
+ await expect(page.getByRole('status')).toContainText(`已合并 ${candidates.words.length}`);
  await page.reload();
  await expect(page.getByRole('button',{name:'更新词库与笔记'})).toHaveCount(0);
  await page.getByRole('button',{name:'我的词库',exact:true}).click();
@@ -167,31 +167,36 @@ test('已有词库在首页增量更新，翻卡可看手写笔记',async({page}
  await expect(page.locator('.answer-word h2')).toHaveText('apace');
  await expect(page.getByLabel('联想记忆')).toContainText('想象脚步接连不断');
 });
-test('List 5 可单独导入，原有复习记录和手写联想保留', async ({page})=>{
- await seed(page);
- await page.getByRole('button',{name:'闪卡复习',exact:true}).click();
- await page.getByRole('button',{name:'开始复习',exact:true}).click();
- await page.getByRole('button',{name:'查看答案',exact:true}).click();
- await page.getByRole('button',{name:'记住了'}).click();
- await page.getByRole('button',{name:'结束本轮'}).click();
- await page.getByRole('button',{name:'导入与备份',exact:true}).click();
- await page.getByRole('button',{name:'补充 List 5',exact:true}).click();
- await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();
- await page.getByRole('button',{name:'确认导入 45 词'}).click();
- await expect(page.getByRole('status')).toContainText('已合并 45');
- await page.getByRole('button',{name:'学习概览',exact:true}).click();
- await expect(page.locator('.metric').filter({hasText:'今日已复习'}).locator('strong')).toHaveText('1词');
- await page.getByRole('button',{name:'我的词库',exact:true}).click();
- await page.getByRole('combobox',{name:'按 List 筛选'}).selectOption('5');
- await expect(page.getByText('找到 45 个词汇',{exact:true})).toBeVisible();
- await page.getByRole('combobox',{name:'按初始分类筛选'}).selectOption('○');
- await expect(page.getByText('找到 27 个词汇',{exact:true})).toBeVisible();
- await page.getByRole('button',{name:'闪卡复习',exact:true}).click();
- await page.getByRole('button',{name:'开始复习',exact:true}).click();
- await page.getByRole('button',{name:'查看答案',exact:true}).click();
- await expect(page.locator('.answer-word h2')).toHaveText('alluvial');
- await expect(page.getByLabel('联想记忆')).toContainText('所有的都到路上了');
-});
+for (const {list, total, unfamiliar, first, cue} of [
+ {list:5,total:45,unfamiliar:27,first:'alluvial',cue:'所有的都到路上了'},
+ {list:6,total:37,unfamiliar:19,first:'amend',cue:'一再的修'},
+]) {
+ test(`List ${list} 可单独导入，原有复习记录和手写联想保留`, async ({page})=>{
+  await seed(page);
+  await page.getByRole('button',{name:'闪卡复习',exact:true}).click();
+  await page.getByRole('button',{name:'开始复习',exact:true}).click();
+  await page.getByRole('button',{name:'查看答案',exact:true}).click();
+  await page.getByRole('button',{name:'记住了'}).click();
+  await page.getByRole('button',{name:'结束本轮'}).click();
+  await page.getByRole('button',{name:'导入与备份',exact:true}).click();
+  await page.getByRole('button',{name:`补充 List ${list}`,exact:true}).click();
+  await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();
+  await page.getByRole('button',{name:`确认导入 ${total} 词`}).click();
+  await expect(page.getByRole('status')).toContainText(`已合并 ${total}`);
+  await page.getByRole('button',{name:'学习概览',exact:true}).click();
+  await expect(page.locator('.metric').filter({hasText:'今日已复习'}).locator('strong')).toHaveText('1词');
+  await page.getByRole('button',{name:'我的词库',exact:true}).click();
+  await page.getByRole('combobox',{name:'按 List 筛选'}).selectOption(String(list));
+  await expect(page.getByText(`找到 ${total} 个词汇`,{exact:true})).toBeVisible();
+  await page.getByRole('combobox',{name:'按初始分类筛选'}).selectOption('○');
+  await expect(page.getByText(`找到 ${unfamiliar} 个词汇`,{exact:true})).toBeVisible();
+  await page.getByRole('button',{name:'闪卡复习',exact:true}).click();
+  await page.getByRole('button',{name:'开始复习',exact:true}).click();
+  await page.getByRole('button',{name:'查看答案',exact:true}).click();
+  await expect(page.locator('.answer-word h2')).toHaveText(first);
+  await expect(page.getByLabel('联想记忆')).toContainText(cue);
+ });
+}
 test('已导入的 List 4 卡片显示修订后的蓝笔词块和趣味口诀',async({page})=>{
  await page.setViewportSize({width:390,height:844});
  await page.goto('/');

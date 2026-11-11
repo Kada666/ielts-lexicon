@@ -1,0 +1,1762 @@
+{
+  "format": "ielts-lexicon-vocabulary",
+  "schema_version": 1,
+  "words": [
+    {
+      "id": "word_appropriate",
+      "word": "appropriate",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "appropriate"
+        }
+      ],
+      "meaning": [
+        "合适的",
+        "恰当的",
+        "占有",
+        "挪用",
+        "拨款"
+      ],
+      "phonetic": "/əˈprəʊpriət/ adj. · /əˈprəʊprieɪt/ v.",
+      "part_of_speech": [
+        "adjective",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "an appropriate response",
+        "appropriate funds"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_appropriate",
+          "type": "association",
+          "title": "从「合适」记到动词「挪用」",
+          "content": "先记形容词的「合适的、恰当的」，再记动词用法。把别人的东西拿来为己所用是「占有、挪用」，正式指定资金供某用途时是「拨款」。形容词和动词的词尾读音不同。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 2 页",
+          "cue": "一再的合适",
+          "related": [
+            {
+              "term": "an appropriate response",
+              "meaning": "恰当的回应"
+            },
+            {
+              "term": "appropriate funds",
+              "meaning": "拨款或挪用资金，按语境判断"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_depict",
+      "word": "depict",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "depict"
+        }
+      ],
+      "meaning": [
+        "描绘",
+        "刻画",
+        "描述"
+      ],
+      "phonetic": "/dɪˈpɪkt/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "depict everyday life"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_depict",
+          "type": "association",
+          "title": "在画布上刻画景物",
+          "content": "想象画家在画架前把眼中的风景画出来 → depict，描绘、刻画。写文章或用图表呈现场景时也可以用这个词。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 2 页",
+          "cue": "在底下画"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_dormancy",
+      "word": "dormancy",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "dormancy"
+        }
+      ],
+      "meaning": [
+        "休眠状态",
+        "蛰伏期"
+      ],
+      "phonetic": "/ˈdɔːmənsi/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "break seed dormancy"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_dormancy",
+          "type": "morphology",
+          "title": "树木在冬天休眠",
+          "content": "想象冬雪中暂时停止生长的树 → dormancy，休眠状态。dormant 强调暂时不活跃，latent 强调潜在、尚未显现。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 2 页",
+          "segments": [
+            {
+              "part": "dorm-",
+              "meaning": "睡眠，联想到宿舍"
+            },
+            {
+              "part": "-ancy",
+              "meaning": "状态、性质"
+            }
+          ],
+          "related": [
+            {
+              "term": "dormant",
+              "meaning": "暂不活跃的、休眠的"
+            },
+            {
+              "term": "latent",
+              "meaning": "潜在的、尚未显现的"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_pitch",
+      "word": "pitch",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "pitch"
+        }
+      ],
+      "meaning": [
+        "投掷",
+        "音高",
+        "球场",
+        "沥青",
+        "推销"
+      ],
+      "phonetic": "/pɪtʃ/",
+      "part_of_speech": [
+        "verb",
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "pitch a ball",
+        "a football pitch"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_pitch",
+          "type": "phonetic",
+          "title": "从投球记住多个常见义",
+          "content": "用口诀想起投手把球投出去。pitch a ball 是投球，football pitch 是足球场，声音的 pitch 是音高。遇到材料语境时也可指沥青。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 2 页",
+          "cue": "屁吃！",
+          "related": [
+            {
+              "term": "pitch a ball",
+              "meaning": "投球"
+            },
+            {
+              "term": "football pitch",
+              "meaning": "足球场（英式）"
+            },
+            {
+              "term": "high pitch",
+              "meaning": "高音调"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_shutter",
+      "word": "shutter",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "shutter"
+        }
+      ],
+      "meaning": [
+        "百叶窗",
+        "活动窗板",
+        "相机快门"
+      ],
+      "phonetic": "/ˈʃʌtə/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "window shutters",
+        "a camera shutter"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_shutter",
+          "type": "morphology",
+          "title": "能关闭和遮挡的装置",
+          "content": "能关起来遮挡的东西 → 窗上的百叶窗或窗板，以及相机的快门。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 2 页",
+          "segments": [
+            {
+              "part": "shut",
+              "meaning": "关、关闭"
+            },
+            {
+              "part": "-er",
+              "meaning": "这里联想到执行动作的装置"
+            }
+          ],
+          "related": [
+            {
+              "term": "window shutters",
+              "meaning": "百叶窗、活动窗板"
+            },
+            {
+              "term": "camera shutter",
+              "meaning": "相机快门"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_demolish",
+      "word": "demolish",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "demolish"
+        }
+      ],
+      "meaning": [
+        "拆除",
+        "摧毁",
+        "彻底驳倒"
+      ],
+      "phonetic": "/dɪˈmɒlɪʃ/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "demolish a building"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_demolish",
+          "type": "association",
+          "title": "挖掘机拆毁建筑",
+          "content": "用开头的 demo 想象一场拆楼演示，挖掘机把旧建筑摧毁 → demolish，拆除、摧毁。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 2 页",
+          "cue": "demo → 立刻拆毁",
+          "related": [
+            {
+              "term": "dismantle",
+              "meaning": "拆卸、拆除，常指拆成部件"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_stuffy",
+      "word": "stuffy",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "stuffy"
+        }
+      ],
+      "meaning": [
+        "闷热的",
+        "不通风的",
+        "鼻塞的",
+        "古板乏味的"
+      ],
+      "phonetic": "/ˈstʌfi/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a stuffy room"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_stuffy",
+          "type": "association",
+          "title": "一下子塞满，空气不流通",
+          "content": "想象教室挤满了人，又没有开窗 → stuffy，不通风的、闷热的。也可形容鼻子堵塞，或气氛古板乏味。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 3 页",
+          "cue": "一下子塞满",
+          "related": [
+            {
+              "term": "stuff",
+              "meaning": "东西；塞满"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_excusable",
+      "word": "excusable",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "excusable"
+        }
+      ],
+      "meaning": [
+        "可原谅的",
+        "情有可原的"
+      ],
+      "phonetic": "/ɪkˈskjuːzəbəl/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "an excusable mistake"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_excusable",
+          "type": "morphology",
+          "title": "能原谅，便情有可原",
+          "content": "一件失误有可以理解的理由，因此可以原谅 → excusable，情有可原的。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 3 页",
+          "segments": [
+            {
+              "part": "excuse",
+              "meaning": "原谅、宽恕"
+            },
+            {
+              "part": "-able",
+              "meaning": "可以……的"
+            }
+          ],
+          "related": [
+            {
+              "term": "excuse",
+              "meaning": "原谅；借口"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_corrode",
+      "word": "corrode",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "corrode"
+        }
+      ],
+      "meaning": [
+        "腐蚀",
+        "受腐蚀",
+        "逐渐损害"
+      ],
+      "phonetic": "/kəˈrəʊd/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "salt water corrodes metal"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_corrode",
+          "type": "morphology",
+          "title": "像被一点一点啃掉",
+          "content": "想象铁管被一点一点啃掉，最后锈出了洞 → corrode，腐蚀、侵蚀。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 3 页",
+          "cue": "都过来侵蚀",
+          "segments": [
+            {
+              "part": "rod-",
+              "meaning": "啃咬、侵蚀",
+              "cue": "肉掉了"
+            }
+          ],
+          "related": [
+            {
+              "term": "corrosion",
+              "meaning": "腐蚀"
+            },
+            {
+              "term": "corrosive",
+              "meaning": "腐蚀性的"
+            },
+            {
+              "term": "erode",
+              "meaning": "侵蚀；逐渐削弱"
+            },
+            {
+              "term": "erosion",
+              "meaning": "侵蚀"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "总表作 corrode，详解标题少写词尾 e。以总表为准。"
+    },
+    {
+      "id": "word_dislodge",
+      "word": "dislodge",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "dis lodge"
+        }
+      ],
+      "meaning": [
+        "使移位",
+        "移开卡住的东西",
+        "驱逐"
+      ],
+      "phonetic": "/dɪsˈlɒdʒ/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "dislodge a blockage"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_dislodge",
+          "type": "morphology",
+          "title": "把卡在原处的东西移开",
+          "content": "从「把人移出原来的小屋」联想到把卡在某处的东西弄出来 → dislodge，移开、使移位；用于人时也可指驱逐。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 3 页",
+          "cue": "把你从小屋中分开",
+          "segments": [
+            {
+              "part": "dis-",
+              "meaning": "分开、移走"
+            },
+            {
+              "part": "lodge",
+              "meaning": "小屋；也可指卡住",
+              "cue": "哥哥落地"
+            }
+          ],
+          "related": [
+            {
+              "term": "lodge",
+              "meaning": "小屋；卡住"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "总表分写，词条采用合写 dislodge。"
+    },
+    {
+      "id": "word_soluble",
+      "word": "soluble",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "soluble"
+        }
+      ],
+      "meaning": [
+        "可溶解的",
+        "可解决的"
+      ],
+      "phonetic": "/ˈsɒljəbəl/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "soluble in water"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_soluble",
+          "type": "word_family",
+          "title": "从溶液联想到解决方案",
+          "content": "把紧密结合的东西松开，物质分散进液体 → soluble，可溶解的。solution 既是「溶液」也是「解决方案」，由此记住 soluble 也可形容一个问题可以解决。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 4 页",
+          "related": [
+            {
+              "term": "solve",
+              "meaning": "解决"
+            },
+            {
+              "term": "resolve",
+              "meaning": "解决；下定决心"
+            },
+            {
+              "term": "dissolve",
+              "meaning": "溶解；解散"
+            },
+            {
+              "term": "solution",
+              "meaning": "溶液；解决方案"
+            },
+            {
+              "term": "insoluble",
+              "meaning": "不可溶的；难以解决的"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "总表作 soluble，详解标题多写 a。以总表为准。"
+    },
+    {
+      "id": "word_underline",
+      "word": "underline",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "under line"
+        }
+      ],
+      "meaning": [
+        "在…下面画线",
+        "强调",
+        "突出"
+      ],
+      "phonetic": "/ˌʌndəˈlaɪn/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "underline the key points"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_underline",
+          "type": "morphology",
+          "title": "在下面画线是为了突出",
+          "content": "在重点单词下面画一条线 → underline，在下面画线。文章或发言也能 underline 一个观点，意思是强调它。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 4 页",
+          "segments": [
+            {
+              "part": "under",
+              "meaning": "在……下面"
+            },
+            {
+              "part": "line",
+              "meaning": "线"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "总表分写，词条采用合写 underline。"
+    },
+    {
+      "id": "word_antidote",
+      "word": "antidote",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "antidote"
+        }
+      ],
+      "meaning": [
+        "解毒剂",
+        "抵消不良影响的方法"
+      ],
+      "phonetic": "/ˈæntɪdəʊt/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "an antidote to the poison"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_antidote",
+          "type": "morphology",
+          "title": "抵抗毒性，再引申为消除坏影响",
+          "content": "想象用药剂对抗毒物 → antidote，解毒剂。它也可比喻抵消不良影响的方法。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 4 页",
+          "segments": [
+            {
+              "part": "anti-",
+              "meaning": "抵抗、对抗",
+              "cue": "俺踢"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_turret",
+      "word": "turret",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "turret"
+        }
+      ],
+      "meaning": [
+        "塔楼",
+        "炮塔"
+      ],
+      "phonetic": "/ˈtʌrət/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a castle turret",
+        "a gun turret"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_turret",
+          "type": "association",
+          "title": "从会转动的炮塔联想到塔楼",
+          "content": "用 turn 联想能转动的炮塔，再记住城堡上突出的塔楼也叫 turret。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 4 页",
+          "cue": "turn（它能转）",
+          "related": [
+            {
+              "term": "gun turret",
+              "meaning": "炮塔"
+            },
+            {
+              "term": "castle turret",
+              "meaning": "城堡塔楼"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "总表作 turret，详解标题多写词尾 n。以总表为准。"
+    },
+    {
+      "id": "word_mishandle",
+      "word": "mishandle",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "mis handle"
+        }
+      ],
+      "meaning": [
+        "处理不当",
+        "粗暴对待"
+      ],
+      "phonetic": "/ˌmɪsˈhændəl/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "mishandle a complaint"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_mishandle",
+          "type": "morphology",
+          "title": "以错误方式处理",
+          "content": "以错误的方式处理一件事 → mishandle，处理不当。用同一个 mis- 记住下列例词。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 5 页",
+          "segments": [
+            {
+              "part": "mis-",
+              "meaning": "错误地、不当地"
+            },
+            {
+              "part": "handle",
+              "meaning": "处理"
+            }
+          ],
+          "related": [
+            {
+              "term": "misunderstand",
+              "meaning": "误解"
+            },
+            {
+              "term": "mislead",
+              "meaning": "误导"
+            },
+            {
+              "term": "misuse",
+              "meaning": "误用、滥用"
+            },
+            {
+              "term": "misjudge",
+              "meaning": "判断错误"
+            },
+            {
+              "term": "misconduct",
+              "meaning": "不当行为"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "总表分写，词条采用合写 mishandle。"
+    },
+    {
+      "id": "word_amend",
+      "word": "amend",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "amend"
+        }
+      ],
+      "meaning": [
+        "修订",
+        "修改"
+      ],
+      "phonetic": "/əˈmend/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "amend the law"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_amend",
+          "type": "association",
+          "title": "一再修改，直到文本合适",
+          "content": "用 mend 想到「修」，再想象在文本上反复修改 → amend，修订、修改，常见于法律或正式文件。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 5 页",
+          "cue": "一再的修",
+          "related": [
+            {
+              "term": "mend",
+              "meaning": "修理、修补"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_lens",
+      "word": "lens",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "lens"
+        }
+      ],
+      "meaning": [
+        "透镜",
+        "镜头",
+        "镜片"
+      ],
+      "phonetic": "/lenz/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a camera lens",
+        "contact lenses"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_lens",
+          "type": "phonetic",
+          "title": "借给你一片透镜看看",
+          "content": "用 lend 的声音联想到借一片透镜来观察东西 → lens，透镜、镜头、镜片。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 5 页",
+          "cue": "lend（借给你看看）"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_coordinator",
+      "word": "coordinator",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "coordinator"
+        }
+      ],
+      "meaning": [
+        "协调员",
+        "统筹者"
+      ],
+      "phonetic": "/kəʊˈɔːdɪneɪtə/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a project coordinator"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_coordinator",
+          "type": "word_family",
+          "title": "让大家协调配合的人",
+          "content": "coordinate 是协调、配合。负责协调人手、时间和任务的人 → coordinator，协调员。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 5 页",
+          "related": [
+            {
+              "term": "coordinate",
+              "meaning": "协调、配合"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_crisp",
+      "word": "crisp",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "crisp"
+        }
+      ],
+      "meaning": [
+        "脆的",
+        "清爽凉快的",
+        "简洁清晰的",
+        "薯片（英式）"
+      ],
+      "phonetic": "/krɪsp/",
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "crisp air",
+        "a packet of crisps"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_crisp",
+          "type": "association",
+          "title": "从酥脆、清爽到简洁明快",
+          "content": "想象薯片的酥脆口感，再联想到秋天空气的清爽，最后联想到文字表达的简洁明快。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List6.pdf · 第 6 页",
+          "cue": "脆脆的",
+          "related": [
+            {
+              "term": "crisp food",
+              "meaning": "酥脆的食物"
+            },
+            {
+              "term": "crisp air",
+              "meaning": "清爽凉快的空气"
+            },
+            {
+              "term": "crisp writing",
+              "meaning": "简洁清晰的文字"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_reign",
+      "word": "reign",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "reign"
+        }
+      ],
+      "meaning": [
+        "统治",
+        "在位",
+        "统治时期"
+      ],
+      "phonetic": "/reɪn/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "during the reign of"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_literacy",
+      "word": "literacy",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "literacy"
+        }
+      ],
+      "meaning": [
+        "读写能力",
+        "某领域的素养"
+      ],
+      "phonetic": "/ˈlɪtərəsi/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "adult literacy",
+        "digital literacy"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_constant",
+      "word": "constant",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "constant"
+        }
+      ],
+      "meaning": [
+        "持续不断的",
+        "恒定的",
+        "常数"
+      ],
+      "phonetic": "/ˈkɒnstənt/",
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "at a constant speed"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_subscription",
+      "word": "subscription",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "subscription"
+        }
+      ],
+      "meaning": [
+        "订阅",
+        "订阅费",
+        "会费"
+      ],
+      "phonetic": "/səbˈskrɪpʃən/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "an annual subscription"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_circulation",
+      "word": "circulation",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "circulation"
+        }
+      ],
+      "meaning": [
+        "循环",
+        "流通",
+        "发行量"
+      ],
+      "phonetic": "/ˌsɜːkjəˈleɪʃən/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "blood circulation",
+        "in circulation"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_decay",
+      "word": "decay",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "decay"
+        }
+      ],
+      "meaning": [
+        "腐烂",
+        "衰退",
+        "衰变"
+      ],
+      "phonetic": "/dɪˈkeɪ/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "tooth decay"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_distribution",
+      "word": "distribution",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "distribution"
+        }
+      ],
+      "meaning": [
+        "分配",
+        "分发",
+        "分布"
+      ],
+      "phonetic": "/ˌdɪstrɪˈbjuːʃən/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "the distribution of income"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_defect",
+      "word": "defect",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "defect"
+        }
+      ],
+      "meaning": [
+        "缺陷",
+        "瑕疵",
+        "叛逃",
+        "倒戈"
+      ],
+      "phonetic": "/ˈdiːfekt/ n. · /dɪˈfekt/ v.",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a manufacturing defect",
+        "defect to another country"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_statistics",
+      "word": "statistics",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "statistics"
+        }
+      ],
+      "meaning": [
+        "统计数据",
+        "统计学"
+      ],
+      "phonetic": "/stəˈtɪstɪks/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "official statistics",
+        "study statistics"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_statistic",
+      "word": "statistic",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "statistic"
+        }
+      ],
+      "meaning": [
+        "一项统计数据",
+        "统计量"
+      ],
+      "phonetic": "/stəˈtɪstɪk/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a key statistic"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_propose",
+      "word": "propose",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "propose"
+        }
+      ],
+      "meaning": [
+        "提议",
+        "提出",
+        "求婚"
+      ],
+      "phonetic": "/prəˈpəʊz/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "propose a solution"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_administration",
+      "word": "administration",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "administration"
+        }
+      ],
+      "meaning": [
+        "管理",
+        "行政",
+        "管理部门",
+        "政府"
+      ],
+      "phonetic": "/ədˌmɪnɪˈstreɪʃən/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "public administration"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_objective",
+      "word": "objective",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "objective"
+        }
+      ],
+      "meaning": [
+        "目标",
+        "客观的"
+      ],
+      "phonetic": "/əbˈdʒektɪv/",
+      "part_of_speech": [
+        "noun",
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "achieve an objective",
+        "an objective assessment"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_conflict",
+      "word": "conflict",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "conflict"
+        }
+      ],
+      "meaning": [
+        "冲突",
+        "矛盾",
+        "抵触"
+      ],
+      "phonetic": "/ˈkɒnflɪkt/ n. · /kənˈflɪkt/ v.",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a conflict of interest",
+        "conflict with the evidence"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_continent",
+      "word": "continent",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "continent"
+        }
+      ],
+      "meaning": [
+        "洲",
+        "大陆"
+      ],
+      "phonetic": "/ˈkɒntɪnənt/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "the African continent"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_redundant",
+      "word": "redundant",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "redundant"
+        }
+      ],
+      "meaning": [
+        "多余的",
+        "因岗位取消而被裁的"
+      ],
+      "phonetic": "/rɪˈdʌndənt/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "make staff redundant"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_property",
+      "word": "property",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "property"
+        }
+      ],
+      "meaning": [
+        "财产",
+        "房产",
+        "性质"
+      ],
+      "phonetic": "/ˈprɒpəti/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "private property",
+        "physical properties"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_coordinate",
+      "word": "coordinate",
+      "list_ids": [
+        6
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 6,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-6",
+          "raw": "coordinate"
+        }
+      ],
+      "meaning": [
+        "协调",
+        "配合",
+        "坐标"
+      ],
+      "phonetic": "/kəʊˈɔːdɪneɪt/ v. · /kəʊˈɔːdɪnət/ n.",
+      "part_of_speech": [
+        "verb",
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "coordinate the response",
+        "geographic coordinates"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    }
+  ]
+}
