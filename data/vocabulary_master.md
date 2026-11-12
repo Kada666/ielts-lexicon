@@ -232,6 +232,50 @@
 | 6 | property | uncertain | △ | 财产；房产；性质 |  | needs_review | needs_review |
 | 6 | coordinate | uncertain | △ | 协调；配合；坐标 |  | needs_review | needs_review |
 
+| 7 | smuggle | unknown | ○ | 走私；偷运；偷偷带入 |  | needs_review | needs_review |
+| 7 | reserve | unknown | ○ | 预订；保留；储备；保护区 |  | needs_review | needs_review |
+| 7 | gravel | unknown | ○ | 砾石；碎石 |  | needs_review | needs_review |
+| 7 | improvise | unknown | ○ | 即兴创作；随机应变；临时凑合 |  | needs_review | needs_review |
+| 7 | laundry | unknown | ○ | 待洗或洗好的衣物；洗衣；洗衣房 |  | needs_review | needs_review |
+| 7 | apparently | unknown | ○ | 看来；似乎；据说 | 原笔记也列「显然」。常见学习义按「据现有信息看来」或「据说」理解，语气随上下文而变。 | needs_review | needs_review |
+| 7 | gelatin | unknown | ○ | 明胶 |  | needs_review | needs_review |
+| 7 | empirical | unknown | ○ | 基于观察或实验的；实证的 | 详解标题作 empircial，采用总表及详解搭配 empirical evidence 中的词形。 | needs_review | needs_review |
+| 7 | probation | unknown | ○ | 缓刑；试用期；考察期 |  | needs_review | needs_review |
+| 7 | proximity | unknown | ○ | 接近；邻近 |  | needs_review | needs_review |
+| 7 | factual | unknown | ○ | 事实的；基于事实的 |  | needs_review | needs_review |
+| 7 | carry | unknown | ○ | 携带；搬运；承载 |  | needs_review | needs_review |
+| 7 | devastate | unknown | ○ | 毁坏；摧毁；使极度悲痛 |  | needs_review | needs_review |
+| 7 | dull | unknown | ○ | 乏味的；暗淡的；钝的；隐隐作痛的；使变钝或减弱 |  | needs_review | needs_review |
+| 7 | tropical | unknown | ○ | 热带的；产于热带的 |  | needs_review | needs_review |
+| 7 | rumour | unknown | ○ | 谣言；传闻 |  | needs_review | needs_review |
+| 7 | slim | unknown | ○ | 苗条的；薄的；微小的；减肥 |  | needs_review | needs_review |
+| 7 | warrant | unknown | ○ | 正当理由；授权令；使有必要；授权 |  | needs_review | needs_review |
+| 7 | optimism | unknown | ○ | 乐观；乐观主义 |  | needs_review | needs_review |
+| 7 | overdue | unknown | ○ | 逾期的；早该发生的 |  | needs_review | needs_review |
+| 7 | analysis | unknown | ○ | 分析；分析结果 |  | needs_review | needs_review |
+| 7 | refresher | unknown | ○ | 复习课；帮助恢复记忆的资料或提醒 | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
+| 7 | blaze | unknown | ○ | 烈火；猛烈燃烧；闪耀 | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
+| 7 | unyielding | unknown | ○ | 不屈服的；顽强的；坚硬的 | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
+| 7 | vernacular | unknown | ○ | 本地话；方言；通俗语言；本地的 | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
+| 7 | deputy | unknown | ○ | 副手；代理人；副职的 | 原稿「续」为 ○ 栏续列。 | needs_review | needs_review |
+| 7 | fragrance | unknown | ○ | 芳香；香味；香水 | 原稿「续」为 ○ 栏续列。原稿的「打碎」与 fragment 保留作拼写和画面联想。 | needs_review | needs_review |
+| 7 | dimensional | uncertain | △ | 维度的；尺寸的 |  | needs_review | needs_review |
+| 7 | insulation | uncertain | △ | 隔热；隔音；绝缘；保温或绝缘材料 |  | needs_review | needs_review |
+| 7 | eliminate | uncertain | △ | 消除；排除；淘汰 |  | needs_review | needs_review |
+| 7 | exclusive | uncertain | △ | 独有的；专供的；排他的；独家报道 |  | needs_review | needs_review |
+| 7 | glue | uncertain | △ | 胶水；用胶水粘住 |  | needs_review | needs_review |
+| 7 | stimulate | uncertain | △ | 刺激；促进；激发 |  | needs_review | needs_review |
+| 7 | operational | uncertain | △ | 运转的；可使用的；业务操作的 |  | needs_review | needs_review |
+| 7 | acclaim | uncertain | △ | 赞誉；称赞 |  | needs_review | needs_review |
+| 7 | payment | uncertain | △ | 付款；支付；款项 |  | needs_review | needs_review |
+| 7 | agenda | uncertain | △ | 议程；待办事项；行动计划 |  | needs_review | needs_review |
+| 7 | rank | uncertain | △ | 等级；名次；把…排序；位列 |  | needs_review | needs_review |
+| 7 | dimension | uncertain | △ | 尺寸；维度；方面 |  | needs_review | needs_review |
+| 7 | administrative | uncertain | △ | 行政的；管理的 |  | needs_review | needs_review |
+| 7 | resistant | uncertain | △ | 有抵抗力的；耐…的；抗拒的 |  | needs_review | needs_review |
+| 7 | verdict | uncertain | △ | 裁决；判决；评断 |  | needs_review | needs_review |
+| 7 | approve | uncertain | △ | 批准；认可；赞成 |  | needs_review | needs_review |
+
 ## 词条补充资料
 
 此处保存基础资料和生成候选。手写记忆法以 [data/notes](notes/) 下各 List 的 Markdown 为准，由构建脚本合并。真实词源需要可靠引用。编辑 word 前同步修改补充资料中的键；复习开始后不要随意改词形，否则会产生新 ID。
@@ -3671,6 +3715,497 @@
     "collocations": [
       "coordinate the response",
       "geographic coordinates"
+    ]
+  },
+  {
+    "word": "smuggle",
+    "raw": "smuggle",
+    "phonetic": "/ˈsmʌɡəl/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "smuggle goods across the border"
+    ]
+  },
+  {
+    "word": "reserve",
+    "raw": "reserve",
+    "phonetic": "/rɪˈzɜːv/",
+    "part_of_speech": [
+      "verb",
+      "noun"
+    ],
+    "collocations": [
+      "reserve a table",
+      "a nature reserve"
+    ]
+  },
+  {
+    "word": "gravel",
+    "raw": "gravel",
+    "phonetic": "/ˈɡrævəl/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a gravel path"
+    ]
+  },
+  {
+    "word": "improvise",
+    "raw": "improvise",
+    "phonetic": "/ˈɪmprəvaɪz/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "improvise a solution"
+    ]
+  },
+  {
+    "word": "laundry",
+    "raw": "laundry",
+    "phonetic": "/ˈlɔːndri/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "do the laundry"
+    ]
+  },
+  {
+    "word": "apparently",
+    "raw": "apparently",
+    "phonetic": "/əˈpærəntli/",
+    "part_of_speech": [
+      "adverb"
+    ],
+    "collocations": [
+      "apparently unrelated"
+    ]
+  },
+  {
+    "word": "gelatin",
+    "raw": "gelatin",
+    "phonetic": "/ˈdʒelətiːn/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "powdered gelatin"
+    ]
+  },
+  {
+    "word": "empirical",
+    "raw": "empirical",
+    "phonetic": "/ɪmˈpɪrɪkəl/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "empirical evidence"
+    ]
+  },
+  {
+    "word": "probation",
+    "raw": "probation",
+    "phonetic": "/prəˈbeɪʃən/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "be on probation"
+    ]
+  },
+  {
+    "word": "proximity",
+    "raw": "proximity",
+    "phonetic": "/prɒkˈsɪməti/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "in close proximity to"
+    ]
+  },
+  {
+    "word": "factual",
+    "raw": "factual",
+    "phonetic": "/ˈfæktʃuəl/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "factual information"
+    ]
+  },
+  {
+    "word": "carry",
+    "raw": "carry",
+    "phonetic": "/ˈkæri/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "carry a box",
+      "carry out a study",
+      "carry on working"
+    ]
+  },
+  {
+    "word": "devastate",
+    "raw": "devastate",
+    "phonetic": "/ˈdevəsteɪt/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "devastate a region"
+    ]
+  },
+  {
+    "word": "dull",
+    "raw": "dull",
+    "phonetic": "/dʌl/",
+    "part_of_speech": [
+      "adjective",
+      "verb"
+    ],
+    "collocations": [
+      "a dull lecture",
+      "a dull ache"
+    ]
+  },
+  {
+    "word": "tropical",
+    "raw": "tropical",
+    "phonetic": "/ˈtrɒpɪkəl/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "a tropical rainforest"
+    ]
+  },
+  {
+    "word": "rumour",
+    "raw": "rumour",
+    "phonetic": "/ˈruːmə/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "spread a rumour"
+    ]
+  },
+  {
+    "word": "slim",
+    "raw": "slim",
+    "phonetic": "/slɪm/",
+    "part_of_speech": [
+      "adjective",
+      "verb"
+    ],
+    "collocations": [
+      "a slim chance"
+    ]
+  },
+  {
+    "word": "warrant",
+    "raw": "warrant",
+    "phonetic": "/ˈwɒrənt/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "an arrest warrant",
+      "warrant further investigation"
+    ]
+  },
+  {
+    "word": "optimism",
+    "raw": "optimism",
+    "phonetic": "/ˈɒptɪmɪzəm/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "cautious optimism"
+    ]
+  },
+  {
+    "word": "overdue",
+    "raw": "overdue",
+    "phonetic": "/ˌəʊvəˈdjuː/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "an overdue payment",
+      "a long-overdue change"
+    ]
+  },
+  {
+    "word": "analysis",
+    "raw": "analysis",
+    "phonetic": "/əˈnæləsɪs/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "data analysis"
+    ]
+  },
+  {
+    "word": "refresher",
+    "raw": "refresher",
+    "phonetic": "/rɪˈfreʃə/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a refresher course"
+    ]
+  },
+  {
+    "word": "blaze",
+    "raw": "blaze",
+    "phonetic": "/bleɪz/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "a fierce blaze"
+    ]
+  },
+  {
+    "word": "unyielding",
+    "raw": "unyielding",
+    "phonetic": "/ʌnˈjiːldɪŋ/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "unyielding determination"
+    ]
+  },
+  {
+    "word": "vernacular",
+    "raw": "vernacular",
+    "phonetic": "/vəˈnækjələ/",
+    "part_of_speech": [
+      "noun",
+      "adjective"
+    ],
+    "collocations": [
+      "in the local vernacular"
+    ]
+  },
+  {
+    "word": "deputy",
+    "raw": "deputy",
+    "phonetic": "/ˈdepjəti/",
+    "part_of_speech": [
+      "noun",
+      "adjective"
+    ],
+    "collocations": [
+      "a deputy director"
+    ]
+  },
+  {
+    "word": "fragrance",
+    "raw": "fragrance",
+    "phonetic": "/ˈfreɪɡrəns/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "the fragrance of roses"
+    ]
+  },
+  {
+    "word": "dimensional",
+    "raw": "dimensional",
+    "phonetic": "/daɪˈmenʃənəl/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "a three-dimensional model"
+    ]
+  },
+  {
+    "word": "insulation",
+    "raw": "insulation",
+    "phonetic": "/ˌɪnsjəˈleɪʃən/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "thermal insulation"
+    ]
+  },
+  {
+    "word": "eliminate",
+    "raw": "eliminate",
+    "phonetic": "/ɪˈlɪmɪneɪt/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "eliminate the risk"
+    ]
+  },
+  {
+    "word": "exclusive",
+    "raw": "exclusive",
+    "phonetic": "/ɪkˈskluːsɪv/",
+    "part_of_speech": [
+      "adjective",
+      "noun"
+    ],
+    "collocations": [
+      "exclusive access"
+    ]
+  },
+  {
+    "word": "glue",
+    "raw": "glue",
+    "phonetic": "/ɡluː/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "glue the pieces together"
+    ]
+  },
+  {
+    "word": "stimulate",
+    "raw": "stimulate",
+    "phonetic": "/ˈstɪmjəleɪt/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "stimulate economic growth"
+    ]
+  },
+  {
+    "word": "operational",
+    "raw": "operational",
+    "phonetic": "/ˌɒpəˈreɪʃənəl/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "become fully operational"
+    ]
+  },
+  {
+    "word": "acclaim",
+    "raw": "acclaim",
+    "phonetic": "/əˈkleɪm/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "critical acclaim"
+    ]
+  },
+  {
+    "word": "payment",
+    "raw": "payment",
+    "phonetic": "/ˈpeɪmənt/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "make a payment"
+    ]
+  },
+  {
+    "word": "agenda",
+    "raw": "agenda",
+    "phonetic": "/əˈdʒendə/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "an item on the agenda"
+    ]
+  },
+  {
+    "word": "rank",
+    "raw": "rank",
+    "phonetic": "/ræŋk/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "rank first"
+    ]
+  },
+  {
+    "word": "dimension",
+    "raw": "dimension",
+    "phonetic": "/daɪˈmenʃən/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "the social dimension"
+    ]
+  },
+  {
+    "word": "administrative",
+    "raw": "administrative",
+    "phonetic": "/ədˈmɪnɪstrətɪv/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "administrative duties"
+    ]
+  },
+  {
+    "word": "resistant",
+    "raw": "resistant",
+    "phonetic": "/rɪˈzɪstənt/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "resistant to change"
+    ]
+  },
+  {
+    "word": "verdict",
+    "raw": "verdict",
+    "phonetic": "/ˈvɜːdɪkt/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "reach a verdict"
+    ]
+  },
+  {
+    "word": "approve",
+    "raw": "approve",
+    "phonetic": "/əˈpruːv/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "approve a proposal",
+      "approve of a decision"
     ]
   }
 ]

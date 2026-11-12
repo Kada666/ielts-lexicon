@@ -1,0 +1,2093 @@
+{
+  "format": "ielts-lexicon-vocabulary",
+  "schema_version": 1,
+  "words": [
+    {
+      "id": "word_smuggle",
+      "word": "smuggle",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "smuggle"
+        }
+      ],
+      "meaning": [
+        "走私",
+        "偷运",
+        "偷偷带入"
+      ],
+      "phonetic": "/ˈsmʌɡəl/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "smuggle goods across the border"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_smuggle",
+          "type": "association",
+          "title": "小心地偷偷运过去",
+          "content": "想象有人把物品藏进行李，试图偷偷通过海关 → smuggle，走私、偷运。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 2 页",
+          "cue": "小小的走"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_reserve",
+      "word": "reserve",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "reserve"
+        }
+      ],
+      "meaning": [
+        "预订",
+        "保留",
+        "储备",
+        "保护区"
+      ],
+      "phonetic": "/rɪˈzɜːv/",
+      "part_of_speech": [
+        "verb",
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "reserve a table",
+        "a nature reserve"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_reserve",
+          "type": "association",
+          "title": "回来时，位置还给你留着",
+          "content": "想象先把座位为某人留下，等对方回来再使用 → reserve，预订、保留。作为名词也可指留作后用的储备，或划出来保护自然的保护区。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 2 页",
+          "cue": "回来我给你服务",
+          "related": [
+            {
+              "term": "reservation",
+              "meaning": "预订；保留意见"
+            },
+            {
+              "term": "preserve",
+              "meaning": "保护、保存"
+            },
+            {
+              "term": "conserve",
+              "meaning": "保存、节约"
+            },
+            {
+              "term": "reservoir",
+              "meaning": "水库；储存处"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_gravel",
+      "word": "gravel",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "gravel"
+        }
+      ],
+      "meaning": [
+        "砾石",
+        "碎石"
+      ],
+      "phonetic": "/ˈɡrævəl/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a gravel path"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_gravel",
+          "type": "association",
+          "title": "墓前小路上的碎石",
+          "content": "从拼写联想到 grave，再想象墓前小路铺满小石子 → gravel，砾石、碎石。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 2 页",
+          "cue": "grave（坟墓之前）",
+          "related": [
+            {
+              "term": "grave",
+              "meaning": "坟墓"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_improvise",
+      "word": "improvise",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "improvise"
+        }
+      ],
+      "meaning": [
+        "即兴创作",
+        "随机应变",
+        "临时凑合"
+      ],
+      "phonetic": "/ˈɪmprəvaɪz/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "improvise a solution"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_improvise",
+          "type": "morphology",
+          "title": "没能提前预见，只好即兴应对",
+          "content": "没能预先看到会发生什么 → 当场想办法、随机应变 → improvise，即兴创作或临时凑合。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 2 页",
+          "cue": "不向前看，走一步看一步",
+          "segments": [
+            {
+              "part": "im-",
+              "meaning": "不"
+            },
+            {
+              "part": "pro-",
+              "meaning": "向前、预先"
+            },
+            {
+              "part": "vis-",
+              "meaning": "看"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_laundry",
+      "word": "laundry",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "laundry"
+        }
+      ],
+      "meaning": [
+        "待洗或洗好的衣物",
+        "洗衣",
+        "洗衣房"
+      ],
+      "phonetic": "/ˈlɔːndri/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "do the laundry"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_laundry",
+          "type": "association",
+          "title": "从洗衣到一篮衣物",
+          "content": "想象把衣物洗干净、晾干并叠好，放回洗衣篮 → laundry，待洗或洗好的衣物，也可指洗衣或洗衣房。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 2 页",
+          "cue": "洗、干"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_apparently",
+      "word": "apparently",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "apparently"
+        }
+      ],
+      "meaning": [
+        "看来",
+        "似乎",
+        "据说"
+      ],
+      "phonetic": "/əˈpærəntli/",
+      "part_of_speech": [
+        "adverb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "apparently unrelated"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_apparently",
+          "type": "word_family",
+          "title": "根据现有信息说「看来」",
+          "content": "appear 是显现、似乎，apparent 是明显的或表面上的。apparently 常用于根据已知信息作判断，或转述听来的消息，译作「看来、似乎、据说」。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 3 页",
+          "related": [
+            {
+              "term": "appear",
+              "meaning": "显现；似乎"
+            },
+            {
+              "term": "apparent",
+              "meaning": "明显的；表面上的"
+            },
+            {
+              "term": "obviously",
+              "meaning": "显而易见地"
+            },
+            {
+              "term": "seemingly",
+              "meaning": "看似、表面上"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "原笔记也列「显然」。常见学习义按「据现有信息看来」或「据说」理解，语气随上下文而变。"
+    },
+    {
+      "id": "word_gelatin",
+      "word": "gelatin",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "gelatin"
+        }
+      ],
+      "meaning": [
+        "明胶"
+      ],
+      "phonetic": "/ˈdʒelətiːn/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "powdered gelatin"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_gelatin",
+          "type": "phonetic",
+          "title": "嚼到黏住的明胶",
+          "content": "用口诀联想到胶黏、有弹性的口感 → gelatin，明胶。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 3 页",
+          "cue": "嚼吧嚼吧，停住了"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_empirical",
+      "word": "empirical",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "empirical"
+        }
+      ],
+      "meaning": [
+        "基于观察或实验的",
+        "实证的"
+      ],
+      "phonetic": "/ɪmˈpɪrɪkəl/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "empirical evidence"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_empirical",
+          "type": "phonetic",
+          "title": "用观察和实验说话",
+          "content": "想象通过实验或观察收集数据来验证想法 → empirical，实证的、以观察或实验为依据的。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 3 页",
+          "cue": "俺们做实验的",
+          "related": [
+            {
+              "term": "empirical evidence",
+              "meaning": "实证证据"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "详解标题作 empircial，采用总表及详解搭配 empirical evidence 中的词形。"
+    },
+    {
+      "id": "word_probation",
+      "word": "probation",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "probation"
+        }
+      ],
+      "meaning": [
+        "缓刑",
+        "试用期",
+        "考察期"
+      ],
+      "phonetic": "/prəˈbeɪʃən/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "be on probation"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_probation",
+          "type": "association",
+          "title": "在一段时间内考察行为",
+          "content": "想象某人的行为在规定的一段时间内受到观察 → probation。用在司法语境可指缓刑或监管考察期，用在工作语境可指试用期。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 3 页",
+          "cue": "调查他的行为",
+          "related": [
+            {
+              "term": "probe",
+              "meaning": "调查、探查"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_proximity",
+      "word": "proximity",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "proximity"
+        }
+      ],
+      "meaning": [
+        "接近",
+        "邻近"
+      ],
+      "phonetic": "/prɒkˈsɪməti/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "in close proximity to"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_proximity",
+          "type": "morphology",
+          "title": "处在很近的位置",
+          "content": "处于很近的状态 → proximity，接近、邻近。approximate 也可以从「接近」联想到近似值。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 3 页",
+          "segments": [
+            {
+              "part": "proxim-",
+              "meaning": "近（near）"
+            },
+            {
+              "part": "-ity",
+              "meaning": "状态、性质"
+            }
+          ],
+          "related": [
+            {
+              "term": "approximate",
+              "meaning": "近似的、大约的"
+            },
+            {
+              "term": "in close proximity to",
+              "meaning": "紧邻、非常靠近"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_factual",
+      "word": "factual",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "factual"
+        }
+      ],
+      "meaning": [
+        "事实的",
+        "基于事实的"
+      ],
+      "phonetic": "/ˈfæktʃuəl/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "factual information"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_factual",
+          "type": "morphology",
+          "title": "以事实为基础",
+          "content": "以事实为依据的描述或信息 → factual，基于事实的。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 4 页",
+          "segments": [
+            {
+              "part": "fact",
+              "meaning": "事实"
+            },
+            {
+              "part": "-ual",
+              "meaning": "此处提示形容词词尾"
+            }
+          ],
+          "related": [
+            {
+              "term": "fact",
+              "meaning": "事实"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_carry",
+      "word": "carry",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "carry"
+        }
+      ],
+      "meaning": [
+        "携带",
+        "搬运",
+        "承载"
+      ],
+      "phonetic": "/ˈkæri/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "carry a box",
+        "carry out a study",
+        "carry on working"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_carry",
+          "type": "association",
+          "title": "搬箱子的动作",
+          "content": "想象双手搬着纸箱从一处走到另一处 → carry，携带、搬运。再分别记 carry out 和 carry on 的搭配。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 4 页",
+          "related": [
+            {
+              "term": "carry out",
+              "meaning": "执行、实施"
+            },
+            {
+              "term": "carry on",
+              "meaning": "继续"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_devastate",
+      "word": "devastate",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "devastate"
+        }
+      ],
+      "meaning": [
+        "毁坏",
+        "摧毁",
+        "使极度悲痛"
+      ],
+      "phonetic": "/ˈdevəsteɪt/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "devastate a region"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_devastate",
+          "type": "phonetic",
+          "title": "从被摧毁的国家联想到极度悲痛",
+          "content": "用口诀想起一个国家遭到严重破坏的画面 → devastate，摧毁。事情也可以 devastate 一个人，让他极度悲痛。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 4 页",
+          "cue": "大卫的国家"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_dull",
+      "word": "dull",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "dull"
+        }
+      ],
+      "meaning": [
+        "乏味的",
+        "暗淡的",
+        "钝的",
+        "隐隐作痛的",
+        "使变钝或减弱"
+      ],
+      "phonetic": "/dʌl/",
+      "part_of_speech": [
+        "adjective",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a dull lecture",
+        "a dull ache"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_dull",
+          "type": "phonetic",
+          "title": "无聊的课、暗淡的天、钝刀",
+          "content": "想象重复读到乏味，再用阴沉的天空和不锋利的刀联想到暗淡和钝。dull 用来形容疼痛时，可以表示隐隐作痛。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 4 页",
+          "cue": "读（做）两遍",
+          "related": [
+            {
+              "term": "a dull lecture",
+              "meaning": "乏味的讲座"
+            },
+            {
+              "term": "dull colours",
+              "meaning": "暗淡的颜色"
+            },
+            {
+              "term": "a dull knife",
+              "meaning": "钝刀"
+            },
+            {
+              "term": "a dull pain",
+              "meaning": "隐隐作痛"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_tropical",
+      "word": "tropical",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "tropical"
+        }
+      ],
+      "meaning": [
+        "热带的",
+        "产于热带的"
+      ],
+      "phonetic": "/ˈtrɒpɪkəl/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a tropical rainforest"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_tropical",
+          "type": "association",
+          "title": "从「转」想到回归线与热带",
+          "content": "按笔记的 trop-「转」联想，先想起地球上的回归线，再想象两条回归线之间的热带雨林 → tropical，热带的。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 4 页",
+          "cue": "让你的屁股团团转",
+          "related": [
+            {
+              "term": "tropic",
+              "meaning": "回归线"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_rumour",
+      "word": "rumour",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "rumour"
+        }
+      ],
+      "meaning": [
+        "谣言",
+        "传闻"
+      ],
+      "phonetic": "/ˈruːmə/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "spread a rumour"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_rumour",
+          "type": "phonetic",
+          "title": "从别人背后议论想到传闻",
+          "content": "用口诀想象有人在背后议论，消息一传十、十传百 → rumour，谣言、传闻。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 4 页",
+          "cue": "辱骂我"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_slim",
+      "word": "slim",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "slim"
+        }
+      ],
+      "meaning": [
+        "苗条的",
+        "薄的",
+        "微小的",
+        "减肥"
+      ],
+      "phonetic": "/slɪm/",
+      "part_of_speech": [
+        "adjective",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a slim chance"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_slim",
+          "type": "association",
+          "title": "把 SIM 卡立起来看有多薄",
+          "content": "想象把 SIM 卡竖起来看它的薄边 → slim，薄的、苗条的。形容机会时，a slim chance 指机会渺茫。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 5 页",
+          "cue": "SIM 卡立起来",
+          "related": [
+            {
+              "term": "slender",
+              "meaning": "细长的、苗条的（List 3）"
+            },
+            {
+              "term": "a slim chance",
+              "meaning": "渺茫的机会"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_warrant",
+      "word": "warrant",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "warrant"
+        }
+      ],
+      "meaning": [
+        "正当理由",
+        "授权令",
+        "使有必要",
+        "授权"
+      ],
+      "phonetic": "/ˈwɒrənt/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "an arrest warrant",
+        "warrant further investigation"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_warrant",
+          "type": "association",
+          "title": "能构成正当理由，也可指授权令",
+          "content": "想象局势严重到足以成为撤离的理由 → warrant 作动词可以表示「使某事有必要」。作名词时也可以指正式的授权令。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 5 页",
+          "cue": "爆发战争快逃跑",
+          "related": [
+            {
+              "term": "warrant further investigation",
+              "meaning": "有必要进一步调查"
+            },
+            {
+              "term": "an arrest warrant",
+              "meaning": "逮捕令"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_optimism",
+      "word": "optimism",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "optimism"
+        }
+      ],
+      "meaning": [
+        "乐观",
+        "乐观主义"
+      ],
+      "phonetic": "/ˈɒptɪmɪzəm/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "cautious optimism"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_optimism",
+          "type": "morphology",
+          "title": "相信事情会朝好的方向发展",
+          "content": "倾向于期待较好的结果 → optimism，乐观、乐观主义。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 5 页",
+          "cue": "听从自己的选择",
+          "segments": [
+            {
+              "part": "optim-",
+              "meaning": "最好的（best）"
+            },
+            {
+              "part": "-ism",
+              "meaning": "主义、思想倾向",
+              "cue": "是 s 还是 m"
+            }
+          ],
+          "related": [
+            {
+              "term": "pessimism",
+              "meaning": "悲观、悲观主义"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_overdue",
+      "word": "overdue",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "overdue"
+        }
+      ],
+      "meaning": [
+        "逾期的",
+        "早该发生的"
+      ],
+      "phonetic": "/ˌəʊvəˈdjuː/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "an overdue payment",
+        "a long-overdue change"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_overdue",
+          "type": "morphology",
+          "title": "已经超过应完成的日期",
+          "content": "日历上的截止日已经过去，事情仍未完成 → overdue，逾期的。也可形容早就该发生的改变。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 5 页",
+          "segments": [
+            {
+              "part": "over-",
+              "meaning": "超过"
+            },
+            {
+              "part": "due",
+              "meaning": "到期的、应得的"
+            }
+          ],
+          "related": [
+            {
+              "term": "due",
+              "meaning": "到期的、应得的"
+            },
+            {
+              "term": "an overdue payment",
+              "meaning": "逾期款项"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_analysis",
+      "word": "analysis",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "analysis"
+        }
+      ],
+      "meaning": [
+        "分析",
+        "分析结果"
+      ],
+      "phonetic": "/əˈnæləsɪs/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "data analysis"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_analysis",
+          "type": "word_family",
+          "title": "记住名词「分析」",
+          "content": "原笔记标出 analysis 的名词义「分析」。把 data analysis 和动词 analyse data 放在一起记。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 6 页",
+          "related": [
+            {
+              "term": "analyse",
+              "meaning": "分析（英式动词）"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_refresher",
+      "word": "refresher",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "refresher"
+        }
+      ],
+      "meaning": [
+        "复习课",
+        "帮助恢复记忆的资料或提醒"
+      ],
+      "phonetic": "/rɪˈfreʃə/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a refresher course"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_refresher",
+          "type": "morphology",
+          "title": "温习后重新记住",
+          "content": "学习 → 遗忘 → 温习 → 重新记住。帮助恢复记忆的资料或课程就是 refresher。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 6 页",
+          "segments": [
+            {
+              "part": "re-",
+              "meaning": "再次"
+            },
+            {
+              "part": "fresh",
+              "meaning": "新鲜的、重新清晰的"
+            },
+            {
+              "part": "-er",
+              "meaning": "这里联想到帮助回顾的事物"
+            }
+          ],
+          "related": [
+            {
+              "term": "refresh",
+              "meaning": "使恢复；刷新"
+            },
+            {
+              "term": "a refresher course",
+              "meaning": "复习课"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "原稿「续」为 ○ 栏续列。"
+    },
+    {
+      "id": "word_blaze",
+      "word": "blaze",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "blaze"
+        }
+      ],
+      "meaning": [
+        "烈火",
+        "猛烈燃烧",
+        "闪耀"
+      ],
+      "phonetic": "/bleɪz/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a fierce blaze"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_blaze",
+          "type": "phonetic",
+          "title": "把责备联想到燃起的火",
+          "content": "用相似的读音想起 blame，再想象纸片被折起来后燃起一团火 → blaze，烈火、猛烈燃烧。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 6 页",
+          "cue": "blame（把谴责折叠）",
+          "related": [
+            {
+              "term": "blame",
+              "meaning": "责备、谴责"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "原稿「续」为 ○ 栏续列。"
+    },
+    {
+      "id": "word_unyielding",
+      "word": "unyielding",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "unyielding"
+        }
+      ],
+      "meaning": [
+        "不屈服的",
+        "顽强的",
+        "坚硬的"
+      ],
+      "phonetic": "/ʌnˈjiːldɪŋ/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "unyielding determination"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_unyielding",
+          "type": "morphology",
+          "title": "不肯让步，也不易弯折",
+          "content": "yield 可以表示让步、屈服，前面加 un- 就变成「不屈服的、顽强的」。形容物体时也可指坚硬的。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 6 页",
+          "segments": [
+            {
+              "part": "un-",
+              "meaning": "不"
+            },
+            {
+              "part": "yielding",
+              "meaning": "让步的、屈服的"
+            }
+          ],
+          "related": [
+            {
+              "term": "yield",
+              "meaning": "产出；让步、屈服"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "原稿「续」为 ○ 栏续列。"
+    },
+    {
+      "id": "word_vernacular",
+      "word": "vernacular",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "vernacular"
+        }
+      ],
+      "meaning": [
+        "本地话",
+        "方言",
+        "通俗语言",
+        "本地的"
+      ],
+      "phonetic": "/vəˈnækjələ/",
+      "part_of_speech": [
+        "noun",
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "in the local vernacular"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_vernacular",
+          "type": "phonetic",
+          "title": "想起奶奶说的家乡话",
+          "content": "用口诀想象奶奶用家乡话说话 → vernacular，本地话、方言或日常通俗用语。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 6 页",
+          "cue": "我奶奶哭了"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "原稿「续」为 ○ 栏续列。"
+    },
+    {
+      "id": "word_deputy",
+      "word": "deputy",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "deputy"
+        }
+      ],
+      "meaning": [
+        "副手",
+        "代理人",
+        "副职的"
+      ],
+      "phonetic": "/ˈdepjəti/",
+      "part_of_speech": [
+        "noun",
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a deputy director"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_deputy",
+          "type": "phonetic",
+          "title": "正职下面的副手",
+          "content": "想象在组织图上把副手放在正职下面。副手在需要时代行职责 → deputy，副手、代理人。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 6 页",
+          "cue": "往底下放",
+          "related": [
+            {
+              "term": "a deputy director",
+              "meaning": "副主任、副主管"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "原稿「续」为 ○ 栏续列。"
+    },
+    {
+      "id": "word_fragrance",
+      "word": "fragrance",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "fragrance"
+        }
+      ],
+      "meaning": [
+        "芳香",
+        "香味",
+        "香水"
+      ],
+      "phonetic": "/ˈfreɪɡrəns/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "the fragrance of roses"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_fragrance",
+          "type": "association",
+          "title": "打碎香水瓶后散出的香味",
+          "content": "从 fragment 的拼写联想到打碎的玻璃，再想象香水瓶碎了，芳香一下散开 → fragrance，芳香、香味。记词族时可用 fragrant（芳香的）。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List7.pdf · 第 7 页",
+          "cue": "打碎从法国跑出来了",
+          "related": [
+            {
+              "term": "fragment",
+              "meaning": "碎片，拼写联想"
+            },
+            {
+              "term": "fragrant",
+              "meaning": "芳香的"
+            },
+            {
+              "term": "scent",
+              "meaning": "气味、香味；口诀「s 送过来」"
+            },
+            {
+              "term": "perfume",
+              "meaning": "香水、香气；口诀「每一个人都服我」"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "原稿「续」为 ○ 栏续列。原稿的「打碎」与 fragment 保留作拼写和画面联想。"
+    },
+    {
+      "id": "word_dimensional",
+      "word": "dimensional",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "dimensional"
+        }
+      ],
+      "meaning": [
+        "维度的",
+        "尺寸的"
+      ],
+      "phonetic": "/daɪˈmenʃənəl/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a three-dimensional model"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_insulation",
+      "word": "insulation",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "insulation"
+        }
+      ],
+      "meaning": [
+        "隔热",
+        "隔音",
+        "绝缘",
+        "保温或绝缘材料"
+      ],
+      "phonetic": "/ˌɪnsjəˈleɪʃən/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "thermal insulation"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_eliminate",
+      "word": "eliminate",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "eliminate"
+        }
+      ],
+      "meaning": [
+        "消除",
+        "排除",
+        "淘汰"
+      ],
+      "phonetic": "/ɪˈlɪmɪneɪt/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "eliminate the risk"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_exclusive",
+      "word": "exclusive",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "exclusive"
+        }
+      ],
+      "meaning": [
+        "独有的",
+        "专供的",
+        "排他的",
+        "独家报道"
+      ],
+      "phonetic": "/ɪkˈskluːsɪv/",
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "exclusive access"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_glue",
+      "word": "glue",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "glue"
+        }
+      ],
+      "meaning": [
+        "胶水",
+        "用胶水粘住"
+      ],
+      "phonetic": "/ɡluː/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "glue the pieces together"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_stimulate",
+      "word": "stimulate",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "stimulate"
+        }
+      ],
+      "meaning": [
+        "刺激",
+        "促进",
+        "激发"
+      ],
+      "phonetic": "/ˈstɪmjəleɪt/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "stimulate economic growth"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_operational",
+      "word": "operational",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "operational"
+        }
+      ],
+      "meaning": [
+        "运转的",
+        "可使用的",
+        "业务操作的"
+      ],
+      "phonetic": "/ˌɒpəˈreɪʃənəl/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "become fully operational"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_acclaim",
+      "word": "acclaim",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "acclaim"
+        }
+      ],
+      "meaning": [
+        "赞誉",
+        "称赞"
+      ],
+      "phonetic": "/əˈkleɪm/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "critical acclaim"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_payment",
+      "word": "payment",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "payment"
+        }
+      ],
+      "meaning": [
+        "付款",
+        "支付",
+        "款项"
+      ],
+      "phonetic": "/ˈpeɪmənt/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "make a payment"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_agenda",
+      "word": "agenda",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "agenda"
+        }
+      ],
+      "meaning": [
+        "议程",
+        "待办事项",
+        "行动计划"
+      ],
+      "phonetic": "/əˈdʒendə/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "an item on the agenda"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_rank",
+      "word": "rank",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "rank"
+        }
+      ],
+      "meaning": [
+        "等级",
+        "名次",
+        "把…排序",
+        "位列"
+      ],
+      "phonetic": "/ræŋk/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "rank first"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_dimension",
+      "word": "dimension",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "dimension"
+        }
+      ],
+      "meaning": [
+        "尺寸",
+        "维度",
+        "方面"
+      ],
+      "phonetic": "/daɪˈmenʃən/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "the social dimension"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_administrative",
+      "word": "administrative",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "administrative"
+        }
+      ],
+      "meaning": [
+        "行政的",
+        "管理的"
+      ],
+      "phonetic": "/ədˈmɪnɪstrətɪv/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "administrative duties"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_resistant",
+      "word": "resistant",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "resistant"
+        }
+      ],
+      "meaning": [
+        "有抵抗力的",
+        "耐…的",
+        "抗拒的"
+      ],
+      "phonetic": "/rɪˈzɪstənt/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "resistant to change"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_verdict",
+      "word": "verdict",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "verdict"
+        }
+      ],
+      "meaning": [
+        "裁决",
+        "判决",
+        "评断"
+      ],
+      "phonetic": "/ˈvɜːdɪkt/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "reach a verdict"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_approve",
+      "word": "approve",
+      "list_ids": [
+        7
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 7,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-7",
+          "raw": "approve"
+        }
+      ],
+      "meaning": [
+        "批准",
+        "认可",
+        "赞成"
+      ],
+      "phonetic": "/əˈpruːv/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "approve a proposal",
+        "approve of a decision"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    }
+  ]
+}

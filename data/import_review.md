@@ -59,6 +59,12 @@ List1.pdf 另有未对应总表卡片的独立旁注，留在这里供查阅。
 
 补充核对了 [appropriate 的两种英式读音](https://dictionary.cambridge.org/us/pronunciation/english/appropriate)、[turret 的英式读音](https://dictionary.cambridge.org/pronunciation/english/turret)、[statistic 的用法](https://dictionary.cambridge.org/us/dictionary/english/statistic)和 [corrode 的词源](https://www.ahdictionary.com/word/search.html?q=+CORRODE)。
 
+## List 7 核对
+
+第 1 页列出 ○ 陌生 27 个（其中 6 个写在「续」栏）、△ 模糊 16 个，共 43 个词。第 2～7 页整理为 27 条卡片笔记，见 [List 7 文字笔记](notes/list_07.md)。empirical 采用总表和详解搭配中的拼写。gelatin、rumour 均沿用总表词形，dimension 与 dimensional 分别收录。
+
+apparently 以「看来、似乎、据说」为常用义。fragrance 的「打碎」及 fragment 保留为联想，词源另可查词典。 [apparently 的用法](https://dictionary.cambridge.org/dictionary/english/apparently?topic=seeming-and-purporting-to-be) · [fragrance 的词源](https://www.oxfordlearnersdictionaries.com/definition/english/fragrance)
+
 ## 确认方法
 
 - 仅核对图片：修改主表 Transcription 为 reviewed，或在应用预览中确认导入。

@@ -170,6 +170,7 @@ test('已有词库在首页增量更新，翻卡可看手写笔记',async({page}
 for (const {list, total, unfamiliar, first, cue} of [
  {list:5,total:45,unfamiliar:27,first:'alluvial',cue:'所有的都到路上了'},
  {list:6,total:37,unfamiliar:19,first:'amend',cue:'一再的修'},
+ {list:7,total:43,unfamiliar:27,first:'analysis',cue:'data analysis'},
 ]) {
  test(`List ${list} 可单独导入，原有复习记录和手写联想保留`, async ({page})=>{
   await seed(page);

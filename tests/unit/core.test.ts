@@ -9,7 +9,7 @@ import candidate from '../../data/vocabulary.pending.json';
 import { convertMarkdown } from '../../scripts/build-vocabulary.mjs';
 import { readFileSync } from 'node:fs';
 const words=parseVocabulary(candidate).words;
-const notebooks=[1,2,3,4,5,6].map(list=>({list,markdown:readFileSync(`data/notes/list_0${list}.md`,'utf8')}));
+const notebooks=[1,2,3,4,5,6,7].map(list=>({list,markdown:readFileSync(`data/notes/list_0${list}.md`,'utf8')}));
 const word=words.find(w=>w.word==='delve')!;
 const name='lexicon-unit'; const repo=new Repository(name);
 beforeEach(async()=>{await deleteDB(name);});
@@ -76,6 +76,19 @@ describe('图片转录与 Markdown',()=>{
    related:[{term:'dormant',meaning:'暂不活跃的、休眠的'},{term:'latent',meaning:'潜在的、尚未显现的'}],
   });
   expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_06.json','utf8'))).words).toEqual(list6);
+ });
+ it('List 7 保留续列分类，并把香味与打碎的联想存为记忆笔记',()=>{
+  const list7=words.filter(w=>w.list_ids.includes(7));
+  expect(list7).toHaveLength(43);
+  expect(list7.filter(w=>w.initial_level==='unknown')).toHaveLength(27);
+  expect(list7.filter(w=>w.notes.includes('「续」')).map(w=>[w.word,w.origins[0].symbol])).toEqual(
+   ['refresher','blaze','unyielding','vernacular','deputy','fragrance'].map(word=>[word,'○'])
+  );
+  expect(list7.flatMap(w=>w.mnemonics)).toHaveLength(27);
+  expect(list7.find(w=>w.word==='fragrance')?.mnemonics[0]).toMatchObject({
+   type:'association', reference:'手写笔记 List7.pdf · 第 7 页',
+  });
+  expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_07.json','utf8'))).words).toEqual(list7);
  });
 });
 describe('复习调度',()=>{
