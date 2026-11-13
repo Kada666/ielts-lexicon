@@ -65,6 +65,12 @@ List1.pdf 另有未对应总表卡片的独立旁注，留在这里供查阅。
 
 apparently 以「看来、似乎、据说」为常用义。fragrance 的「打碎」及 fragment 保留为联想，词源另可查词典。 [apparently 的用法](https://dictionary.cambridge.org/dictionary/english/apparently?topic=seeming-and-purporting-to-be) · [fragrance 的词源](https://www.oxfordlearnersdictionaries.com/definition/english/fragrance)
 
+## List 8 核对
+
+第 1 页列出 ○ 陌生 25 个、△ 模糊 13 个，共 38 个词。第 2～7 页的 25 条笔记见 [List 8 文字笔记](notes/list_08.md)。沿用总表中的英式拼写 stabilise，将详解补充的动词规范写为 narrate。provided 保留原笔记中的两个例句，区分条件连词与 provide 的过去式。
+
+词形和音标参考 [collate 的词源](https://ahdictionary.com/word/search.html?q=collate)、[trimester 的英式发音](https://dictionary.cambridge.org/pronunciation/english/trimester)、[reorient 的英式发音](https://dictionary.cambridge.org/pronunciation/english/reorient)及 [homogeneous 的英式发音](https://dictionary.cambridge.org/pronunciation/english/homogeneous)。
+
 ## 确认方法
 
 - 仅核对图片：修改主表 Transcription 为 reviewed，或在应用预览中确认导入。

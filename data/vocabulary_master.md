@@ -276,6 +276,45 @@
 | 7 | verdict | uncertain | △ | 裁决；判决；评断 |  | needs_review | needs_review |
 | 7 | approve | uncertain | △ | 批准；认可；赞成 |  | needs_review | needs_review |
 
+| 8 | ubiquitous | unknown | ○ | 无处不在的；普遍存在的 |  | needs_review | needs_review |
+| 8 | collate | unknown | ○ | 汇集整理；对照核对；按顺序排列 |  | needs_review | needs_review |
+| 8 | trimester | unknown | ○ | 三个月的时期；妊娠三个月；三学期制中的一学期 |  | needs_review | needs_review |
+| 8 | redevelopment | unknown | ○ | 重新开发；改建；重建 |  | needs_review | needs_review |
+| 8 | narrator | unknown | ○ | 叙述者；讲述者；旁白 | 总表写 narrator，详解补充的动词采用规范拼写 narrate。 | needs_review | needs_review |
+| 8 | alignment | unknown | ○ | 对齐；排成直线；一致 |  | needs_review | needs_review |
+| 8 | boot | unknown | ○ | 靴子；汽车后备箱（英式）；启动（计算机） |  | needs_review | needs_review |
+| 8 | acid | unknown | ○ | 酸；酸性的；酸味的 |  | needs_review | needs_review |
+| 8 | booming | unknown | ○ | 蓬勃发展的；繁荣的；响亮低沉的 |  | needs_review | needs_review |
+| 8 | deem | unknown | ○ | 认为；视为 |  | needs_review | needs_review |
+| 8 | reorient | unknown | ○ | 重新定位；改变方向或重点 |  | needs_review | needs_review |
+| 8 | sledge | unknown | ○ | 雪橇 |  | needs_review | needs_review |
+| 8 | magnetic | unknown | ○ | 磁性的；有磁力的；有吸引力的 |  | needs_review | needs_review |
+| 8 | graphic | unknown | ○ | 图示的；图表的；生动详尽的；图形 |  | needs_review | needs_review |
+| 8 | provided | unknown | ○ | 只要；假如；提供了（provide 的过去式或过去分词） | 原稿特意标出了条件连词用法，并与 provide 的过去式作对比。 | needs_review | needs_review |
+| 8 | era | unknown | ○ | 时代；时期 |  | needs_review | needs_review |
+| 8 | stimulus | unknown | ○ | 刺激物；刺激因素；激励 |  | needs_review | needs_review |
+| 8 | roam | unknown | ○ | 漫游；闲逛；四处走动 |  | needs_review | needs_review |
+| 8 | hurdle | unknown | ○ | 障碍；难关；跨栏；跨越障碍 |  | needs_review | needs_review |
+| 8 | homogeneous | unknown | ○ | 同质的；均匀的；同类的 |  | needs_review | needs_review |
+| 8 | spasm | unknown | ○ | 痉挛；抽搐；情绪或活动的突然发作 |  | needs_review | needs_review |
+| 8 | terrace | unknown | ○ | 梯田的一层；露台；一排相连的房屋（英式） |  | needs_review | needs_review |
+| 8 | throughout | unknown | ○ | 遍及；贯穿；自始至终 |  | needs_review | needs_review |
+| 8 | hunch | unknown | ○ | 直觉；预感；弓背；蜷着身子 |  | needs_review | needs_review |
+| 8 | hinterland | unknown | ○ | 内地；腹地 |  | needs_review | needs_review |
+| 8 | formulate | uncertain | △ | 制定；拟定；系统地表达 |  | needs_review | needs_review |
+| 8 | furnish | uncertain | △ | 为…配备家具；提供 |  | needs_review | needs_review |
+| 8 | stabilise | uncertain | △ | 使稳定；趋于稳定 | 沿用总表的英式拼写。 | needs_review | needs_review |
+| 8 | definite | uncertain | △ | 明确的；确定的；肯定的 |  | needs_review | needs_review |
+| 8 | tutorial | uncertain | △ | 辅导课；教程；辅导的 |  | needs_review | needs_review |
+| 8 | significance | uncertain | △ | 重要性；意义；显著性 |  | needs_review | needs_review |
+| 8 | blanket | uncertain | △ | 毯子；覆盖层；全面的；覆盖 |  | needs_review | needs_review |
+| 8 | arrogance | uncertain | △ | 傲慢；自大 |  | needs_review | needs_review |
+| 8 | composition | uncertain | △ | 构成；成分；作文；作品 |  | needs_review | needs_review |
+| 8 | architecture | uncertain | △ | 建筑学；建筑风格；体系结构 |  | needs_review | needs_review |
+| 8 | staff | uncertain | △ | 全体员工；为…配备人员；手杖 |  | needs_review | needs_review |
+| 8 | apt | uncertain | △ | 恰当的；易于…的；善于学习的 |  | needs_review | needs_review |
+| 8 | devote | uncertain | △ | 把时间或精力用于；献身于 |  | needs_review | needs_review |
+
 ## 词条补充资料
 
 此处保存基础资料和生成候选。手写记忆法以 [data/notes](notes/) 下各 List 的 Markdown 为准，由构建脚本合并。真实词源需要可靠引用。编辑 word 前同步修改补充资料中的键；复习开始后不要随意改词形，否则会产生新 ID。
@@ -4206,6 +4245,447 @@
     "collocations": [
       "approve a proposal",
       "approve of a decision"
+    ]
+  },
+  {
+    "word": "ubiquitous",
+    "raw": "ubiquitous",
+    "phonetic": "/juːˈbɪkwɪtəs/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "ubiquitous technology"
+    ]
+  },
+  {
+    "word": "collate",
+    "raw": "collate",
+    "phonetic": "/kəˈleɪt/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "collate the survey results"
+    ]
+  },
+  {
+    "word": "trimester",
+    "raw": "trimester",
+    "phonetic": "/trɪˈmestə/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "the first trimester"
+    ]
+  },
+  {
+    "word": "redevelopment",
+    "raw": "redevelopment",
+    "phonetic": "/ˌriːdɪˈveləpmənt/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "urban redevelopment"
+    ]
+  },
+  {
+    "word": "narrator",
+    "raw": "narrator",
+    "phonetic": "/nəˈreɪtə/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "an unreliable narrator"
+    ]
+  },
+  {
+    "word": "alignment",
+    "raw": "alignment",
+    "phonetic": "/əˈlaɪnmənt/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "in alignment with"
+    ]
+  },
+  {
+    "word": "boot",
+    "raw": "boot",
+    "phonetic": "/buːt/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "a pair of boots",
+      "the boot of a car"
+    ]
+  },
+  {
+    "word": "acid",
+    "raw": "acid",
+    "phonetic": "/ˈæsɪd/",
+    "part_of_speech": [
+      "noun",
+      "adjective"
+    ],
+    "collocations": [
+      "acid rain"
+    ]
+  },
+  {
+    "word": "booming",
+    "raw": "booming",
+    "phonetic": "/ˈbuːmɪŋ/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "a booming industry"
+    ]
+  },
+  {
+    "word": "deem",
+    "raw": "deem",
+    "phonetic": "/diːm/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "deem it necessary"
+    ]
+  },
+  {
+    "word": "reorient",
+    "raw": "reorient",
+    "phonetic": "/ˌriːˈɔːrient/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "reorient policy towards prevention"
+    ]
+  },
+  {
+    "word": "sledge",
+    "raw": "sledge",
+    "phonetic": "/sledʒ/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "ride a sledge"
+    ]
+  },
+  {
+    "word": "magnetic",
+    "raw": "magnetic",
+    "phonetic": "/mæɡˈnetɪk/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "a magnetic field"
+    ]
+  },
+  {
+    "word": "graphic",
+    "raw": "graphic",
+    "phonetic": "/ˈɡræfɪk/",
+    "part_of_speech": [
+      "adjective",
+      "noun"
+    ],
+    "collocations": [
+      "a graphic representation",
+      "in graphic detail"
+    ]
+  },
+  {
+    "word": "provided",
+    "raw": "provided",
+    "phonetic": "/prəˈvaɪdɪd/",
+    "part_of_speech": [
+      "conjunction",
+      "verb"
+    ],
+    "collocations": [
+      "provided that",
+      "provided students with accommodation"
+    ],
+    "example": "Students can use the laboratory provided that they follow the safety rules.",
+    "example_zh": "只要学生遵守安全规定，就可以使用实验室。"
+  },
+  {
+    "word": "era",
+    "raw": "era",
+    "phonetic": "/ˈɪərə/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a new era"
+    ]
+  },
+  {
+    "word": "stimulus",
+    "raw": "stimulus",
+    "phonetic": "/ˈstɪmjələs/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "an economic stimulus"
+    ]
+  },
+  {
+    "word": "roam",
+    "raw": "roam",
+    "phonetic": "/rəʊm/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "roam the streets",
+      "data roaming"
+    ]
+  },
+  {
+    "word": "hurdle",
+    "raw": "hurdle",
+    "phonetic": "/ˈhɜːdəl/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "clear a hurdle"
+    ]
+  },
+  {
+    "word": "homogeneous",
+    "raw": "homogeneous",
+    "phonetic": "/ˌhɒməˈdʒiːniəs/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "a homogeneous mixture"
+    ]
+  },
+  {
+    "word": "spasm",
+    "raw": "spasm",
+    "phonetic": "/ˈspæzəm/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a muscle spasm"
+    ]
+  },
+  {
+    "word": "terrace",
+    "raw": "terrace",
+    "phonetic": "/ˈterəs/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a roof terrace",
+      "terraced houses"
+    ]
+  },
+  {
+    "word": "throughout",
+    "raw": "throughout",
+    "phonetic": "/θruːˈaʊt/",
+    "part_of_speech": [
+      "preposition",
+      "adverb"
+    ],
+    "collocations": [
+      "throughout the country",
+      "throughout the year"
+    ]
+  },
+  {
+    "word": "hunch",
+    "raw": "hunch",
+    "phonetic": "/hʌntʃ/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "have a hunch",
+      "hunch over a desk"
+    ]
+  },
+  {
+    "word": "hinterland",
+    "raw": "hinterland",
+    "phonetic": "/ˈhɪntəlænd/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "the port and its hinterland"
+    ]
+  },
+  {
+    "word": "formulate",
+    "raw": "formulate",
+    "phonetic": "/ˈfɔːmjəleɪt/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "formulate a policy"
+    ]
+  },
+  {
+    "word": "furnish",
+    "raw": "furnish",
+    "phonetic": "/ˈfɜːnɪʃ/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "furnish a flat",
+      "furnish evidence"
+    ]
+  },
+  {
+    "word": "stabilise",
+    "raw": "stabilise",
+    "phonetic": "/ˈsteɪbəlaɪz/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "stabilise prices"
+    ]
+  },
+  {
+    "word": "definite",
+    "raw": "definite",
+    "phonetic": "/ˈdefɪnət/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "a definite answer"
+    ]
+  },
+  {
+    "word": "tutorial",
+    "raw": "tutorial",
+    "phonetic": "/tjuːˈtɔːriəl/",
+    "part_of_speech": [
+      "noun",
+      "adjective"
+    ],
+    "collocations": [
+      "an online tutorial"
+    ]
+  },
+  {
+    "word": "significance",
+    "raw": "significance",
+    "phonetic": "/sɪɡˈnɪfɪkəns/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "statistical significance"
+    ]
+  },
+  {
+    "word": "blanket",
+    "raw": "blanket",
+    "phonetic": "/ˈblæŋkɪt/",
+    "part_of_speech": [
+      "noun",
+      "adjective",
+      "verb"
+    ],
+    "collocations": [
+      "a blanket ban"
+    ]
+  },
+  {
+    "word": "arrogance",
+    "raw": "arrogance",
+    "phonetic": "/ˈærəɡəns/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "a display of arrogance"
+    ]
+  },
+  {
+    "word": "composition",
+    "raw": "composition",
+    "phonetic": "/ˌkɒmpəˈzɪʃən/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "the composition of the atmosphere"
+    ]
+  },
+  {
+    "word": "architecture",
+    "raw": "architecture",
+    "phonetic": "/ˈɑːkɪtektʃə/",
+    "part_of_speech": [
+      "noun"
+    ],
+    "collocations": [
+      "modern architecture"
+    ]
+  },
+  {
+    "word": "staff",
+    "raw": "staff",
+    "phonetic": "/stɑːf/",
+    "part_of_speech": [
+      "noun",
+      "verb"
+    ],
+    "collocations": [
+      "a member of staff",
+      "staff a clinic"
+    ]
+  },
+  {
+    "word": "apt",
+    "raw": "apt",
+    "phonetic": "/æpt/",
+    "part_of_speech": [
+      "adjective"
+    ],
+    "collocations": [
+      "an apt description",
+      "be apt to forget"
+    ]
+  },
+  {
+    "word": "devote",
+    "raw": "devote",
+    "phonetic": "/dɪˈvəʊt/",
+    "part_of_speech": [
+      "verb"
+    ],
+    "collocations": [
+      "devote time to study"
     ]
   }
 ]

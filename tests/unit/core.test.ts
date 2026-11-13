@@ -9,7 +9,7 @@ import candidate from '../../data/vocabulary.pending.json';
 import { convertMarkdown } from '../../scripts/build-vocabulary.mjs';
 import { readFileSync } from 'node:fs';
 const words=parseVocabulary(candidate).words;
-const notebooks=[1,2,3,4,5,6,7].map(list=>({list,markdown:readFileSync(`data/notes/list_0${list}.md`,'utf8')}));
+const notebooks=[1,2,3,4,5,6,7,8].map(list=>({list,markdown:readFileSync(`data/notes/list_0${list}.md`,'utf8')}));
 const word=words.find(w=>w.word==='delve')!;
 const name='lexicon-unit'; const repo=new Repository(name);
 beforeEach(async()=>{await deleteDB(name);});
@@ -89,6 +89,19 @@ describe('图片转录与 Markdown',()=>{
    type:'association', reference:'手写笔记 List7.pdf · 第 7 页',
   });
   expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_07.json','utf8'))).words).toEqual(list7);
+ });
+ it('List 8 保留 25 个陌生词的笔记及 13 个模糊词',()=>{
+  const list8=words.filter(w=>w.list_ids.includes(8));
+  const unfamiliar=list8.filter(w=>w.initial_level==='unknown');
+  expect(list8).toHaveLength(38);
+  expect(unfamiliar).toHaveLength(25);
+  expect(unfamiliar.every(w=>w.mnemonics.length===1)).toBe(true);
+  expect(list8.find(w=>w.word==='provided')?.mnemonics[0].related?.map(note=>note.term)).toEqual([
+   'as long as',
+   'Students can use the laboratory provided that they follow the safety rules.',
+   'The university provided students with accommodation.',
+  ]);
+  expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_08.json','utf8'))).words).toEqual(list8);
  });
 });
 describe('复习调度',()=>{
