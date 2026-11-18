@@ -71,6 +71,10 @@ apparently 以「看来、似乎、据说」为常用义。fragrance 的「打�
 
 词形和音标参考 [collate 的词源](https://ahdictionary.com/word/search.html?q=collate)、[trimester 的英式发音](https://dictionary.cambridge.org/pronunciation/english/trimester)、[reorient 的英式发音](https://dictionary.cambridge.org/pronunciation/english/reorient)及 [homogeneous 的英式发音](https://dictionary.cambridge.org/pronunciation/english/homogeneous)。
 
+## List 9 核对
+
+第 1 页列出 ○ 陌生 27 个、△ 模糊 19 个，共 46 个词，与 List 1～8 无重复词形。第 2～6 页的 27 条笔记见 [List 9 文字笔记](notes/list_09.md)。总表的 pratically 保留为原始写法，规范候选为 [practically](https://dictionary.cambridge.org/dictionary/english/practically)，待确认；digestive 和 nickel 沿用总表的拼写。vessel 保留船舶、容器和血管三义；swift 保留雨燕图像联想，以及指金融报文网络的 [SWIFT](https://www.swift.com/about-us/who-we-are/what-swift) 拼写联想。
+
 ## 确认方法
 
 - 仅核对图片：修改主表 Transcription 为 reviewed，或在应用预览中确认导入。

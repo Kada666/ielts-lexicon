@@ -314,6 +314,52 @@
 | 8 | staff | uncertain | △ | 全体员工；为…配备人员；手杖 |  | needs_review | needs_review |
 | 8 | apt | uncertain | △ | 恰当的；易于…的；善于学习的 |  | needs_review | needs_review |
 | 8 | devote | uncertain | △ | 把时间或精力用于；献身于 |  | needs_review | needs_review |
+| 9 | traverse | unknown | ○ | 穿过；横越 |  | needs_review | needs_review |
+| 9 | poll | unknown | ○ | 民意调查；投票；对…进行民调 |  | needs_review | needs_review |
+| 9 | homesick | unknown | ○ | 想家的；思乡的 |  | needs_review | needs_review |
+| 9 | orientate | unknown | ○ | 确定方向；使适应或熟悉环境 | 保留总表的英式拼写 orientate。 | needs_review | needs_review |
+| 9 | glide | unknown | ○ | 滑行；滑翔；平稳移动 |  | needs_review | needs_review |
+| 9 | casualty | unknown | ○ | 伤亡人员；受害者 |  | needs_review | needs_review |
+| 9 | tug | unknown | ○ | 用力拉；猛拽；拖船 |  | needs_review | needs_review |
+| 9 | intervene | unknown | ○ | 介入；干预；调停 |  | needs_review | needs_review |
+| 9 | bump | unknown | ○ | 碰撞；隆起；肿块 |  | needs_review | needs_review |
+| 9 | reunion | unknown | ○ | 重聚；团圆；联谊聚会 |  | needs_review | needs_review |
+| 9 | digestive | unknown | ○ | 消化的；与消化有关的 | 总表写 digestive，详解中的词形照总表规范。 | needs_review | needs_review |
+| 9 | homestay | unknown | ○ | 寄宿在当地家庭；家庭寄宿 |  | needs_review | needs_review |
+| 9 | nickel | unknown | ○ | 镍；五美分硬币（美式） | 总表写 nickel，详解写作 nickle，统一采用总表拼写。 | needs_review | needs_review |
+| 9 | limp | unknown | ○ | 一瘸一拐地走；软弱无力的；跛行 |  | needs_review | needs_review |
+| 9 | spit | unknown | ○ | 吐唾沫；吐出；唾液 |  | needs_review | needs_review |
+| 9 | irregularity | unknown | ○ | 不规则；异常情况；不合规行为 |  | needs_review | needs_review |
+| 9 | hive | unknown | ○ | 蜂箱；蜂巢；忙碌的场所 |  | needs_review | needs_review |
+| 9 | oxide | unknown | ○ | 氧化物 |  | needs_review | needs_review |
+| 9 | plagiarism | unknown | ○ | 抄袭；剽窃 |  | needs_review | needs_review |
+| 9 | gallop | unknown | ○ | （马）飞奔、疾驰；飞奔 |  | needs_review | needs_review |
+| 9 | splendid | unknown | ○ | 极好的；壮观的；华丽的 |  | needs_review | needs_review |
+| 9 | elbow | unknown | ○ | 肘；肘部；用肘挤开 |  | needs_review | needs_review |
+| 9 | vessel | unknown | ○ | 船舶；容器；血管 |  | needs_review | needs_review |
+| 9 | stereo | unknown | ○ | 立体声音响；立体声的 |  | needs_review | needs_review |
+| 9 | stout | unknown | ○ | 粗壮的；结实的；（人）肥胖的；烈性黑啤酒 |  | needs_review | needs_review |
+| 9 | greasy | unknown | ○ | 油腻的；沾有油脂的 |  | needs_review | needs_review |
+| 9 | swift | unknown | ○ | 迅速的；敏捷的；雨燕 |  | needs_review | needs_review |
+| 9 | assistant | uncertain | △ | 助手；助理；助理的 |  | needs_review | needs_review |
+| 9 | obligation | uncertain | △ | 义务；责任 |  | needs_review | needs_review |
+| 9 | liberty | uncertain | △ | 自由；自由权 |  | needs_review | needs_review |
+| 9 | pesticide | uncertain | △ | 农药；杀虫剂 |  | needs_review | needs_review |
+| 9 | compassionate | uncertain | △ | 有同情心的；富有怜悯心的 |  | needs_review | needs_review |
+| 9 | concentration | uncertain | △ | 专注；集中；浓度 |  | needs_review | needs_review |
+| 9 | proceed | uncertain | △ | 继续进行；接着做；前往 |  | needs_review | needs_review |
+| 9 | process | uncertain | △ | 过程；流程；处理；加工 |  | needs_review | needs_review |
+| 9 | hostile | uncertain | △ | 敌对的；不友善的；恶劣的 |  | needs_review | needs_review |
+| 9 | commit | uncertain | △ | 犯（罪或错）；承诺；投入 |  | needs_review | needs_review |
+| 9 | practically | uncertain | △ | 几乎；差不多；从实际角度看 | 总表写作 pratically，候选规范拼写 practically；请核对。 | needs_review | needs_review |
+| 9 | acrobat | uncertain | △ | 杂技演员；特技表演者 |  | needs_review | needs_review |
+| 9 | magnify | uncertain | △ | 放大；夸大 |  | needs_review | needs_review |
+| 9 | pledge | uncertain | △ | 郑重承诺；誓言；保证 |  | needs_review | needs_review |
+| 9 | deny | uncertain | △ | 否认；拒绝给予 |  | needs_review | needs_review |
+| 9 | union | uncertain | △ | 工会；联盟；联合 |  | needs_review | needs_review |
+| 9 | responsibility | uncertain | △ | 责任；职责 |  | needs_review | needs_review |
+| 9 | notify | uncertain | △ | 通知；告知 |  | needs_review | needs_review |
+| 9 | soak | uncertain | △ | 浸泡；浸湿；吸收（soak up） |  | needs_review | needs_review |
 
 ## 词条补充资料
 
@@ -4687,6 +4733,52 @@
     "collocations": [
       "devote time to study"
     ]
-  }
+  },
+  {"word":"traverse","phonetic":"/trəˈvɜːs/","part_of_speech":["verb"],"collocations":["traverse a valley","traverse rough terrain"]},
+  {"word":"poll","phonetic":"/pəʊl/","part_of_speech":["noun","verb"],"collocations":["an opinion poll","poll voters"]},
+  {"word":"homesick","phonetic":"/ˈhəʊm.sɪk/","part_of_speech":["adjective"],"collocations":["feel homesick"]},
+  {"word":"orientate","phonetic":"/ˈɔː.ri.ən.teɪt/","part_of_speech":["verb"],"collocations":["orientate yourself","orientate new students"]},
+  {"word":"glide","phonetic":"/ɡlaɪd/","part_of_speech":["verb","noun"],"collocations":["glide across the water"]},
+  {"word":"casualty","phonetic":"/ˈkæʒ.u.əl.ti/","part_of_speech":["noun"],"collocations":["civilian casualties","cause numerous casualties"],"example":"The earthquake caused numerous casualties.","example_zh":"地震造成了大量人员伤亡。"},
+  {"word":"tug","phonetic":"/tʌɡ/","part_of_speech":["verb","noun"],"collocations":["tug at a rope","tug of war"]},
+  {"word":"intervene","phonetic":"/ˌɪn.təˈviːn/","part_of_speech":["verb"],"collocations":["intervene in a dispute"]},
+  {"word":"bump","phonetic":"/bʌmp/","part_of_speech":["noun","verb"],"collocations":["bump into someone","a speed bump"],"example":"I bumped into an old friend at the supermarket.","example_zh":"我在超市偶遇了一位老朋友。"},
+  {"word":"reunion","phonetic":"/ˌriːˈjuː.ni.ən/","part_of_speech":["noun"],"collocations":["a family reunion","a class reunion"]},
+  {"word":"digestive","phonetic":"/daɪˈdʒes.tɪv/","part_of_speech":["adjective"],"collocations":["the digestive system","digestive enzymes"]},
+  {"word":"homestay","phonetic":"/ˈhəʊm.steɪ/","part_of_speech":["noun"],"collocations":["a homestay family","a homestay programme"]},
+  {"word":"nickel","phonetic":"/ˈnɪk.əl/","part_of_speech":["noun"],"collocations":["nickel alloy","a nickel coin"]},
+  {"word":"limp","phonetic":"/lɪmp/","part_of_speech":["verb","adjective","noun"],"collocations":["walk with a limp","go limp"]},
+  {"word":"spit","phonetic":"/spɪt/","part_of_speech":["verb","noun"],"collocations":["spit something out"]},
+  {"word":"irregularity","phonetic":"/ɪˌreɡ.jəˈlær.ə.ti/","part_of_speech":["noun"],"collocations":["financial irregularities","a surface irregularity"]},
+  {"word":"hive","phonetic":"/haɪv/","part_of_speech":["noun"],"collocations":["a hive of activity","a bee hive"]},
+  {"word":"oxide","phonetic":"/ˈɒk.saɪd/","part_of_speech":["noun"],"collocations":["iron oxide","metal oxides"]},
+  {"word":"plagiarism","phonetic":"/ˈpleɪ.dʒər.ɪ.zəm/","part_of_speech":["noun"],"collocations":["avoid plagiarism","detect plagiarism"]},
+  {"word":"gallop","phonetic":"/ˈɡæl.əp/","part_of_speech":["verb","noun"],"collocations":["at full gallop","gallop across a field"]},
+  {"word":"splendid","phonetic":"/ˈsplen.dɪd/","part_of_speech":["adjective"],"collocations":["a splendid view","a splendid performance"]},
+  {"word":"elbow","phonetic":"/ˈel.bəʊ/","part_of_speech":["noun","verb"],"collocations":["bend your elbow","elbow your way through a crowd"]},
+  {"word":"vessel","phonetic":"/ˈves.əl/","part_of_speech":["noun"],"collocations":["cargo vessel","glass vessel","blood vessel"]},
+  {"word":"stereo","phonetic":"/ˈster.i.əʊ/","part_of_speech":["noun","adjective"],"collocations":["a stereo system","stereo sound"]},
+  {"word":"stout","phonetic":"/staʊt/","part_of_speech":["adjective","noun"],"collocations":["a stout branch","a pint of stout"]},
+  {"word":"greasy","phonetic":"/ˈɡriː.si/","part_of_speech":["adjective"],"collocations":["greasy food","a greasy surface"]},
+  {"word":"swift","phonetic":"/swɪft/","part_of_speech":["adjective","noun"],"collocations":["a swift response","swift action"]},
+  {"word":"assistant","phonetic":"/əˈsɪs.tənt/","part_of_speech":["noun","adjective"],"collocations":["a research assistant","assistant manager"]},
+  {"word":"obligation","phonetic":"/ˌɒb.lɪˈɡeɪ.ʃən/","part_of_speech":["noun"],"collocations":["a legal obligation","fulfil an obligation"]},
+  {"word":"liberty","phonetic":"/ˈlɪb.ə.ti/","part_of_speech":["noun"],"collocations":["civil liberties","at liberty to leave"]},
+  {"word":"pesticide","phonetic":"/ˈpes.tɪ.saɪd/","part_of_speech":["noun"],"collocations":["pesticide use","pesticide residues"]},
+  {"word":"compassionate","phonetic":"/kəmˈpæʃ.ən.ət/","part_of_speech":["adjective"],"collocations":["compassionate care","a compassionate approach"]},
+  {"word":"concentration","phonetic":"/ˌkɒn.sənˈtreɪ.ʃən/","part_of_speech":["noun"],"collocations":["lose concentration","a high concentration of salt"]},
+  {"word":"proceed","phonetic":"/prəˈsiːd/","part_of_speech":["verb"],"collocations":["proceed with the plan","proceed to the next stage"]},
+  {"word":"process","phonetic":"/ˈprəʊ.ses/","part_of_speech":["noun","verb"],"collocations":["the decision-making process","process data"]},
+  {"word":"hostile","phonetic":"/ˈhɒs.taɪl/","part_of_speech":["adjective"],"collocations":["a hostile environment","hostile to change"]},
+  {"word":"commit","phonetic":"/kəˈmɪt/","part_of_speech":["verb"],"collocations":["commit a crime","commit to a plan"]},
+  {"word":"practically","raw":"pratically","phonetic":"/ˈpræk.tɪ.kəl.i/","part_of_speech":["adverb"],"collocations":["practically impossible","practically everyone"]},
+  {"word":"acrobat","phonetic":"/ˈæk.rə.bæt/","part_of_speech":["noun"],"collocations":["a circus acrobat"]},
+  {"word":"magnify","phonetic":"/ˈmæɡ.nɪ.faɪ/","part_of_speech":["verb"],"collocations":["magnify an image","magnify the problem"]},
+  {"word":"pledge","phonetic":"/pledʒ/","part_of_speech":["noun","verb"],"collocations":["make a pledge","pledge support"]},
+  {"word":"deny","phonetic":"/dɪˈnaɪ/","part_of_speech":["verb"],"collocations":["deny the allegations","deny someone access"]},
+  {"word":"union","phonetic":"/ˈjuː.ni.ən/","part_of_speech":["noun"],"collocations":["a trade union","a political union"]},
+  {"word":"responsibility","phonetic":"/rɪˌspɒn.səˈbɪl.ə.ti/","part_of_speech":["noun"],"collocations":["take responsibility for","a sense of responsibility"]},
+  {"word":"notify","phonetic":"/ˈnəʊ.tɪ.faɪ/","part_of_speech":["verb"],"collocations":["notify the authorities","notify someone of a change"]},
+  {"word":"soak","phonetic":"/səʊk/","part_of_speech":["verb","noun"],"collocations":["soak in water","soak up moisture"]}
 ]
 ```
