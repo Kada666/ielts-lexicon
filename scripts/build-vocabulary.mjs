@@ -92,6 +92,7 @@ if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href) {
  await writeFile('data/vocabulary.list_07.json',file([...result.words,...result.pending].filter(w=>w.list_ids.includes(7))));
  await writeFile('data/vocabulary.list_08.json',file([...result.words,...result.pending].filter(w=>w.list_ids.includes(8))));
  await writeFile('data/vocabulary.list_09.json',file([...result.words,...result.pending].filter(w=>w.list_ids.includes(9))));
+ await writeFile('data/vocabulary.list_10.json',file([...result.words,...result.pending].filter(w=>w.list_ids.includes(10))));
  for(const list of [...new Set([...result.words,...result.pending].flatMap(w=>w.list_ids))].sort((a,b)=>a-b)){
    const words=[...result.words,...result.pending].filter(w=>w.list_ids.includes(list));
    const lines=words.map(w=>{const origin=w.origins.find(o=>o.list===list);return `| ${w.word} | ${origin.raw} | ${origin.symbol} | ${w.meaning.join('；')} | ${w.notes} |`;});

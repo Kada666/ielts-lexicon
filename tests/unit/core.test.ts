@@ -9,7 +9,7 @@ import candidate from '../../data/vocabulary.pending.json';
 import { convertMarkdown } from '../../scripts/build-vocabulary.mjs';
 import { readFileSync } from 'node:fs';
 const words=parseVocabulary(candidate).words;
-const notebooks=[1,2,3,4,5,6,7,8,9].map(list=>({list,markdown:readFileSync(`data/notes/list_0${list}.md`,'utf8')}));
+const notebooks=[1,2,3,4,5,6,7,8,9,10].map(list=>({list,markdown:readFileSync(`data/notes/list_${String(list).padStart(2,'0')}.md`,'utf8')}));
 const word=words.find(w=>w.word==='delve')!;
 const name='lexicon-unit'; const repo=new Repository(name);
 beforeEach(async()=>{await deleteDB(name);});
@@ -117,6 +117,19 @@ describe('图片转录与 Markdown',()=>{
    'cargo vessel','glass vessel','blood vessel','cardiovascular',
   ]);
   expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_09.json','utf8'))).words).toEqual(list9);
+ });
+ it('List 10 保留 22 个陌生词的笔记、20 个模糊词及原始拼写',()=>{
+  const list10=words.filter(w=>w.list_ids.includes(10));
+  const unfamiliar=list10.filter(w=>w.initial_level==='unknown');
+  const uncertain=list10.filter(w=>w.initial_level==='uncertain');
+  expect(list10).toHaveLength(42);
+  expect(unfamiliar).toHaveLength(22);
+  expect(uncertain).toHaveLength(20);
+  expect(unfamiliar.every(w=>w.origins[0].symbol==='○'&&w.mnemonics.length===1&&w.mnemonics[0].status==='needs_review')).toBe(true);
+  expect(uncertain.every(w=>w.origins[0].symbol==='△'&&w.mnemonics.length===0)).toBe(true);
+  expect(list10.find(w=>w.word==='conversation')?.origins[0]).toMatchObject({list:10,symbol:'△',raw:'conversetion'});
+  expect(list10.find(w=>w.word==='dividend')?.meaning).toEqual(['股息','红利','被除数']);
+  expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_10.json','utf8'))).words).toEqual(list10);
  });
 });
 describe('复习调度',()=>{

@@ -75,6 +75,10 @@ apparently 以「看来、似乎、据说」为常用义。fragrance 的「打�
 
 第 1 页列出 ○ 陌生 27 个、△ 模糊 19 个，共 46 个词，与 List 1～8 无重复词形。第 2～6 页的 27 条笔记见 [List 9 文字笔记](notes/list_09.md)。总表的 pratically 保留为原始写法，规范候选为 [practically](https://dictionary.cambridge.org/dictionary/english/practically)，待确认；digestive 和 nickel 沿用总表的拼写。vessel 保留船舶、容器和血管三义；swift 保留雨燕图像联想，以及指金融报文网络的 [SWIFT](https://www.swift.com/about-us/who-we-are/what-swift) 拼写联想。
 
+## List 10 核对
+
+第 1 页列出 ○ 陌生 22 个、△ 模糊 20 个，共 42 个词，与 List 1～9 无重复词形。第 2～7 页的 22 条笔记见 [List 10 文字笔记](notes/list_10.md)，第 8 页为空白。总表中的 conversetion 保留为原始写法，规范候选为 [conversation](https://dictionary.cambridge.org/dictionary/english/conversation)，待确认；dividend 沿用总表，保留股息和被除数两义。保留英式 [calibre](https://dictionary.cambridge.org/dictionary/english/calibre) 及表示放弃的 [forgo](https://dictionary.cambridge.org/dictionary/english/forgo)。
+
 ## 确认方法
 
 - 仅核对图片：修改主表 Transcription 为 reviewed，或在应用预览中确认导入。

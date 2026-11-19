@@ -360,6 +360,48 @@
 | 9 | responsibility | uncertain | △ | 责任；职责 |  | needs_review | needs_review |
 | 9 | notify | uncertain | △ | 通知；告知 |  | needs_review | needs_review |
 | 9 | soak | uncertain | △ | 浸泡；浸湿；吸收（soak up） |  | needs_review | needs_review |
+| 10 | mitigate | unknown | ○ | 减轻；缓解 |   | needs_review | needs_review |
+| 10 | aesthetic | unknown | ○ | 审美的；美学的；审美风格 |   | needs_review | needs_review |
+| 10 | scrape | unknown | ○ | 刮；擦；刮掉；擦伤 |   | needs_review | needs_review |
+| 10 | spasmodic | unknown | ○ | 痉挛性的；间歇发生的；不规律的 |   | needs_review | needs_review |
+| 10 | specification | unknown | ○ | 规格；技术说明；详细规定 |   | needs_review | needs_review |
+| 10 | extinguisher | unknown | ○ | 灭火器 |   | needs_review | needs_review |
+| 10 | referee | unknown | ○ | 裁判；仲裁人；推荐人（英式）；担任裁判 |   | needs_review | needs_review |
+| 10 | forgo | unknown | ○ | 放弃；自愿不享用 |   | needs_review | needs_review |
+| 10 | assistantship | unknown | ○ | 助教或助研岗位；助理职位 |   | needs_review | needs_review |
+| 10 | offset | unknown | ○ | 抵消；补偿；偏移量 |   | needs_review | needs_review |
+| 10 | siesta | unknown | ○ | 午睡；午休 |   | needs_review | needs_review |
+| 10 | detour | unknown | ○ | 绕路；绕行；绕行路线 |   | needs_review | needs_review |
+| 10 | arthritis | unknown | ○ | 关节炎 |   | needs_review | needs_review |
+| 10 | cosmic | unknown | ○ | 宇宙的；宇宙尺度的 |   | needs_review | needs_review |
+| 10 | jumble | unknown | ○ | 弄乱；混杂；杂乱的一堆 |   | needs_review | needs_review |
+| 10 | embed | unknown | ○ | 嵌入；嵌进；使深植于 |   | needs_review | needs_review |
+| 10 | orientation | unknown | ○ | 方向；朝向；倾向；入门指导；适应培训 |   | needs_review | needs_review |
+| 10 | deprive | unknown | ○ | 剥夺；使丧失 |   | needs_review | needs_review |
+| 10 | dividend | unknown | ○ | 股息；红利；被除数 | 详解页手写似 divident，采用总表 dividend。 | needs_review | needs_review |
+| 10 | swap | unknown | ○ | 交换；互换 |   | needs_review | needs_review |
+| 10 | bulk | unknown | ○ | 大量；大部分；体积 |   | needs_review | needs_review |
+| 10 | calibre | unknown | ○ | 质量；水平；能力；口径 | 保留英式拼写 calibre。 | needs_review | needs_review |
+| 10 | ignorance | uncertain | △ | 无知；不了解 |   | needs_review | needs_review |
+| 10 | absent | uncertain | △ | 缺席的；不存在的；走神的 |   | needs_review | needs_review |
+| 10 | promotion | uncertain | △ | 晋升；推广；促销 |   | needs_review | needs_review |
+| 10 | magnificent | uncertain | △ | 宏伟的；壮丽的；极好的 |   | needs_review | needs_review |
+| 10 | fund | uncertain | △ | 基金；资金；资助 |   | needs_review | needs_review |
+| 10 | perceive | uncertain | △ | 察觉；感知；将…视为 |   | needs_review | needs_review |
+| 10 | assume | uncertain | △ | 假定；认为；承担 |   | needs_review | needs_review |
+| 10 | proportion | uncertain | △ | 比例；份额；部分 |   | needs_review | needs_review |
+| 10 | forth | uncertain | △ | 向前；往外；等等（and so forth） |   | needs_review | needs_review |
+| 10 | conversation | uncertain | △ | 谈话；交谈；对话 | 总表写作 conversetion，规范候选 conversation；请核对。 | needs_review | needs_review |
+| 10 | stripe | uncertain | △ | 条纹；条带 |   | needs_review | needs_review |
+| 10 | strip | uncertain | △ | 窄条；剥去；脱去 |   | needs_review | needs_review |
+| 10 | justice | uncertain | △ | 公平；正义；司法 |   | needs_review | needs_review |
+| 10 | abundance | uncertain | △ | 大量；丰富；充裕 |   | needs_review | needs_review |
+| 10 | amaze | uncertain | △ | 使惊奇；使惊叹 |   | needs_review | needs_review |
+| 10 | uneasy | uncertain | △ | 不安的；忧虑的；不稳定的 |   | needs_review | needs_review |
+| 10 | clarity | uncertain | △ | 清晰；明确；清楚 |   | needs_review | needs_review |
+| 10 | machinery | uncertain | △ | 机器设备（总称）；机构；运作体系 |   | needs_review | needs_review |
+| 10 | harsh | uncertain | △ | 严厉的；严酷的；刺耳的 |   | needs_review | needs_review |
+| 10 | parliament | uncertain | △ | 议会；国会 |   | needs_review | needs_review |
 
 ## 词条补充资料
 
@@ -4779,6 +4821,48 @@
   {"word":"union","phonetic":"/ˈjuː.ni.ən/","part_of_speech":["noun"],"collocations":["a trade union","a political union"]},
   {"word":"responsibility","phonetic":"/rɪˌspɒn.səˈbɪl.ə.ti/","part_of_speech":["noun"],"collocations":["take responsibility for","a sense of responsibility"]},
   {"word":"notify","phonetic":"/ˈnəʊ.tɪ.faɪ/","part_of_speech":["verb"],"collocations":["notify the authorities","notify someone of a change"]},
-  {"word":"soak","phonetic":"/səʊk/","part_of_speech":["verb","noun"],"collocations":["soak in water","soak up moisture"]}
+  {"word":"soak","phonetic":"/səʊk/","part_of_speech":["verb","noun"],"collocations":["soak in water","soak up moisture"]},
+  {"word":"mitigate","phonetic":"/ˈmɪt.ɪ.ɡeɪt/","part_of_speech":["verb"],"collocations":["mitigate the impact","mitigate risk"]},
+  {"word":"aesthetic","phonetic":"/esˈθet.ɪk/","part_of_speech":["adjective","noun"],"collocations":["aesthetic appeal","a minimalist aesthetic"]},
+  {"word":"scrape","phonetic":"/skreɪp/","part_of_speech":["verb","noun"],"collocations":["scrape paint off","a scrape on the knee"]},
+  {"word":"spasmodic","phonetic":"/spæzˈmɒd.ɪk/","part_of_speech":["adjective"],"collocations":["spasmodic activity","spasmodic attacks"]},
+  {"word":"specification","phonetic":"/ˌspes.ɪ.fɪˈkeɪ.ʃən/","part_of_speech":["noun"],"collocations":["technical specifications","meet the specifications"]},
+  {"word":"extinguisher","phonetic":"/ɪkˈstɪŋ.ɡwɪ.ʃə/","part_of_speech":["noun"],"collocations":["a fire extinguisher"]},
+  {"word":"referee","phonetic":"/ˌref.əˈriː/","part_of_speech":["noun","verb"],"collocations":["a football referee","provide the names of two referees"]},
+  {"word":"forgo","phonetic":"/fɔːˈɡəʊ/","part_of_speech":["verb"],"collocations":["forgo a meal","forgo the opportunity"]},
+  {"word":"assistantship","phonetic":"/əˈsɪs.tənt.ʃɪp/","part_of_speech":["noun"],"collocations":["a teaching assistantship","a research assistantship"]},
+  {"word":"offset","phonetic":"/ˌɒfˈset/（动词）；/ˈɒf.set/（名词）","part_of_speech":["verb","noun"],"collocations":["offset the cost","offset carbon emissions"]},
+  {"word":"siesta","phonetic":"/siˈes.tə/","part_of_speech":["noun"],"collocations":["take a siesta"]},
+  {"word":"detour","phonetic":"/ˈdiː.tʊə/","part_of_speech":["noun","verb"],"collocations":["take a detour","a short detour"]},
+  {"word":"arthritis","phonetic":"/ɑːˈθraɪ.tɪs/","part_of_speech":["noun"],"collocations":["have arthritis","rheumatoid arthritis"]},
+  {"word":"cosmic","phonetic":"/ˈkɒz.mɪk/","part_of_speech":["adjective"],"collocations":["on a cosmic scale","cosmic rays"]},
+  {"word":"jumble","phonetic":"/ˈdʒʌm.bəl/","part_of_speech":["verb","noun"],"collocations":["jumble up the letters","a jumble of objects"]},
+  {"word":"embed","phonetic":"/ɪmˈbed/","part_of_speech":["verb"],"collocations":["embed a video","be deeply embedded in","embed technology in education"]},
+  {"word":"orientation","phonetic":"/ˌɔː.ri.enˈteɪ.ʃən/","part_of_speech":["noun"],"collocations":["the orientation of a building","an orientation programme"]},
+  {"word":"deprive","phonetic":"/dɪˈpraɪv/","part_of_speech":["verb"],"collocations":["deprive someone of sleep","deprive children of an education"]},
+  {"word":"dividend","phonetic":"/ˈdɪv.ɪ.dend/","part_of_speech":["noun"],"collocations":["pay a dividend","an annual dividend"]},
+  {"word":"swap","phonetic":"/swɒp/","part_of_speech":["verb","noun"],"collocations":["swap seats","swap stories"]},
+  {"word":"bulk","phonetic":"/bʌlk/","part_of_speech":["noun"],"collocations":["the bulk of something","in bulk","bulk up"]},
+  {"word":"calibre","phonetic":"/ˈkæl.ɪ.bə/","part_of_speech":["noun"],"collocations":["of a high calibre","the calibre of the candidates"]},
+  {"word":"ignorance","phonetic":"/ˈɪɡ.nər.əns/","part_of_speech":["noun"],"collocations":["ignorance of the law"]},
+  {"word":"absent","phonetic":"/ˈæb.sənt/","part_of_speech":["adjective"],"collocations":["be absent from class","an absent expression"]},
+  {"word":"promotion","phonetic":"/prəˈməʊ.ʃən/","part_of_speech":["noun"],"collocations":["get a promotion","sales promotion"]},
+  {"word":"magnificent","phonetic":"/mæɡˈnɪf.ɪ.sənt/","part_of_speech":["adjective"],"collocations":["a magnificent view","a magnificent building"]},
+  {"word":"fund","phonetic":"/fʌnd/","part_of_speech":["noun","verb"],"collocations":["raise funds","fund a project"]},
+  {"word":"perceive","phonetic":"/pəˈsiːv/","part_of_speech":["verb"],"collocations":["perceive a threat","perceive something as a risk"]},
+  {"word":"assume","phonetic":"/əˈsjuːm/","part_of_speech":["verb"],"collocations":["assume responsibility","assume that"]},
+  {"word":"proportion","phonetic":"/prəˈpɔː.ʃən/","part_of_speech":["noun"],"collocations":["a high proportion of","in proportion to"]},
+  {"word":"forth","phonetic":"/fɔːθ/","part_of_speech":["adverb"],"collocations":["and so forth","bring forth"]},
+  {"word":"conversation","raw":"conversetion","phonetic":"/ˌkɒn.vəˈseɪ.ʃən/","part_of_speech":["noun"],"collocations":["have a conversation","strike up a conversation"]},
+  {"word":"stripe","phonetic":"/straɪp/","part_of_speech":["noun"],"collocations":["a shirt with blue stripes","black and white stripes"]},
+  {"word":"strip","phonetic":"/strɪp/","part_of_speech":["noun","verb"],"collocations":["a strip of land","strip paint from a door"]},
+  {"word":"justice","phonetic":"/ˈdʒʌs.tɪs/","part_of_speech":["noun"],"collocations":["access to justice","the criminal justice system"]},
+  {"word":"abundance","phonetic":"/əˈbʌn.dəns/","part_of_speech":["noun"],"collocations":["an abundance of resources","in abundance"]},
+  {"word":"amaze","phonetic":"/əˈmeɪz/","part_of_speech":["verb"],"collocations":["never cease to amaze","be amazed at the result"]},
+  {"word":"uneasy","phonetic":"/ʌnˈiː.zi/","part_of_speech":["adjective"],"collocations":["feel uneasy about","an uneasy truce"]},
+  {"word":"clarity","phonetic":"/ˈklær.ə.ti/","part_of_speech":["noun"],"collocations":["clarity of expression","explain with clarity"]},
+  {"word":"machinery","phonetic":"/məˈʃiː.nər.i/","part_of_speech":["noun"],"collocations":["heavy machinery","agricultural machinery"]},
+  {"word":"harsh","phonetic":"/hɑːʃ/","part_of_speech":["adjective"],"collocations":["harsh criticism","harsh conditions"]},
+  {"word":"parliament","phonetic":"/ˈpɑː.lɪ.mənt/","part_of_speech":["noun"],"collocations":["a member of parliament","dissolve parliament"]}
 ]
 ```
