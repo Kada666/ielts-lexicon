@@ -4,9 +4,41 @@ import { Repository } from '../../src/db/database';
 import { makeQuestions, timedResult } from '../../src/review/timed';
 import { parseBackup, parseSyncEvent, parseVocabulary } from '../../src/utils/validation';
 import candidate from '../../data/vocabulary.pending.json';
+import { bundledImports, importRefId, parseImportRef } from '../../src/sync/imports';
 
 const words=parseVocabulary(candidate).words;
 const word=words[0];
+
+it('syncs unreviewed Lists 9 and 10 from desktop to phone without changing existing study data',async()=>{
+ const owner='learner';
+ const desktop=new Repository('imports-desktop'),phone=new Repository('imports-phone');
+ const additions=words.filter(item=>item.list_ids.includes(9)||item.list_ids.includes(10));
+ const catalog=bundledImports(words);
+ await desktop.importWords(additions);
+ await phone.importWords([word]);
+ await phone.grade(word.id,'good',1000000);
+ await phone.saveOverride({word_id:word.id,meaning:['我的释义'],example:'',example_zh:'',collocations:[],mnemonics:[],updated_at:1000001});
+ const before=await phone.snapshot();
+ const refs=(await desktop.snapshot()).words.flatMap(item=>item.list_ids.map(list=>({word_id:item.id,list})));
+ expect(refs).toHaveLength(88);
+ expect((await desktop.snapshot()).reviews).toEqual([]);
+ expect(await phone.mergeImportedWords(owner,refs,catalog)).toBe(false);
+ await phone.claimSyncOwner(owner);
+ expect(await phone.mergeImportedWords('other',refs,catalog)).toBe(false);
+ expect(await phone.mergeImportedWords(owner,[...refs,{word_id:word.id,list:10}],catalog)).toBe(true);
+ expect(await phone.mergeImportedWords(owner,refs,catalog)).toBe(false);
+ const after=await phone.snapshot();
+ expect(after.words.find(item=>item.id===word.id)).toEqual(before.words[0]);
+ expect(after.words.filter(item=>item.list_ids.includes(9))).toHaveLength(46);
+ expect(after.words.filter(item=>item.list_ids.includes(10))).toHaveLength(42);
+ expect(after.words.find(item=>item.word==='aesthetic')?.mnemonics[0].id).toBe('pdf_note_aesthetic');
+ expect(after.reviews).toEqual(before.reviews);
+ expect(after.overrides).toEqual(before.overrides);
+ expect(after.progress.find(item=>item.word_id===word.id)).toEqual(before.progress[0]);
+ expect(after.progress.filter(item=>item.state==='new')).toHaveLength(88);
+ expect(parseImportRef({word_id:word.id,list:51})).toBeNull();
+ expect(importRefId(refs[0])).toMatch(/^(9|10)_word_/);
+});
 
 it('keeps the 5s and 10s boundaries and distinguishes errors from timeouts',()=>{
  expect(timedResult(true,4999)).toMatchObject({grade:'good',attempt:{result:'correct',elapsed_ms:4999}});

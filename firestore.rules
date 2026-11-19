@@ -36,5 +36,17 @@ service cloud.firestore {
       allow create: if own(uid) && validReview(request.resource.data, reviewId);
       allow update: if own(uid) && request.resource.data == resource.data;
     }
+    match /users/{uid}/imports/{importId} {
+      allow read: if own(uid);
+      allow create: if own(uid)
+        && request.resource.data.keys().hasOnly(['word_id','list'])
+        && request.resource.data.word_id is string
+        && request.resource.data.word_id.size() <= 180
+        && request.resource.data.word_id.matches("^word_[a-z]+([_'-][a-z]+)*$")
+        && request.resource.data.list is int
+        && request.resource.data.list >= 1 && request.resource.data.list <= 50
+        && importId == string(request.resource.data.list) + '_' + request.resource.data.word_id;
+      allow update: if own(uid) && request.resource.data == resource.data;
+    }
   }
 }

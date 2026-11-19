@@ -3,11 +3,13 @@ import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, type 
 import { collection, doc, getFirestore, onSnapshot, writeBatch } from 'firebase/firestore';
 import type { ReviewEvent } from '../types';
 import { parseSyncEvent } from '../utils/validation';
+import { importRefId, parseImportRef, type ImportRef } from './imports';
 
 export function createCloud(config: FirebaseOptions) {
  const app=getApps().find(entry=>entry.name==='lexicon-sync')??initializeApp(config,'lexicon-sync');
  const auth=getAuth(app),db=getFirestore(app);
  const reviews=(uid:string)=>collection(db,'users',uid,'reviews');
+ const imports=(uid:string)=>collection(db,'users',uid,'imports');
  return {
   watchUser:(callback:(user:User|null)=>void)=>onAuthStateChanged(auth,callback),
   signIn:(email:string,password:string)=>signInWithEmailAndPassword(auth,email,password),
@@ -21,6 +23,22 @@ export function createCloud(config: FirebaseOptions) {
     });
     update(events);
    },fail),
+  watchImports:(uid:string,update:(refs:ImportRef[])=>void,fail:(error:Error)=>void)=>
+   onSnapshot(imports(uid),{includeMetadataChanges:true},snapshot=>{
+    if(snapshot.metadata.fromCache||snapshot.metadata.hasPendingWrites)return;
+    update(snapshot.docs.flatMap(row=>{
+     const ref=parseImportRef(row.data());
+     return ref&&importRefId(ref)===row.id?[ref]:[];
+    }));
+   },fail),
+  async uploadImports(uid:string,refs:ImportRef[]){
+   for(let index=0;index<refs.length;index+=200){
+    if(auth.currentUser?.uid!==uid)throw new Error('同步账号已退出。');
+    const batch=writeBatch(db);
+    for(const ref of refs.slice(index,index+200))batch.set(doc(imports(uid),importRefId(ref)),ref);
+    await batch.commit();
+   }
+  },
   async upload(uid:string,events:ReviewEvent[]){
    for(let i=0;i<events.length;i+=200){
     if(auth.currentUser?.uid!==uid)throw new Error('同步账号已退出。');

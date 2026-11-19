@@ -3,6 +3,7 @@ import { defaults, type Backup, type Grade, type Override, type Progress, type R
 import { ALGORITHM, freshProgress, replayReviews, schedule, upgradeProgress } from '../review/scheduler';
 import { mergeNotebookOverride, mergeWords, notebookChanges, parseBackup, parseSyncEvent, validateWords } from '../utils/validation';
 import { correctContinuationOrigins } from '../utils/originCorrections';
+import { importRefId, parseImportRef, type ImportRef } from '../sync/imports';
 import edition from '../../edition.json';
 export const DATABASE_NAME = edition.database_name;
 interface Schema extends DBSchema {
@@ -150,10 +151,38 @@ export class Repository {
     try {return await db.get('meta','sync-owner');}
     finally {db.close();}
   }
-  async mergeReviewEvents(events: ReviewEvent[], bundled: Word[]) {
+  async mergeImportedWords(owner:string, refs:ImportRef[], bundled:ReadonlyMap<string,Word>) {
     const db=await connect(this.name);
     try {
-      const tx=db.transaction(['words','reviews','progress'],'readwrite');
+      const tx=db.transaction(['meta','words','progress'],'readwrite');
+      const words=tx.objectStore('words'),progress=tx.objectStore('progress');
+      if(await tx.objectStore('meta').get('sync-owner')!==owner){await tx.done;return false;}
+      let changed=false;
+      for(const value of refs) {
+        const ref=parseImportRef(value);
+        if(!ref)continue;
+        const incoming=bundled.get(importRefId(ref));
+        if(!incoming)continue;
+        const local=await words.get(incoming.id);
+        if(local?.list_ids.includes(ref.list))continue;
+        const word:Word=local?{
+          ...local,list_ids:[...local.list_ids,ref.list].sort((left,right)=>left-right),
+          origins:[...local.origins,...incoming.origins],
+          initial_level:local.initial_level==='unknown'||incoming.initial_level==='unknown'?'unknown':'uncertain',
+        }:incoming;
+        await words.put(word);
+        if(!await progress.get(word.id))await progress.put(freshProgress(word));
+        changed=true;
+      }
+      await tx.done;
+      return changed;
+    } finally {db.close();}
+  }
+  async mergeReviewEvents(events: ReviewEvent[], bundled: Word[], owner?: string) {
+    const db=await connect(this.name);
+    try {
+      const tx=db.transaction(['words','reviews','progress','meta'],'readwrite');
+      if(owner!==undefined&&await tx.objectStore('meta').get('sync-owner')!==owner){await tx.done;return false;}
       const wordStore=tx.objectStore('words'),reviewStore=tx.objectStore('reviews');
       const [localWords,localReviews]=await Promise.all([wordStore.getAll(),reviewStore.getAll()]);
       const words=new Map(localWords.map(word=>[word.id,word]));
