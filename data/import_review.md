@@ -79,6 +79,10 @@ apparently 以「看来、似乎、据说」为常用义。fragrance 的「打�
 
 第 1 页列出 ○ 陌生 22 个、△ 模糊 20 个，共 42 个词，与 List 1～9 无重复词形。第 2～7 页的 22 条笔记见 [List 10 文字笔记](notes/list_10.md)，第 8 页为空白。总表中的 conversetion 保留为原始写法，规范候选为 [conversation](https://dictionary.cambridge.org/dictionary/english/conversation)，待确认；dividend 沿用总表，保留股息和被除数两义。保留英式 [calibre](https://dictionary.cambridge.org/dictionary/english/calibre) 及表示放弃的 [forgo](https://dictionary.cambridge.org/dictionary/english/forgo)。
 
+## List 11 核对
+
+第 1 页列出 ○ 陌生 22 个、△ 模糊 14 个，共 36 个词，与 List 1～10 无重复词形。第 2～7 页的 22 条手写记忆法和第 3 页的词缀口诀见 [List 11 文字笔记](notes/list_11.md)。保留原稿的 [specialty](https://dictionary.cambridge.org/pronunciation/english/specialty) 和 marvellous；另在 specialty 备注中列出 [speciality](https://dictionary.cambridge.org/pronunciation/english/speciality)。slat / flat 与 slate / plate 标为拼写助记。
+
 ## 确认方法
 
 - 仅核对图片：修改主表 Transcription 为 reviewed，或在应用预览中确认导入。

@@ -43,7 +43,7 @@ IELTS Lexicon 是一个本地优先、支持离线使用的个人雅思词汇学
 
 在线地址为 **[IELTS Lexicon](https://kada666.github.io/ielts-lexicon/)**。统一公开仓库和看板链接；桌面入口可直接打开在线版，也可运行本地副本。
 
-1. 点击“核对并导入初始词库”，预览 List 1～10 共 **390 个候选词**。已有词库时，点首页“更新词库与笔记”增量合并，也可在“导入与备份”单独补充 List 5～10 中的某一 List，或 List 3 + List 4。
+1. 点击“核对并导入初始词库”，预览 List 1～11 共 **426 个候选词**。已有词库时，点首页“更新词库与笔记”增量合并，也可在“导入与备份”单独补充 List 5～11 中的某一 List，或 List 3 + List 4。
 2. 查看 Markdown 文字笔记，核对拼写及 ○ / △ 后导入；可逐 List 核对更多候选。
 3. 开始复习：先回忆 → 翻开 → 查看词义与记忆线索 → 评分。
 4. 在词库中补充自己的记忆方法，并定期导出**完整 JSON 备份**。
@@ -70,7 +70,7 @@ npm run preview -- --port 4173 --strictPort
 
 ## 数据来源与持续扩充
 
-词库来自手写筛查表，已转写为 [List 1～10 的 Markdown 笔记](data/notes/)。表格统计的是个人筛查词。
+词库来自手写筛查表，已转写为 [List 1～11 的 Markdown 笔记](data/notes/)。表格统计的是个人筛查词。
 
 | List | ○ 陌生 | △ 模糊 | 练习 | 候选数 |
 | --- | ---: | ---: | ---: | ---: |
@@ -84,9 +84,10 @@ npm run preview -- --port 4173 --strictPort
 | 8 | 25 | 13 | 0 | 38 |
 | 9 | 27 | 19 | 0 | 46 |
 | 10 | 22 | 20 | 0 | 42 |
-| 合计 | 232 | 158 | 0 | 390 |
+| 11 | 22 | 14 | 0 | 36 |
+| 合计 | 254 | 172 | 0 | 426 |
 
-十份详解笔记整理为 **238 条手写记忆法**，按词块、口诀、记忆链和关联词展示。另提供 [List 3 + List 4 的 90 词](data/vocabulary.list_03_04.json)、[List 5 的 45 词](data/vocabulary.list_05.json)、[List 6 的 37 词](data/vocabulary.list_06.json)、[List 7 的 43 词](data/vocabulary.list_07.json)、[List 8 的 38 词](data/vocabulary.list_08.json)、[List 9 的 46 词](data/vocabulary.list_09.json)和 [List 10 的 42 词](data/vocabulary.list_10.json)独立导入文件。[词表核对记录](data/import_review.md)
+十一份详解笔记整理为 **260 条手写记忆法**，按词块、口诀、记忆链和关联词展示。另提供 [List 3 + List 4](data/vocabulary.list_03_04.json)、[List 5](data/vocabulary.list_05.json)、[List 6](data/vocabulary.list_06.json)、[List 7](data/vocabulary.list_07.json)、[List 8](data/vocabulary.list_08.json)、[List 9](data/vocabulary.list_09.json)、[List 10](data/vocabulary.list_10.json)和 [List 11](data/vocabulary.list_11.json) 的独立导入文件。[词表核对记录](data/import_review.md)
 
 未确认转录保存在 `vocabulary.pending.json`，在看板预览确认后写入本地词库。释义、音标、例句和记忆候选保留各自的审核状态。List 4、List 5 和 List 7 的「续」是陌生词续列，归入 ○。
 

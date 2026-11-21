@@ -9,7 +9,7 @@ import candidate from '../../data/vocabulary.pending.json';
 import { convertMarkdown } from '../../scripts/build-vocabulary.mjs';
 import { readFileSync } from 'node:fs';
 const words=parseVocabulary(candidate).words;
-const notebooks=[1,2,3,4,5,6,7,8,9,10].map(list=>({list,markdown:readFileSync(`data/notes/list_${String(list).padStart(2,'0')}.md`,'utf8')}));
+const notebooks=[1,2,3,4,5,6,7,8,9,10,11].map(list=>({list,markdown:readFileSync(`data/notes/list_${String(list).padStart(2,'0')}.md`,'utf8')}));
 const word=words.find(w=>w.word==='delve')!;
 const name='lexicon-unit'; const repo=new Repository(name);
 beforeEach(async()=>{await deleteDB(name);});
@@ -130,6 +130,17 @@ describe('图片转录与 Markdown',()=>{
   expect(list10.find(w=>w.word==='conversation')?.origins[0]).toMatchObject({list:10,symbol:'△',raw:'conversetion'});
   expect(list10.find(w=>w.word==='dividend')?.meaning).toEqual(['股息','红利','被除数']);
   expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_10.json','utf8'))).words).toEqual(list10);
+ });
+ it('List 11 保留原始分类、手写联想和原词形',()=>{
+  const list11=words.filter(w=>w.list_ids.includes(11));
+  expect(list11).toHaveLength(36);
+  const unfamiliar=list11.filter(w=>w.origins.some(o=>o.list===11&&o.symbol==='○'));
+  expect(unfamiliar).toHaveLength(22);
+  expect(unfamiliar.every(w=>w.mnemonics.length===1&&w.mnemonics[0].status==='needs_review')).toBe(true);
+  expect(list11.filter(w=>w.origins.some(o=>o.list===11&&o.symbol==='△'))).toHaveLength(14);
+  expect(list11.find(w=>w.word==='specialty')?.origins[0]).toMatchObject({list:11,symbol:'△',raw:'specialty'});
+  expect(list11.find(w=>w.word==='slat')?.mnemonics[0]).toMatchObject({type:'association',cue:'slat 借 flat；slate 借 plate'});
+  expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_11.json','utf8'))).words).toEqual(list11);
  });
 });
 describe('复习调度',()=>{

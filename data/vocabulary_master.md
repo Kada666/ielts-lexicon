@@ -402,6 +402,42 @@
 | 10 | machinery | uncertain | △ | 机器设备（总称）；机构；运作体系 |   | needs_review | needs_review |
 | 10 | harsh | uncertain | △ | 严厉的；严酷的；刺耳的 |   | needs_review | needs_review |
 | 10 | parliament | uncertain | △ | 议会；国会 |   | needs_review | needs_review |
+| 11 | deviate | unknown | ○ | 偏离；背离 |   | needs_review | needs_review |
+| 11 | aquarium | unknown | ○ | 鱼缸；水族馆 |   | needs_review | needs_review |
+| 11 | turnover | unknown | ○ | 营业额；人员流动率；存货周转率 |   | needs_review | needs_review |
+| 11 | lateral | unknown | ○ | 侧面的；向侧面的 |   | needs_review | needs_review |
+| 11 | tribute | unknown | ○ | 致敬；颂词；贡品 |   | needs_review | needs_review |
+| 11 | sanitary | unknown | ○ | 卫生的；清洁的 |   | needs_review | needs_review |
+| 11 | archive | unknown | ○ | 档案；档案馆；归档 |   | needs_review | needs_review |
+| 11 | anecdotal | unknown | ○ | 基于个人经历或个例的；轶事性的 |   | needs_review | needs_review |
+| 11 | shorthand | unknown | ○ | 速记；速记法；简略说法 |   | needs_review | needs_review |
+| 11 | goggles | unknown | ○ | 护目镜；泳镜 |   | needs_review | needs_review |
+| 11 | thereby | unknown | ○ | 从而；由此；借此 |   | needs_review | needs_review |
+| 11 | barge | unknown | ○ | 驳船；闯入；横冲直撞 |   | needs_review | needs_review |
+| 11 | aerobics | unknown | ○ | 有氧健身操；有氧健身运动 |   | needs_review | needs_review |
+| 11 | shrub | unknown | ○ | 灌木 |   | needs_review | needs_review |
+| 11 | slat | unknown | ○ | 板条；长木条 |   | needs_review | needs_review |
+| 11 | cinematography | unknown | ○ | 电影摄影；电影摄影术 |   | needs_review | needs_review |
+| 11 | bronchitis | unknown | ○ | 支气管炎 |   | needs_review | needs_review |
+| 11 | exacerbate | unknown | ○ | 使恶化；使加剧 |   | needs_review | needs_review |
+| 11 | intrusion | unknown | ○ | 闯入；侵扰；侵犯 |   | needs_review | needs_review |
+| 11 | cork | unknown | ○ | 软木；软木塞；用软木塞封住 |   | needs_review | needs_review |
+| 11 | larva | unknown | ○ | 幼虫；幼体 |   | needs_review | needs_review |
+| 11 | crater | unknown | ○ | 火山口；陨石坑；环形坑 |   | needs_review | needs_review |
+| 11 | dweller | uncertain | △ | 居民；居住者 |   | needs_review | needs_review |
+| 11 | coverage | uncertain | △ | 覆盖范围；新闻报道；保险保障 |   | needs_review | needs_review |
+| 11 | specialty | uncertain | △ | 专业；专长；特色菜或特产 | 保留总表的 specialty；另见英式词形 speciality。 | needs_review | needs_review |
+| 11 | stick | uncertain | △ | 棍；枝条；粘住；卡住；坚持 |   | needs_review | needs_review |
+| 11 | mention | uncertain | △ | 提及；说起；提到 |   | needs_review | needs_review |
+| 11 | snack | uncertain | △ | 零食；点心；吃零食 |   | needs_review | needs_review |
+| 11 | marvellous | uncertain | △ | 极好的；了不起的 | 保留英式拼写 marvellous。 | needs_review | needs_review |
+| 11 | exceptional | uncertain | △ | 非凡的；出色的；例外的 |   | needs_review | needs_review |
+| 11 | primitive | uncertain | △ | 原始的；早期的；简陋的 |   | needs_review | needs_review |
+| 11 | craft | uncertain | △ | 工艺；技艺；船或飞行器；精心制作 |   | needs_review | needs_review |
+| 11 | confuse | uncertain | △ | 使困惑；把…混淆 |   | needs_review | needs_review |
+| 11 | decoration | uncertain | △ | 装饰；装饰品；勋章 |   | needs_review | needs_review |
+| 11 | offspring | uncertain | △ | 子女；后代；幼崽 |   | needs_review | needs_review |
+| 11 | occasional | uncertain | △ | 偶尔的；不经常的 |   | needs_review | needs_review |
 
 ## 词条补充资料
 
@@ -4863,6 +4899,42 @@
   {"word":"clarity","phonetic":"/ˈklær.ə.ti/","part_of_speech":["noun"],"collocations":["clarity of expression","explain with clarity"]},
   {"word":"machinery","phonetic":"/məˈʃiː.nər.i/","part_of_speech":["noun"],"collocations":["heavy machinery","agricultural machinery"]},
   {"word":"harsh","phonetic":"/hɑːʃ/","part_of_speech":["adjective"],"collocations":["harsh criticism","harsh conditions"]},
-  {"word":"parliament","phonetic":"/ˈpɑː.lɪ.mənt/","part_of_speech":["noun"],"collocations":["a member of parliament","dissolve parliament"]}
+  {"word":"parliament","phonetic":"/ˈpɑː.lɪ.mənt/","part_of_speech":["noun"],"collocations":["a member of parliament","dissolve parliament"]},
+  {"word":"deviate","phonetic":"/ˈdiː.vi.eɪt/","part_of_speech":["verb"],"collocations":["deviate from the route","deviate from the plan"]},
+  {"word":"aquarium","phonetic":"/əˈkweə.ri.əm/","part_of_speech":["noun"],"collocations":["a public aquarium","an aquarium tank"]},
+  {"word":"turnover","phonetic":"/ˈtɜːnˌəʊ.və/","part_of_speech":["noun"],"collocations":["annual turnover","staff turnover","inventory turnover"]},
+  {"word":"lateral","phonetic":"/ˈlæt.ər.əl/","part_of_speech":["adjective"],"collocations":["lateral movement","lateral thinking"]},
+  {"word":"tribute","phonetic":"/ˈtrɪb.juːt/","part_of_speech":["noun"],"collocations":["pay tribute to someone","a tribute to her work"]},
+  {"word":"sanitary","phonetic":"/ˈsæn.ɪ.tər.i/","part_of_speech":["adjective"],"collocations":["sanitary conditions","sanitary facilities"]},
+  {"word":"archive","phonetic":"/ˈɑː.kaɪv/","part_of_speech":["noun","verb"],"collocations":["a digital archive","archive old files"]},
+  {"word":"anecdotal","phonetic":"/ˌæn.ɪkˈdəʊ.təl/","part_of_speech":["adjective"],"collocations":["anecdotal evidence","anecdotal reports"]},
+  {"word":"shorthand","phonetic":"/ˈʃɔːt.hænd/","part_of_speech":["noun"],"collocations":["take notes in shorthand","shorthand for something"]},
+  {"word":"goggles","phonetic":"/ˈɡɒɡ.əlz/","part_of_speech":["noun"],"collocations":["safety goggles","swimming goggles"]},
+  {"word":"thereby","phonetic":"/ˌðeəˈbaɪ/","part_of_speech":["adverb"],"collocations":["thereby reducing costs","thereby improving safety"]},
+  {"word":"barge","phonetic":"/bɑːdʒ/","part_of_speech":["noun","verb"],"collocations":["a cargo barge","barge in"]},
+  {"word":"aerobics","phonetic":"/eəˈrəʊ.bɪks/","part_of_speech":["noun"],"collocations":["do aerobics","an aerobics class"]},
+  {"word":"shrub","phonetic":"/ʃrʌb/","part_of_speech":["noun"],"collocations":["a flowering shrub","plant shrubs"]},
+  {"word":"slat","phonetic":"/slæt/","part_of_speech":["noun"],"collocations":["wooden slats","the slats of a blind"]},
+  {"word":"cinematography","phonetic":"/ˌsɪn.ə.məˈtɒɡ.rə.fi/","part_of_speech":["noun"],"collocations":["digital cinematography","an award for cinematography"]},
+  {"word":"bronchitis","phonetic":"/brɒŋˈkaɪ.tɪs/","part_of_speech":["noun"],"collocations":["acute bronchitis","chronic bronchitis"]},
+  {"word":"exacerbate","phonetic":"/ɪɡˈzæs.ə.beɪt/","part_of_speech":["verb"],"collocations":["exacerbate the problem","exacerbate tensions"]},
+  {"word":"intrusion","phonetic":"/ɪnˈtruː.ʒən/","part_of_speech":["noun"],"collocations":["an intrusion into privacy","an unwanted intrusion"]},
+  {"word":"cork","phonetic":"/kɔːk/","part_of_speech":["noun","verb"],"collocations":["a cork stopper","cork a bottle"]},
+  {"word":"larva","phonetic":"/ˈlɑː.və/","part_of_speech":["noun"],"collocations":["a mosquito larva","insect larvae"]},
+  {"word":"crater","phonetic":"/ˈkreɪ.tə/","part_of_speech":["noun"],"collocations":["a volcanic crater","an impact crater"]},
+  {"word":"dweller","phonetic":"/ˈdwel.ə/","part_of_speech":["noun"],"collocations":["city dwellers","urban dwellers"]},
+  {"word":"coverage","phonetic":"/ˈkʌv.ər.ɪdʒ/","part_of_speech":["noun"],"collocations":["media coverage","insurance coverage","network coverage"]},
+  {"word":"specialty","phonetic":"/ˈspeʃ.əl.ti/","part_of_speech":["noun"],"collocations":["a medical specialty","a local specialty"]},
+  {"word":"stick","phonetic":"/stɪk/","part_of_speech":["noun","verb"],"collocations":["a walking stick","stick to a plan"]},
+  {"word":"mention","phonetic":"/ˈmen.ʃən/","part_of_speech":["verb","noun"],"collocations":["mention a possibility","make no mention of"]},
+  {"word":"snack","phonetic":"/snæk/","part_of_speech":["noun","verb"],"collocations":["a light snack","snack on fruit"]},
+  {"word":"marvellous","phonetic":"/ˈmɑː.vəl.əs/","part_of_speech":["adjective"],"collocations":["a marvellous opportunity","a marvellous idea"]},
+  {"word":"exceptional","phonetic":"/ɪkˈsep.ʃən.əl/","part_of_speech":["adjective"],"collocations":["exceptional talent","in exceptional circumstances"]},
+  {"word":"primitive","phonetic":"/ˈprɪm.ɪ.tɪv/","part_of_speech":["adjective"],"collocations":["primitive tools","primitive technology"]},
+  {"word":"craft","phonetic":"/krɑːft/","part_of_speech":["noun","verb"],"collocations":["traditional crafts","craft a response"]},
+  {"word":"confuse","phonetic":"/kənˈfjuːz/","part_of_speech":["verb"],"collocations":["confuse one word with another","confuse the reader"]},
+  {"word":"decoration","phonetic":"/ˌdek.əˈreɪ.ʃən/","part_of_speech":["noun"],"collocations":["interior decoration","festive decorations"]},
+  {"word":"offspring","phonetic":"/ˈɒf.sprɪŋ/","part_of_speech":["noun"],"collocations":["produce offspring","raise offspring"]},
+  {"word":"occasional","phonetic":"/əˈkeɪ.ʒən.əl/","part_of_speech":["adjective"],"collocations":["an occasional visitor","an occasional error"]}
 ]
 ```

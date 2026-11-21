@@ -1,0 +1,1818 @@
+{
+  "format": "ielts-lexicon-vocabulary",
+  "schema_version": 1,
+  "words": [
+    {
+      "id": "word_deviate",
+      "word": "deviate",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "deviate"
+        }
+      ],
+      "meaning": [
+        "偏离",
+        "背离"
+      ],
+      "phonetic": "/ˈdiː.vi.eɪt/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "deviate from the route",
+        "deviate from the plan"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_deviate",
+          "type": "morphology",
+          "title": "走偏了原来的路",
+          "content": "想象走着走着离开原来的路 → deviate，偏离路线、计划或常规。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 2 页",
+          "segments": [
+            {
+              "part": "de-",
+              "meaning": "离开、偏离"
+            },
+            {
+              "part": "via",
+              "meaning": "道路、路线"
+            },
+            {
+              "part": "-ate",
+              "meaning": "动词后缀"
+            }
+          ],
+          "related": [
+            {
+              "term": "deviate from something",
+              "meaning": "偏离某事物"
+            },
+            {
+              "term": "detour",
+              "meaning": "绕路、绕行（List 10）"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_aquarium",
+      "word": "aquarium",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "aquarium"
+        }
+      ],
+      "meaning": [
+        "鱼缸",
+        "水族馆"
+      ],
+      "phonetic": "/əˈkweə.ri.əm/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a public aquarium",
+        "an aquarium tank"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_aquarium",
+          "type": "morphology",
+          "title": "装着水的地方",
+          "content": "想象走进水族馆，隔着透明隧道看头顶游过的鱼 → aquarium，水族馆；也可以是养鱼用的鱼缸。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 2 页",
+          "segments": [
+            {
+              "part": "aqu-",
+              "meaning": "水",
+              "cue": "啊啾！打喷嚏时想到水汽（拟声联想）"
+            },
+            {
+              "part": "-arium",
+              "meaning": "可表示供某种用途的场所或容器",
+              "cue": "用「泡在空气里」记场所（原笔记联想）"
+            }
+          ],
+          "related": [
+            {
+              "term": "aquatic organisms",
+              "meaning": "水生生物"
+            },
+            {
+              "term": "aquatic",
+              "meaning": "水生的；水中的"
+            },
+            {
+              "term": "organism",
+              "meaning": "生物；有机体"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_turnover",
+      "word": "turnover",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "turnover"
+        }
+      ],
+      "meaning": [
+        "营业额",
+        "人员流动率",
+        "存货周转率"
+      ],
+      "phonetic": "/ˈtɜːnˌəʊ.və/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "annual turnover",
+        "staff turnover",
+        "inventory turnover"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_turnover",
+          "type": "morphology",
+          "title": "转动、翻转，再到周转",
+          "content": "商品卖掉再补货，员工离职后有人接替 → turnover 可指存货周转、人员流动；企业营业额也用这个词。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 2 页",
+          "segments": [
+            {
+              "part": "turn",
+              "meaning": "转动"
+            },
+            {
+              "part": "over",
+              "meaning": "翻过、换过来的联想"
+            }
+          ],
+          "related": [
+            {
+              "term": "annual turnover",
+              "meaning": "年营业额"
+            },
+            {
+              "term": "staff turnover",
+              "meaning": "人员流动率"
+            },
+            {
+              "term": "inventory turnover",
+              "meaning": "存货周转率"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_lateral",
+      "word": "lateral",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "lateral"
+        }
+      ],
+      "meaning": [
+        "侧面的",
+        "向侧面的"
+      ],
+      "phonetic": "/ˈlæt.ər.əl/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "lateral movement",
+        "lateral thinking"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_lateral",
+          "type": "morphology",
+          "title": "往侧面挪一步",
+          "content": "想象一个物体向左右两边移动 → lateral，侧面的、向侧面的。这里的 later- 表示侧面。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 2 页",
+          "segments": [
+            {
+              "part": "later-",
+              "meaning": "侧面",
+              "cue": "很懒的人去侧面（谐音）"
+            },
+            {
+              "part": "-al",
+              "meaning": "在这里构成形容词"
+            }
+          ],
+          "related": [
+            {
+              "term": "bilateral",
+              "meaning": "双边的"
+            },
+            {
+              "term": "unilateral",
+              "meaning": "单方面的"
+            },
+            {
+              "term": "multilateral",
+              "meaning": "多边的"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_tribute",
+      "word": "tribute",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "tribute"
+        }
+      ],
+      "meaning": [
+        "致敬",
+        "颂词",
+        "贡品"
+      ],
+      "phonetic": "/ˈtrɪb.juːt/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "pay tribute to someone",
+        "a tribute to her work"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_tribute",
+          "type": "morphology",
+          "title": "给予贡品，向人致敬",
+          "content": "从把东西分给或献给别人，想到贡献礼物来表示敬意 → tribute，贡品、致敬、颂词。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 3 页",
+          "segments": [
+            {
+              "part": "trib- / tribut-",
+              "meaning": "分配、给予"
+            }
+          ],
+          "related": [
+            {
+              "term": "pay tribute to someone",
+              "meaning": "向某人致敬"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_sanitary",
+      "word": "sanitary",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "sanitary"
+        }
+      ],
+      "meaning": [
+        "卫生的",
+        "清洁的"
+      ],
+      "phonetic": "/ˈsæn.ɪ.tər.i/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "sanitary conditions",
+        "sanitary facilities"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_sanitary",
+          "type": "morphology",
+          "title": "健康离不开卫生",
+          "content": "从身心健康想到保持生活环境清洁 → sanitary，卫生的、清洁的。复习 sanitation 时想公共卫生设施，复习 sanity 时想心智健全。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 3 页",
+          "segments": [
+            {
+              "part": "san- / sanit-",
+              "meaning": "健康、健全",
+              "cue": "三个你（谐音）"
+            },
+            {
+              "part": "-ary",
+              "meaning": "在这里构成形容词",
+              "cue": "啊一个人（谐音）"
+            }
+          ],
+          "related": [
+            {
+              "term": "sanitation",
+              "meaning": "公共卫生；卫生设施"
+            },
+            {
+              "term": "sanitise / sanitize",
+              "meaning": "清洁；消毒"
+            },
+            {
+              "term": "sane",
+              "meaning": "心智健全的；理智的"
+            },
+            {
+              "term": "sanity",
+              "meaning": "理智；神志正常"
+            },
+            {
+              "term": "sanatorium",
+              "meaning": "疗养院"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_archive",
+      "word": "archive",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "archive"
+        }
+      ],
+      "meaning": [
+        "档案",
+        "档案馆",
+        "归档"
+      ],
+      "phonetic": "/ˈɑː.kaɪv/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a digital archive",
+        "archive old files"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_archive",
+          "type": "phonetic",
+          "title": "一个人吃掉艺术时",
+          "content": "顺着原稿的趣味口诀，想象有人赶紧把艺术作品的资料和照片保存到一排排档案架上 → archive，档案、档案馆，也可作动词「归档」。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 3 页",
+          "cue": "一个人吃掉艺术时"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_anecdotal",
+      "word": "anecdotal",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "anecdotal"
+        }
+      ],
+      "meaning": [
+        "基于个人经历或个例的",
+        "轶事性的"
+      ],
+      "phonetic": "/ˌæn.ɪkˈdəʊ.təl/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "anecdotal evidence",
+        "anecdotal reports"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_anecdotal",
+          "type": "association",
+          "title": "俺一看就投了",
+          "content": "想象有人用自己「一看就投了」的经历做证据：那是一个个案，不能据此代表普遍情况 → anecdotal，基于个人经历或个例的。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 3 页",
+          "cue": "俺一看就投了",
+          "related": [
+            {
+              "term": "anecdotal evidence",
+              "meaning": "来自个别经历或个案的证据"
+            },
+            {
+              "term": "empirical evidence",
+              "meaning": "通过观察或实验得到的实证证据"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_shorthand",
+      "word": "shorthand",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "shorthand"
+        }
+      ],
+      "meaning": [
+        "速记",
+        "速记法",
+        "简略说法"
+      ],
+      "phonetic": "/ˈʃɔːt.hænd/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "take notes in shorthand",
+        "shorthand for something"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_shorthand",
+          "type": "morphology",
+          "title": "手写得更简短",
+          "content": "说话太快，用很短的符号手写下来 → shorthand，速记；也指表达某个概念的简略说法。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 4 页",
+          "segments": [
+            {
+              "part": "short",
+              "meaning": "简短的"
+            },
+            {
+              "part": "hand",
+              "meaning": "手；这里联想到手写"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_goggles",
+      "word": "goggles",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "goggles"
+        }
+      ],
+      "meaning": [
+        "护目镜",
+        "泳镜"
+      ],
+      "phonetic": "/ˈɡɒɡ.əlz/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "safety goggles",
+        "swimming goggles"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_goggles",
+          "type": "phonetic",
+          "title": "go go go，戴上去看",
+          "content": "想象进实验室或跳进泳池前，有人喊「go go go」，你先戴上保护眼睛的镜子 → goggles，护目镜、泳镜。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 4 页",
+          "cue": "go go go 来看"
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_thereby",
+      "word": "thereby",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "thereby"
+        }
+      ],
+      "meaning": [
+        "从而",
+        "由此",
+        "借此"
+      ],
+      "phonetic": "/ˌðeəˈbaɪ/",
+      "part_of_speech": [
+        "adverb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "thereby reducing costs",
+        "thereby improving safety"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_thereby",
+          "type": "association",
+          "title": "通过这件事，带来那个结果",
+          "content": "先发生一个动作，正是通过这个动作带来后面的结果 → thereby，从而、由此。比如改善流程，从而降低成本。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 4 页",
+          "related": [
+            {
+              "term": "thereby reducing costs",
+              "meaning": "从而降低成本"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_barge",
+      "word": "barge",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "barge"
+        }
+      ],
+      "meaning": [
+        "驳船",
+        "闯入",
+        "横冲直撞"
+      ],
+      "phonetic": "/bɑːdʒ/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a cargo barge",
+        "barge in"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_barge",
+          "type": "phonetic",
+          "title": "酒吧里的哥哥闯进来",
+          "content": "想象酒吧里的哥哥横冲直撞地闯进来 → barge in，闯入、插话。再回想图片里的平底运货船 → barge，驳船。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 4 页",
+          "cue": "酒吧里的哥哥",
+          "related": [
+            {
+              "term": "cargo barge",
+              "meaning": "货运驳船"
+            },
+            {
+              "term": "barge in",
+              "meaning": "闯入；插话"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_aerobics",
+      "word": "aerobics",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "aerobics"
+        }
+      ],
+      "meaning": [
+        "有氧健身操",
+        "有氧健身运动"
+      ],
+      "phonetic": "/eəˈrəʊ.bɪks/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "do aerobics",
+        "an aerobics class"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_aerobics",
+          "type": "morphology",
+          "title": "空气、呼吸和有氧健身操",
+          "content": "看到一群人跟着节奏做操，持续运动时需要供氧 → aerobics，有氧健身操。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 5 页",
+          "segments": [
+            {
+              "part": "aero-",
+              "meaning": "空气",
+              "cue": "用「诶哟」联想到空气（谐音）"
+            }
+          ],
+          "related": [
+            {
+              "term": "aerobic exercise",
+              "meaning": "有氧运动"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_shrub",
+      "word": "shrub",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "shrub"
+        }
+      ],
+      "meaning": [
+        "灌木"
+      ],
+      "phonetic": "/ʃrʌb/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a flowering shrub",
+        "plant shrubs"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_shrub",
+          "type": "phonetic",
+          "title": "刷一下吧",
+          "content": "想象花园里低矮、枝条茂密的植物，外形像一把刷子 → shrub，灌木。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 5 页",
+          "cue": "刷一下吧",
+          "related": [
+            {
+              "term": "bush",
+              "meaning": "灌木；矮树丛"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_slat",
+      "word": "slat",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "slat"
+        }
+      ],
+      "meaning": [
+        "板条",
+        "长木条"
+      ],
+      "phonetic": "/slæt/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "wooden slats",
+        "the slats of a blind"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_slat",
+          "type": "association",
+          "title": "百叶窗里一根根扁板条",
+          "content": "用 flat 联想到百叶窗里扁扁的长板条 → slat。看到多一个 e 的 slate，借 plate 想到石板。这两组只是拼写助记。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 5 页",
+          "cue": "slat 借 flat；slate 借 plate",
+          "related": [
+            {
+              "term": "flat",
+              "meaning": "平的；扁平的"
+            },
+            {
+              "term": "slate",
+              "meaning": "石板；板岩"
+            },
+            {
+              "term": "plate",
+              "meaning": "盘子；平板"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_cinematography",
+      "word": "cinematography",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "cinematography"
+        }
+      ],
+      "meaning": [
+        "电影摄影",
+        "电影摄影术"
+      ],
+      "phonetic": "/ˌsɪn.ə.məˈtɒɡ.rə.fi/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "digital cinematography",
+        "an award for cinematography"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_cinematography",
+          "type": "morphology",
+          "title": "用镜头记录运动的画面",
+          "content": "想象摄影师推着摄影机在轨道上移动，记录连续的活动画面 → cinematography，电影摄影术。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 6 页",
+          "segments": [
+            {
+              "part": "cinemat(o)-",
+              "meaning": "运动；在这里联想到活动影像"
+            },
+            {
+              "part": "graph-",
+              "meaning": "写、画、记录"
+            },
+            {
+              "part": "-y",
+              "meaning": "在这里构成名词，指技艺"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_bronchitis",
+      "word": "bronchitis",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "bronchitis"
+        }
+      ],
+      "meaning": [
+        "支气管炎"
+      ],
+      "phonetic": "/brɒŋˈkaɪ.tɪs/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "acute bronchitis",
+        "chronic bronchitis"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_bronchitis",
+          "type": "morphology",
+          "title": "支气管发炎",
+          "content": "看气管往两侧分叉的图，把「支气管」和「炎症」合起来 → bronchitis，支气管炎。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 6 页",
+          "segments": [
+            {
+              "part": "bronch-",
+              "meaning": "支气管",
+              "cue": "bro，你的声音（谐音）"
+            },
+            {
+              "part": "-itis",
+              "meaning": "炎症"
+            }
+          ],
+          "related": [
+            {
+              "term": "arthritis",
+              "meaning": "关节炎（List 10，同含 -itis）"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_exacerbate",
+      "word": "exacerbate",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "exacerbate"
+        }
+      ],
+      "meaning": [
+        "使恶化",
+        "使加剧"
+      ],
+      "phonetic": "/ɪɡˈzæs.ə.beɪt/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "exacerbate the problem",
+        "exacerbate tensions"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_exacerbate",
+          "type": "association",
+          "title": "严重程度继续往上走",
+          "content": "原来就有的问题变得更严重，想象严重程度的曲线向上走 → exacerbate，使恶化、使加剧；mitigate 则是减轻。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 6 页",
+          "cue": "在外面变得更酸了",
+          "segments": [
+            {
+              "part": "-ate",
+              "meaning": "原笔记记作「使……」的动词提示"
+            }
+          ],
+          "related": [
+            {
+              "term": "mitigate",
+              "meaning": "减轻；缓解（List 10）"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_intrusion",
+      "word": "intrusion",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "intrusion"
+        }
+      ],
+      "meaning": [
+        "闯入",
+        "侵扰",
+        "侵犯"
+      ],
+      "phonetic": "/ɪnˈtruː.ʒən/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "an intrusion into privacy",
+        "an unwanted intrusion"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_intrusion",
+          "type": "word_family",
+          "title": "从闯入的动作到侵扰这件事",
+          "content": "未获邀请闯进别人的空间，或干涉别人的隐私 → 动作用 intrude，事件用 intrusion。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 7 页",
+          "related": [
+            {
+              "term": "intrude",
+              "meaning": "闯入；侵扰"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_cork",
+      "word": "cork",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "cork"
+        }
+      ],
+      "meaning": [
+        "软木",
+        "软木塞",
+        "用软木塞封住"
+      ],
+      "phonetic": "/kɔːk/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a cork stopper",
+        "cork a bottle"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_cork",
+          "type": "phonetic",
+          "title": "挡住公鸡，塞住瓶口",
+          "content": "用原稿的公鸡联想记声音，再想象用软木塞把瓶口塞住 → cork，软木、软木塞，也表示用软木塞封住。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 7 页",
+          "cue": "挡住公鸡（借 cock 联想）",
+          "related": [
+            {
+              "term": "cock",
+              "meaning": "公鸡（仅作谐音联想）"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_larva",
+      "word": "larva",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "larva"
+        }
+      ],
+      "meaning": [
+        "幼虫",
+        "幼体"
+      ],
+      "phonetic": "/ˈlɑː.və/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a mosquito larva",
+        "insect larvae"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_larva",
+          "type": "phonetic",
+          "title": "拉着来玩",
+          "content": "顺着口诀想象叶片上爬着的毛毛虫 → larva，昆虫等动物的幼体；复数常写作 larvae。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 7 页",
+          "cue": "拉着来玩",
+          "related": [
+            {
+              "term": "larvae",
+              "meaning": "larva 的复数"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_crater",
+      "word": "crater",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "unknown",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "○",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "crater"
+        }
+      ],
+      "meaning": [
+        "火山口",
+        "陨石坑",
+        "环形坑"
+      ],
+      "phonetic": "/ˈkreɪ.tə/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a volcanic crater",
+        "an impact crater"
+      ],
+      "mnemonics": [
+        {
+          "id": "pdf_note_crater",
+          "type": "association",
+          "title": "制造东西的地方，留下一个大坑",
+          "content": "想象火山喷发或陨石撞击过后，地面留下一个环形大坑 → crater，火山口、陨石坑。",
+          "source": "user",
+          "status": "needs_review",
+          "preferred": true,
+          "revision": 1,
+          "reference": "手写笔记 List11.pdf · 第 7 页",
+          "cue": "制造东西的地方",
+          "related": [
+            {
+              "term": "impact crater",
+              "meaning": "撞击坑"
+            },
+            {
+              "term": "volcanic crater",
+              "meaning": "火山口"
+            }
+          ]
+        }
+      ],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_dweller",
+      "word": "dweller",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "dweller"
+        }
+      ],
+      "meaning": [
+        "居民",
+        "居住者"
+      ],
+      "phonetic": "/ˈdwel.ə/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "city dwellers",
+        "urban dwellers"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_coverage",
+      "word": "coverage",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "coverage"
+        }
+      ],
+      "meaning": [
+        "覆盖范围",
+        "新闻报道",
+        "保险保障"
+      ],
+      "phonetic": "/ˈkʌv.ər.ɪdʒ/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "media coverage",
+        "insurance coverage",
+        "network coverage"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_specialty",
+      "word": "specialty",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "specialty"
+        }
+      ],
+      "meaning": [
+        "专业",
+        "专长",
+        "特色菜或特产"
+      ],
+      "phonetic": "/ˈspeʃ.əl.ti/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a medical specialty",
+        "a local specialty"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "保留总表的 specialty；另见英式词形 speciality。"
+    },
+    {
+      "id": "word_stick",
+      "word": "stick",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "stick"
+        }
+      ],
+      "meaning": [
+        "棍",
+        "枝条",
+        "粘住",
+        "卡住",
+        "坚持"
+      ],
+      "phonetic": "/stɪk/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a walking stick",
+        "stick to a plan"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_mention",
+      "word": "mention",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "mention"
+        }
+      ],
+      "meaning": [
+        "提及",
+        "说起",
+        "提到"
+      ],
+      "phonetic": "/ˈmen.ʃən/",
+      "part_of_speech": [
+        "verb",
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "mention a possibility",
+        "make no mention of"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_snack",
+      "word": "snack",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "snack"
+        }
+      ],
+      "meaning": [
+        "零食",
+        "点心",
+        "吃零食"
+      ],
+      "phonetic": "/snæk/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a light snack",
+        "snack on fruit"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_marvellous",
+      "word": "marvellous",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "marvellous"
+        }
+      ],
+      "meaning": [
+        "极好的",
+        "了不起的"
+      ],
+      "phonetic": "/ˈmɑː.vəl.əs/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "a marvellous opportunity",
+        "a marvellous idea"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": "保留英式拼写 marvellous。"
+    },
+    {
+      "id": "word_exceptional",
+      "word": "exceptional",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "exceptional"
+        }
+      ],
+      "meaning": [
+        "非凡的",
+        "出色的",
+        "例外的"
+      ],
+      "phonetic": "/ɪkˈsep.ʃən.əl/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "exceptional talent",
+        "in exceptional circumstances"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_primitive",
+      "word": "primitive",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "primitive"
+        }
+      ],
+      "meaning": [
+        "原始的",
+        "早期的",
+        "简陋的"
+      ],
+      "phonetic": "/ˈprɪm.ɪ.tɪv/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "primitive tools",
+        "primitive technology"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_craft",
+      "word": "craft",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "craft"
+        }
+      ],
+      "meaning": [
+        "工艺",
+        "技艺",
+        "船或飞行器",
+        "精心制作"
+      ],
+      "phonetic": "/krɑːft/",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "traditional crafts",
+        "craft a response"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_confuse",
+      "word": "confuse",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "confuse"
+        }
+      ],
+      "meaning": [
+        "使困惑",
+        "把…混淆"
+      ],
+      "phonetic": "/kənˈfjuːz/",
+      "part_of_speech": [
+        "verb"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "confuse one word with another",
+        "confuse the reader"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_decoration",
+      "word": "decoration",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "decoration"
+        }
+      ],
+      "meaning": [
+        "装饰",
+        "装饰品",
+        "勋章"
+      ],
+      "phonetic": "/ˌdek.əˈreɪ.ʃən/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "interior decoration",
+        "festive decorations"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_offspring",
+      "word": "offspring",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "offspring"
+        }
+      ],
+      "meaning": [
+        "子女",
+        "后代",
+        "幼崽"
+      ],
+      "phonetic": "/ˈɒf.sprɪŋ/",
+      "part_of_speech": [
+        "noun"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "produce offspring",
+        "raise offspring"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    },
+    {
+      "id": "word_occasional",
+      "word": "occasional",
+      "list_ids": [
+        11
+      ],
+      "initial_level": "uncertain",
+      "origins": [
+        {
+          "list": 11,
+          "symbol": "△",
+          "source": "data/vocabulary_master.md#list-11",
+          "raw": "occasional"
+        }
+      ],
+      "meaning": [
+        "偶尔的",
+        "不经常的"
+      ],
+      "phonetic": "/əˈkeɪ.ʒən.əl/",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "example": "",
+      "example_zh": "",
+      "collocations": [
+        "an occasional visitor",
+        "an occasional error"
+      ],
+      "mnemonics": [],
+      "content_status": "needs_review",
+      "transcription_status": "needs_review",
+      "notes": ""
+    }
+  ]
+}

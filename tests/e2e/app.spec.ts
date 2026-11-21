@@ -174,6 +174,7 @@ for (const {list, total, unfamiliar, first, cue} of [
  {list:8,total:38,unfamiliar:25,first:'acid',cue:'吃完之后嘶嘶声'},
  {list:9,total:46,unfamiliar:27,first:'bump',cue:'砰'},
  {list:10,total:42,unfamiliar:22,first:'aesthetic',cue:'爱死他'},
+ {list:11,total:36,unfamiliar:22,first:'aerobics',cue:'诶哟'},
 ]) {
  test(`List ${list} 可单独导入，原有复习记录和手写联想保留`, async ({page})=>{
   await seed(page);
