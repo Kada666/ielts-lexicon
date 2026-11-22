@@ -3,7 +3,7 @@ import candidates from '../../data/vocabulary.pending.json' with { type: 'json' 
 const totalWords=candidates.words.length;
 async function seed(page:Page,all=false){
  await page.goto('/');await page.getByRole('button',{name:'核对并导入初始词库'}).click();
- if(!all)await page.getByRole('combobox',{name:'导入范围'}).selectOption('initial');
+ if(!all)await page.getByRole('button',{name:'List 1 + List 2',exact:true}).click();
  await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();
  await page.getByRole('button',{name:`确认导入 ${all?totalWords:49} 词`}).click();
  await expect(page.getByRole('status')).toContainText(`已合并 ${all?totalWords:49}`);

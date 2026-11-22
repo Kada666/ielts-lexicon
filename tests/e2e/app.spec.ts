@@ -1,6 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 import candidates from '../../data/vocabulary.pending.json' with { type: 'json' };
-async function seed(page:Page){await page.goto('/');await page.getByRole('button',{name:'核对并导入初始词库'}).click();await page.getByRole('combobox',{name:'导入范围'}).selectOption('initial');await expect(page.getByRole('button',{name:'确认导入 49 词'})).toBeDisabled();await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();await page.getByRole('button',{name:'确认导入 49 词'}).click();await expect(page.getByRole('status')).toContainText('已合并 49');}
+async function seed(page:Page){await page.goto('/');await page.getByRole('button',{name:'核对并导入初始词库'}).click();await page.getByRole('button',{name:'List 1 + List 2',exact:true}).click();await expect(page.getByRole('button',{name:'确认导入 49 词'})).toBeDisabled();await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();await page.getByRole('button',{name:'确认导入 49 词'}).click();await expect(page.getByRole('status')).toContainText('已合并 49');}
 test('每日背诵优先重练刚到期的错词，首页更新曲线并记住全局字号', async ({page})=>{
  await page.setViewportSize({width:390,height:844});
  await page.clock.install();
@@ -104,7 +104,7 @@ test('49词导入、编辑、评分持久化、重复导入、备份恢复和生
  await page.getByRole('textbox',{name:'中文义项'}).fill('深入探究\n个人补充义项');await page.getByRole('button',{name:'添加一条'}).click();const editor=page.getByRole('dialog');const last=editor.locator('.mnemonic-editor').last();await last.getByRole('textbox',{name:'记忆内容'}).fill('我的私人记忆线索，导入后也要保留。');await last.getByRole('combobox',{name:'记忆类型'}).selectOption('phonetic');await last.getByRole('radio',{name:'首选'}).check();await page.getByRole('button',{name:'保存个人修改'}).click();await expect(page.getByRole('dialog')).toHaveCount(0);
  await page.getByRole('button',{name:'闪卡复习',exact:true}).click();await page.getByRole('button',{name:'开始复习',exact:true}).click();await expect(page.getByRole('button',{name:'忘记了'})).toHaveCount(0);await page.getByRole('button',{name:'查看答案',exact:true}).click();await expect(page.locator('.core-meaning')).toBeVisible();await expect(page.locator('.mnemonic')).toBeVisible();await page.getByRole('button',{name:'记住了'}).click();await page.reload();
  await page.getByRole('button',{name:'导入与备份',exact:true}).click();const down=page.waitForEvent('download');await page.getByRole('button',{name:'完整 JSON 备份'}).click();const backup=await down;const file=await backup.path();expect(file).toBeTruthy();const fs=await import('node:fs/promises');const data=JSON.parse(await fs.readFile(file!,'utf8'));expect(data.words).toHaveLength(49);expect(data.reviews).toHaveLength(1);expect(data.overrides[0].mnemonics.some((m:{content:string})=>m.content.includes('我的私人'))).toBe(true);
- await page.getByRole('button',{name:'查看并核对转录'}).click();await page.getByRole('combobox',{name:'导入范围'}).selectOption('initial');await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();await page.getByRole('button',{name:'确认导入 49 词'}).click();
+ await page.getByRole('button',{name:'查看并核对转录'}).click();await page.getByRole('button',{name:'List 1 + List 2',exact:true}).click();await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();await page.getByRole('button',{name:'确认导入 49 词'}).click();
  const down2=page.waitForEvent('download');await page.getByRole('button',{name:'完整 JSON 备份'}).click();const f2=await (await down2).path();const data2=JSON.parse(await fs.readFile(f2!,'utf8'));expect(data2.progress).toEqual(data.progress);expect(data2.reviews).toEqual(data.reviews);expect(data2.overrides).toEqual(data.overrides);
  await page.locator('input[type=file]').setInputFiles({name:'backup.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(data))});await page.getByRole('checkbox',{name:'我确认用这份备份替换当前数据'}).check();await page.getByRole('button',{name:'备份当前数据并恢复'}).click();await expect(page.getByRole('status')).toContainText('备份恢复完成');
  await page.getByRole('button',{name:'学习概览',exact:true}).click();await page.getByRole('button',{name:'关闭提示'}).click();await page.screenshot({path:info.outputPath('desktop.png'),fullPage:true});
@@ -135,7 +135,7 @@ test('已有49词后补充List3/4的90词，保留原评分并能按List复习�
  await seed(page);
  await page.getByRole('button',{name:'闪卡复习',exact:true}).click();await page.getByRole('button',{name:'开始复习',exact:true}).click();await page.getByRole('button',{name:'查看答案',exact:true}).click();await page.getByRole('button',{name:'记住了'}).click();
  await page.getByRole('button',{name:'导入与备份',exact:true}).click();const beforeDownload=page.waitForEvent('download');await page.getByRole('button',{name:'完整 JSON 备份'}).click();const fs=await import('node:fs/promises');const before=JSON.parse(await fs.readFile((await (await beforeDownload).path())!,'utf8'));
- await page.getByRole('button',{name:'补充 List 3 + List 4',exact:true}).click();await expect(page.getByRole('button',{name:'确认导入 90 词'})).toBeDisabled();await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();await page.getByRole('button',{name:'确认导入 90 词'}).click();await expect(page.getByRole('status')).toContainText('已合并 90');
+ await page.getByRole('button',{name:'查看并核对转录'}).click();await page.getByRole('button',{name:'List 3 + List 4',exact:true}).click();await expect(page.getByRole('button',{name:'确认导入 90 词'})).toBeDisabled();await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();await page.getByRole('button',{name:'确认导入 90 词'}).click();await expect(page.getByRole('status')).toContainText('已合并 90');
  const afterDownload=page.waitForEvent('download');await page.getByRole('button',{name:'完整 JSON 备份'}).click();const after=JSON.parse(await fs.readFile((await (await afterDownload).path())!,'utf8'));expect(after.words).toHaveLength(139);expect(after.reviews).toEqual(before.reviews);expect(after.progress.filter((p:{word_id:string})=>before.progress.some((old:{word_id:string})=>old.word_id===p.word_id))).toEqual(before.progress);
  await page.getByRole('button',{name:'我的词库',exact:true}).click();await page.getByRole('combobox',{name:'按 List 筛选'}).selectOption('3');await expect(page.getByText('找到 43 个词汇',{exact:true})).toBeVisible();await page.getByRole('combobox',{name:'按 List 筛选'}).selectOption('4');await expect(page.getByText('找到 47 个词汇',{exact:true})).toBeVisible();
  await page.getByRole('combobox',{name:'按初始分类筛选'}).selectOption('○');await expect(page.getByText('找到 28 个词汇',{exact:true})).toBeVisible();
@@ -184,7 +184,10 @@ for (const {list, total, unfamiliar, first, cue} of [
   await page.getByRole('button',{name:'记住了'}).click();
   await page.getByRole('button',{name:'结束本轮'}).click();
   await page.getByRole('button',{name:'导入与备份',exact:true}).click();
-  await page.getByRole('button',{name:`补充 List ${list}`,exact:true}).click();
+  const dial=page.getByRole('slider',{name:'选择要核对的 List'});
+  await dial.press('End');
+  for(let current=candidates.words.reduce((max,w)=>Math.max(max,...w.list_ids),0);current>list;current--) await dial.press('ArrowLeft');
+  await page.getByRole('button',{name:`核对 List ${list}`,exact:true}).click();
   await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();
   await page.getByRole('button',{name:`确认导入 ${total} 词`}).click();
   await expect(page.getByRole('status')).toContainText(`已合并 ${total}`);
