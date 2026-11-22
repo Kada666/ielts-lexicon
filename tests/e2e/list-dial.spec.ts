@@ -75,3 +75,26 @@ test('320px 手机可滑动和点按刻度轮，单独打开对应 List 核对',
   await expect(page.getByRole('slider', { name: '导入范围' })).toHaveAttribute('aria-valuetext', `List ${selected}`);
   await expect(page.getByRole('button', { name: `确认导入 ${total} 词` })).toBeDisabled();
 });
+
+test('空白单元可以选到 List 50，并停用导入和复习按钮', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: '导入与备份', exact: true }).click();
+  const starter = page.getByRole('slider', { name: '选择要核对的 List' });
+  await expect(starter).toHaveAttribute('aria-valuemax', '50');
+  await starter.press('End');
+  await expect(starter).toHaveAttribute('aria-valuetext', 'List 50，待整理');
+  await expect(page.getByRole('button', { name: '核对 List 50', exact: true })).toBeDisabled();
+  await page.getByRole('button', { name: '查看并核对转录' }).click();
+  const preview = page.getByRole('slider', { name: '导入范围' });
+  await preview.press('End');
+  await expect(preview).toHaveAttribute('aria-valuetext', 'List 50，暂无候选');
+  await expect(page.getByRole('checkbox', { name: '我已核对以上词形' })).toBeDisabled();
+  await expect(page.getByRole('button', { name: '确认导入 0 词' })).toBeDisabled();
+  await page.getByRole('button', { name: '闪卡复习', exact: true }).click();
+  const studyDial = page.getByRole('slider', { name: '学习范围' });
+  await studyDial.press('End');
+  await expect(studyDial).toHaveAttribute('aria-valuetext', 'List 50，未入库');
+  await expect(page.getByRole('button', { name: '开始复习', exact: true })).toBeDisabled();
+  await studyDial.press('ArrowLeft');
+  await expect(studyDial).toHaveAttribute('aria-valuenow', '49');
+});

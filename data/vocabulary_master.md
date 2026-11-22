@@ -438,6 +438,49 @@
 | 11 | decoration | uncertain | △ | 装饰；装饰品；勋章 |   | needs_review | needs_review |
 | 11 | offspring | uncertain | △ | 子女；后代；幼崽 |   | needs_review | needs_review |
 | 11 | occasional | uncertain | △ | 偶尔的；不经常的 |   | needs_review | needs_review |
+| 12 | congregate | unknown | ○ | 聚集；集合 |   | needs_review | needs_review |
+| 12 | ensure | unknown | ○ | 确保；保证 |   | needs_review | needs_review |
+| 12 | instruct | unknown | ○ | 指导；教授；指示 |   | needs_review | needs_review |
+| 12 | conditioner | unknown | ○ | 护发素；调节装置或用品 |   | needs_review | needs_review |
+| 12 | scrap | unknown | ○ | 碎片；废料；废弃；取消 |   | needs_review | needs_review |
+| 12 | recipient | unknown | ○ | 接收者；收件人；获奖者 |   | needs_review | needs_review |
+| 12 | tropospheric | unknown | ○ | 对流层的 |   | needs_review | needs_review |
+| 12 | earthwork | unknown | ○ | 土方工程；土筑工事 |   | needs_review | needs_review |
+| 12 | horrify | unknown | ○ | 使惊恐；使震惊 |   | needs_review | needs_review |
+| 12 | memorandum | unknown | ○ | 备忘录；公函 |   | needs_review | needs_review |
+| 12 | rectangular | unknown | ○ | 长方形的；矩形的 |   | needs_review | needs_review |
+| 12 | kidney | unknown | ○ | 肾；肾脏 |   | needs_review | needs_review |
+| 12 | curative | unknown | ○ | 治疗的；有疗效的 |   | needs_review | needs_review |
+| 12 | clutch | unknown | ○ | 紧抓；离合器；一窝蛋 |   | needs_review | needs_review |
+| 12 | chart | unknown | ○ | 图表；绘制；记录（进程） |   | needs_review | needs_review |
+| 12 | asthma | unknown | ○ | 哮喘 |   | needs_review | needs_review |
+| 12 | signature | unknown | ○ | 签名；署名；标志性的 |   | needs_review | needs_review |
+| 12 | moderation | unknown | ○ | 适度；节制；温和 |   | needs_review | needs_review |
+| 12 | bound | unknown | ○ | 必定的；前往……的；受约束的；跳跃；边界 |   | needs_review | needs_review |
+| 12 | trinket | unknown | ○ | 小饰品；小玩意儿 |   | needs_review | needs_review |
+| 12 | turbine | unknown | ○ | 涡轮机；透平机 |   | needs_review | needs_review |
+| 12 | backbone | unknown | ○ | 脊柱；骨干；支柱 |   | needs_review | needs_review |
+| 12 | magnitude | unknown | ○ | 大小；程度；量级；（地震的）震级 |   | needs_review | needs_review |
+| 12 | entrepreneur | unknown | ○ | 企业家；创业者 |   | needs_review | needs_review |
+| 12 | tramp | unknown | ○ | 长途跋涉；沉重地走；流浪者 | 徒步旅行义主要见于 tramping；见新西兰英语 go tramping。 | needs_review | needs_review |
+| 12 | currency | unknown | ○ | 货币；流通；流行或通行 |   | needs_review | needs_review |
+| 12 | audacious | unknown | ○ | 大胆的；冒险的；鲁莽的 |   | needs_review | needs_review |
+| 12 | flexibility | uncertain | △ | 灵活性；柔韧性；弹性 |   | needs_review | needs_review |
+| 12 | native | uncertain | △ | 本地的；原产的；母语的；本地人 |   | needs_review | needs_review |
+| 12 | significant | uncertain | △ | 重要的；显著的；有意义的 |   | needs_review | needs_review |
+| 12 | loyalty | uncertain | △ | 忠诚；忠实；忠心 |   | needs_review | needs_review |
+| 12 | sensation | uncertain | △ | 感觉；知觉；轰动 |   | needs_review | needs_review |
+| 12 | attraction | uncertain | △ | 吸引力；吸引；景点 |   | needs_review | needs_review |
+| 12 | surround | uncertain | △ | 围绕；包围 |   | needs_review | needs_review |
+| 12 | compact | uncertain | △ | 紧凑的；小巧的；压实；协议 | 名词读 /ˈkɒm.pækt/；形容词和动词读 /kəmˈpækt/。 | needs_review | needs_review |
+| 12 | enquire | uncertain | △ | 询问；打听 | 保留手写表中的英式拼写 enquire。 | needs_review | needs_review |
+| 12 | documentation | uncertain | △ | 文件资料；文档；记录 |   | needs_review | needs_review |
+| 12 | documentary | uncertain | △ | 纪录片；纪实的；文件的 |   | needs_review | needs_review |
+| 12 | vocational | uncertain | △ | 职业的；职业培训的 |   | needs_review | needs_review |
+| 12 | attribute | uncertain | △ | 把……归因于；属性；特质 | 名词读 /ˈæt.rɪ.bjuːt/；动词读 /əˈtrɪb.juːt/。 | needs_review | needs_review |
+| 12 | compatible | uncertain | △ | 兼容的；相容的；合得来的 |   | needs_review | needs_review |
+| 12 | disapprove | uncertain | △ | 不赞成；反对 |   | needs_review | needs_review |
+| 12 | inflation | uncertain | △ | 通货膨胀；充气；膨胀 |   | needs_review | needs_review |
 
 ## 词条补充资料
 
@@ -4935,6 +4978,49 @@
   {"word":"confuse","phonetic":"/kənˈfjuːz/","part_of_speech":["verb"],"collocations":["confuse one word with another","confuse the reader"]},
   {"word":"decoration","phonetic":"/ˌdek.əˈreɪ.ʃən/","part_of_speech":["noun"],"collocations":["interior decoration","festive decorations"]},
   {"word":"offspring","phonetic":"/ˈɒf.sprɪŋ/","part_of_speech":["noun"],"collocations":["produce offspring","raise offspring"]},
-  {"word":"occasional","phonetic":"/əˈkeɪ.ʒən.əl/","part_of_speech":["adjective"],"collocations":["an occasional visitor","an occasional error"]}
+  {"word":"occasional","phonetic":"/əˈkeɪ.ʒən.əl/","part_of_speech":["adjective"],"collocations":["an occasional visitor","an occasional error"]},
+  {"word":"congregate","phonetic":"/ˈkɒŋ.ɡrɪ.ɡeɪt/","part_of_speech":["verb"],"collocations":["people congregate","congregate in one place"]},
+  {"word":"ensure","phonetic":"/ɪnˈʃʊə/","part_of_speech":["verb"],"collocations":["ensure safety","ensure that"]},
+  {"word":"instruct","phonetic":"/ɪnˈstrʌkt/","part_of_speech":["verb"],"collocations":["instruct someone to do something","instruct students"]},
+  {"word":"conditioner","phonetic":"/kənˈdɪʃ.ən.ə/","part_of_speech":["noun"],"collocations":["hair conditioner","air conditioner"]},
+  {"word":"scrap","phonetic":"/skræp/","part_of_speech":["noun","verb"],"collocations":["scrap metal","scrap a plan"]},
+  {"word":"recipient","phonetic":"/rɪˈsɪp.i.ənt/","part_of_speech":["noun"],"collocations":["the recipient of an award","email recipient"]},
+  {"word":"tropospheric","phonetic":"/ˌtrɒp.əˈsfer.ɪk/","part_of_speech":["adjective"],"collocations":["tropospheric ozone","tropospheric circulation"]},
+  {"word":"earthwork","phonetic":"/ˈɜːθ.wɜːk/","part_of_speech":["noun"],"collocations":["carry out earthworks","defensive earthworks"]},
+  {"word":"horrify","phonetic":"/ˈhɒr.ɪ.faɪ/","part_of_speech":["verb"],"collocations":["be horrified by the news"]},
+  {"word":"memorandum","phonetic":"/ˌmem.əˈræn.dəm/","part_of_speech":["noun"],"collocations":["an internal memorandum","memorandum of understanding"]},
+  {"word":"rectangular","phonetic":"/rekˈtæŋ.ɡjə.lə/","part_of_speech":["adjective"],"collocations":["a rectangular table","a rectangular area"]},
+  {"word":"kidney","phonetic":"/ˈkɪd.ni/","part_of_speech":["noun"],"collocations":["kidney function","a kidney transplant"]},
+  {"word":"curative","phonetic":"/ˈkjʊə.rə.tɪv/","part_of_speech":["adjective"],"collocations":["curative treatment","curative properties"]},
+  {"word":"clutch","phonetic":"/klʌtʃ/","part_of_speech":["verb","noun"],"collocations":["clutch the rope","clutch pedal"]},
+  {"word":"chart","phonetic":"/tʃɑːt/","part_of_speech":["noun","verb"],"collocations":["a bar chart","chart the progress of"]},
+  {"word":"asthma","phonetic":"/ˈæs.mə/","part_of_speech":["noun"],"collocations":["an asthma attack","asthma symptoms"]},
+  {"word":"signature","phonetic":"/ˈsɪɡ.nə.tʃə/","part_of_speech":["noun","adjective"],"collocations":["sign your name","signature dish"]},
+  {"word":"moderation","phonetic":"/ˌmɒd.ərˈeɪ.ʃən/","part_of_speech":["noun"],"collocations":["in moderation","practice moderation"]},
+  {"word":"bound","phonetic":"/baʊnd/","part_of_speech":["adjective","verb","noun"],"collocations":["be bound to do something","be bound for a place","be bound by rules","out of bounds"]},
+  {"word":"trinket","phonetic":"/ˈtrɪŋ.kɪt/","part_of_speech":["noun"],"collocations":["cheap trinkets"]},
+  {"word":"turbine","phonetic":"/ˈtɜː.baɪn/","part_of_speech":["noun"],"collocations":["wind turbine","steam turbine"]},
+  {"word":"backbone","phonetic":"/ˈbæk.bəʊn/","part_of_speech":["noun"],"collocations":["the backbone of the economy"]},
+  {"word":"magnitude","phonetic":"/ˈmæɡ.nɪ.tʃuːd/","part_of_speech":["noun"],"collocations":["the magnitude of the problem","order of magnitude"]},
+  {"word":"entrepreneur","phonetic":"/ˌɒn.trə.prəˈnɜː/","part_of_speech":["noun"],"collocations":["a successful entrepreneur","a young entrepreneur"]},
+  {"word":"tramp","phonetic":"/træmp/","part_of_speech":["verb","noun"],"collocations":["tramp through the forest","go tramping","tramping track"]},
+  {"word":"currency","phonetic":"/ˈkʌr.ən.si/","part_of_speech":["noun"],"collocations":["digital currency","foreign currency","gain currency"],"example":"The idea has gained currency among researchers.","example_zh":"这一观点逐渐得到研究人员的广泛认可。"},
+  {"word":"audacious","phonetic":"/ɔːˈdeɪ.ʃəs/","part_of_speech":["adjective"],"collocations":["an audacious plan","an audacious move"]},
+  {"word":"flexibility","phonetic":"/ˌflek.səˈbɪl.ə.ti/","part_of_speech":["noun"],"collocations":["workplace flexibility","flexibility in scheduling"]},
+  {"word":"native","phonetic":"/ˈneɪ.tɪv/","part_of_speech":["adjective","noun"],"collocations":["native speaker","native species","be native to"]},
+  {"word":"significant","phonetic":"/sɪɡˈnɪf.ɪ.kənt/","part_of_speech":["adjective"],"collocations":["a significant increase","statistically significant"]},
+  {"word":"loyalty","phonetic":"/ˈlɔɪ.əl.ti/","part_of_speech":["noun"],"collocations":["customer loyalty","show loyalty to"]},
+  {"word":"sensation","phonetic":"/senˈseɪ.ʃən/","part_of_speech":["noun"],"collocations":["a burning sensation","cause a sensation"]},
+  {"word":"attraction","phonetic":"/əˈtræk.ʃən/","part_of_speech":["noun"],"collocations":["a tourist attraction","mutual attraction"]},
+  {"word":"surround","phonetic":"/səˈraʊnd/","part_of_speech":["verb"],"collocations":["be surrounded by trees"]},
+  {"word":"compact","phonetic":"/kəmˈpækt/","part_of_speech":["adjective","verb","noun"],"collocations":["compact design","compact the soil"]},
+  {"word":"enquire","phonetic":"/ɪnˈkwaɪə/","part_of_speech":["verb"],"collocations":["enquire about the course","enquire into a matter"]},
+  {"word":"documentation","phonetic":"/ˌdɒk.jə.menˈteɪ.ʃən/","part_of_speech":["noun"],"collocations":["technical documentation","provide documentation"]},
+  {"word":"documentary","phonetic":"/ˌdɒk.jəˈmen.tər.i/","part_of_speech":["noun","adjective"],"collocations":["a documentary about wildlife","documentary evidence"]},
+  {"word":"vocational","phonetic":"/vəʊˈkeɪ.ʃən.əl/","part_of_speech":["adjective"],"collocations":["vocational training","vocational education"]},
+  {"word":"attribute","phonetic":"/əˈtrɪb.juːt/","part_of_speech":["verb","noun"],"collocations":["attribute the change to","key attributes"]},
+  {"word":"compatible","phonetic":"/kəmˈpæt.ə.bəl/","part_of_speech":["adjective"],"collocations":["compatible with the software"]},
+  {"word":"disapprove","phonetic":"/ˌdɪs.əˈpruːv/","part_of_speech":["verb"],"collocations":["disapprove of a decision"]},
+  {"word":"inflation","phonetic":"/ɪnˈfleɪ.ʃən/","part_of_speech":["noun"],"collocations":["the rate of inflation","curb inflation"]}
 ]
 ```

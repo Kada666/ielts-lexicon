@@ -175,6 +175,7 @@ for (const {list, total, unfamiliar, first, cue} of [
  {list:9,total:46,unfamiliar:27,first:'bump',cue:'砰'},
  {list:10,total:42,unfamiliar:22,first:'aesthetic',cue:'爱死他'},
  {list:11,total:36,unfamiliar:22,first:'aerobics',cue:'诶哟'},
+ {list:12,total:43,unfamiliar:27,first:'asthma',cue:'快喊妈'},
 ]) {
  test(`List ${list} 可单独导入，原有复习记录和手写联想保留`, async ({page})=>{
   await seed(page);
@@ -185,8 +186,8 @@ for (const {list, total, unfamiliar, first, cue} of [
   await page.getByRole('button',{name:'结束本轮'}).click();
   await page.getByRole('button',{name:'导入与备份',exact:true}).click();
   const dial=page.getByRole('slider',{name:'选择要核对的 List'});
-  await dial.press('End');
-  for(let current=candidates.words.reduce((max,w)=>Math.max(max,...w.list_ids),0);current>list;current--) await dial.press('ArrowLeft');
+  await dial.press('Home');
+  for(let current=1;current<list;current++) await dial.press('ArrowRight');
   await page.getByRole('button',{name:`核对 List ${list}`,exact:true}).click();
   await page.getByRole('checkbox',{name:'我已核对以上词形'}).check();
   await page.getByRole('button',{name:`确认导入 ${total} 词`}).click();

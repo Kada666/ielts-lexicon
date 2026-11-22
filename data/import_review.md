@@ -83,6 +83,10 @@ apparently 以「看来、似乎、据说」为常用义。fragrance 的「打�
 
 第 1 页列出 ○ 陌生 22 个、△ 模糊 14 个，共 36 个词，与 List 1～10 无重复词形。第 2～7 页的 22 条手写记忆法和第 3 页的词缀口诀见 [List 11 文字笔记](notes/list_11.md)。保留原稿的 [specialty](https://dictionary.cambridge.org/pronunciation/english/specialty) 和 marvellous；另在 specialty 备注中列出 [speciality](https://dictionary.cambridge.org/pronunciation/english/speciality)。slat / flat 与 slate / plate 标为拼写助记。
 
+## List 12 核对
+
+第 1 页按 ○ 陌生 27 个、△ 模糊 16 个转录，共 43 词，与 List 1～11 无重复词形。第 2～9 页的 27 条手写记忆法和第 8 页的词缀对照见 [List 12 文字笔记](notes/list_12.md)。保留英式词形 [enquire](https://dictionary.cambridge.org/dictionary/english/enquire)，并记录 [tramping 在新西兰的用法](https://www.doc.govt.nz/parks-and-recreation/things-to-do/walking-and-tramping/track-categories/)和 [compact 的词性重音](https://dictionary.cambridge.org/pronunciation/english/compact)。口语口诀与拼写联想保留在记忆法中。
+
 ## 确认方法
 
 - 仅核对图片：修改主表 Transcription 为 reviewed，或在应用预览中确认导入。

@@ -87,15 +87,9 @@ if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href) {
  const file=words=>JSON.stringify({format:'ielts-lexicon-vocabulary',schema_version:1,words},null,2)+'\n';
  await mkdir('data',{recursive:true}); await writeFile('data/vocabulary.json',file(result.words)); await writeFile('data/vocabulary.pending.json',file(result.pending));
  await writeFile('data/vocabulary.list_03_04.json',file([...result.words,...result.pending].filter(w=>w.list_ids.some(n=>n===3||n===4))));
- await writeFile('data/vocabulary.list_05.json',file([...result.words,...result.pending].filter(w=>w.list_ids.includes(5))));
- await writeFile('data/vocabulary.list_06.json',file([...result.words,...result.pending].filter(w=>w.list_ids.includes(6))));
- await writeFile('data/vocabulary.list_07.json',file([...result.words,...result.pending].filter(w=>w.list_ids.includes(7))));
- await writeFile('data/vocabulary.list_08.json',file([...result.words,...result.pending].filter(w=>w.list_ids.includes(8))));
- await writeFile('data/vocabulary.list_09.json',file([...result.words,...result.pending].filter(w=>w.list_ids.includes(9))));
- await writeFile('data/vocabulary.list_10.json',file([...result.words,...result.pending].filter(w=>w.list_ids.includes(10))));
- await writeFile('data/vocabulary.list_11.json',file([...result.words,...result.pending].filter(w=>w.list_ids.includes(11))));
  for(const list of [...new Set([...result.words,...result.pending].flatMap(w=>w.list_ids))].sort((a,b)=>a-b)){
    const words=[...result.words,...result.pending].filter(w=>w.list_ids.includes(list));
+   if(list>=5)await writeFile(`data/vocabulary.list_${String(list).padStart(2,'0')}.json`,file(words));
    const lines=words.map(w=>{const origin=w.origins.find(o=>o.list===list);return `| ${w.word} | ${origin.raw} | ${origin.symbol} | ${w.meaning.join('；')} | ${w.notes} |`;});
    const unresolved=list===4?master.split('## 需人工辨认 / 分类')[1]?.split('## 词条补充资料')[0]?.trim():undefined;
    const notebook=notebooks.find(n=>n.list===list)?.markdown ?? '';

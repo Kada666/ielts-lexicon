@@ -7,9 +7,10 @@ import { mergeWords, parseBackup, parseVocabulary, stableId } from '../../src/ut
 import { defaults, type Word } from '../../src/types';
 import candidate from '../../data/vocabulary.pending.json';
 import { convertMarkdown } from '../../scripts/build-vocabulary.mjs';
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 const words=parseVocabulary(candidate).words;
-const notebooks=[1,2,3,4,5,6,7,8,9,10,11].map(list=>({list,markdown:readFileSync(`data/notes/list_${String(list).padStart(2,'0')}.md`,'utf8')}));
+const notebooks=readdirSync('data/notes').filter(name=>/^list_\d{2}\.md$/.test(name))
+ .map(name=>({list:Number(name.slice(5,7)),markdown:readFileSync(`data/notes/${name}`,'utf8')}));
 const word=words.find(w=>w.word==='delve')!;
 const name='lexicon-unit'; const repo=new Repository(name);
 beforeEach(async()=>{await deleteDB(name);});
@@ -141,6 +142,19 @@ describe('图片转录与 Markdown',()=>{
   expect(list11.find(w=>w.word==='specialty')?.origins[0]).toMatchObject({list:11,symbol:'△',raw:'specialty'});
   expect(list11.find(w=>w.word==='slat')?.mnemonics[0]).toMatchObject({type:'association',cue:'slat 借 flat；slate 借 plate'});
   expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_11.json','utf8'))).words).toEqual(list11);
+ });
+ it('List 12 保留 ○／△ 分类、手写记忆法和待核对状态',()=>{
+  const list12=words.filter(w=>w.list_ids.includes(12));
+  const unfamiliar=list12.filter(w=>w.origins[0].symbol==='○');
+  const uncertain=list12.filter(w=>w.origins[0].symbol==='△');
+  expect(list12).toHaveLength(43);
+  expect(unfamiliar).toHaveLength(27);
+  expect(uncertain).toHaveLength(16);
+  expect(list12.every(w=>w.list_ids.length===1&&w.transcription_status==='needs_review')).toBe(true);
+  expect(unfamiliar.every(w=>w.mnemonics.length===1&&w.mnemonics[0].status==='needs_review')).toBe(true);
+  expect(list12.find(w=>w.word==='asthma')?.mnemonics[0]).toMatchObject({type:'phonetic',cue:'唉，要死了，快喊妈'});
+  expect(list12.find(w=>w.word==='currency')?.mnemonics[0].related?.map(w=>w.term)).toContain('gain currency');
+  expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_12.json','utf8'))).words).toEqual(list12);
  });
 });
 describe('复习调度',()=>{

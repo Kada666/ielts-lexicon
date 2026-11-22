@@ -65,5 +65,6 @@
 .list-dial-tick i { display: block; width: 2px; height: 13px; border-radius: 3px; background: var(--muted); opacity: .48; }
 .list-dial-tick[data-major='true'] i { height: 21px; opacity: .75; }
 .list-dial-tick[data-current='true'] i { width: 4px; height: 32px; background: var(--green); opacity: 1; }
+.list-dial-tick[data-available='false'] i { background: var(--muted); opacity: .24; }
 .list-dial-actions { margin-top: 12px; }
 .list-dial-preview { margin: 16px 0 12px; }
