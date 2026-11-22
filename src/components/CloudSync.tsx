@@ -6,6 +6,7 @@ import type { ReviewEvent, Snapshot, Word } from '../types';
 import type { createCloud } from '../sync/firebase';
 import { parseSyncEvent } from '../utils/validation';
 import { bundledImports, importRefId, type ImportRef } from '../sync/imports';
+import { useMnemonicSync } from '../sync/useMnemonicSync';
 
 function loadConfig():FirebaseOptions|null{
  try{
@@ -64,6 +65,7 @@ export default function CloudSync({repo,snapshot,bundled,online,visible,refresh}
   return ()=>{active=false;stop?.();};
  },[repo]);
  const uid=session?.linked?session.user.uid:null;
+ const mnemonicSync=useMnemonicSync({repo,cloud,uid,snapshot,online,retry,refresh});
  const remote=cloudSnapshot?.uid===uid&&cloudSnapshot.retry===retry?cloudSnapshot.events:null;
  const remoteImports=importSnapshot?.uid===uid&&importSnapshot.retry===retry?importSnapshot.refs:null;
  const pendingImports=useMemo(()=>{
@@ -219,12 +221,17 @@ export default function CloudSync({repo,snapshot,bundled,online,visible,refresh}
       <p role="status">{importStatus}</p>
       {missingImports.length>importDownloads.length&&<p>有新词需要最新版看板，联网刷新后可继续同步。</p>}
       {missing.length>downloads.length&&<p>另有 {missing.length-downloads.length} 条记录需先导入对应词条。</p>}
-      <button className="primary" disabled={!online||uploading||uploadingImports} onClick={syncNow}>{error||importError?'重试同步':'立即同步'}</button>
+      <label className="setting-row"><div><strong>同步个人联想</strong><p>将本机的联想、口诀、词块和关联词保存到此账号。要在另一台设备接收，请在那边也开启此项。</p></div><input type="checkbox" aria-label="同步个人联想" checked={mnemonicSync.enabled} disabled={mnemonicSync.saving} onChange={e=>void mnemonicSync.toggle(e.target.checked)}/></label>
+      {mnemonicSync.enabled&&<p role="status">{mnemonicSync.status}</p>}
+      {mnemonicSync.enabled&&mnemonicSync.missing>0&&<p>有 {mnemonicSync.missing} 个词的联想等待对应词条。内置词会随词库同步，自建词需先在本机导入。</p>}
+      {mnemonicSync.enabled&&mnemonicSync.oversized>0&&<p>有 {mnemonicSync.oversized} 个词的联想无法上传，内容仍保存在本机，可导出备份。</p>}
+      <button className="primary" disabled={!online||uploading||uploadingImports||mnemonicSync.uploading} onClick={syncNow}>{error||importError||mnemonicSync.error?'重试同步':'立即同步'}</button>
      </>:
      <><p>此设备尚未启用同步。启用后会把已导入的内置词汇与复习历史合并到此账号。</p><button className="primary" disabled={action} onClick={()=>void link()}>同步本机进度</button></>}
     <button className="secondary" disabled={action} onClick={()=>void logout()}>退出登录</button>
    </>}
   {error&&<p role="alert">{error}</p>}
   {importError&&<p role="alert">{importError}</p>}
+  {mnemonicSync.error&&<p role="alert">{mnemonicSync.error}</p>}
  </section>;
 }

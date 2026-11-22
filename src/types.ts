@@ -24,7 +24,8 @@ export type Grade = 'again' | 'hard' | 'good';
 export interface TimedAttempt { version: 'timed-v1'; result: 'correct' | 'incorrect' | 'timeout'; elapsed_ms: number }
 export interface ReviewEvent { id: string; word_id: string; at: number; grade: Grade; attempt?: TimedAttempt; initial_level?: Level }
 export interface Review extends ReviewEvent { before: Progress; after: Progress }
-export interface Override { word_id: string; meaning: string[]; example: string; example_zh: string; collocations: string[]; mnemonics: Mnemonic[]; updated_at: number }
+export interface MnemonicEdit { at: number; id: string }
+export interface Override { word_id: string; meaning: string[]; example: string; example_zh: string; collocations: string[]; mnemonics: Mnemonic[]; updated_at: number; mnemonic_edit?: MnemonicEdit; mnemonics_only?: boolean }
 export interface Settings { phonetic: boolean; mnemonics: boolean; example: boolean; daily_limit: number; text_size?: 'standard' | 'large' | 'extra-large' }
 export interface Snapshot { words: Word[]; progress: Progress[]; reviews: Review[]; overrides: Override[]; settings: Settings }
 export interface Backup extends Snapshot { format: 'ielts-lexicon-backup'; schema_version: 2; exported_at: string }

@@ -48,5 +48,22 @@ service cloud.firestore {
         && importId == string(request.resource.data.list) + '_' + request.resource.data.word_id;
       allow update: if own(uid) && request.resource.data == resource.data;
     }
+    function validMnemonic(data, wordId) {
+      return data.keys().hasOnly(['word_id','at','edit_id','payload'])
+        && data.word_id == wordId && wordId.size() <= 180
+        && wordId.matches("^word_[a-z]+([_'-][a-z]+)*$")
+        && data.at is int && data.at >= 0 && data.at <= 253402300799999
+        && data.edit_id is string && data.edit_id.matches('^[a-z0-9-]{1,40}$')
+        && data.payload is string && data.payload.size() <= 60000;
+    }
+    match /users/{uid}/mnemonics/{wordId} {
+      allow read: if own(uid);
+      allow create: if own(uid) && validMnemonic(request.resource.data, wordId);
+      allow update: if own(uid) && validMnemonic(request.resource.data, wordId)
+        && (request.resource.data == resource.data
+          || request.resource.data.at > resource.data.at
+          || (request.resource.data.at == resource.data.at
+            && request.resource.data.edit_id > resource.data.edit_id));
+    }
   }
 }

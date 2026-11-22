@@ -141,7 +141,13 @@ export function parseBackup(input: unknown): Backup {
   assert(new Set(rows.reviews.map(r=>r.id)).size === rows.reviews.length && rows.reviews.length <= 1000000, '历史 ID 重复或条目过多');
   rows.reviews.forEach(r => { assert(validReviewEvent(r) && ids.has(r.word_id), '复习历史无效'); validateProgress(r.before, ids); validateProgress(r.after, ids); assert(r.before.word_id === r.word_id && r.after.word_id === r.word_id, '历史关联不匹配'); });
   assert(new Set(rows.overrides.map(o=>o.word_id)).size === rows.overrides.length, '个人修改 ID 重复');
-  rows.overrides.forEach(o => { assert(ids.has(o.word_id) && strings(o.meaning) && o.meaning.some(m=>m.trim()) && typeof o.example === 'string' && typeof o.example_zh === 'string' && strings(o.collocations) && finite(o.updated_at), '个人修改无效'); validateMnemonics(o.mnemonics); });
+  rows.overrides.forEach(o => {
+    assert(ids.has(o.word_id) && strings(o.meaning) && o.meaning.some(m=>m.trim()) && typeof o.example === 'string' && typeof o.example_zh === 'string' && strings(o.collocations) && finite(o.updated_at), '个人修改无效');
+    const edit=o.mnemonic_edit;
+    assert(edit===undefined||(record(edit)&&Number.isSafeInteger(edit.at)&&edit.at>=0&&edit.at<=253402300799999&&typeof edit.id==='string'&&/^[a-z0-9-]{1,40}$/.test(edit.id)), '个人联想版本无效');
+    assert(o.mnemonics_only===undefined||typeof o.mnemonics_only==='boolean', '个人联想范围无效');
+    validateMnemonics(o.mnemonics);
+  });
   const settings = b.settings;
   assert(record(settings) && ['phonetic','mnemonics','example'].every(k => typeof settings[k] === 'boolean') && Number.isInteger(settings.daily_limit) && Number(settings.daily_limit) >= 1 && Number(settings.daily_limit) <= 500, '设置无效');
   assert(settings.text_size === undefined || ['standard','large','extra-large'].includes(String(settings.text_size)), '字号设置无效');

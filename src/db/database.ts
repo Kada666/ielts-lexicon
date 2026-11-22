@@ -4,6 +4,7 @@ import { ALGORITHM, freshProgress, replayReviews, schedule, upgradeProgress } fr
 import { mergeNotebookOverride, mergeWords, notebookChanges, parseBackup, parseSyncEvent, validateWords } from '../utils/validation';
 import { correctContinuationOrigins } from '../utils/originCorrections';
 import { importRefId, parseImportRef, type ImportRef } from '../sync/imports';
+import { compareMnemonicEdits, decodeMnemonicRecord, encodeMnemonics, localMnemonicRecord, type MnemonicRecord } from '../sync/mnemonics';
 import edition from '../../edition.json';
 export const DATABASE_NAME = edition.database_name;
 interface Schema extends DBSchema {
@@ -216,7 +217,73 @@ export class Repository {
       return additions.size>0;
     } finally {db.close();}
   }
-  async saveOverride(value: Override) { const db = await connect(this.name); await db.put('overrides',value); db.close(); }
+  async saveOverride(value: Override, options?:{mnemonicsOnly?:boolean;originalMnemonics?:Word['mnemonics']}) {
+    const db=await connect(this.name);
+    try {
+      const tx=db.transaction(['words','overrides'],'readwrite');
+      const word=await tx.objectStore('words').get(value.word_id);
+      if(!word){await tx.done;throw new Error('单词不存在，请刷新后重试');}
+      const store=tx.objectStore('overrides'),previous=await store.get(word.id);
+      const old=previous&&localMnemonicRecord(word,previous);
+      const incoming=encodeMnemonics(word.id,value.mnemonics,{at:0,id:'legacy'});
+      const base=encodeMnemonics(word.id,word.mnemonics,{at:0,id:'legacy'});
+      const original=options?.originalMnemonics;
+      const edited=!original||incoming.payload!==encodeMnemonics(word.id,original,{at:0,id:'legacy'}).payload;
+      const changed=edited&&incoming.payload!==(old?.payload??base.payload);
+      const mnemonic_edit=changed?{at:Math.max(value.updated_at,(old?.at??0)+1),id:crypto.randomUUID()}:
+        previous?.mnemonic_edit??(old?{at:old.at,id:old.edit_id}:undefined);
+      const mnemonics_only=!!options?.mnemonicsOnly&&(!previous||previous.mnemonics_only===true);
+      const content=options?.mnemonicsOnly?(mnemonics_only?word:previous!):value;
+      await store.put({...value,meaning:content.meaning,example:content.example,example_zh:content.example_zh,
+        collocations:content.collocations,mnemonics:edited?value.mnemonics:(previous??word).mnemonics,
+        mnemonics_only,
+        ...(mnemonic_edit?{mnemonic_edit}:{})});
+      await tx.done;
+    } finally {db.close();}
+  }
+  async mnemonicSyncEnabled(owner:string) {
+    const db=await connect(this.name);
+    try {return await db.get('meta','mnemonic-sync-owner')===owner;}
+    finally {db.close();}
+  }
+  async setMnemonicSync(owner:string,enabled:boolean) {
+    const db=await connect(this.name);
+    try {
+      const tx=db.transaction('meta','readwrite');
+      if(await tx.store.get('sync-owner')===owner){
+        if(enabled)await tx.store.put(owner,'mnemonic-sync-owner');
+        else await tx.store.delete('mnemonic-sync-owner');
+      }
+      await tx.done;
+    } finally {db.close();}
+  }
+  async mergeMnemonicRecords(owner:string,records:MnemonicRecord[]) {
+    const db=await connect(this.name);
+    try {
+      const tx=db.transaction(['words','overrides','meta'],'readwrite');
+      const meta=tx.objectStore('meta');
+      if(await meta.get('sync-owner')!==owner||await meta.get('mnemonic-sync-owner')!==owner){await tx.done;return false;}
+      const store=tx.objectStore('overrides');
+      let changed=false;
+      for(const incoming of records){
+        const parsed=decodeMnemonicRecord(incoming,incoming.word_id);
+        if(!parsed)continue;
+        const word=await tx.objectStore('words').get(incoming.word_id);
+        if(!word)continue;
+        const previous=await store.get(word.id);
+        const local=previous&&localMnemonicRecord(word,previous);
+        if(local&&compareMnemonicEdits(incoming,local)<=0)continue;
+        const mnemonics_only=!previous||previous.mnemonics_only===true;
+        const content=mnemonics_only?word:previous!;
+        await store.put({word_id:word.id,meaning:content.meaning,example:content.example,example_zh:content.example_zh,
+          collocations:content.collocations,mnemonics:parsed.mnemonics,updated_at:previous?.updated_at??incoming.at,
+          mnemonic_edit:{at:incoming.at,id:incoming.edit_id},mnemonics_only});
+        changed=true;
+      }
+      await tx.done;
+      return changed;
+    } finally {db.close();}
+  }
   async saveSettings(value: Settings) { const db = await connect(this.name); await db.put('meta',value,'settings'); db.close(); }
   async backup(): Promise<Backup> { return {format:'ielts-lexicon-backup',schema_version:2,exported_at:new Date().toISOString(),...await this.snapshot()}; }
   async restore(input: unknown) {
@@ -230,4 +297,4 @@ export class Repository {
     await tx.objectStore('meta').put(backup.settings,'settings'); await tx.done; db.close();
   }
 }
-export function effectiveWords(s: Snapshot) { return s.words.map(w => { const o = s.overrides.find(x=>x.word_id===w.id); return o ? {...w,meaning:o.meaning,example:o.example,example_zh:o.example_zh,collocations:o.collocations,mnemonics:o.mnemonics} : w; }); }
+export function effectiveWords(s: Snapshot) { return s.words.map(w => { const o = s.overrides.find(x=>x.word_id===w.id); return !o?w:o.mnemonics_only?{...w,mnemonics:o.mnemonics}:{...w,meaning:o.meaning,example:o.example,example_zh:o.example_zh,collocations:o.collocations,mnemonics:o.mnemonics}; }); }

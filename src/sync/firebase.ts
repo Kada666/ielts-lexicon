@@ -1,19 +1,45 @@
 import { getApps, initializeApp, type FirebaseOptions } from 'firebase/app';
 import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, type User } from 'firebase/auth';
-import { collection, doc, getFirestore, onSnapshot, writeBatch } from 'firebase/firestore';
+import { collection, doc, getFirestore, onSnapshot, runTransaction, writeBatch } from 'firebase/firestore';
 import type { ReviewEvent } from '../types';
 import { parseSyncEvent } from '../utils/validation';
 import { importRefId, parseImportRef, type ImportRef } from './imports';
+import { compareMnemonicEdits, decodeMnemonicRecord, type MnemonicRecord } from './mnemonics';
 
 export function createCloud(config: FirebaseOptions) {
  const app=getApps().find(entry=>entry.name==='lexicon-sync')??initializeApp(config,'lexicon-sync');
  const auth=getAuth(app),db=getFirestore(app);
  const reviews=(uid:string)=>collection(db,'users',uid,'reviews');
  const imports=(uid:string)=>collection(db,'users',uid,'imports');
+ const mnemonics=(uid:string)=>collection(db,'users',uid,'mnemonics');
  return {
   watchUser:(callback:(user:User|null)=>void)=>onAuthStateChanged(auth,callback),
   signIn:(email:string,password:string)=>signInWithEmailAndPassword(auth,email,password),
   signOut:()=>signOut(auth),
+  watchMnemonics:(uid:string,update:(notes:MnemonicRecord[])=>void,fail:(error:Error)=>void)=>
+   onSnapshot(mnemonics(uid),{includeMetadataChanges:true},snapshot=>{
+    if(snapshot.metadata.fromCache||snapshot.metadata.hasPendingWrites)return;
+    update(snapshot.docs.flatMap(row=>{
+     const note=decodeMnemonicRecord(row.data(),row.id);
+     return note?[note.record]:[];
+    }));
+   },fail),
+  async uploadMnemonics(uid:string,notes:MnemonicRecord[],active:()=>boolean){
+   for(let offset=0;offset<notes.length;offset+=20){
+    if(!active()||auth.currentUser?.uid!==uid)return;
+    const group=notes.slice(offset,offset+20);
+    await runTransaction(db,async tx=>{
+     if(!active()||auth.currentUser?.uid!==uid)return;
+     const rows=group.map(note=>({note,ref:doc(mnemonics(uid),note.word_id)}));
+     const stored=await Promise.all(rows.map(({ref})=>tx.get(ref)));
+     if(!active()||auth.currentUser?.uid!==uid)return;
+     rows.forEach(({ref,note},index)=>{
+      const other=decodeMnemonicRecord(stored[index].data(),note.word_id)?.record;
+      if(!other||compareMnemonicEdits(note,other)>0)tx.set(ref,note);
+     });
+    });
+   }
+  },
   watchReviews:(uid:string,update:(events:ReviewEvent[])=>void,fail:(error:Error)=>void)=>
    onSnapshot(reviews(uid),{includeMetadataChanges:true},snapshot=>{
     if(snapshot.metadata.fromCache||snapshot.metadata.hasPendingWrites)return;

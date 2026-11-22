@@ -23,7 +23,7 @@ export default function MnemonicEditor({word,busy,onClose,onSave}:{word:Word;bus
   <label>联想内容<textarea ref={textarea} rows={6} value={text} placeholder="写一个画面、一句口诀，或者你自己的故事…" onChange={e=>setText(e.target.value)}/></label>
   <details className="mnemonic-fields"><summary>编辑口诀、词块和关联词</summary><MnemonicFields details={details} onChange={value=>setDetails(old=>({...old,...value}))}/></details>
   {incomplete&&<p role="alert" className="error-text">请补全每行的英文和含义，或删去未填完的一行。</p>}
-  <p>只保存到你的浏览器，保留其他词义和记忆候选。</p>
+  <p>联想先保存在本机。开启「同步个人联想」后，联网会同步到同一账号的其他设备。</p>
   <div className="quick-editor-actions"><button className="secondary" disabled={busy} onClick={onClose}>取消</button><button className="primary" disabled={busy||!text.trim()||incomplete} onClick={save}><Check size={20}/> 保存联想</button></div>
  </div></div>;
 }
