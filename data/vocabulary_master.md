@@ -481,6 +481,56 @@
 | 12 | compatible | uncertain | △ | 兼容的；相容的；合得来的 |   | needs_review | needs_review |
 | 12 | disapprove | uncertain | △ | 不赞成；反对 |   | needs_review | needs_review |
 | 12 | inflation | uncertain | △ | 通货膨胀；充气；膨胀 |   | needs_review | needs_review |
+| 13 | reinstate | unknown | ○ | 使恢复原职；恢复原状；重新实施 |   | needs_review | needs_review |
+| 13 | given | unknown | ○ | 考虑到；鉴于；给定的；特定的 | give 的过去分词。鉴于、考虑到的用法另见 given that。 | needs_review | needs_review |
+| 13 | milestone | unknown | ○ | 里程碑；重要阶段 |   | needs_review | needs_review |
+| 13 | crank | unknown | ○ | 曲柄；摇把；用摇把转动；怪人 |   | needs_review | needs_review |
+| 13 | lexicographer | unknown | ○ | 词典编纂者 |   | needs_review | needs_review |
+| 13 | bunch | unknown | ○ | 一串；一束；一群；聚拢 |   | needs_review | needs_review |
+| 13 | costume | unknown | ○ | 戏服；化装服；特定时期或地区的服装 |   | needs_review | needs_review |
+| 13 | juvenile | unknown | ○ | 青少年的；未成年的；未成年人；幼稚的 |   | needs_review | needs_review |
+| 13 | freight | unknown | ○ | 货物；货运；运费 |   | needs_review | needs_review |
+| 13 | presumably | unknown | ○ | 据推测；想必；大概 | 副词，表示根据已有信息推测。 | needs_review | needs_review |
+| 13 | sanctuary | unknown | ○ | 庇护所；避难所；野生动物保护区；圣所 |   | needs_review | needs_review |
+| 13 | dash | unknown | ○ | 猛冲；飞奔；使希望破灭；破折号 |   | needs_review | needs_review |
+| 13 | coarse | unknown | ○ | 粗糙的；颗粒粗的；粗俗的 |   | needs_review | needs_review |
+| 13 | linen | unknown | ○ | 亚麻布；床单、被套等布制用品 |   | needs_review | needs_review |
+| 13 | deception | unknown | ○ | 欺骗；骗局 |   | needs_review | needs_review |
+| 13 | pliable | unknown | ○ | 柔韧的；易弯曲的；易受影响的 |   | needs_review | needs_review |
+| 13 | subsidiary | unknown | ○ | 子公司；附属的；次要的 |   | needs_review | needs_review |
+| 13 | kneel | unknown | ○ | 跪下；跪着 |   | needs_review | needs_review |
+| 13 | contempt | unknown | ○ | 轻蔑；蔑视；藐视法庭 |   | needs_review | needs_review |
+| 13 | badge | unknown | ○ | 徽章；身份标识 |   | needs_review | needs_review |
+| 13 | pulverise | unknown | ○ | 粉碎；磨成粉末 | 保留原稿的 -ise 拼写。 | needs_review | needs_review |
+| 13 | ration | unknown | ○ | 定量配给；配给量；限量供应 |   | needs_review | needs_review |
+| 13 | snap | unknown | ○ | 突然折断；啪地一声；抓拍；厉声说 |   | needs_review | needs_review |
+| 13 | nominal | unknown | ○ | 名义上的；象征性的；（价格或费用）很低的 |   | needs_review | needs_review |
+| 13 | miserable | unknown | ○ | 痛苦的；悲惨的；很不愉快的 |   | needs_review | needs_review |
+| 13 | continuous | unknown | ○ | 连续的；持续不断的 |   | needs_review | needs_review |
+| 13 | crack | unknown | ○ | 裂缝；缝隙；（使）裂开 |   | needs_review | needs_review |
+| 13 | ripe | unknown | ○ | 成熟的；时机成熟的 |   | needs_review | needs_review |
+| 13 | vet | unknown | ○ | 兽医；审查；仔细核查 |   | needs_review | needs_review |
+| 13 | statement | uncertain | △ | 陈述；声明；报表 |   | needs_review | needs_review |
+| 13 | advanced | uncertain | △ | 先进的；高级的；晚期的 |   | needs_review | needs_review |
+| 13 | scare | uncertain | △ | 使害怕；惊吓；恐慌 |   | needs_review | needs_review |
+| 13 | manipulate | uncertain | △ | 操纵；熟练地操作；篡改 |   | needs_review | needs_review |
+| 13 | treatment | uncertain | △ | 治疗；对待；处理 |   | needs_review | needs_review |
+| 13 | campaign | uncertain | △ | 有组织的活动；运动；发起运动 |   | needs_review | needs_review |
+| 13 | spot | uncertain | △ | 斑点；地点；发现；认出 |   | needs_review | needs_review |
+| 13 | outcome | uncertain | △ | 结果；结局 |   | needs_review | needs_review |
+| 13 | disposal | uncertain | △ | 处置；清除；支配权（用于搭配） |   | needs_review | needs_review |
+| 13 | disposable | uncertain | △ | 一次性的；可支配的 |   | needs_review | needs_review |
+| 13 | pattern | uncertain | △ | 模式；规律；图案 |   | needs_review | needs_review |
+| 13 | terrain | uncertain | △ | 地形；地势；地带 |   | needs_review | needs_review |
+| 13 | recognize | uncertain | △ | 认出；识别；承认；表彰 | 保留原稿拼写 recognize，亦作 recognise。 | needs_review | needs_review |
+| 13 | virtue | uncertain | △ | 美德；优点 |   | needs_review | needs_review |
+| 13 | fertilise | uncertain | △ | 施肥；使受精 | 保留原稿的 -ise 拼写。 | needs_review | needs_review |
+| 13 | sophisticate | uncertain | △ | 见多识广、举止老练的人（正式用语） | 保留原稿的 sophisticate。常见形容词 sophisticated 表示老练的、精密的，需区别。 | needs_review | needs_review |
+| 13 | acquire | uncertain | △ | 获得；习得；购得 |   | needs_review | needs_review |
+| 13 | extremely | uncertain | △ | 极其；非常 |   | needs_review | needs_review |
+| 13 | rot | uncertain | △ | 腐烂；（使）腐坏；腐朽 |   | needs_review | needs_review |
+| 13 | ambulance | uncertain | △ | 救护车 |   | needs_review | needs_review |
+| 13 | reap | uncertain | △ | 收割；收获；获得（成果） |   | needs_review | needs_review |
 
 ## 词条补充资料
 
@@ -5021,6 +5071,56 @@
   {"word":"attribute","phonetic":"/əˈtrɪb.juːt/","part_of_speech":["verb","noun"],"collocations":["attribute the change to","key attributes"]},
   {"word":"compatible","phonetic":"/kəmˈpæt.ə.bəl/","part_of_speech":["adjective"],"collocations":["compatible with the software"]},
   {"word":"disapprove","phonetic":"/ˌdɪs.əˈpruːv/","part_of_speech":["verb"],"collocations":["disapprove of a decision"]},
-  {"word":"inflation","phonetic":"/ɪnˈfleɪ.ʃən/","part_of_speech":["noun"],"collocations":["the rate of inflation","curb inflation"]}
+  {"word":"inflation","phonetic":"/ɪnˈfleɪ.ʃən/","part_of_speech":["noun"],"collocations":["the rate of inflation","curb inflation"]},
+  {"word":"reinstate","phonetic":"/ˌriː.ɪnˈsteɪt/","part_of_speech":["verb"],"collocations":["reinstate an employee","reinstate a policy"]},
+  {"word":"given","phonetic":"/ˈɡɪv.ən/","part_of_speech":["preposition","adjective","conjunction"],"collocations":["given the circumstances","given that","at a given time","take something as given"],"example":"Given the high cost of housing, many students choose to share accommodation.","example_zh":"考虑到住房成本较高，许多学生选择合租。"},
+  {"word":"milestone","phonetic":"/ˈmaɪl.stəʊn/","part_of_speech":["noun"],"collocations":["reach a milestone","a major milestone"]},
+  {"word":"crank","phonetic":"/kræŋk/","part_of_speech":["noun","verb"],"collocations":["turn the crank","crank the engine"]},
+  {"word":"lexicographer","phonetic":"/ˌlek.sɪˈkɒɡ.rə.fə/","part_of_speech":["noun"],"collocations":["a professional lexicographer"]},
+  {"word":"bunch","phonetic":"/bʌntʃ/","part_of_speech":["noun","verb"],"collocations":["a bunch of grapes","a bunch of flowers","bunch together"]},
+  {"word":"costume","phonetic":"/ˈkɒs.tʃuːm/","part_of_speech":["noun"],"collocations":["a stage costume","traditional costume"]},
+  {"word":"juvenile","phonetic":"/ˈdʒuː.vən.aɪl/","part_of_speech":["adjective","noun"],"collocations":["juvenile offenders","juvenile behaviour"]},
+  {"word":"freight","phonetic":"/freɪt/","part_of_speech":["noun","verb"],"collocations":["air freight","a freight train","freight charges"]},
+  {"word":"presumably","phonetic":"/prɪˈzjuː.mə.bli/","part_of_speech":["adverb"],"collocations":["presumably because","presumably due to"]},
+  {"word":"sanctuary","phonetic":"/ˈsæŋk.tʃu.ə.ri/","part_of_speech":["noun"],"collocations":["a wildlife sanctuary","seek sanctuary"]},
+  {"word":"dash","phonetic":"/dæʃ/","part_of_speech":["verb","noun"],"collocations":["dash towards the door","dash someone's hopes"]},
+  {"word":"coarse","phonetic":"/kɔːs/","part_of_speech":["adjective"],"collocations":["coarse texture","coarse salt","coarse language"]},
+  {"word":"linen","phonetic":"/ˈlɪn.ɪn/","part_of_speech":["noun"],"collocations":["bed linen","a linen shirt"],"example":"Is bed linen provided, or do I need to bring my own?","example_zh":"这里提供床单和被套吗，还是需要我自带？"},
+  {"word":"deception","phonetic":"/dɪˈsep.ʃən/","part_of_speech":["noun"],"collocations":["an act of deception","deliberate deception"]},
+  {"word":"pliable","phonetic":"/ˈplaɪ.ə.bəl/","part_of_speech":["adjective"],"collocations":["a pliable material","remain pliable"]},
+  {"word":"subsidiary","phonetic":"/səbˈsɪd.i.ə.ri/","part_of_speech":["noun","adjective"],"collocations":["a wholly owned subsidiary","subsidiary companies"]},
+  {"word":"kneel","phonetic":"/niːl/","part_of_speech":["verb"],"collocations":["kneel down","kneel beside someone"]},
+  {"word":"contempt","phonetic":"/kənˈtempt/","part_of_speech":["noun"],"collocations":["treat with contempt","contempt of court"]},
+  {"word":"badge","phonetic":"/bædʒ/","part_of_speech":["noun"],"collocations":["wear a badge","an identity badge"]},
+  {"word":"pulverise","phonetic":"/ˈpʌl.vər.aɪz/","part_of_speech":["verb"],"collocations":["pulverise into a powder","pulverise the rock"]},
+  {"word":"ration","phonetic":"/ˈræʃ.ən/","part_of_speech":["noun","verb"],"collocations":["food rations","ration water"]},
+  {"word":"snap","phonetic":"/snæp/","part_of_speech":["verb","noun"],"collocations":["snap in half","snap a photo","snap at someone"]},
+  {"word":"nominal","phonetic":"/ˈnɒm.ɪ.nəl/","part_of_speech":["adjective"],"collocations":["a nominal fee","nominal value"]},
+  {"word":"miserable","phonetic":"/ˈmɪz.ər.ə.bəl/","part_of_speech":["adjective"],"collocations":["feel miserable","miserable weather"]},
+  {"word":"continuous","phonetic":"/kənˈtɪn.ju.əs/","part_of_speech":["adjective"],"collocations":["continuous monitoring","a continuous flow"]},
+  {"word":"crack","phonetic":"/kræk/","part_of_speech":["noun","verb"],"collocations":["a crack in the wall","crack open"]},
+  {"word":"ripe","phonetic":"/raɪp/","part_of_speech":["adjective"],"collocations":["ripe fruit","ripe for change"]},
+  {"word":"vet","phonetic":"/vet/","part_of_speech":["noun","verb"],"collocations":["take the dog to the vet","vet job applicants"]},
+  {"word":"statement","phonetic":"/ˈsteɪt.mənt/","part_of_speech":["noun"],"collocations":["issue a statement","a bank statement"]},
+  {"word":"advanced","phonetic":"/ədˈvɑːnst/","part_of_speech":["adjective"],"collocations":["advanced technology","an advanced course"]},
+  {"word":"scare","phonetic":"/skeə/","part_of_speech":["verb","noun"],"collocations":["scare someone away","a health scare"]},
+  {"word":"manipulate","phonetic":"/məˈnɪp.jə.leɪt/","part_of_speech":["verb"],"collocations":["manipulate data","manipulate public opinion"]},
+  {"word":"treatment","phonetic":"/ˈtriːt.mənt/","part_of_speech":["noun"],"collocations":["medical treatment","fair treatment","water treatment"]},
+  {"word":"campaign","phonetic":"/kæmˈpeɪn/","part_of_speech":["noun","verb"],"collocations":["an election campaign","campaign for reform"]},
+  {"word":"spot","phonetic":"/spɒt/","part_of_speech":["noun","verb"],"collocations":["a quiet spot","spot a mistake"]},
+  {"word":"outcome","phonetic":"/ˈaʊt.kʌm/","part_of_speech":["noun"],"collocations":["the likely outcome","learning outcomes"]},
+  {"word":"disposal","phonetic":"/dɪˈspəʊ.zəl/","part_of_speech":["noun"],"collocations":["waste disposal","at your disposal"]},
+  {"word":"disposable","phonetic":"/dɪˈspəʊ.zə.bəl/","part_of_speech":["adjective"],"collocations":["disposable gloves","disposable income"]},
+  {"word":"pattern","phonetic":"/ˈpæt.ən/","part_of_speech":["noun","verb"],"collocations":["a pattern of behaviour","weather patterns"]},
+  {"word":"terrain","phonetic":"/təˈreɪn/","part_of_speech":["noun"],"collocations":["rough terrain","mountainous terrain"]},
+  {"word":"recognize","phonetic":"/ˈrek.əɡ.naɪz/","part_of_speech":["verb"],"collocations":["recognize a face","recognize the need for change"]},
+  {"word":"virtue","phonetic":"/ˈvɜː.tʃuː/","part_of_speech":["noun"],"collocations":["a moral virtue","by virtue of"]},
+  {"word":"fertilise","phonetic":"/ˈfɜː.tɪ.laɪz/","part_of_speech":["verb"],"collocations":["fertilise the soil","fertilise an egg"]},
+  {"word":"sophisticate","phonetic":"/səˈfɪs.tɪ.kət/","part_of_speech":["noun"],"collocations":["an urban sophisticate"]},
+  {"word":"acquire","phonetic":"/əˈkwaɪə/","part_of_speech":["verb"],"collocations":["acquire new skills","acquire a company"]},
+  {"word":"extremely","phonetic":"/ɪkˈstriːm.li/","part_of_speech":["adverb"],"collocations":["extremely important","extremely unlikely"]},
+  {"word":"rot","phonetic":"/rɒt/","part_of_speech":["verb","noun"],"collocations":["leave food to rot","root rot"]},
+  {"word":"ambulance","phonetic":"/ˈæm.bjə.ləns/","part_of_speech":["noun"],"collocations":["call an ambulance","an ambulance crew"]},
+  {"word":"reap","phonetic":"/riːp/","part_of_speech":["verb"],"collocations":["reap the harvest","reap the benefits"]}
 ]
 ```

@@ -156,6 +156,18 @@ describe('图片转录与 Markdown',()=>{
   expect(list12.find(w=>w.word==='currency')?.mnemonics[0].related?.map(w=>w.term)).toContain('gain currency');
   expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_12.json','utf8'))).words).toEqual(list12);
  });
+ it('List 13 保留原始词形、○／△ 分类及手写联想',()=>{
+  const list13=words.filter(w=>w.list_ids.includes(13));
+  const unfamiliar=list13.filter(w=>w.origins[0].symbol==='○');
+  expect(list13).toHaveLength(50);
+  expect(unfamiliar).toHaveLength(29);
+  expect(list13.filter(w=>w.origins[0].symbol==='△')).toHaveLength(21);
+  expect(list13.every(w=>w.list_ids.length===1&&w.transcription_status==='needs_review')).toBe(true);
+  expect(unfamiliar.every(w=>w.mnemonics.length===1&&w.mnemonics[0].status==='needs_review')).toBe(true);
+  expect(list13.find(w=>w.word==='sophisticate')?.origins[0]).toMatchObject({raw:'sophisticate',symbol:'△'});
+  expect(list13.find(w=>w.word==='given')?.mnemonics[0].related?.map(w=>w.term)).toContain('given that resources are limited');
+  expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_13.json','utf8'))).words).toEqual(list13);
+ });
 });
 describe('复习调度',()=>{
  it('陌生词首轮间隔更短，模糊与遗忘各有独立规则',()=>{
