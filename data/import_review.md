@@ -95,9 +95,14 @@ apparently 以「看来、似乎、据说」为常用义。fragrance 的「打�
 
 第 1 页转录 ○ 陌生 25 个、△ 模糊 17 个，共 42 词，与 List 1～13 无重复词形。第 2～9 页的 25 条手写联想见 [List 14 文字笔记](notes/list_14.md)。保留 refusal 的 -al 对照、topsoil 的农业例句和 familiarise 的英式拼写。[cloakroom](https://dictionary.cambridge.org/dictionary/english/cloakroom) 保留衣帽寄存处和英式洗手间两个义项。
 
+## List 15 核对
+
+第 1 页转录 ○ 不会 25 个、△ 模糊 21 个，共 46 词，与 List 1～14 无重复词形。○ 词的闪卡释义逐条对应第 2～9 页箭头后的手写释义，例如 flip 仅为「翻转」、provision 为「提供；供应」、mansion 保留「豪宅；大 house」。△ 词的释义为补写候选。25 条联想见 [List 15 文字笔记](notes/list_15.md)。关联词采用词典拼写 [torrential](https://dictionary.cambridge.org/dictionary/english/torrential)。
+
 ## 确认方法
 
 - 仅核对图片：修改主表 Transcription 为 reviewed，或在应用预览中确认导入。
+- 录入释义：○ 不会词按手写释义录入，保留原有义项和顺序。看不清或缺失时标记待确认。△ 模糊词可补写常用义项并保留待核验状态。
 - 审核释义 / 搭配 / 音标 / 例句：修改主表 Content 为 reviewed；未核验保留 needs_review。
 - 手写记忆法在各 List 的 Markdown 维护。看板编辑器可逐条核验手写笔记和生成候选。
 - 新的修改优先追加，保留已经确认的原始资料与来源记录。

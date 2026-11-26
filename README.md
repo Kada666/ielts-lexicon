@@ -43,7 +43,7 @@ IELTS Lexicon 是一个本地优先、支持离线使用的个人雅思词汇学
 
 在线地址为 **[IELTS Lexicon](https://kada666.github.io/ielts-lexicon/)**。统一公开仓库和看板链接；桌面入口可直接打开在线版，也可运行本地副本。
 
-1. 点击“核对并导入初始词库”，预览 List 1～14 共 **561 个候选词**。已有词库时，可以点首页“更新词库与笔记”，或在“导入与备份”用刻度轮单独核对 List 14。刻度轮覆盖 List 1～50，尚无数据的单元会标为待整理。
+1. 点击“核对并导入初始词库”，预览 List 1～15 共 **607 个候选词**。已有词库时，可以点首页“更新词库与笔记”，或在“导入与备份”用刻度轮单独核对 List 15。刻度轮覆盖 List 1～50，尚无数据的单元会标为待整理。
 2. 查看 Markdown 文字笔记，核对拼写及 ○ / △ 后导入；可逐 List 核对更多候选。
 3. 开始复习：先回忆 → 翻开 → 查看词义与记忆线索 → 评分。
 4. 在词库中补充自己的记忆方法，并定期导出**完整 JSON 备份**。
@@ -70,7 +70,7 @@ npm run preview -- --port 4173 --strictPort
 
 ## 数据来源与持续扩充
 
-词库来自手写筛查表，已转写为 [List 1～14 的 Markdown 笔记](data/notes/)。表格统计的是个人筛查词。
+词库来自手写筛查表，已转写为 [List 1～15 的 Markdown 笔记](data/notes/)。表格统计的是个人筛查词。
 
 | List | ○ 陌生 | △ 模糊 | 练习 | 候选数 |
 | --- | ---: | ---: | ---: | ---: |
@@ -88,9 +88,10 @@ npm run preview -- --port 4173 --strictPort
 | 12 | 27 | 16 | 0 | 43 |
 | 13 | 29 | 21 | 0 | 50 |
 | 14 | 25 | 17 | 0 | 42 |
-| 合计 | 335 | 226 | 0 | 561 |
+| 15 | 25 | 21 | 0 | 46 |
+| 合计 | 360 | 247 | 0 | 607 |
 
-十四份详解笔记整理为 **341 条手写记忆法**，按词块、口诀、记忆链和关联词展示。另提供 [List 3 + List 4](data/vocabulary.list_03_04.json)、[List 5](data/vocabulary.list_05.json)、[List 6](data/vocabulary.list_06.json)、[List 7](data/vocabulary.list_07.json)、[List 8](data/vocabulary.list_08.json)、[List 9](data/vocabulary.list_09.json)、[List 10](data/vocabulary.list_10.json)、[List 11](data/vocabulary.list_11.json)、[List 12](data/vocabulary.list_12.json)、[List 13](data/vocabulary.list_13.json) 和 [List 14](data/vocabulary.list_14.json) 的独立导入文件。[词表核对记录](data/import_review.md)
+十五份详解笔记整理为 **366 条手写记忆法**，按词块、口诀、记忆链和关联词展示。另提供 [List 3 + List 4](data/vocabulary.list_03_04.json)、[List 5](data/vocabulary.list_05.json)、[List 6](data/vocabulary.list_06.json)、[List 7](data/vocabulary.list_07.json)、[List 8](data/vocabulary.list_08.json)、[List 9](data/vocabulary.list_09.json)、[List 10](data/vocabulary.list_10.json)、[List 11](data/vocabulary.list_11.json)、[List 12](data/vocabulary.list_12.json)、[List 13](data/vocabulary.list_13.json)、[List 14](data/vocabulary.list_14.json) 和 [List 15](data/vocabulary.list_15.json) 的独立导入文件。[词表核对记录](data/import_review.md)
 
 未确认转录保存在 `vocabulary.pending.json`，在看板预览确认后写入本地词库。释义、音标、例句和记忆候选保留各自的审核状态。List 4、List 5 和 List 7 的「续」是陌生词续列，归入 ○。
 

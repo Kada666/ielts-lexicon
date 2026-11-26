@@ -181,6 +181,21 @@ describe('图片转录与 Markdown',()=>{
   expect(list14.find(w=>w.word==='topsoil')?.example).toContain('deplete nutrients in the topsoil');
   expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_14.json','utf8'))).words).toEqual(list14);
  });
+ it('List 15 的 ○ 词沿用手写释义，△ 词保留补写候选',()=>{
+  const list15=words.filter(w=>w.list_ids.includes(15));
+  const unfamiliar=list15.filter(w=>w.origins[0].symbol==='○');
+  expect(list15).toHaveLength(46);
+  expect(unfamiliar).toHaveLength(25);
+  expect(list15.filter(w=>w.origins[0].symbol==='△')).toHaveLength(21);
+  expect(list15.every(w=>w.list_ids.length===1&&w.content_status==='needs_review')).toBe(true);
+  expect(unfamiliar.every(w=>w.mnemonics.length===1&&w.mnemonics[0].status==='needs_review')).toBe(true);
+  expect(list15.find(w=>w.word==='flip')?.meaning).toEqual(['翻转']);
+  expect(list15.find(w=>w.word==='provision')?.meaning).toEqual(['提供','供应']);
+  expect(list15.find(w=>w.word==='mansion')?.meaning).toEqual(['豪宅','大 house']);
+  expect(list15.find(w=>w.word==='bent')?.meaning).toEqual(['弯曲的','下定决心的','爱好','天赋']);
+  expect(list15.find(w=>w.word==='defence')).toMatchObject({initial_level:'uncertain',meaning:['防御','辩护','国防']});
+  expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_15.json','utf8'))).words).toEqual(list15);
+ });
 });
 describe('复习调度',()=>{
  it('陌生词首轮间隔更短，模糊与遗忘各有独立规则',()=>{

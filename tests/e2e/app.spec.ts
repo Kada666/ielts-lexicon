@@ -178,6 +178,7 @@ for (const {list, total, unfamiliar, first, cue} of [
  {list:12,total:43,unfamiliar:27,first:'asthma',cue:'快喊妈'},
  {list:13,total:50,unfamiliar:29,first:'badge',cue:'坏哥哥'},
  {list:14,total:42,unfamiliar:25,first:'accreditation',cue:'一再地相信他'},
+ {list:15,total:46,unfamiliar:25,first:'amass',cue:'越攒越多'},
 ]) {
  test(`List ${list} 可单独导入，原有复习记录和手写联想保留`, async ({page})=>{
   await seed(page);

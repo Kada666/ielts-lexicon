@@ -573,6 +573,52 @@
 | 14 | account | uncertain | △ | 账户；叙述；解释；占（比例） |   | needs_review | needs_review |
 | 14 | promise | uncertain | △ | 承诺；答应；有希望；前景 |   | needs_review | needs_review |
 | 14 | shrink | uncertain | △ | 收缩；缩小；减少 |   | needs_review | needs_review |
+| 15 | stagnant | unknown | ○ | 停滞的；不景气的 |   | needs_review | needs_review |
+| 15 | flip | unknown | ○ | 翻转 |   | needs_review | needs_review |
+| 15 | provision | unknown | ○ | 提供；供应 |   | needs_review | needs_review |
+| 15 | internist | unknown | ○ | 内科医生 |   | needs_review | needs_review |
+| 15 | clue | unknown | ○ | 线索；提示 |   | needs_review | needs_review |
+| 15 | stammer | unknown | ○ | 口吃；结巴 |   | needs_review | needs_review |
+| 15 | swamp | unknown | ○ | 沼泽；湿地；淹没 |   | needs_review | needs_review |
+| 15 | fickle | unknown | ○ | 善变的；反复无常的（贬义） |   | needs_review | needs_review |
+| 15 | uphill | unknown | ○ | 艰难的；上坡 |   | needs_review | needs_review |
+| 15 | consecutive | unknown | ○ | 连续的 |   | needs_review | needs_review |
+| 15 | diversion | unknown | ○ | 转移；改道；消遣；娱乐 |   | needs_review | needs_review |
+| 15 | emboss | unknown | ○ | 立体压花；使图案凸起 |   | needs_review | needs_review |
+| 15 | glossary | unknown | ○ | 词汇表 |   | needs_review | needs_review |
+| 15 | mansion | unknown | ○ | 豪宅；大 house |   | needs_review | needs_review |
+| 15 | amass | unknown | ○ | 聚集；积攒 |   | needs_review | needs_review |
+| 15 | pretension | unknown | ○ | 自命不凡 |   | needs_review | needs_review |
+| 15 | bent | unknown | ○ | 弯曲的；下定决心的；爱好；天赋 | 「下定决心的」对应 be bent on，「爱好、天赋」对应 a bent for。 | needs_review | needs_review |
+| 15 | stitch | unknown | ○ | 针脚；缝合；缝补 |   | needs_review | needs_review |
+| 15 | mite | unknown | ○ | 螨虫；极少量 |   | needs_review | needs_review |
+| 15 | burglar | unknown | ○ | 窃贼 |   | needs_review | needs_review |
+| 15 | materialistic | unknown | ○ | 物质主义的；唯物主义的 |   | needs_review | needs_review |
+| 15 | detach | unknown | ○ | 打开；分离 |   | needs_review | needs_review |
+| 15 | torrent | unknown | ○ | 激流；洪流；大量东西涌来 |   | needs_review | needs_review |
+| 15 | seam | unknown | ○ | 接缝；矿层 |   | needs_review | needs_review |
+| 15 | microcosm | unknown | ○ | 微观世界；缩影 |   | needs_review | needs_review |
+| 15 | comment | uncertain | △ | 评论；意见；发表评论 |   | needs_review | needs_review |
+| 15 | reception | uncertain | △ | 接待；接待处；招待会；反响；接收 |   | needs_review | needs_review |
+| 15 | suspend | uncertain | △ | 暂停；中止；悬挂；使停职 |   | needs_review | needs_review |
+| 15 | defence | uncertain | △ | 防御；辩护；国防 | 保留原稿的英式拼写 defence。 | needs_review | needs_review |
+| 15 | succession | uncertain | △ | 一连串；连续；继承；接任 |   | needs_review | needs_review |
+| 15 | donate | uncertain | △ | 捐赠；捐献 |   | needs_review | needs_review |
+| 15 | volume | uncertain | △ | 体积；数量；音量；（书籍的）卷或册 |   | needs_review | needs_review |
+| 15 | regardless | uncertain | △ | 不顾；无论如何 |   | needs_review | needs_review |
+| 15 | internationalist | uncertain | △ | 国际主义者；支持国际合作的人；国际主义的 |   | needs_review | needs_review |
+| 15 | scatter | uncertain | △ | 散开；散布；撒 |   | needs_review | needs_review |
+| 15 | prevail | uncertain | △ | 占上风；获胜；盛行；普遍存在 |   | needs_review | needs_review |
+| 15 | consolidation | uncertain | △ | 巩固；整合；合并 |   | needs_review | needs_review |
+| 15 | consideration | uncertain | △ | 考虑；顾及；需要考虑的因素 |   | needs_review | needs_review |
+| 15 | route | uncertain | △ | 路线；途径；为……安排路线 |   | needs_review | needs_review |
+| 15 | deficiency | uncertain | △ | 缺乏；不足；缺陷 |   | needs_review | needs_review |
+| 15 | opposite | uncertain | △ | 相反的；对面的；相反的人或事物 |   | needs_review | needs_review |
+| 15 | participation | uncertain | △ | 参加；参与 |   | needs_review | needs_review |
+| 15 | participate | uncertain | △ | 参加；参与 |   | needs_review | needs_review |
+| 15 | scheme | uncertain | △ | 计划；方案；图谋；密谋 |   | needs_review | needs_review |
+| 15 | sensory | uncertain | △ | 感官的；感觉的 |   | needs_review | needs_review |
+| 15 | inspect | uncertain | △ | 检查；视察 |   | needs_review | needs_review |
 
 ## 词条补充资料
 
@@ -5205,6 +5251,52 @@
   {"word":"prey","phonetic":"/preɪ/","part_of_speech":["noun","verb"],"collocations":["birds of prey","prey on insects","fall prey to"]},
   {"word":"account","phonetic":"/əˈkaʊnt/","part_of_speech":["noun","verb"],"collocations":["a bank account","give an account of","account for","take into account"]},
   {"word":"promise","phonetic":"/ˈprɒm.ɪs/","part_of_speech":["noun","verb"],"collocations":["keep a promise","show promise","promise to help"]},
-  {"word":"shrink","phonetic":"/ʃrɪŋk/","part_of_speech":["verb"],"collocations":["shrink in the wash","a shrinking workforce"]}
+  {"word":"shrink","phonetic":"/ʃrɪŋk/","part_of_speech":["verb"],"collocations":["shrink in the wash","a shrinking workforce"]},
+  {"word":"stagnant","phonetic":"/ˈstæɡ.nənt/","part_of_speech":["adjective"],"collocations":["a stagnant economy"]},
+  {"word":"flip","phonetic":"/flɪp/","part_of_speech":["verb"],"collocations":["flip the page","on the flip side"]},
+  {"word":"provision","phonetic":"/prəˈvɪʒ.ən/","part_of_speech":["noun"],"collocations":["the provision of services"]},
+  {"word":"internist","phonetic":"/ˈɪn.tɜː.nɪst/","part_of_speech":["noun"],"collocations":["consult an internist"]},
+  {"word":"clue","phonetic":"/kluː/","part_of_speech":["noun"],"collocations":["find a clue","a clue to the answer"]},
+  {"word":"stammer","phonetic":"/ˈstæm.ə/","part_of_speech":["verb","noun"],"collocations":["stammer a reply"]},
+  {"word":"swamp","phonetic":"/swɒmp/","part_of_speech":["noun","verb"],"collocations":["be swamped with work"]},
+  {"word":"fickle","phonetic":"/ˈfɪk.əl/","part_of_speech":["adjective"],"collocations":["fickle public opinion"]},
+  {"word":"uphill","phonetic":"/ˌʌpˈhɪl/","part_of_speech":["adjective","adverb"],"collocations":["an uphill battle","walk uphill"]},
+  {"word":"consecutive","phonetic":"/kənˈsek.jə.tɪv/","part_of_speech":["adjective"],"collocations":["seven consecutive days"]},
+  {"word":"diversion","phonetic":"/daɪˈvɜː.ʃən/","part_of_speech":["noun"],"collocations":["a traffic diversion","a welcome diversion"]},
+  {"word":"emboss","phonetic":"/ɪmˈbɒs/","part_of_speech":["verb"],"collocations":["emboss a logo on paper"]},
+  {"word":"glossary","phonetic":"/ˈɡlɒs.ər.i/","part_of_speech":["noun"],"collocations":["a glossary of terms"]},
+  {"word":"mansion","phonetic":"/ˈmæn.ʃən/","part_of_speech":["noun"],"collocations":["a country mansion"]},
+  {"word":"amass","phonetic":"/əˈmæs/","part_of_speech":["verb"],"collocations":["amass a fortune","amass a collection"]},
+  {"word":"pretension","phonetic":"/prɪˈten.ʃən/","part_of_speech":["noun"],"collocations":["intellectual pretensions"]},
+  {"word":"bent","phonetic":"/bent/","part_of_speech":["adjective","noun"],"collocations":["be bent on doing something","have a bent for music"]},
+  {"word":"stitch","phonetic":"/stɪtʃ/","part_of_speech":["noun","verb"],"collocations":["stitch the fabric together","sew a row of stitches"]},
+  {"word":"mite","phonetic":"/maɪt/","part_of_speech":["noun"],"collocations":["dust mites","a mite warmer"]},
+  {"word":"burglar","phonetic":"/ˈbɜː.ɡlə/","part_of_speech":["noun"],"collocations":["catch a burglar"]},
+  {"word":"materialistic","phonetic":"/məˌtɪə.ri.əˈlɪs.tɪk/","part_of_speech":["adjective"],"collocations":["a materialistic society"]},
+  {"word":"detach","phonetic":"/dɪˈtætʃ/","part_of_speech":["verb"],"collocations":["detach the label from the package"]},
+  {"word":"torrent","phonetic":"/ˈtɒr.ənt/","part_of_speech":["noun"],"collocations":["a torrent of water","a torrent of criticism"]},
+  {"word":"seam","phonetic":"/siːm/","part_of_speech":["noun"],"collocations":["a coal seam","sew along the seam"]},
+  {"word":"microcosm","phonetic":"/ˈmaɪ.krəʊˌkɒz.əm/","part_of_speech":["noun"],"collocations":["a microcosm of society"]},
+  {"word":"comment","phonetic":"/ˈkɒm.ent/","part_of_speech":["noun","verb"],"collocations":["make a comment","comment on the proposal"]},
+  {"word":"reception","phonetic":"/rɪˈsep.ʃən/","part_of_speech":["noun"],"collocations":["a wedding reception","receive a warm reception"]},
+  {"word":"suspend","phonetic":"/səˈspend/","part_of_speech":["verb"],"collocations":["suspend operations","be suspended from the ceiling"]},
+  {"word":"defence","phonetic":"/dɪˈfens/","part_of_speech":["noun"],"collocations":["in defence of a decision","defence spending"]},
+  {"word":"succession","phonetic":"/səkˈseʃ.ən/","part_of_speech":["noun"],"collocations":["a succession of events","in quick succession"]},
+  {"word":"donate","phonetic":"/dəʊˈneɪt/","part_of_speech":["verb"],"collocations":["donate money to charity","donate blood"]},
+  {"word":"volume","phonetic":"/ˈvɒl.juːm/","part_of_speech":["noun"],"collocations":["turn down the volume","a large volume of traffic"]},
+  {"word":"regardless","phonetic":"/rɪˈɡɑːd.ləs/","part_of_speech":["adverb"],"collocations":["regardless of age","continue regardless"]},
+  {"word":"internationalist","phonetic":"/ˌɪn.təˈnæʃ.ən.əl.ɪst/","part_of_speech":["noun","adjective"],"collocations":["an internationalist outlook"]},
+  {"word":"scatter","phonetic":"/ˈskæt.ə/","part_of_speech":["verb"],"collocations":["scatter seeds","be scattered across the region"]},
+  {"word":"prevail","phonetic":"/prɪˈveɪl/","part_of_speech":["verb"],"collocations":["prevail over an opponent","conditions that prevail"]},
+  {"word":"consolidation","phonetic":"/kənˌsɒl.ɪˈdeɪ.ʃən/","part_of_speech":["noun"],"collocations":["industry consolidation","the consolidation of gains"]},
+  {"word":"consideration","phonetic":"/kənˌsɪd.əˈreɪ.ʃən/","part_of_speech":["noun"],"collocations":["take into consideration","give careful consideration to"]},
+  {"word":"route","phonetic":"/ruːt/","part_of_speech":["noun","verb"],"collocations":["a bus route","an alternative route","route traffic through a town"]},
+  {"word":"deficiency","phonetic":"/dɪˈfɪʃ.ən.si/","part_of_speech":["noun"],"collocations":["iron deficiency","a deficiency in the system"]},
+  {"word":"opposite","phonetic":"/ˈɒp.ə.zɪt/","part_of_speech":["adjective","noun","preposition","adverb"],"collocations":["opposite directions","the opposite of","opposite the station"]},
+  {"word":"participation","phonetic":"/pɑːˌtɪs.ɪˈpeɪ.ʃən/","part_of_speech":["noun"],"collocations":["public participation","participation in the programme"]},
+  {"word":"participate","phonetic":"/pɑːˈtɪs.ɪ.peɪt/","part_of_speech":["verb"],"collocations":["participate in a discussion"]},
+  {"word":"scheme","phonetic":"/skiːm/","part_of_speech":["noun","verb"],"collocations":["a training scheme","a pension scheme"]},
+  {"word":"sensory","phonetic":"/ˈsen.sər.i/","part_of_speech":["adjective"],"collocations":["sensory information","sensory perception"]},
+  {"word":"inspect","phonetic":"/ɪnˈspekt/","part_of_speech":["verb"],"collocations":["inspect the equipment","inspect a building"]}
 ]
 ```
