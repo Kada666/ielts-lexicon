@@ -168,6 +168,19 @@ describe('图片转录与 Markdown',()=>{
   expect(list13.find(w=>w.word==='given')?.mnemonics[0].related?.map(w=>w.term)).toContain('given that resources are limited');
   expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_13.json','utf8'))).words).toEqual(list13);
  });
+ it('List 14 保留原始词形、○／△ 分类、手写联想及例句',()=>{
+  const list14=words.filter(w=>w.list_ids.includes(14));
+  const unfamiliar=list14.filter(w=>w.origins[0].symbol==='○');
+  expect(list14).toHaveLength(42);
+  expect(unfamiliar).toHaveLength(25);
+  expect(list14.filter(w=>w.origins[0].symbol==='△')).toHaveLength(17);
+  expect(list14.every(w=>w.list_ids.length===1&&w.transcription_status==='needs_review')).toBe(true);
+  expect(unfamiliar.every(w=>w.mnemonics.length===1&&w.mnemonics[0].status==='needs_review')).toBe(true);
+  expect(list14.find(w=>w.word==='familiarise')?.origins[0]).toMatchObject({raw:'familiarise',symbol:'△'});
+  expect(list14.find(w=>w.word==='refusal')?.mnemonics[0].related?.map(w=>w.term)).toContain('withdraw → withdrawal');
+  expect(list14.find(w=>w.word==='topsoil')?.example).toContain('deplete nutrients in the topsoil');
+  expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_14.json','utf8'))).words).toEqual(list14);
+ });
 });
 describe('复习调度',()=>{
  it('陌生词首轮间隔更短，模糊与遗忘各有独立规则',()=>{

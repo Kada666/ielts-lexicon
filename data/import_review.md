@@ -91,6 +91,10 @@ apparently 以「看来、似乎、据说」为常用义。fragrance 的「打�
 
 第 1 页转录 ○ 陌生 29 个、△ 模糊 21 个，共 50 词，与 List 1～12 无重复词形。第 2～8 页的 29 条记忆法见 [List 13 文字笔记](notes/list_13.md)。保留原稿的 recognize、fertilise、pulverise 和 [sophisticate](https://dictionary.cambridge.org/dictionary/english/sophisticate)，并补注 [sophisticated](https://dictionary.cambridge.org/dictionary/english/sophisticated) 的词性区别。保留 [given 的用法](https://dictionary.cambridge.org/dictionary/english/given)和 [vet 从兽医检查引申为审查的线索](https://www.etymonline.com/word/vet)。
 
+## List 14 核对
+
+第 1 页转录 ○ 陌生 25 个、△ 模糊 17 个，共 42 词，与 List 1～13 无重复词形。第 2～9 页的 25 条手写联想见 [List 14 文字笔记](notes/list_14.md)。保留 refusal 的 -al 对照、topsoil 的农业例句和 familiarise 的英式拼写。[cloakroom](https://dictionary.cambridge.org/dictionary/english/cloakroom) 保留衣帽寄存处和英式洗手间两个义项。
+
 ## 确认方法
 
 - 仅核对图片：修改主表 Transcription 为 reviewed，或在应用预览中确认导入。

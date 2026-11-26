@@ -531,6 +531,48 @@
 | 13 | rot | uncertain | △ | 腐烂；（使）腐坏；腐朽 |   | needs_review | needs_review |
 | 13 | ambulance | uncertain | △ | 救护车 |   | needs_review | needs_review |
 | 13 | reap | uncertain | △ | 收割；收获；获得（成果） |   | needs_review | needs_review |
+| 14 | resonate | unknown | ○ | 共鸣；共振；引起共鸣 |   | needs_review | needs_review |
+| 14 | cloakroom | unknown | ○ | 衣帽寄存处；（英）洗手间 | 英式英语中也可委婉指公共场所的洗手间。 | needs_review | needs_review |
+| 14 | refusal | unknown | ○ | 拒绝；回绝 |   | needs_review | needs_review |
+| 14 | coupon | unknown | ○ | 优惠券；票券 |   | needs_review | needs_review |
+| 14 | tome | unknown | ○ | 大部头书；厚重的书 |   | needs_review | needs_review |
+| 14 | toxin | unknown | ○ | 毒素 |   | needs_review | needs_review |
+| 14 | wonder | unknown | ○ | 奇迹；惊叹；想知道 |   | needs_review | needs_review |
+| 14 | interplay | unknown | ○ | 相互作用；相互影响 |   | needs_review | needs_review |
+| 14 | vitality | unknown | ○ | 活力；生命力 |   | needs_review | needs_review |
+| 14 | deplete | unknown | ○ | 耗尽；使大量减少 |   | needs_review | needs_review |
+| 14 | tragic | unknown | ○ | 悲惨的；悲剧性的 |   | needs_review | needs_review |
+| 14 | splint | unknown | ○ | 夹板；用夹板固定 |   | needs_review | needs_review |
+| 14 | foam | unknown | ○ | 泡沫；泡沫材料；起泡 |   | needs_review | needs_review |
+| 14 | format | unknown | ○ | 格式；形式；编排格式；格式化 |   | needs_review | needs_review |
+| 14 | appointment | unknown | ○ | 预约；约定；任命；委派 |   | needs_review | needs_review |
+| 14 | slope | unknown | ○ | 斜坡；坡度；倾斜 |   | needs_review | needs_review |
+| 14 | overhead | unknown | ○ | 在头顶上方的；在上空；间接开支（常用复数） | 间接经营开支义常用复数 overheads。 | needs_review | needs_review |
+| 14 | prerequisite | unknown | ○ | 先决条件；必备的 |   | needs_review | needs_review |
+| 14 | assessment | unknown | ○ | 评估；考核 |   | needs_review | needs_review |
+| 14 | textile | unknown | ○ | 纺织品；织物；纺织业的 |   | needs_review | needs_review |
+| 14 | topsoil | unknown | ○ | 表土；表层土壤 |   | needs_review | needs_review |
+| 14 | thunder | unknown | ○ | 雷声；打雷；轰隆作响 |   | needs_review | needs_review |
+| 14 | layout | unknown | ○ | 布局；设计；版面编排 |   | needs_review | needs_review |
+| 14 | gland | unknown | ○ | 腺；腺体 |   | needs_review | needs_review |
+| 14 | accreditation | unknown | ○ | 官方认证；资质认可 |   | needs_review | needs_review |
+| 14 | divide | uncertain | △ | 分开；划分；除；分歧 |   | needs_review | needs_review |
+| 14 | ridiculous | uncertain | △ | 荒谬的；可笑的 |   | needs_review | needs_review |
+| 14 | familiarise | uncertain | △ | 使熟悉；使了解 | 保留原稿的 -ise 拼写，亦作 familiarize。 | needs_review | needs_review |
+| 14 | expectancy | uncertain | △ | 期待；预期 | life expectancy 指预期寿命。 | needs_review | needs_review |
+| 14 | convenient | uncertain | △ | 方便的；便利的；合适的 |   | needs_review | needs_review |
+| 14 | genuine | uncertain | △ | 真实的；货真价实的；真诚的 |   | needs_review | needs_review |
+| 14 | observation | uncertain | △ | 观察；观测；观察所得的意见 |   | needs_review | needs_review |
+| 14 | advisable | uncertain | △ | 明智的；可取的 |   | needs_review | needs_review |
+| 14 | bankrupt | uncertain | △ | 破产的；使破产 |   | needs_review | needs_review |
+| 14 | fantasy | uncertain | △ | 幻想；想象；奇幻作品 |   | needs_review | needs_review |
+| 14 | bachelor | uncertain | △ | 未婚男子；学士 |   | needs_review | needs_review |
+| 14 | complex | uncertain | △ | 复杂的；综合设施；复合体；情结 |   | needs_review | needs_review |
+| 14 | population | uncertain | △ | 人口；（生物）种群；总体 |   | needs_review | needs_review |
+| 14 | prey | uncertain | △ | 猎物；受害者；捕食 |   | needs_review | needs_review |
+| 14 | account | uncertain | △ | 账户；叙述；解释；占（比例） |   | needs_review | needs_review |
+| 14 | promise | uncertain | △ | 承诺；答应；有希望；前景 |   | needs_review | needs_review |
+| 14 | shrink | uncertain | △ | 收缩；缩小；减少 |   | needs_review | needs_review |
 
 ## 词条补充资料
 
@@ -5121,6 +5163,48 @@
   {"word":"extremely","phonetic":"/ɪkˈstriːm.li/","part_of_speech":["adverb"],"collocations":["extremely important","extremely unlikely"]},
   {"word":"rot","phonetic":"/rɒt/","part_of_speech":["verb","noun"],"collocations":["leave food to rot","root rot"]},
   {"word":"ambulance","phonetic":"/ˈæm.bjə.ləns/","part_of_speech":["noun"],"collocations":["call an ambulance","an ambulance crew"]},
-  {"word":"reap","phonetic":"/riːp/","part_of_speech":["verb"],"collocations":["reap the harvest","reap the benefits"]}
+  {"word":"reap","phonetic":"/riːp/","part_of_speech":["verb"],"collocations":["reap the harvest","reap the benefits"]},
+  {"word":"resonate","phonetic":"/ˈrez.ə.neɪt/","part_of_speech":["verb"],"collocations":["resonate with readers","resonate at a particular frequency"]},
+  {"word":"cloakroom","phonetic":"/ˈkləʊk.ruːm/","part_of_speech":["noun"],"collocations":["leave your coat in the cloakroom"]},
+  {"word":"refusal","phonetic":"/rɪˈfjuː.zəl/","part_of_speech":["noun"],"collocations":["refusal to comply","a flat refusal"]},
+  {"word":"coupon","phonetic":"/ˈkuː.pɒn/","part_of_speech":["noun"],"collocations":["a discount coupon","redeem a coupon"]},
+  {"word":"tome","phonetic":"/təʊm/","part_of_speech":["noun"],"collocations":["a hefty tome"]},
+  {"word":"toxin","phonetic":"/ˈtɒk.sɪn/","part_of_speech":["noun"],"collocations":["bacterial toxins"]},
+  {"word":"wonder","phonetic":"/ˈwʌn.də/","part_of_speech":["noun","verb"],"collocations":["the wonders of nature","wonder whether","no wonder"]},
+  {"word":"interplay","phonetic":"/ˈɪn.tə.pleɪ/","part_of_speech":["noun"],"collocations":["the interplay between culture and technology"]},
+  {"word":"vitality","phonetic":"/vaɪˈtæl.ə.ti/","part_of_speech":["noun"],"collocations":["economic vitality","full of vitality"]},
+  {"word":"deplete","phonetic":"/dɪˈpliːt/","part_of_speech":["verb"],"collocations":["deplete natural resources","deplete soil nutrients"]},
+  {"word":"tragic","phonetic":"/ˈtrædʒ.ɪk/","part_of_speech":["adjective"],"collocations":["a tragic accident","a tragic ending"]},
+  {"word":"splint","phonetic":"/splɪnt/","part_of_speech":["noun","verb"],"collocations":["wear a splint","put a splint on a finger"]},
+  {"word":"foam","phonetic":"/fəʊm/","part_of_speech":["noun","verb"],"collocations":["soap foam","packaging foam","foam fire extinguisher"]},
+  {"word":"format","phonetic":"/ˈfɔː.mæt/","part_of_speech":["noun","verb"],"collocations":["file format","format a document"]},
+  {"word":"appointment","phonetic":"/əˈpɔɪnt.mənt/","part_of_speech":["noun"],"collocations":["make an appointment","the appointment of a new director"]},
+  {"word":"slope","phonetic":"/sləʊp/","part_of_speech":["noun","verb"],"collocations":["a steep slope","slope down towards the river"]},
+  {"word":"overhead","phonetic":"/ˌəʊ.vəˈhed/","part_of_speech":["adjective","adverb","noun"],"collocations":["overhead lighting","fly overhead","reduce overheads"]},
+  {"word":"prerequisite","phonetic":"/ˌpriːˈrek.wɪ.zɪt/","part_of_speech":["noun","adjective"],"collocations":["a prerequisite for entry","a prerequisite course"]},
+  {"word":"assessment","phonetic":"/əˈses.mənt/","part_of_speech":["noun"],"collocations":["a risk assessment","continuous assessment"]},
+  {"word":"textile","phonetic":"/ˈtek.staɪl/","part_of_speech":["noun","adjective"],"collocations":["the textile industry","textile production"]},
+  {"word":"topsoil","phonetic":"/ˈtɒp.sɔɪl/","part_of_speech":["noun"],"collocations":["fertile topsoil","loss of topsoil"],"example":"Intensive farming can deplete nutrients in the topsoil and accelerate soil erosion.","example_zh":"集约化农业可能消耗表土中的养分，并加速土壤侵蚀。"},
+  {"word":"thunder","phonetic":"/ˈθʌn.də/","part_of_speech":["noun","verb"],"collocations":["a clap of thunder","thunderous applause"]},
+  {"word":"layout","phonetic":"/ˈleɪ.aʊt/","part_of_speech":["noun"],"collocations":["the layout of a room","a dashboard layout"]},
+  {"word":"gland","phonetic":"/ɡlænd/","part_of_speech":["noun"],"collocations":["sweat gland","salivary gland"]},
+  {"word":"accreditation","phonetic":"/əˌkred.ɪˈteɪ.ʃən/","part_of_speech":["noun"],"collocations":["gain accreditation","professional accreditation"]},
+  {"word":"divide","phonetic":"/dɪˈvaɪd/","part_of_speech":["verb","noun"],"collocations":["divide into groups","divide ten by two","the digital divide"]},
+  {"word":"ridiculous","phonetic":"/rɪˈdɪk.jə.ləs/","part_of_speech":["adjective"],"collocations":["a ridiculous suggestion","look ridiculous"]},
+  {"word":"familiarise","phonetic":"/fəˈmɪl.i.ə.raɪz/","part_of_speech":["verb"],"collocations":["familiarise yourself with the rules"]},
+  {"word":"expectancy","phonetic":"/ɪkˈspek.tən.si/","part_of_speech":["noun"],"collocations":["life expectancy","a sense of expectancy"]},
+  {"word":"convenient","phonetic":"/kənˈviː.ni.ənt/","part_of_speech":["adjective"],"collocations":["a convenient location","at a convenient time"]},
+  {"word":"genuine","phonetic":"/ˈdʒen.ju.ɪn/","part_of_speech":["adjective"],"collocations":["genuine concern","a genuine interest"]},
+  {"word":"observation","phonetic":"/ˌɒb.zəˈveɪ.ʃən/","part_of_speech":["noun"],"collocations":["direct observation","make an observation"]},
+  {"word":"advisable","phonetic":"/ədˈvaɪ.zə.bəl/","part_of_speech":["adjective"],"collocations":["it is advisable to check"]},
+  {"word":"bankrupt","phonetic":"/ˈbæŋ.krʌpt/","part_of_speech":["adjective","verb"],"collocations":["go bankrupt","bankrupt a company"]},
+  {"word":"fantasy","phonetic":"/ˈfæn.tə.si/","part_of_speech":["noun"],"collocations":["a fantasy novel","escape into fantasy"]},
+  {"word":"bachelor","phonetic":"/ˈbætʃ.əl.ə/","part_of_speech":["noun"],"collocations":["a bachelor's degree","a Bachelor of Arts"]},
+  {"word":"complex","phonetic":"/ˈkɒm.pleks/","part_of_speech":["adjective","noun"],"collocations":["a complex problem","a sports complex"]},
+  {"word":"population","phonetic":"/ˌpɒp.jəˈleɪ.ʃən/","part_of_speech":["noun"],"collocations":["population growth","an ageing population"]},
+  {"word":"prey","phonetic":"/preɪ/","part_of_speech":["noun","verb"],"collocations":["birds of prey","prey on insects","fall prey to"]},
+  {"word":"account","phonetic":"/əˈkaʊnt/","part_of_speech":["noun","verb"],"collocations":["a bank account","give an account of","account for","take into account"]},
+  {"word":"promise","phonetic":"/ˈprɒm.ɪs/","part_of_speech":["noun","verb"],"collocations":["keep a promise","show promise","promise to help"]},
+  {"word":"shrink","phonetic":"/ʃrɪŋk/","part_of_speech":["verb"],"collocations":["shrink in the wash","a shrinking workforce"]}
 ]
 ```
