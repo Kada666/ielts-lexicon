@@ -99,6 +99,10 @@ apparently 以「看来、似乎、据说」为常用义。fragrance 的「打�
 
 第 1 页转录 ○ 不会 25 个、△ 模糊 21 个，共 46 词，与 List 1～14 无重复词形。○ 词的闪卡释义逐条对应第 2～9 页箭头后的手写释义，例如 flip 仅为「翻转」、provision 为「提供；供应」、mansion 保留「豪宅；大 house」。△ 词的释义为补写候选。25 条联想见 [List 15 文字笔记](notes/list_15.md)。关联词采用词典拼写 [torrential](https://dictionary.cambridge.org/dictionary/english/torrential)。
 
+## List 16 核对
+
+第 1 页转录 ○ 不会 17 个、△ 模糊 22 个，共 39 词，与 List 1～15 无重复词形。○ 词释义沿用第 2～7 页手写内容，△ 词补写常用义项并标为待核验。原稿的 institude 保存在原始写法栏，词条按 [institute](https://dictionary.cambridge.org/dictionary/english/institute) 整理，待核对。17 条助记见 [List 16 文字笔记](notes/list_16.md)。
+
 ## 确认方法
 
 - 仅核对图片：修改主表 Transcription 为 reviewed，或在应用预览中确认导入。

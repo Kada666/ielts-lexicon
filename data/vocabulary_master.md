@@ -619,6 +619,45 @@
 | 15 | scheme | uncertain | △ | 计划；方案；图谋；密谋 |   | needs_review | needs_review |
 | 15 | sensory | uncertain | △ | 感官的；感觉的 |   | needs_review | needs_review |
 | 15 | inspect | uncertain | △ | 检查；视察 |   | needs_review | needs_review |
+| 16 | proliferate | unknown | ○ | 激增；迅速增殖 |   | needs_review | needs_review |
+| 16 | catastrophe | unknown | ○ | 灾难 |   | needs_review | needs_review |
+| 16 | sediment | unknown | ○ | 沉淀物；沉积物 |   | needs_review | needs_review |
+| 16 | resit | unknown | ○ | 重考；补考 | 名词读 /ˈriː.sɪt/，动词读 /ˌriːˈsɪt/。 | needs_review | needs_review |
+| 16 | menace | unknown | ○ | 威胁；恐吓 |   | needs_review | needs_review |
+| 16 | flexitime | unknown | ○ | 弹性工作制 |   | needs_review | needs_review |
+| 16 | sinew | unknown | ○ | 肌腱 |   | needs_review | needs_review |
+| 16 | parallel | unknown | ○ | 平行线；平行的；与……相似 |   | needs_review | needs_review |
+| 16 | oversee | unknown | ○ | 监督；监管 |   | needs_review | needs_review |
+| 16 | overdraft | unknown | ○ | 透支；透支额 |   | needs_review | needs_review |
+| 16 | optical | unknown | ○ | 视觉的；光学的 |   | needs_review | needs_review |
+| 16 | twofold | unknown | ○ | 双重的；两倍地（的） |   | needs_review | needs_review |
+| 16 | beforehand | unknown | ○ | 预先；事先 |   | needs_review | needs_review |
+| 16 | filter | unknown | ○ | 过滤；筛选；滤镜 |   | needs_review | needs_review |
+| 16 | foetus | unknown | ○ | 胎儿 | 保留原稿的英式拼写 foetus。 | needs_review | needs_review |
+| 16 | stationery | unknown | ○ | 文具 |   | needs_review | needs_review |
+| 16 | limestone | unknown | ○ | 石灰岩 |   | needs_review | needs_review |
+| 16 | overwork | uncertain | △ | 过度工作；使工作过度；过度劳累 |   | needs_review | needs_review |
+| 16 | parental | uncertain | △ | 父母的；与父母有关的 |   | needs_review | needs_review |
+| 16 | scratch | uncertain | △ | 抓；刮擦；划痕 |   | needs_review | needs_review |
+| 16 | snatch | uncertain | △ | 夺走；抢走；抓住（机会） |   | needs_review | needs_review |
+| 16 | assist | uncertain | △ | 帮助；协助 |   | needs_review | needs_review |
+| 16 | veil | uncertain | △ | 面纱；遮盖物；掩盖 |   | needs_review | needs_review |
+| 16 | removal | uncertain | △ | 移除；清除；撤职 |   | needs_review | needs_review |
+| 16 | institute | uncertain | △ | 机构；学院；研究所；制定并实施 | 原稿写作 institude，按 institute 整理，待核对。 | needs_review | needs_review |
+| 16 | reinforce | uncertain | △ | 加强；巩固；加固 |   | needs_review | needs_review |
+| 16 | commitment | uncertain | △ | 承诺；投入；责任或义务 |   | needs_review | needs_review |
+| 16 | possession | uncertain | △ | 拥有；占有；所有物 |   | needs_review | needs_review |
+| 16 | cultural | uncertain | △ | 文化的；与文化有关的 |   | needs_review | needs_review |
+| 16 | embassy | uncertain | △ | 大使馆；大使馆人员 |   | needs_review | needs_review |
+| 16 | congress | uncertain | △ | 大会；代表大会；国会（Congress） |   | needs_review | needs_review |
+| 16 | germ | uncertain | △ | 病菌；微生物；萌芽 |   | needs_review | needs_review |
+| 16 | splash | uncertain | △ | 溅；泼；飞溅声；少量液体 |   | needs_review | needs_review |
+| 16 | aspect | uncertain | △ | 方面；特征；朝向 |   | needs_review | needs_review |
+| 16 | tunnel | uncertain | △ | 隧道；地道；挖掘隧道 |   | needs_review | needs_review |
+| 16 | contrast | uncertain | △ | 对比；差异；形成对照 | 名词读 /ˈkɒn.trɑːst/，动词读 /kənˈtrɑːst/。 | needs_review | needs_review |
+| 16 | stem | uncertain | △ | 茎；词干；阻止；起源于 |   | needs_review | needs_review |
+| 16 | stern | uncertain | △ | 严厉的；严肃的；船尾 |   | needs_review | needs_review |
+| 16 | interrelationship | uncertain | △ | 相互关系；相互联系 |   | needs_review | needs_review |
 
 ## 词条补充资料
 
@@ -5297,6 +5336,45 @@
   {"word":"participate","phonetic":"/pɑːˈtɪs.ɪ.peɪt/","part_of_speech":["verb"],"collocations":["participate in a discussion"]},
   {"word":"scheme","phonetic":"/skiːm/","part_of_speech":["noun","verb"],"collocations":["a training scheme","a pension scheme"]},
   {"word":"sensory","phonetic":"/ˈsen.sər.i/","part_of_speech":["adjective"],"collocations":["sensory information","sensory perception"]},
-  {"word":"inspect","phonetic":"/ɪnˈspekt/","part_of_speech":["verb"],"collocations":["inspect the equipment","inspect a building"]}
+  {"word":"inspect","phonetic":"/ɪnˈspekt/","part_of_speech":["verb"],"collocations":["inspect the equipment","inspect a building"]},
+  {"word":"proliferate","phonetic":"/prəˈlɪf.ər.eɪt/","part_of_speech":["verb"],"collocations":["cells proliferate","proliferate rapidly"]},
+  {"word":"catastrophe","phonetic":"/kəˈtæs.trə.fi/","part_of_speech":["noun"],"collocations":["an environmental catastrophe","avert a catastrophe"]},
+  {"word":"sediment","phonetic":"/ˈsed.ɪ.mənt/","part_of_speech":["noun"],"collocations":["marine sediment","sediment settles"]},
+  {"word":"resit","phonetic":"/ˌriːˈsɪt/","part_of_speech":["verb","noun"],"collocations":["resit an exam","take a resit"]},
+  {"word":"menace","phonetic":"/ˈmen.əs/","part_of_speech":["noun","verb"],"collocations":["a menace to public safety"]},
+  {"word":"flexitime","phonetic":"/ˈflek.si.taɪm/","part_of_speech":["noun"],"collocations":["work flexitime","a flexitime scheme"]},
+  {"word":"sinew","phonetic":"/ˈsɪn.juː/","part_of_speech":["noun"],"collocations":["muscles and sinews"]},
+  {"word":"parallel","phonetic":"/ˈpær.ə.lel/","part_of_speech":["noun","adjective","verb"],"collocations":["parallel lines","run parallel to the road","draw a parallel between A and B"]},
+  {"word":"oversee","phonetic":"/ˌəʊ.vəˈsiː/","part_of_speech":["verb"],"collocations":["oversee a project","oversee daily operations"]},
+  {"word":"overdraft","phonetic":"/ˈəʊ.və.drɑːft/","part_of_speech":["noun"],"collocations":["an overdraft limit","arrange an overdraft"]},
+  {"word":"optical","phonetic":"/ˈɒp.tɪ.kəl/","part_of_speech":["adjective"],"collocations":["optical fibre","an optical illusion"]},
+  {"word":"twofold","phonetic":"/ˈtuː.fəʊld/","part_of_speech":["adjective","adverb"],"collocations":["a twofold increase","increase twofold"]},
+  {"word":"beforehand","phonetic":"/bɪˈfɔː.hænd/","part_of_speech":["adverb"],"collocations":["prepare beforehand","check beforehand"]},
+  {"word":"filter","phonetic":"/ˈfɪl.tə/","part_of_speech":["verb","noun"],"collocations":["filter out impurities","apply a filter"]},
+  {"word":"foetus","phonetic":"/ˈfiː.təs/","part_of_speech":["noun"],"collocations":["the developing foetus"]},
+  {"word":"stationery","phonetic":"/ˈsteɪ.ʃən.ər.i/","part_of_speech":["noun"],"collocations":["office stationery","a stationery shop"]},
+  {"word":"limestone","phonetic":"/ˈlaɪm.stəʊn/","part_of_speech":["noun"],"collocations":["a limestone quarry","limestone cliffs"]},
+  {"word":"overwork","phonetic":"/ˌəʊ.vəˈwɜːk/","part_of_speech":["verb","noun"],"collocations":["overwork yourself","suffer from overwork"]},
+  {"word":"parental","phonetic":"/pəˈren.təl/","part_of_speech":["adjective"],"collocations":["parental consent","parental responsibility"]},
+  {"word":"scratch","phonetic":"/skrætʃ/","part_of_speech":["verb","noun"],"collocations":["scratch the surface","start from scratch"]},
+  {"word":"snatch","phonetic":"/snætʃ/","part_of_speech":["verb"],"collocations":["snatch a bag","snatch a victory"]},
+  {"word":"assist","phonetic":"/əˈsɪst/","part_of_speech":["verb"],"collocations":["assist with a task","assist someone in doing something"]},
+  {"word":"veil","phonetic":"/veɪl/","part_of_speech":["noun","verb"],"collocations":["wear a veil","a veil of secrecy"]},
+  {"word":"removal","phonetic":"/rɪˈmuː.vəl/","part_of_speech":["noun"],"collocations":["waste removal","removal from office"]},
+  {"word":"institute","phonetic":"/ˈɪn.stɪ.tʃuːt/","part_of_speech":["noun","verb"],"collocations":["a research institute","institute new guidelines"],"raw":"institude"},
+  {"word":"reinforce","phonetic":"/ˌriː.ɪnˈfɔːs/","part_of_speech":["verb"],"collocations":["reinforce a message","reinforce a structure"]},
+  {"word":"commitment","phonetic":"/kəˈmɪt.mənt/","part_of_speech":["noun"],"collocations":["make a commitment","show commitment to"]},
+  {"word":"possession","phonetic":"/pəˈzeʃ.ən/","part_of_speech":["noun"],"collocations":["in possession of","personal possessions"]},
+  {"word":"cultural","phonetic":"/ˈkʌl.tʃər.əl/","part_of_speech":["adjective"],"collocations":["cultural diversity","cultural heritage"]},
+  {"word":"embassy","phonetic":"/ˈem.bə.si/","part_of_speech":["noun"],"collocations":["a British embassy","contact the embassy"]},
+  {"word":"congress","phonetic":"/ˈkɒŋ.ɡres/","part_of_speech":["noun"],"collocations":["an international congress","the US Congress"]},
+  {"word":"germ","phonetic":"/dʒɜːm/","part_of_speech":["noun"],"collocations":["spread germs","the germ of an idea"]},
+  {"word":"splash","phonetic":"/splæʃ/","part_of_speech":["verb","noun"],"collocations":["splash water","a splash of milk"]},
+  {"word":"aspect","phonetic":"/ˈæs.pekt/","part_of_speech":["noun"],"collocations":["an important aspect of","a south-facing aspect"]},
+  {"word":"tunnel","phonetic":"/ˈtʌn.əl/","part_of_speech":["noun","verb"],"collocations":["a railway tunnel","tunnel through rock"]},
+  {"word":"contrast","phonetic":"/ˈkɒn.trɑːst/","part_of_speech":["noun","verb"],"collocations":["in contrast to","contrast A with B"]},
+  {"word":"stem","phonetic":"/stem/","part_of_speech":["noun","verb"],"collocations":["a flower stem","stem the flow","stem from"]},
+  {"word":"stern","phonetic":"/stɜːn/","part_of_speech":["adjective","noun"],"collocations":["a stern warning","at the stern"]},
+  {"word":"interrelationship","phonetic":"/ˌɪn.tə.rɪˈleɪ.ʃən.ʃɪp/","part_of_speech":["noun"],"collocations":["the interrelationship between A and B"]}
 ]
 ```

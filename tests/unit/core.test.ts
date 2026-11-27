@@ -196,6 +196,20 @@ describe('图片转录与 Markdown',()=>{
   expect(list15.find(w=>w.word==='defence')).toMatchObject({initial_level:'uncertain',meaning:['防御','辩护','国防']});
   expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_15.json','utf8'))).words).toEqual(list15);
  });
+ it('List 16 保留手写释义、助记和待核对原始拼写',()=>{
+  const list16=words.filter(w=>w.list_ids.includes(16));
+  const unfamiliar=list16.filter(w=>w.origins[0].symbol==='○');
+  expect(list16).toHaveLength(39);
+  expect(unfamiliar).toHaveLength(17);
+  expect(list16.filter(w=>w.origins[0].symbol==='△')).toHaveLength(22);
+  expect(list16.every(w=>w.list_ids.length===1&&w.content_status==='needs_review')).toBe(true);
+  expect(unfamiliar.every(w=>w.mnemonics.length===1&&w.mnemonics[0].status==='needs_review')).toBe(true);
+  expect(list16.find(w=>w.word==='catastrophe')?.meaning).toEqual(['灾难']);
+  expect(list16.find(w=>w.word==='filter')?.meaning).toEqual(['过滤','筛选','滤镜']);
+  expect(list16.find(w=>w.word==='twofold')?.meaning).toEqual(['双重的','两倍地（的）']);
+  expect(list16.find(w=>w.word==='institute')).toMatchObject({transcription_status:'needs_review',origins:[{raw:'institude',symbol:'△'}]});
+  expect(parseVocabulary(JSON.parse(readFileSync('data/vocabulary.list_16.json','utf8'))).words).toEqual(list16);
+ });
 });
 describe('复习调度',()=>{
  it('陌生词首轮间隔更短，模糊与遗忘各有独立规则',()=>{
